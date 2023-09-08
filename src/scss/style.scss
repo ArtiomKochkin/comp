@@ -1,0 +1,17 @@
+@import "vendor/reset";
+@import "vars";
+@import "mixins";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: black;
+    font-size: 1.4rem;
+    color: white;
+}
