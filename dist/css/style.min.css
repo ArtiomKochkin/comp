@@ -1338,6 +1338,131 @@ img {
   cursor: pointer;
 }
 
+.contacts {
+  margin-top: 3.2rem;
+}
+
+.contacts__wrap {
+  display: flex;
+  margin: 2.4rem 0;
+}
+
+.contacts__info,
+.contacts__map {
+  width: 50%;
+}
+
+.contacts__info {
+  background-color: #060F42;
+  padding: 2.4rem;
+}
+
+.contacts__item {
+  display: flex;
+  padding-left: 6rem;
+  margin-bottom: 2.4rem;
+}
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+.contacts__item--tel {
+  background: url("../../img/contacts/phone.svg") 0% 0% no-repeat;
+  background-size: 24px 24px;
+}
+.contacts__item--email {
+  background: url("../../img/contacts/email.svg") 0% 0% no-repeat;
+  background-size: 24px 24px;
+}
+.contacts__item--time {
+  background: url("../../img/contacts/time.svg") 0% 0% no-repeat;
+  background-size: 24px 24px;
+}
+.contacts__item--location {
+  background: url("../../img/contacts/location.svg") 0% 0% no-repeat;
+  background-size: 24px 24px;
+}
+.contacts__item--skype {
+  background: url("../../img/contacts/skype.svg") 0% 0% no-repeat;
+  background-size: 24px 24px;
+}
+
+.contacts__column {
+  margin-right: 5vw;
+}
+.contacts__column:last-child {
+  margin-right: 0;
+}
+
+.contacts__title {
+  color: #F4F8FB;
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 1.6rem;
+}
+
+.contacts__list-item {
+  margin-top: 1.2rem;
+}
+.contacts__list-item:first-child {
+  margin-top: 0;
+}
+
+.contacts__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+}
+.contacts__link:hover {
+  color: #999;
+}
+
+.contacts__group {
+  margin-bottom: 2.4rem;
+}
+.contacts__group:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__desc {
+  color: #666;
+  font-size: 0.8vw;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-bottom: 1.2rem;
+}
+
+.contacts__group-item {
+  margin-top: 1.2rem;
+}
+.contacts__group-item:first-child {
+  margin-top: 0;
+}
+
+.contacts__group-link {
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-decoration: none;
+}
+.contacts__group-link:hover {
+  color: #999;
+}
+
+.contacts__text {
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-bottom: 0.4rem;
+}
+.contacts__text:last-child {
+  margin-bottom: 0;
+}
+
 .rating {
   display: flex;
   align-items: center;

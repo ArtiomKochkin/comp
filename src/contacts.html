@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Контакты"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <section class="contacts container">
+            <h3 class="section__title">Контакты</h3>
+            <div class="contacts__wrap">
+                <div class="contacts__info">
+                    <div class="contacts__item contacts__item--tel">
+                        <div class="contacts__column">
+                            <h5 class="contacts__title">Отдел продаж</h5>
+                            <ul class="contacts__list">
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79061112485" class="contacts__link">+7 (906) 11-12-485</a>
+                                </li>
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79064843922" class="contacts__link">+7 (906) 484-39-22</a>
+                                </li>
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79067473348" class="contacts__link">+7 (906) 747-33-48</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__column">
+                            <h5 class="contacts__title">Сервисный центр</h5>
+                            <ul class="contacts__list">
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79061112485" class="contacts__link">+7 (906) 111-24-85</a>
+                                </li>
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79064843922" class="contacts__link">+7 (906) 484-39-22</a>
+                                </li>
+                                <li class="contacts__list-item">
+                                    <a href="tel:+79067473348" class="contacts__link">+7 (906) 747-33-48</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item--email">
+                        <div class="contacts__column">
+                            <div class="contacts__group">
+                                <p class="contacts__desc">
+                                    Интернет-продажи 
+                                </p>
+                                <ul class="contacts__group-list">
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:yurij.kovika@v-comp.com.ua" class="contacts__group-link">
+                                            yurij.kovika@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__group">
+                                <p class="contacts__desc">
+                                    Ремонт техники (сервисный центр)  
+                                </p>
+                                <ul class="contacts__group-list">
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:a.ovsyannikov@v-comp.com.ua" class="contacts__group-link">
+                                            a.ovsyannikov@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__group">
+                                <p class="contacts__desc">
+                                    Отдел корпоративных продаж (счета с НДС, без НДС)   
+                                </p>
+                                <ul class="contacts__group-list">
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:o.ryabiy@v-comp.com.ua" class="contacts__group-link">
+                                            o.ryabiy@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contacts__column">
+                            <div class="contacts__group">
+                                <p class="contacts__desc">
+                                    Скупка б/у техники 
+                                </p>
+                                <ul class="contacts__group-list">
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:a.krasnoschok@v-comp.com.ua" class="contacts__group-link">
+                                            a.krasnoschok@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__group">
+                                <p class="contacts__desc">
+                                    Жалобы и предложения  
+                                </p>
+                                <ul class="contacts__group-list">
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:v.krasnoschok@v-comp.com.ua" class="contacts__group-link">
+                                            v.krasnoschok@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                    <li class="contacts__group-item">
+                                        <a href="mailto:a.krasnoschok@v-comp.com.ua" class="contacts__group-link">
+                                            a.krasnoschok@v-comp.com.ua
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item--time">
+                        <div class="contacts__column">
+                            <p class="contacts__text">
+                                Понедельник-Пятница 9:00-19:00
+                            </p>
+                            <p class="contacts__text">
+                                Суббота-Воскресенье: с 9:00-16:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item--location">
+                        <div class="contacts__column">
+                            <p class="contacts__text">
+                                г. Днепр, ул. Европейская, 8  (бывшая Миронова 8)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item--skype">
+                        <div class="contacts__column">
+                            <ul class="contacts__group-list">
+                                <li class="contacts__group-item">
+                                    <a href="skype:yurij.kovika" class="contacts__group-link">
+                                        yurij.kovika
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__map"></div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>
