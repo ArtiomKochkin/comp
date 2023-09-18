@@ -1,0 +1,17 @@
+.section__title {
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 32px;
+    color: $dark-grey;
+
+    &--page {
+        font-size: 1.7vw;
+        line-height: 36px;
+    }
+}
+
+.section__main-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.4rem auto;
+}

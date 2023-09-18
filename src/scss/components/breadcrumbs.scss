@@ -1,0 +1,22 @@
+.breadcrumbs {
+    margin: 3.2rem auto 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.breadcrumbs__link {
+    color: #01579B;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    text-decoration: none;
+
+    &--current {
+        color: $gray;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,151 @@
+.footer {
+    padding: 3rem 0;
+    background-color: $dark;
+}
+
+.footer__up {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    color: $light-gray;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+
+    &--navigation {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.footer__item {
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__link {
+    text-decoration: none;
+    color: $light-gray;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+
+    &:hover {
+        color: $gray;
+    }
+}
+
+.footer__address {
+    font-size: 0.8vw;
+    margin-top: 1.5rem;
+    color: $light-gray;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.footer__location {
+    font-size: 0.8vw;
+    margin-top: 1.2rem;
+    color: $light-gray;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.footer__social {
+    margin-top: 2rem;
+    margin-bottom: 2.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-item {
+    margin-right: 0.8rem;
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__social-link {
+    display: block;
+    text-decoration: none;
+    background-color: $soft;
+    border-radius: 50%;
+    padding: 4px 4px;
+
+    &--whatsapp {
+        padding: 6px 7px;
+    }
+    &--telegram {
+        padding: 8px 6px;
+    }
+}
+
+.footer__social-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer__form {
+    width: 18.75vw;
+    margin-top: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    border: 1px solid $dark;
+    background: $white;
+    padding: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.footer__button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.footer__down {
+    display: flex;
+    padding: 1.6rem 0;
+    align-items: center;
+    justify-content: space-between;
+    color: #D9D9D9;
+    border-top: 1px solid rgba(#D9D9D9, 0.5);
+    border-bottom: 1px solid rgba(#D9D9D9, 0.5);
+
+}
+
+.footer__down-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-right: 1.56vw;
+}
+
+.footer__copyright {
+    font-size: 0.8vw;
+    color: $light-gray;;
+}
+
+.footer__pay-system {
+    display: flex;
+    align-items: center;
+}
+
+.footer__pay-system__item {
+    margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

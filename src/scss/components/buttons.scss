@@ -1,0 +1,52 @@
+.button {
+    background-color: $primary;
+    color: $soft;
+    border-radius: 4px;
+    font-size: 0.8vw;
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all linear .3s;
+    border: none;
+    font-family: 'Montserrat';
+    outline: none;
+
+    &:hover {
+        background-color: #37BD8D;
+    }
+
+    &:active {
+        border: 1px solid vrgba(38, 99, 255, 0.50);
+        box-shadow: 0px 0px 3px 0px rgba(63, 117, 255, 0.65);
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        color: #999999;
+    }
+
+    &--secondary {
+        background-color: $secondary;
+
+        &:hover {
+            background-color: #3582BF;
+        }
+    }
+
+    &--small {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.7vw;
+    }
+}
+
+.button-img {
+    display: block;
+    margin-left: 1rem;
+
+    &:left {
+        margin-right: 1rem;
+    }
+}

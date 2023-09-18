@@ -1,0 +1,24 @@
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 1.5vw;
+}
+
+.nav__link {
+    color: $soft;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    text-decoration: none;
+
+    &:hover {
+        color: $gray;
+    }
+}
+
+.header__up-account-img {
+    width: 1.25vw;
+}

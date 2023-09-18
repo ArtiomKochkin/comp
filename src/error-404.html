@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Ошибка 404"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <div class="error">
+            <h2 class="error__title">404</h2>
+            <p class="error__subtitle">
+                К сожалению, запрашиваемая вами страница не найдена.
+            </p>
+            <p class="error__info">
+                Неправильно набран адрес или такой страницы на сайте больше не существует.
+            </p>
+            <a href="index.html" class="error__link">ПЕРЕЙТИ НА ГЛАВНУЮ</a>
+        </div>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

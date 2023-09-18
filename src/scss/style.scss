@@ -1,9 +1,11 @@
 @import "vendor/reset";
 @import "vars";
 @import "mixins";
+@import "fonts";
 
 *, *::after, *::before {
     box-sizing: border-box;
+    transition: all linear 0.3s;
 }
 
 html {
@@ -11,7 +13,49 @@ html {
 }
 
 body {
-    background-color: black;
+    color: $dark;
     font-size: 1.4rem;
-    color: white;
+    background-color: $white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
 }
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 79.79vw;
+    margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/footer";
+@import "blocks/catalog";
+@import "blocks/intro";
+@import "blocks/top";
+@import "blocks/game";
+@import "blocks/inst";
+@import "blocks/reviews";
+@import "blocks/partners";
+@import "blocks/news";
+@import "blocks/about";
+@import "blocks/category";
+@import "blocks/subcategory";
+@import "blocks/error";
+@import "blocks/post";
+@import "blocks/stock";
+
+@import "components/rating";
+@import "components/product";
+@import "components/section";
+@import "components/show-more";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/breadcrumbs";
+@import "components/recommendation";
+@import "components/pagination";
