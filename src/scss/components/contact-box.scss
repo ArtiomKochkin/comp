@@ -1,0 +1,35 @@
+.contact-box__item {
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact-box__link {
+    text-decoration: none;
+    color: $light-gray;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+
+    &:hover {
+        color: $gray;
+    }
+}
+
+.contact-box__address {
+    font-size: 0.8vw;
+    margin-top: 1.5rem;
+    color: $light-gray;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.contact-box__location {
+    font-size: 0.8vw;
+    margin-top: 1.2rem;
+    color: $light-gray;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}

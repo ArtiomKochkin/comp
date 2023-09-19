@@ -33,7 +33,7 @@ img {
 }
 
 @import "blocks/header";
-@import "blocks/nav";
+@import "blocks/menu";
 @import "blocks/footer";
 @import "blocks/catalog";
 @import "blocks/intro";
@@ -51,6 +51,7 @@ img {
 @import "blocks/stock";
 @import "blocks/contacts";
 
+@import "components/nav";
 @import "components/rating";
 @import "components/product";
 @import "components/section";
@@ -60,3 +61,5 @@ img {
 @import "components/breadcrumbs";
 @import "components/recommendation";
 @import "components/pagination";
+@import "components/social";
+@import "components/contact-box";

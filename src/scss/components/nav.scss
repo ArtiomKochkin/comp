@@ -1,0 +1,50 @@
+.nav {
+    &--menu {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+
+    &--dark {
+        display: block;
+    }
+}
+
+.nav__item {
+    margin-right: 1.5vw;
+
+    &--dark {
+        margin-bottom: 1.2rem;
+        margin-right: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.nav__link {
+    color: $soft;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    text-decoration: none;
+
+    &:hover {
+        color: $gray;
+    }
+
+    &--dark {
+        color: $light-gray;
+        font-size: 0.8vw;
+        font-weight: 500;
+        line-height: 16px; /* 133.333% */
+    }
+}

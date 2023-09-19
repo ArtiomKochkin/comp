@@ -1,3 +1,7 @@
+.header {
+    position: relative;
+}
+
 .header__up {
     background-color: $dark;
     padding: 1rem 0;
@@ -28,7 +32,6 @@
 .header__up-account-img {
     width: 1.25vw;
 }
-
 .header__down {
     padding: 2.4rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
