@@ -5,6 +5,16 @@
 .header__up {
     background-color: $dark;
     padding: 1rem 0;
+
+    @include breakpoint($mobile) {
+        padding: 0.8rem 0;
+    }
+}
+
+.header__nav {
+    @include breakpoint($mobile) {
+        display: none;
+    }
 }
 
 .header__up-wrap {
@@ -23,18 +33,60 @@
 
 .header__burger-img {
     width: 1.25vw;
+
+    @include breakpoint($tablet) {
+        width: 2.7vw;
+    }
+    @include breakpoint($tablet-pt) {
+        transform: translateY(2px);
+    }
+    @include breakpoint($mobile) {
+        width: 7vw;
+    }
+}
+
+.header__up-logo {
+    display: none; 
+    
+    @include breakpoint($mobile) {
+        display: block;
+    }
+}
+
+.header__up-phone {
+    display: none; 
+    
+    @include breakpoint($mobile) {
+        display: block;
+    }
 }
 
 .header__up-account {
     cursor: pointer;
+
+    @include breakpoint($mobile) {
+        display: none;
+    }
 }
 
 .header__up-account-img {
     width: 1.25vw;
+
+    @include breakpoint($tablet) {
+        width: 2.7vw;
+    }
 }
 .header__down {
     padding: 2.4rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+    @include breakpoint($tablet) {
+        padding: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+        padding: 0.8rem 0;
+        background-color: $dark;
+    }
 }
 
 .header__down-wrap  {
@@ -53,10 +105,18 @@
 .header__logo {
     margin-right: 1.72vw;
     cursor: pointer;
+
+    @include breakpoint($mobile) {
+        display: none;
+    }
 }
 
 .header__logo-img {
     width: 8.54vw;
+
+    @include breakpoint($tablet) {
+        width: 16vw;
+    }
 }
 
 .header__search {
@@ -75,6 +135,24 @@
     &:hover {
         background-color: #3582BF;
     }
+
+    @include breakpoint($mobile) {
+       background-color: transparent;
+
+       &:hover {
+            background-color: transparent;
+        }
+    }
+
+    @include breakpoint($mobile) {
+       height: auto;
+    }
+}
+
+.header__search-img {
+    @include breakpoint($mobile) {
+        width: 7vw;
+    }
 }
 
 .header__actions {
@@ -89,6 +167,37 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &--mobile {
+        display: none;
+    }
+
+    @include breakpoint($tablet-pt) {
+        display: none;
+
+        &:last-child {
+           display: block;
+           margin-left: 0.8vw;
+
+           .header__actions-img {
+                width: 5.5vw;
+           }
+        }
+    }
+    @include breakpoint($mobile) {
+
+        &:last-child {
+            display: none;
+        }
+
+        &--mobile {
+            display: block;
+ 
+            .header__actions-img {
+                width: 7vw;
+            }
+         }
     }
 }
 .header__actions-count {
@@ -106,5 +215,28 @@
     &--cart {
         background-color: $primary;
         color: $soft;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    @include breakpoint($mobile) {
+        top: -10px;
+        right: -10px;
+    }
+}
+
+.header__actions-img {
+    &--comparison {
+        width: 4vw;
+    }
+
+    @include breakpoint($tablet) {
+        width: 4vw;
+
+        &--comparison {
+            width: 5vw;
+        }
     }
 }

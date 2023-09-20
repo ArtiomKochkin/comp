@@ -1,12 +1,22 @@
 .intro {
-    display: flex;
-    justify-content: space-between;
-    margin: 3.2rem auto 3rem;
+    margin: 0 auto;
+    position: relative;
 }
 
 .intro__banners {
-    margin-bottom: 5.8rem;
+    margin-left: 26vw;
+    margin-top: 3.2rem;
+    margin-bottom: 3.8rem;
     position: relative;
+
+    @include breakpoint($tablet) {
+        margin-left: 0;
+    }
+    @include breakpoint($tablet) {
+        margin: 0;
+        width: 100vw;
+        transform: translateX(-1.6rem);
+    }
 }
 
 .intro__banner {
@@ -16,6 +26,19 @@
 .intro__banner-img {
     width: 63.4vw;
     height: 60vh;
+
+    @include breakpoint($desktop) {
+        width: 100%;
+    }
+    @include breakpoint($tablet) {
+        height: 70vh;
+    }
+    @include breakpoint($tablet-pt) {
+        height: 34rem;
+    }
+    @include breakpoint($tablet) {
+        height: 28rem;
+    }
 }
 
 .intro__banner-content {
@@ -24,6 +47,21 @@
     top: 4rem;
     z-index: 2;
     max-width: 45vw;
+
+    @include breakpoint($tablet) {
+        max-width: 62vw;
+    }
+    @include breakpoint($tablet-pt) {
+        max-width: 68vw;
+        left: 3rem;
+        top: 3rem;
+    }
+    @include breakpoint($mobile) {
+        right: 1.6rem;
+        top: 3rem;
+        text-align: right;
+        max-width: none;
+    }
 }
 
 .intro__title {
@@ -32,6 +70,16 @@
     line-height: normal;
     text-transform: uppercase;
     color: $white;
+
+    @include breakpoint($tablet) {
+        font-size: 3.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 3.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 6.5vw;
+    }
 }
 
 .intro__desc {
@@ -40,6 +88,22 @@
     font-size: 1vw;
     font-weight: 400;
     max-width: 35vw;
+
+    @include breakpoint($tablet) {
+        font-size: 2vw;
+        max-width: 50vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.3vw;
+        max-width: 58vw;
+        margin: 2.5rem 0;
+    }
+
+    @include breakpoint($mobile) {
+        font-size: 3.2vw;
+        max-width: none;
+        margin: 1.2rem 0;
+    }
 }
 
 .intro__banner-btn {
@@ -60,6 +124,18 @@
     &:hover {
         background-color: transparent;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+        padding: 1.1rem 3.2rem;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3vw;
+        padding: 1.1rem 3.2rem;
+    }
 }
 
 .intro__dots {
@@ -69,6 +145,16 @@
     z-index: 2;
     display: flex;
     align-items: center;
+
+    @include breakpoint($tablet-pt) {
+        left: 3rem;
+        bottom: 3rem;
+    }
+    @include breakpoint($mobile) {
+        left: auto;
+        right: 1.6rem;
+        bottom: 1.6rem;
+    }
 }
 
 .intro__dot {
@@ -85,8 +171,16 @@
 }
 
 .intro__advantages {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 2rem 0 3rem;
+    margin-left: 26vw;
+
+    @include breakpoint($tablet) {
+        grid-template-columns: repeat(7, 110px);
+        overflow: auto;
+        margin-left: 0;
+    }
 }
 
 .intro__advatages-item {
@@ -114,5 +208,16 @@
     line-height: 12px; /* 100% */
     color: $dark;
     text-align: center;
+    word-wrap: break-word;
     margin: auto 0 0 0;
+
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.7vw;
+    }
 }

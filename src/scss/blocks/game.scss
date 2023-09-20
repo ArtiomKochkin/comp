@@ -2,6 +2,10 @@
     background: $dark url("../../img/game-zone/bg.jpg") center no-repeat;
     background-size: cover;
     padding: 4rem 0;
+
+    @include breakpoint($mobile) {
+        padding: 2.4rem 0;
+    }
 }
 
 .game-wrap {
@@ -30,6 +34,57 @@
         width: 54.5vw;
         height: 2px;
     }
+
+    @include breakpoint($desktop) {
+        &::after {
+            width: 67.5vw;
+        }
+    }
+
+    @include breakpoint($laptop) {
+        &::before {
+            top: 1.2%;
+        }
+
+        &::after {
+            top: 1.2%;
+            width: 66.5vw;
+        }
+    }
+
+    @include breakpoint($tablet) {
+        &::before {
+            top: 1%;
+        }
+
+        &::after {
+            top: 1%;
+            width: 68.5vw;
+        }
+    }
+
+    @include breakpoint($tablet-pt) {
+        &::before {
+            top: 0.9%;
+        }
+
+        &::after {
+            top: 0.9%;
+            width: 63.5vw;
+        }
+    }
+
+    @include breakpoint($mobile) {
+        &::before {
+            top: 1%;
+            width: 18vw;
+        }
+
+        &::after {
+            top: 1%;
+            width: 18vw;
+        }
+    }
 }
 
 .game__title {
@@ -49,6 +104,35 @@
         line-height: 32px; /* 114.286% */
         margin-top: 4rem;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 2.5vw;
+
+        &--s {
+            font-size: 2vw;
+        }
+    }
+
+    @include breakpoint($tablet-pt) {
+        font-size: 3vw;
+
+        &--s {
+            font-size: 2.5vw;
+        }
+    }
+
+    @include breakpoint($mobile) {
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 1.2rem;
+
+        &--s {
+            font-size: 4vw;
+            text-align: left;
+            margin-top: 1.2rem;
+        }
+    }
 }
 
 .game__items {
@@ -56,25 +140,53 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 1.6rem; 
     margin-bottom: 2.8rem;  
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1.2rem;  
+    }
 }
 
 .game__item {
     grid-column: span 2;
 
-    @media screen and (max-width: 1920px) {
+    @include breakpoint($laptop) {
         grid-column: span 4;
+    }
+    @include breakpoint($tablet) {
+        grid-column: span 6;
     }
 }
 
 .game__categories {
     margin-bottom: 2.8rem;
     display: grid;
-    gap: 1.5rem;
+    gap: 1.6rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 228px);
     grid-template-areas: 
     "keyboard keyboard mouse laptop video-card video-card"
     "accessories monitor monitor laptop motherboard cpu";
+
+    @include breakpoint($tablet) {
+        grid-template-rows: repeat(3, 228px);
+        grid-template-areas: 
+        "keyboard keyboard accessories accessories video-card video-card"
+        "monitor monitor laptop laptop motherboard motherboard"
+        "mouse mouse laptop laptop cpu cpu";
+    }
+
+    @include breakpoint($tablet-pt) {
+        grid-template-rows: repeat(4, 228px);
+        grid-template-areas: 
+        "keyboard keyboard keyboard video-card  video-card video-card"
+        "monitor monitor monitor motherboard motherboard motherboard"
+        "mouse mouse mouse cpu cpu cpu"
+        "accessories accessories accessories laptop laptop laptop";
+    }
+
+    @include breakpoint($mobile) {
+        grid-template-rows: repeat(4, 128px);
+    }
 }
 
 .game__category {
@@ -147,6 +259,21 @@
     left: 2.4rem;
     bottom: 1.6rem;
     z-index: 3;
+
+    @include breakpoint($tablet) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.2vw;
+        left: 2rem;
+        bottom: 1.2rem;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+        left: 0.8rem;
+        bottom: 0.8rem;
+        line-height: 18px;
+    }
 }
 
 .game__category-link {
@@ -158,6 +285,8 @@
     width: 100%;
     height: 100%;
     transition: all linear .3s;
+
+    
 }
 
 .game__category-img {

@@ -1,6 +1,12 @@
 .reviews {
     width: 38vw;
-   
+    
+    @include breakpoint($laptop) {
+        width: 42vw;
+    }
+    @include breakpoint($tablet) {
+        width: 100%;
+    }
 }
 
 .reviews-wrap {
@@ -11,19 +17,53 @@
     border-radius: 4px;
     padding: 0.8rem;
     box-shadow: 0px 2px 10px 0px rgba(50, 50, 71, 0.14);
+
+    @include breakpoint($tablet) {
+        margin: 2rem auto 2.4rem;
+    }
+    @include breakpoint($mobile) {
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+        margin: 1.2rem 0;
+    }
 }
 
 .reviews__items {
     padding-right: 0.8rem;
 }
 
+.reviews__rating {
+    text-align: center;
+    margin: auto 0;
+    border-left: 1px solid #E6E6E6;
+    padding: 0 2rem;
+
+    @include breakpoint($mobile) {
+        grid-row-start: 1;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 0;
+        margin-bottom: 1.2rem;
+    }
+}
+
 .reviews__item {
     display: flex;
     align-items: center;
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+    }
 }
 
 .reviews__avatar {
     margin-right: 0.8rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1.2rem;
+        margin-right: 0;
+    }
 }
 
 .reviews__img {
@@ -43,11 +83,25 @@
     font-size: 1.2vw;
     font-weight: 700;
     line-height: 24px; /* 133.333% */
+
+    @include breakpoint($tablet) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.9vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 5.5vw;
+    }
 }
 
 .reviews__transition {
     display: flex;
     align-items: center;
+
+    @include breakpoint($mobile) {
+        display: none;
+    }
 }
 
 .reviews__prev {
@@ -64,6 +118,10 @@
     font-size: 0.7vw;
     font-weight: 500;
     line-height: 10px; 
+
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
 }
 
 .reviews__text {
@@ -73,8 +131,20 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
 
-    @media screen and (max-width: 1920px) {
+    @include breakpoint($desktop) {
         font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+        line-height: 18px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+        line-height: 15px;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+        line-height: 18px
     }
 }
 
@@ -87,13 +157,16 @@
     font-size: 0.9vw;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
-}
 
-.reviews__rating {
-    text-align: center;
-    margin: auto 0;
-    border-left: 1px solid #E6E6E6;
-    padding: 0 2rem;
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.5vw;
+    }
 }
 
 .reviews__number {
@@ -101,6 +174,16 @@
     font-size: 3vw;
     font-weight: 700;
     margin-bottom: 0.8rem;
+
+    @include breakpoint($tablet) {
+        font-size: 3.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 7vw;
+    }
 }
 
 .reviews__link {
@@ -116,7 +199,17 @@
         opacity: 0.8;
     }
 
-    @media screen and (max-width: 1920px) {
+    @include breakpoint($desktop) {
         font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+        margin-bottom: 0;
     }
 }

@@ -27,6 +27,13 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @include breakpoint($laptop) {
+            margin-bottom: 1rem;
+        }
+        @include breakpoint($tablet-pt) {
+            margin-bottom: 0.5rem;
+        }
     }
 }
 
@@ -46,5 +53,12 @@
         font-size: 0.8vw;
         font-weight: 500;
         line-height: 16px; /* 133.333% */
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
     }
 }

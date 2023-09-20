@@ -6,6 +6,10 @@
     &--reviews {
         margin: 0 auto 1.2rem;
         justify-content: center;
+
+        @include breakpoint($mobile) {
+            margin: 0 auto;
+        }
     }
 }
 

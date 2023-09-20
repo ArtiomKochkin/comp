@@ -42,6 +42,12 @@
                     </ul>
                 </nav>
             </div>
+            <a href="index.html" class="header__up-logo">
+                <img src="../img/header/logo-white.svg" alt="Логотип Comp+" class="header__up-logo-img">
+            </a>
+            <a href="tel:+79069991234" class="header__up-phone">
+                <img src="../img/header/phone.svg" alt="" class="header__up-phone-img">
+            </a>
             <div class="header__up-account">
                 <img src="../img/header/account.svg" alt="" class="header__up-account-img">
             </div>
@@ -66,12 +72,16 @@
             </div>
             <div class="header__actions">
                 <div class="header__actions-item">
-                    <img src="../img/header/comparison.svg" alt="" class="header__actions-img" width="46">
+                    <img src="../img/header/comparison.svg" alt="" class="header__actions-img header__actions-img--comparison" width="46">
                     <div class="header__actions-count"></div>
                 </div>
                 <div class="header__actions-item">
-                    <img src="../img/header/favorites.svg" alt="" class="header__actions-img" width="40">
+                    <img src="../img/header/favorites.svg" alt="" class="header__actions-img " width="40">
                     <div class="header__actions-count"></div>
+                </div>
+                <div class="header__actions-item header__actions-item--mobile">
+                    <img src="../img/header/cart-white.svg" alt="" class="header__actions-img " width="46">
+                    <div class="header__actions-count header__actions-count--cart active">10</div>
                 </div>
                 <div class="header__actions-item">
                     <img src="../img/header/cart.svg" alt="" class="header__actions-img" width="36">
@@ -307,861 +317,859 @@
 </header>
     <main class="main">
         <section class="intro container">
-            <ul class="catalog">
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/components.svg" alt="" class="catalog__pic">
-                        <a href="category.html" class="catalog__name">Комплектующие ПК</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Основные комплектующие для ПК</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Материнские платы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Процессоры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Видеокарты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Оперативная память</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Блоки питания</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Корпуса</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Охлаждение</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Твердотельные накопители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Жесткие диски</a>
-                                    </li>
-                                </ul>
+            <div class="catalog">
+                <ul class="catalog__list-main">
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/components.svg" alt="" class="catalog__pic">
+                            <a href="category.html" class="catalog__name">Комплектующие ПК</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Основные комплектующие для ПК</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Материнские платы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Процессоры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Видеокарты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Оперативная память</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Блоки питания</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Корпуса</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Охлаждение</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Твердотельные накопители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Жесткие диски</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Устройства расширения</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Оптические приводы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Звуковые карты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Карты видеозахвата</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Платы расширения</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Сетевые карты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Адаптеры для накопителей</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Устройства расширения</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Оптические приводы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Звуковые карты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Карты видеозахвата</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Платы расширения</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Сетевые карты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Адаптеры для накопителей</a>
-                                    </li>
-                                </ul>
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Моддинг и обслуживание</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Системы подсветки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Вентиляторы для корпуса</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Кабели, разветвители и удлинители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Держатели для видеокарт</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Комплектующие для сервера</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверные процессоры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверные накопители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверные БП</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверная память</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверные корпуса</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Серверные контроллеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Охлаждение для серверных процессоров</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Моддинг и обслуживание</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Системы подсветки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Вентиляторы для корпуса</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Кабели, разветвители и удлинители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Держатели для видеокарт</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Комплектующие для сервера</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверные процессоры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверные накопители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверные БП</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверная память</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверные корпуса</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Серверные контроллеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Охлаждение для серверных процессоров</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/Monitor.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Мониторы</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Мониторы</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Мониторы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игровые мониторы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Мультимедийные проекторы</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/Monitor.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Мониторы</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Мониторы</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Мониторы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игровые мониторы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Мультимедийные проекторы</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/pc.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Компьютеры</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Компьютеры и ПО</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Персональные компьютеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Моноблоки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Платформы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Платформы для моноблоков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Программное обеспечение</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Микрокомпьютеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Охлаждение</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Твердотельные накопители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Жесткие диски</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/pc.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Компьютеры</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Компьютеры и ПО</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Персональные компьютеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Моноблоки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Платформы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Платформы для моноблоков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Программное обеспечение</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Микрокомпьютеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Охлаждение</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Твердотельные накопители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Жесткие диски</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/laptop.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Ноутбуки</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Ноутбуки</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Все ноутбуки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игровые ноутбуки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ноутбуки Huawei</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ноутбуки Apple</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ультрабуки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ноутбуки-трансформеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ноутбуки для бизнеса</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ноутбуки-трансформеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Для ноутбуков</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Подставки для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Столики для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Сумки для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Рюкзаки для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Чехлы для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Салазки в отсек привода ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Зарядные устройства для ноутбуков</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Блоки питания для ноутбуков</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/laptop.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Ноутбуки</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Ноутбуки</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Все ноутбуки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игровые ноутбуки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ноутбуки Huawei</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ноутбуки Apple</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ультрабуки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ноутбуки-трансформеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ноутбуки для бизнеса</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ноутбуки-трансформеры</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/consoles.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Игровые консоли</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Видеоигры</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для PlayStation</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для Microsoft Xbox</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для Nintendo</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для ПК</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Microsoft Xbox</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Консоли Microsoft Xbox</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для Microsoft Xbox</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Контроллеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Гарнитуры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аксессуары к Microsoft Xbox</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">PlayStation</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Консоли PlayStation</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для PlayStation</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Контроллеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Гарнитуры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аксессуары к PlayStation</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Для ноутбуков</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Подставки для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Столики для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Сумки для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Рюкзаки для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Чехлы для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Салазки в отсек привода ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Зарядные устройства для ноутбуков</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Блоки питания для ноутбуков</a>
-                                    </li>
-                                </ul>
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Nintendo</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Консоли Nintendo Switch</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Консоли Nintendo Switch Lite</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игры для Nintendo</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Подписки и пополнение кошелька Nintendo</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Контроллеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Наушники</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Акксессуары к Nintendo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Другое</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аксессуары для геймпадов</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игровые рули и аксессуары для гонок</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Контроллеры для авиасимуляторов</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Системы VR</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Контроллеры и геймпады</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Портативные игровые консоли</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Консоли 8bit и 16bit</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/consoles.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Игровые консоли</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Видеоигры</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для PlayStation</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для Microsoft Xbox</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для Nintendo</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для ПК</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Microsoft Xbox</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Консоли Microsoft Xbox</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для Microsoft Xbox</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Контроллеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Гарнитуры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аксессуары к Microsoft Xbox</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">PlayStation</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Консоли PlayStation</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для PlayStation</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Контроллеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Гарнитуры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аксессуары к PlayStation</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/componentsLaptop.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Комплектующие к ноутбукам</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Комплектующие к ноутбукам</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">SSD накопители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">SSD.M2 накопители</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Жесткие диски мобильные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Оперативная память мобильная</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Внешние оптические приводы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аккумуляторы для ноутбуков</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Nintendo</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Консоли Nintendo Switch</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Консоли Nintendo Switch Lite</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игры для Nintendo</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Подписки и пополнение кошелька Nintendo</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Контроллеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Наушники</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Акксессуары к Nintendo</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Другое</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аксессуары для геймпадов</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игровые рули и аксессуары для гонок</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Контроллеры для авиасимуляторов</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Системы VR</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Контроллеры и геймпады</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Портативные игровые консоли</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Консоли 8bit и 16bit</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/tablet.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Планшеты</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Планшеты</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">С клавиатурой</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Детские</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Для игр</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">С 4G LTE</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Аксессуары для планшетов</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Чехлы для планшетов</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Защитные пленки для планшетов</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Защитные стекла для планшетов</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Зарядные устройства</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Держатели</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Карты памяти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Другое</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Электронные книги</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Цифровые блокноты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Чехлы для электронных книг</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/componentsLaptop.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Комплектующие к ноутбукам</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Комплектующие к ноутбукам</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">SSD накопители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">SSD.M2 накопители</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Жесткие диски мобильные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Оперативная память мобильная</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Внешние оптические приводы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аккумуляторы для ноутбуков</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/printer.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Принтеры и МФУ</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Техника для печати</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Цветные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Черно-белые</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Лазерные МФУ</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Струйные МФУ</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Лазерные принтеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Струйные принтеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Термопринтеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Лазерные принтеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Широкоформатные принтеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Матричные принтеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Сканеры</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Планшетные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Протяжные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Ручные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Слайд-сканеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Фотоаппаратные</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Расходные материалы и постпечатное оборудование</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Картриджи</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Чернила</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Тонеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Фотобарабаны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Бумага</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Наклейки и пленки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Расходные материалы для 3D-печати</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аксессуары для оргтехники</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">ЗИП для МФУ и принтеров</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Уничтожители бумаг</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/tablet.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Планшеты</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Планшеты</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">С клавиатурой</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Детские</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Для игр</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">С 4G LTE</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/Speakers.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Аудиотехника</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Наушники и гарнитуры</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Наушники TWS</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Наушники-вкладыши и внутриканальные</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Накладные и охватывающие наушники</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Игровые наушники</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Чехлы для наушников</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Скрутки для наушников</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Подставки для наушников</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Амбушюры для наушников</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Домашняя акустика</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Музыкальные центры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Домашние кинотеатры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Саундбары</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Сабвуферы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Виниловые проигрыватели</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Виниловые проигрыватели</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Головки звукоснимателя</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Иглы звукоснимателя</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Аксессуары для планшетов</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Чехлы для планшетов</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Защитные пленки для планшетов</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Защитные стекла для планшетов</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Зарядные устройства</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Держатели</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Карты памяти</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Другое</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Электронные книги</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Цифровые блокноты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Чехлы для электронных книг</a>
-                                    </li>
-                                </ul>
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Портативная акустика</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Портативные колонки и аудиосистемы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Магнитолы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Умные колонки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Крепления для портативных колонок</a>
+                                        </li>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Колонки</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аудиоколонки</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">5.1</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">2.1</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">2.0</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Микрофоны и радиосистемы</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Микрофоны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Студийные микрофоны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Петличные микрофоны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Вокальные микрофоны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Микрофоны для фото- видеокамер</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Спикерфоны</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Радиосистемы</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/printer.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Принтеры и МФУ</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Техника для печати</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Цветные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Черно-белые</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Лазерные МФУ</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Струйные МФУ</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Лазерные принтеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Струйные принтеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Термопринтеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Лазерные принтеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Широкоформатные принтеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Матричные принтеры</a>
-                                    </li>
-                                </ul>
+                    </li>
+                    <li class="catalog__item">
+                        <div class="catalog__info">
+                            <img src="./img/intro/sidebar/network.svg" alt="" class="catalog__pic">
+                            <a href="category.html"  class="catalog__name">Сетевое оборудование</a>
+                        </div>
+                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
+                        <div class="catalog__content">
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Wi-Fi роутеры и оборудование для малых сетей</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Wi-Fi роутеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link"> MESH-комплекты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link"> Роутеры xDSL</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Маршрутизаторы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Усилители беспроводного сигнала</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Сетевые карты</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Модемы 3G/4G/5G</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Точки доступа Wi-Fi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Видеонаблюдение</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Регистраторы для видеонаблюдения</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Системы видеонаблюдения</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">IP камеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аналоговые камеры</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Аксессуары для систем видеонаблюдения</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Сканеры</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Планшетные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Протяжные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Ручные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Слайд-сканеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Фотоаппаратные</a>
-                                    </li>
-                                </ul>
+                            <div class="catalog__column">
+                                <div class="catalog__column-item">
+                                    <h5 class="catalog__title">Профессиональное сетевое оборудование</h5>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Коммутаторы</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Сетевые кабели и коммутация</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Оборудование VoIP</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Оптоволоконное оборудование</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Инструменты для коммутационного оборудования</a>
+                                        </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Прочее коммутационное оборудование</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Расходные материалы и постпечатное оборудование</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Картриджи</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Чернила</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Тонеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Фотобарабаны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Бумага</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Наклейки и пленки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Расходные материалы для 3D-печати</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аксессуары для оргтехники</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">ЗИП для МФУ и принтеров</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Уничтожители бумаг</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/Speakers.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Аудиотехника</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Наушники и гарнитуры</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Наушники TWS</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Наушники-вкладыши и внутриканальные</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Накладные и охватывающие наушники</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Игровые наушники</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Чехлы для наушников</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Скрутки для наушников</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Подставки для наушников</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Амбушюры для наушников</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Домашняя акустика</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Музыкальные центры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Домашние кинотеатры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Саундбары</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Сабвуферы</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Виниловые проигрыватели</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Виниловые проигрыватели</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Головки звукоснимателя</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Иглы звукоснимателя</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Портативная акустика</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Портативные колонки и аудиосистемы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Магнитолы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Умные колонки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Крепления для портативных колонок</a>
-                                    </li>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Колонки</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аудиоколонки</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">5.1</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">2.1</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">2.0</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Микрофоны и радиосистемы</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Микрофоны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Студийные микрофоны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Петличные микрофоны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Вокальные микрофоны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Микрофоны для фото- видеокамер</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Спикерфоны</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Радиосистемы</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        </div>
-                    </div>
-                </li>
-                <li class="catalog__item">
-                    <div class="catalog__info">
-                        <img src="./img/intro/sidebar/network.svg" alt="" class="catalog__pic">
-                        <a href="category.html"  class="catalog__name">Сетевое оборудование</a>
-                    </div>
-                    <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
-                    <div class="catalog__content">
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Wi-Fi роутеры и оборудование для малых сетей</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Wi-Fi роутеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link"> MESH-комплекты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link"> Роутеры xDSL</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Маршрутизаторы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Усилители беспроводного сигнала</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Сетевые карты</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Модемы 3G/4G/5G</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Точки доступа Wi-Fi</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Видеонаблюдение</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Регистраторы для видеонаблюдения</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Системы видеонаблюдения</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">IP камеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аналоговые камеры</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Аксессуары для систем видеонаблюдения</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="catalog__column">
-                            <div class="catalog__column-item">
-                                <h5 class="catalog__title">Профессиональное сетевое оборудование</h5>
-                                <ul class="catalog__list">
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Коммутаторы</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Сетевые кабели и коммутация</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Оборудование VoIP</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Оптоволоконное оборудование</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Инструменты для коммутационного оборудования</a>
-                                    </li>
-                                    <li class="catalog__column-element">
-                                        <a href="#!" class="catalog__link">Прочее коммутационное оборудование</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="intro__content">
-                <div class="intro__banners">
-                    <div class="intro__banner">
-                        <img src="./img/intro/banners/banner-2.jpg" alt="компьютеры с минимальной стоимостью" class="intro__banner-img">
-                        <div class="intro__banner-content">
-                            <h1 class="intro__title">компьютеры с минимальной стоимостью</h1>
-                            <p class="intro__desc">V-comp – всеукраинский магазин компьютерной техники и комплектующих, в котором без труда Вы сможете найти компьютер с минимальной стоимостью</p>
-                            <button class="intro__banner-btn" type="button">каталог</button>
-                        </div>
-                    </div>
-                    <div class="intro__dots">
-                        <div class="intro__dot"></div>
-                        <div class="intro__dot active"></div>
-                        <div class="intro__dot"></div>
-                        <div class="intro__dot"></div>
-                        <div class="intro__dot"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="intro__banners">
+                <div class="intro__banner">
+                    <img src="./img/intro/banners/banner-2.jpg" alt="компьютеры с минимальной стоимостью" class="intro__banner-img">
+                    <div class="intro__banner-content">
+                        <h1 class="intro__title">компьютеры с минимальной стоимостью</h1>
+                        <p class="intro__desc">V-comp – всеукраинский магазин компьютерной техники и комплектующих, в котором без труда Вы сможете найти компьютер с минимальной стоимостью</p>
+                        <button class="intro__banner-btn" type="button">каталог</button>
                     </div>
                 </div>
-                <div class="intro__advantages">
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Installation.svg" alt="Бесплатная сборка" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">
-                            Бесплатная сборка
-                        </h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Payments.svg" alt="Рассрочка 4 мес./0%
-                        без переплат" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">Рассрочка 4 мес./0%
-                            без переплат</h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Delivery.svg" alt="Бесплатная 
-                        доставка" class="intro__advatages-pic intro__advatages-pic--low">
-                        <h5 class="intro__advatages-title">Бесплатная 
-                            доставка</h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Guarantee.svg" alt="Официальная
-                        гарантия" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">Официальная
-                            гарантия</h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Price.svg" alt="Лучшая цена" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">Лучшая цена
-                        </h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Achievement.svg" alt="11 лет
-                        на рынке" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">11 лет
-                            на рынке</h5>
-                    </div>
-                    <div class="intro__advatages-item">
-                        <img src="./img/intro/icons/Manager.svg" alt="Профессиональная
-                        консультация" class="intro__advatages-pic">
-                        <h5 class="intro__advatages-title">Профессиональная
-                            консультация</p>
-                    </div>
-                </div> 
+                <div class="intro__dots">
+                    <div class="intro__dot"></div>
+                    <div class="intro__dot active"></div>
+                    <div class="intro__dot"></div>
+                    <div class="intro__dot"></div>
+                    <div class="intro__dot"></div>
+                </div>
             </div>
+            <div class="intro__advantages">
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Installation.svg" alt="Бесплатная сборка" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">
+                        Бесплатная сборка
+                    </h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Delivery.svg" alt="Бесплатная 
+                    доставка" class="intro__advatages-pic intro__advatages-pic--low">
+                    <h5 class="intro__advatages-title">Бесплатная 
+                        доставка</h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Guarantee.svg" alt="Официальная
+                    гарантия" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">Официальная
+                        гарантия</h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Price.svg" alt="Лучшая цена" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">Лучшая цена
+                    </h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Achievement.svg" alt="11 лет
+                    на рынке" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">11 лет
+                        на рынке</h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Manager.svg" alt="Профессиональная
+                    консультация" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">Профессиональная
+                        консультация</h5>
+                </div>
+                <div class="intro__advatages-item">
+                    <img src="./img/intro/icons/Payments.svg" alt="Рассрочка 4 мес./0%
+                    без переплат" class="intro__advatages-pic">
+                    <h5 class="intro__advatages-title">Рассрочка 4 мес./0%
+                        без переплат</h5>
+                </div>
+            </div> 
         </section>
         <section class="top container">
             <h3 class="section__title">Топ продаж</h3>
@@ -1717,320 +1725,322 @@
             </div>
         </section>
         <section class="game">
-            <div class="game-wrap container">
-                <h2 class="game__title">game zone</h2>
-                <div class="game__items">
-                    <div class="game__item product">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new active">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" Acer K240YB, Black (UM.QE0EE.B01)" class="product__img">
-                            <div class="product__name">
-                                Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                </div>
-                                Отзывов: <span class="product__reviews-counter">5</span>
-                            </div>
-                        </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old disabled">6000 грн.</div>
-                                <div class="product__price-actual">
-                                    <span class="product__price ">5000</span> грн.
+            <div class="container">
+                <div class="game-wrap">
+                    <h2 class="game__title">game zone</h2>
+                    <div class="game__items">
+                        <div class="game__item product">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new active">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
-                        </div>
-                    </div>
-                    <div class="game__item product">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
-                            <div class="product__name">
-                                Процессор Intel Core i5-12400F OEM
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
-                                    </div>
+                            <div class="product__main">
+                                <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" Acer K240YB, Black (UM.QE0EE.B01)" class="product__img">
+                                <div class="product__name">
+                                    Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
                                 </div>
-                                Отзывов: <span class="product__reviews-counter">4</span>
-                            </div>
-                        </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old">6000 грн.</div>
-                                <div class="product__price-actual product__price-actual--sale">
-                                    <span class="product__price ">5000</span> грн.
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">5</span>
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
-                        </div>
-                    </div>
-                    <div class="game__item product">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
-                            <div class="product__name">
-                                Корпус Cougar MX330-F 
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old disabled">6000 грн.</div>
+                                    <div class="product__price-actual">
+                                        <span class="product__price ">5000</span> грн.
                                     </div>
                                 </div>
-                                Отзывов: <span class="product__reviews-counter">12</span>
+                                <button class="product__button" type="button">Купить</button>
                             </div>
                         </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old">3600 грн.</div>
-                                <div class="product__price-actual product__price-actual--sale">
-                                    <span class="product__price ">3500</span> грн.
+                        <div class="game__item product">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
-                        </div>
-                    </div>
-                    <div class="game__item product product--blue">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new active">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison-yellow.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite-yellow.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/keyboard-2.svg" alt="" class="product__img">
-                            <div class="product__name">
-                                Клавиатура проводная Dark Project KD87A Gateron Teal Cap
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
-                                    </div>
+                            <div class="product__main">
+                                <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
+                                <div class="product__name">
+                                    Процессор Intel Core i5-12400F OEM
                                 </div>
-                                Отзывов: <span class="product__reviews-counter">4</span>
-                            </div>
-                        </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old disabled">3000 грн.</div>
-                                <div class="product__price-actual">
-                                    <span class="product__price ">2500</span> грн.
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">4</span>
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
-                        </div>
-                    </div>
-                    <div class="game__item product">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
-                            <div class="product__name">
-                                Материнская плата GIGABYTE B550 AORUS ELITE V2
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old">6000 грн.</div>
+                                    <div class="product__price-actual product__price-actual--sale">
+                                        <span class="product__price ">5000</span> грн.
                                     </div>
                                 </div>
-                                Отзывов: <span class="product__reviews-counter">23</span>
+                                <button class="product__button" type="button">Купить</button>
                             </div>
                         </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old">3600 грн.</div>
-                                <div class="product__price-actual product__price-actual--sale">
-                                    <span class="product__price ">3500</span> грн.
+                        <div class="game__item product">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
-                        </div>
-                    </div>
-                    <div class="game__item product">
-                        <a href="#!" class="product__link"></a>
-                    <div class="product__header">
-                            <div class="product__new">Новинка</div>
-                            <div class="product__actions">
-                                <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                            </div>
-                        </div>
-                        <div class="product__main">
-                            <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
-                            <div class="product__name">
-                                Видеокарта Palit GeForce RTX 3060 Dual (LHR) 
-                            </div>
-                            <div class="product__reviews">
-                                <div class="rating">
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
-                                    <div class="rating-item">
-                                        <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
-                                    </div>
+                            <div class="product__main">
+                                <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
+                                <div class="product__name">
+                                    Корпус Cougar MX330-F 
                                 </div>
-                                Отзывов: <span class="product__reviews-counter">15</span>
-                            </div>
-                        </div>
-                        <div class="product__footer">
-                            <div class="product__prices">
-                                <div class="product__price-old">12000 грн.</div>
-                                <div class="product__price-actual product__price-actual--sale">
-                                    <span class="product__price ">10000</span> грн.
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">12</span>
                                 </div>
                             </div>
-                            <button class="product__button" type="button">Купить</button>
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old">3600 грн.</div>
+                                    <div class="product__price-actual product__price-actual--sale">
+                                        <span class="product__price ">3500</span> грн.
+                                    </div>
+                                </div>
+                                <button class="product__button" type="button">Купить</button>
+                            </div>
+                        </div>
+                        <div class="game__item product product--blue">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new active">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison-yellow.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite-yellow.svg" alt="" class="product__icon">
+                                </div>
+                            </div>
+                            <div class="product__main">
+                                <img src="./img/goods/keyboard-2.svg" alt="" class="product__img">
+                                <div class="product__name">
+                                    Клавиатура проводная Dark Project KD87A Gateron Teal Cap
+                                </div>
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">4</span>
+                                </div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old disabled">3000 грн.</div>
+                                    <div class="product__price-actual">
+                                        <span class="product__price ">2500</span> грн.
+                                    </div>
+                                </div>
+                                <button class="product__button" type="button">Купить</button>
+                            </div>
+                        </div>
+                        <div class="game__item product">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                </div>
+                            </div>
+                            <div class="product__main">
+                                <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                <div class="product__name">
+                                    Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                </div>
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">23</span>
+                                </div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old">3600 грн.</div>
+                                    <div class="product__price-actual product__price-actual--sale">
+                                        <span class="product__price ">3500</span> грн.
+                                    </div>
+                                </div>
+                                <button class="product__button" type="button">Купить</button>
+                            </div>
+                        </div>
+                        <div class="game__item product">
+                            <a href="#!" class="product__link"></a>
+                        <div class="product__header">
+                                <div class="product__new">Новинка</div>
+                                <div class="product__actions">
+                                    <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                    <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                </div>
+                            </div>
+                            <div class="product__main">
+                                <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
+                                <div class="product__name">
+                                    Видеокарта Palit GeForce RTX 3060 Dual (LHR) 
+                                </div>
+                                <div class="product__reviews">
+                                    <div class="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                        </div>
+                                    </div>
+                                    Отзывов: <span class="product__reviews-counter">15</span>
+                                </div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__prices">
+                                    <div class="product__price-old">12000 грн.</div>
+                                    <div class="product__price-actual product__price-actual--sale">
+                                        <span class="product__price ">10000</span> грн.
+                                    </div>
+                                </div>
+                                <button class="product__button" type="button">Купить</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="show-more">
-                    <a href="#!" class="show-more__link show-more__link--white">Смотреть все товары</a>
-                </div>
-                <h3 class="game__title game__title--s">Категории для геймеров</h3>
-                <div class="game__categories">
-                    <div class="game__category keyboard">
-                        <h5 class="game__category-title">Клавиатуры</h5>
-                        <a href="#!" class="game__category-link game__category-link--gray"></a>
+                    <div class="show-more">
+                        <a href="#!" class="show-more__link show-more__link--white">Смотреть все товары</a>
                     </div>
-                    <div class="game__category mouse">
-                        <h5 class="game__category-title">Мыши</h5>
-                        <a href="#!" class="game__category-link game__category-link--red"></a>
+                    <h3 class="game__title game__title--s">Категории для геймеров</h3>
+                    <div class="game__categories">
+                        <div class="game__category keyboard">
+                            <h5 class="game__category-title">Клавиатуры</h5>
+                            <a href="#!" class="game__category-link game__category-link--gray"></a>
+                        </div>
+                        <div class="game__category mouse">
+                            <h5 class="game__category-title">Мыши</h5>
+                            <a href="#!" class="game__category-link game__category-link--red"></a>
+                        </div>
+                        <div class="game__category accessories">
+                            <h5 class="game__category-title">Аксессуары</h5>
+                            <a href="#!" class="game__category-link game__category-link--azure"></a>
+                        </div>
+                        <div class="game__category laptop">
+                            <h5 class="game__category-title">Ноутбуки</h5>
+                            <a href="#!" class="game__category-link game__category-link--azure"></a>
+                        </div>
+                        <div class="game__category monitor">
+                            <h5 class="game__category-title">Мониторы</h5>
+                            <a href="#!" class="game__category-link game__category-link--blue"></a>
+                        </div>
+                        <div class="game__category video-card">
+                            <h5 class="game__category-title">Видеокарты</h5>
+                            <a href="#!" class="game__category-link game__category-link--blue"></a>
+                        </div>
+                        <div class="game__category motherboard">
+                            <h5 class="game__category-title">Материнские платы</h5>
+                            <a href="#!" class="game__category-link game__category-link--gray"></a>
+                        </div>
+                        <div class="game__category cpu">
+                            <h5 class="game__category-title">Процессоры</h5>
+                            <a href="#!" class="game__category-link game__category-link--red"></a>
+                        </div>
                     </div>
-                    <div class="game__category accessories">
-                        <h5 class="game__category-title">Аксессуары</h5>
-                        <a href="#!" class="game__category-link game__category-link--azure"></a>
+                    <div class="show-more">
+                        <a href="#!" class="show-more__link show-more__link--white">Все категории для геймеров</a>
                     </div>
-                    <div class="game__category laptop">
-                        <h5 class="game__category-title">Ноутбуки</h5>
-                        <a href="#!" class="game__category-link game__category-link--azure"></a>
-                    </div>
-                    <div class="game__category monitor">
-                        <h5 class="game__category-title">Мониторы</h5>
-                        <a href="#!" class="game__category-link game__category-link--blue"></a>
-                    </div>
-                    <div class="game__category video-card">
-                        <h5 class="game__category-title">Видеокарты</h5>
-                        <a href="#!" class="game__category-link game__category-link--blue"></a>
-                    </div>
-                    <div class="game__category motherboard">
-                        <h5 class="game__category-title">Материнские платы</h5>
-                        <a href="#!" class="game__category-link game__category-link--gray"></a>
-                    </div>
-                    <div class="game__category cpu">
-                        <h5 class="game__category-title">Процессоры</h5>
-                        <a href="#!" class="game__category-link game__category-link--red"></a>
-                    </div>
-                </div>
-                <div class="show-more">
-                    <a href="#!" class="show-more__link show-more__link--white">Все категории для геймеров</a>
                 </div>
             </div>
         </section>
@@ -2330,34 +2340,25 @@
             <nav class="nav nav--dark">
                 <ul class="nav__list nav__list--dark">
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Акции</a>
+                        <a href="#!" class="nav__link nav__link--dark">Сервисный центр v-comp</a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Кредит</a>
+                        <a href="#!" class="nav__link nav__link--dark">Магазин Б/У товара</a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Оплата и доставка</a>
+                        <a href="#!" class="nav__link nav__link--dark">Скупка Б/У </a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Гарантия</a>
+                        <a href="#!" class="nav__link nav__link--dark">Ремонт ПК и оргтехники</a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Частые вопросы</a>
+                        <a href="#!" class="nav__link nav__link--dark">Компьютерная помощь</a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Новости</a>
+                        <a href="#!" class="nav__link nav__link--dark">Сотрудничество</a>
                     </li>
                     <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Блог</a>
-                    </li>
-                    <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">О нас</a>
-                    </li>
-                    <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Политика конфиденциальности</a>
-                    </li>
-                    <li class="nav__item nav__item--dark">
-                        <a href="#!" class="nav__link nav__link--dark">Контакты</a>
+                        <a href="#!" class="nav__link nav__link--dark">Главная</a>
                     </li>
                 </ul>
             </nav>
@@ -2421,6 +2422,9 @@
                     </li>
                 </ul>
             </div>
+            <a href="index.html" class="footer__logo-mobile">
+                <img src="../img/footer/logo-mobile.svg" alt="Логотип Comp+" class="footer__logo-mobile-img">
+            </a>
             <div class="footer__newsletter">
                 <h6 class="footer__title">Подписывайтесь на скидки</h6>
                 <form action="/" class="footer__form">
@@ -2432,21 +2436,31 @@
             </div>
         </div>
     </div>
-    <div class="footer__down container">
-        <div class="footer__down-left">
-            <a href="index.html" class="footer__logo">
-                <img src="../img/footer/logo.svg" alt="Логотип Comp+" class="footer__logo-img">
-            </a>
-            <p class="footer__copyright">
-                2008-2021 Интернет-магазин v-comp.com.ua. Все права защищены
-            </p>
-        </div>
-        <div class="footer__pay-system">
+    <div class="container">
+        <div class="footer__pay-system footer__pay-system--mobile">
             <div class="footer__pay-system__item">
                 <img src="../img/footer/mastercard.svg" alt="" class="footer__pay-system-img">
             </div>
             <div class="footer__pay-system__item">
                 <img src="../img/footer/visa.svg" alt="" class="footer__pay-system-img">
+            </div>
+        </div>
+        <div class="footer__down">
+            <div class="footer__down-left">
+                <a href="index.html" class="footer__logo">
+                    <img src="../img/footer/logo.svg" alt="Логотип Comp+" class="footer__logo-img">
+                </a>
+                <p class="footer__copyright">
+                    2008-2021 Интернет-магазин v-comp.com.ua. Все права защищены
+                </p>
+            </div>
+            <div class="footer__pay-system">
+                <div class="footer__pay-system__item">
+                    <img src="../img/footer/mastercard.svg" alt="" class="footer__pay-system-img">
+                </div>
+                <div class="footer__pay-system__item">
+                    <img src="../img/footer/visa.svg" alt="" class="footer__pay-system-img">
+                </div>
             </div>
         </div>
     </div>

@@ -8,6 +8,19 @@
     font-size: 1.7vw;
     font-weight: 600;
     line-height: 36px; /* 112.5% */
+
+    @include breakpoint($tablet) {
+        font-size: 2.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.5vw;
+        margin-bottom: 2rem;
+    }
+    @include breakpoint($mobile) {
+        font-size: 5.5vw;
+        line-height: 28px;
+        margin-bottom: 1.2rem;
+    }
 }
 
 .about__text {
@@ -15,6 +28,22 @@
     font-size: 1vw;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
+
+    @include breakpoint($laptop) {
+        line-height: 25px;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.4vw;
+        line-height: 21px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+        line-height: 18px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 4vw;
+        line-height: 22px;
+    }
 }
 
 .about__paragraph {
@@ -22,5 +51,12 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include breakpoint($laptop) {
+        margin-bottom: 1.2rem;
+    }
+    @include breakpoint($tablet) {
+        margin-bottom: 1rem;
     }
 }

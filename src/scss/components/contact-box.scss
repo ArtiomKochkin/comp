@@ -4,6 +4,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include breakpoint($laptop) {
+        margin-bottom: 1rem;
+    }
 }
 
 .contact-box__link {
@@ -16,6 +20,13 @@
     &:hover {
         color: $gray;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
 }
 
 .contact-box__address {
@@ -24,6 +35,13 @@
     color: $light-gray;
     font-weight: 500;
     line-height: 18px; /* 150% */
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
 }
 
 .contact-box__location {
@@ -32,4 +50,11 @@
     color: $light-gray;
     font-weight: 500;
     line-height: 18px; /* 150% */
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
 }

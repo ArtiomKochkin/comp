@@ -80,6 +80,21 @@
         background: url("../../img/svg/right-triangle.svg") center no-repeat;
         background-size: cover;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+
+        &::after {
+            right: -9px;
+        }
+    }
+
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.5vw;
+    }
 }
 
 .product__main {
@@ -98,8 +113,18 @@
     line-height: 16px; /* 114.286% */
     color: $dark-grey;
 
-    @media screen and (max-width: 1920px) {
+    @include breakpoint($desktop) {
         font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+        line-height: 14px;
     }
 }
 
@@ -110,6 +135,17 @@
     display: flex;
     align-items: center;
     margin-bottom: 1.2rem;
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+        line-height: 12px;
+    }
 }
 
 .product__reviews-counter {
@@ -142,6 +178,16 @@
     &:hover {
         background: #37BD8D;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+    }
 }
 
 .product__price-actual {
@@ -159,10 +205,29 @@
             font-weight: 500;
             line-height: 20px; /* 133.333% */
 
-            @media screen and (max-width: 1920px) {
+            @include breakpoint($desktop) {
                 font-size: 1.1vw;
             }
+            @include breakpoint($tablet) {
+                font-size: 1.4vw;
+            }
+            @include breakpoint($tablet-pt) {
+                font-size: 1.7vw;
+            }
+            @include breakpoint($mobile) {
+                font-size: 2.7vw;
+            }
         }
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
     }
 }
 
@@ -177,6 +242,16 @@
     &.disabled {
         display: none;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+    }
 }
 
 .product__price {
@@ -184,8 +259,17 @@
     font-weight: 700;
     line-height: 24px; /* 133.333% */
 
-    @media screen and (max-width: 1920px) {
+    @include breakpoint($desktop) {
         font-size: 1.1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
     }
 }
 

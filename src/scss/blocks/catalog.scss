@@ -1,6 +1,22 @@
 .catalog {
     width: 19.27vw;
     margin-right: 1.6rem;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    @include breakpoint($laptop) {
+        width: 26vw;
+    }
+
+    @include breakpoint($tablet) {
+        display: none;
+    }
+}
+
+.catalog__list-main {
     position: relative;
 }
 

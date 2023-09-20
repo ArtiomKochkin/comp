@@ -42,6 +42,28 @@
             font-weight: 700;
             color: #E5E5E5;
         }
+
+        @include breakpoint($tablet) {
+            width: 30vw;
+            font-size: 1.1vw;
+            height: auto;
+
+            &::placeholder {
+                font-size: 1.1vw;
+            }
+        }
+
+        @include breakpoint($tablet-pt) {
+            font-size: 1.5vw;
+
+            &::placeholder {
+                font-size: 1.5vw;
+            }
+        }
+
+        @include breakpoint($mobile) {
+            display: none;
+        }
     }
 
     &--footer {
@@ -59,6 +81,31 @@
         &:focus {
             border: none;
             box-shadow: none;
+        }
+
+        @include breakpoint($tablet) {
+            font-size: 1.1vw;
+
+            &::placeholder {
+                font-size: 1.1vw;
+            }
+        }
+
+        @include breakpoint($tablet-pt) {
+            font-size: 1.5vw;
+
+            &::placeholder {
+                font-size: 1.5vw;
+            }
+        }
+
+        @include breakpoint($mobile) {
+            width: 100%;
+            font-size: 4.5vw;
+
+            &::placeholder {
+                font-size: 4.5vw;
+            }
         }
     }
 }

@@ -3,7 +3,6 @@
 }
 
 .show-more__link {
-    
     display: inline-block;
     color: #01579B;
     font-size: 0.8vw;
@@ -47,6 +46,26 @@
         &:hover {
             background: url("../../img/svg/arrow/arrow-right-blue-s.svg") 101% 40% no-repeat;
             background-size: 12px; 
+        }
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 0.8vw;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+        padding-right: 3rem;
+    }
+    
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3vw;
+
+        &--s {
+            font-size: 2.3vw;
         }
     }
 }

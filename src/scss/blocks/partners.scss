@@ -3,16 +3,26 @@
 }
 
 .partners__items {
-    margin: 2.4rem 0 2.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 2.4rem 0 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.6rem;
+
+    @include breakpoint($tablet) {
+        overflow-x: auto;
+        grid-template-columns: repeat(12, 100px);
+    }
 }
 
 .partners__item {
-    margin-right: 1.25vw;
+    grid-column: span 1;
+}
 
-    &:last-child {
-        margin-right: 0;
-    }
+.partners__img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
 }

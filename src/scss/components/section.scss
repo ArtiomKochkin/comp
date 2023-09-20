@@ -8,10 +8,25 @@
         font-size: 1.7vw;
         line-height: 36px;
     }
+
+    @include breakpoint($tablet) {
+        font-size: 2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.5vw;
+        line-height: 20px;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4.5vw;
+    }
 }
 
 .section__main-page {
     display: flex;
     justify-content: space-between;
     margin: 2.4rem auto;
+
+    @include breakpoint($tablet) {
+        flex-wrap: wrap;
+    }
 }

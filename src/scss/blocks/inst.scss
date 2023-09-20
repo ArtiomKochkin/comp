@@ -1,5 +1,10 @@
 .inst {
-    margin-left: 1.6rem
+    margin-left: 1.6rem;
+
+    @include breakpoint($tablet) {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .inst__items {
@@ -11,17 +16,42 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 8px;
+
+    @include breakpoint($tablet) {
+        align-self: center;
+        padding-top: 0;
+        margin: 2rem auto 2.4rem;
+    }
+    @include breakpoint($mobile) {
+        margin: 1.2rem 0;
+    }
 }
 
 .inst__item {
     grid-column: span 2;
     display: inline-block;
 
-    @media screen and (max-width: 1920px) {
-        grid-column: span 4;
-    }
-
     &:hover {
         box-shadow: 0px 1px 10px 0px rgba(50, 50, 71, 0.74);
+    }
+
+    @include breakpoint($desktop) {
+        grid-column: span 4;
+    }
+    @include breakpoint($tablet) {
+        grid-column: span 2;
+    }
+    @include breakpoint($tablet-pt) {
+        grid-column: span 4;
+    }
+    @include breakpoint($mobile) {
+        grid-column: span 6;
+    }
+}
+
+.inst__img {
+    @include breakpoint($mobile) {
+        display: block;
+        margin: 0 auto;
     }
 }
