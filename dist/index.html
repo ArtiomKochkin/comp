@@ -9,7 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Главная страница</title>
+    <title>Компьютеры с минимальной стоимостью</title>
 </head>
 <body>
     <header class="header">
@@ -22,13 +22,13 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../stock.html" class="nav__link">Акции</a>
+                            <a href="../promotion.html" class="nav__link">Акции</a>
                         </li>
                         <li class="nav__item">
                             <a href="#!" class="nav__link">Кредит</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Оплата и доставка</a>
+                            <a href="../search.html" class="nav__link">Оплата и доставка</a>
                         </li>
                         <li class="nav__item">
                             <a href="../error-404.html" class="nav__link">Помощь</a>
@@ -183,7 +183,7 @@
                 <div class="menu__item-wrap">
                     <h6 class="menu__title">Информация</h6>
                     <div class="menu__arrow">
-                        <img src="../img/svg/arrow/arrow-up-white-l.svg" alt="" class="menu__arrow-img">
+                        <img src="../img/svg/arrow/arrow-down-white-l.svg" alt="" class="menu__arrow-img">
                     </div>
                 </div>
                 <nav class="nav nav--dark nav--menu">
@@ -225,7 +225,7 @@
                 <div class="menu__item-wrap">
                     <h6 class="menu__title">Наши сервисы</h6>
                     <div class="menu__arrow">
-                        <img src="../img/svg/arrow/arrow-up-white-l.svg" alt="" class="menu__arrow-img">
+                        <img src="../img/svg/arrow/arrow-down-white-l.svg" alt="" class="menu__arrow-img">
                     </div>
                 </div>
                 <nav class="nav nav--dark nav--menu">
@@ -256,7 +256,7 @@
             </div>
             <div class="menu__content-item">
                 <h6 class="menu__title">Контакты</h6>
-                <div class="contact-box">
+                <div class="contact-box contact-box--menu">
                     <ul class="contact-box__list">
                         <li class="contact-box__item">
                             <a href="tel:+79061112485" class="contact-box__link">+7 (906) 11-12-485 - Отдел продаж</a>
@@ -319,15 +319,18 @@
         <section class="intro container">
             <div class="catalog">
                 <ul class="catalog__list-main">
-                    <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/components.svg" alt="" class="catalog__pic">
-                            <a href="category.html" class="catalog__name">Комплектующие ПК</a>
+                    <li class="catalog__item ">
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/components.svg" alt="" class="catalog__pic catalog__pic--components">
+                                <a href="category.html" class="catalog__name">Комплектующие ПК</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Основные комплектующие для ПК</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -360,6 +363,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Устройства расширения</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -385,6 +389,7 @@
                             </div>
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Моддинг и обслуживание</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -402,6 +407,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Комплектующие для сервера</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -431,14 +437,17 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/Monitor.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Мониторы</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/Monitor.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Мониторы</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Мониторы</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -450,20 +459,26 @@
                                         <li class="catalog__column-element">
                                             <a href="#!" class="catalog__link">Мультимедийные проекторы</a>
                                         </li>
+                                        <li class="catalog__column-element">
+                                            <a href="#!" class="catalog__link">Акксессуары для мониторов</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/pc.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Компьютеры</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/pc.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Компьютеры</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Компьютеры и ПО</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -484,29 +499,23 @@
                                         <li class="catalog__column-element">
                                             <a href="#!" class="catalog__link">Микрокомпьютеры</a>
                                         </li>
-                                        <li class="catalog__column-element">
-                                            <a href="#!" class="catalog__link">Охлаждение</a>
-                                        </li>
-                                        <li class="catalog__column-element">
-                                            <a href="#!" class="catalog__link">Твердотельные накопители</a>
-                                        </li>
-                                        <li class="catalog__column-element">
-                                            <a href="#!" class="catalog__link">Жесткие диски</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/laptop.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Ноутбуки</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/laptop.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Ноутбуки</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Ноутбуки</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -536,6 +545,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Для ноутбуков</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -568,14 +578,17 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/consoles.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Игровые консоли</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/consoles.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Игровые консоли</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Видеоигры</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -593,6 +606,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Microsoft Xbox</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -613,6 +627,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">PlayStation</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -635,6 +650,7 @@
                             </div>
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Nintendo</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -661,6 +677,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Другое</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -690,14 +707,17 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/componentsLaptop.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Комплектующие к ноутбукам</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/componentsLaptop.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Комплектующие к ноутбукам</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Комплектующие к ноутбукам</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -724,14 +744,17 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/tablet.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Планшеты</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/tablet.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Планшеты</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Планшеты</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -749,6 +772,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Аксессуары для планшетов</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -772,6 +796,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Другое</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -789,14 +814,17 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/printer.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Принтеры и МФУ</a>
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/printer.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Принтеры и МФУ</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Техника для печати</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -832,6 +860,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Сканеры</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -854,6 +883,7 @@
                             </div>
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Расходные материалы и постпечатное оборудование</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -891,15 +921,18 @@
                             </div>
                         </div>
                     </li>
-                    <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/Speakers.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Аудиотехника</a>
+                    <li class="catalog__item ">
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/Speakers.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Аудиотехника</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Наушники и гарнитуры</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -929,6 +962,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Домашняя акустика</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -946,6 +980,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Виниловые проигрыватели</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -962,6 +997,7 @@
                             </div>
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Портативная акустика</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -976,8 +1012,10 @@
                                         <li class="catalog__column-element">
                                             <a href="#!" class="catalog__link">Крепления для портативных колонок</a>
                                         </li>
+                                    </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Колонки</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -995,6 +1033,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Микрофоны и радиосистемы</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -1023,15 +1062,18 @@
                             </div>
                         </div>
                     </li>
-                    <li class="catalog__item">
-                        <div class="catalog__info">
-                            <img src="./img/intro/sidebar/network.svg" alt="" class="catalog__pic">
-                            <a href="category.html"  class="catalog__name">Сетевое оборудование</a>
+                    <li class="catalog__item ">
+                        <div class="catalog__intro">
+                            <div class="catalog__info">
+                                <img src="./img/intro/sidebar/network.svg" alt="" class="catalog__pic">
+                                <a href="category.html"  class="catalog__name">Сетевое оборудование</a>
+                            </div>
+                            <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         </div>
-                        <img src="./img/svg/arrow-right.svg" alt="" class="catalog__arrow">
                         <div class="catalog__content">
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Wi-Fi роутеры и оборудование для малых сетей</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -1061,6 +1103,7 @@
                                     </ul>
                                 </div>
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Видеонаблюдение</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -1083,6 +1126,7 @@
                             </div>
                             <div class="catalog__column">
                                 <div class="catalog__column-item">
+                                    <a href="subcategory.html" class="catalog__column-item-link"></a>
                                     <h5 class="catalog__title">Профессиональное сетевое оборудование</h5>
                                     <ul class="catalog__list">
                                         <li class="catalog__column-element">
@@ -1129,43 +1173,57 @@
             </div>
             <div class="intro__advantages">
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Installation.svg" alt="Бесплатная сборка" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box intro__advatanges-img-box--installation">
+                        <img src="./img/intro/icons/Installation.svg" alt="Бесплатная сборка" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">
                         Бесплатная сборка
                     </h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Delivery.svg" alt="Бесплатная 
-                    доставка" class="intro__advatages-pic intro__advatages-pic--low">
+                    <div class="intro__advatanges-img-box intro__advatanges-img-box--delivery">
+                        <img src="./img/intro/icons/Delivery.svg" alt="Бесплатная 
+                        доставка" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">Бесплатная 
                         доставка</h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Guarantee.svg" alt="Официальная
-                    гарантия" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box intro__advatanges-img-box--guarantee">
+                        <img src="./img/intro/icons/Guarantee.svg" alt="Официальная
+                        гарантия" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">Официальная
                         гарантия</h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Price.svg" alt="Лучшая цена" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box intro__advatanges-img-box--price">
+                        <img src="./img/intro/icons/Price.svg" alt="Лучшая цена" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">Лучшая цена
                     </h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Achievement.svg" alt="11 лет
-                    на рынке" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box">
+                        <img src="./img/intro/icons/Achievement.svg" alt="11 лет
+                        на рынке" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">11 лет
                         на рынке</h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Manager.svg" alt="Профессиональная
-                    консультация" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box">
+                        <img src="./img/intro/icons/Manager.svg" alt="Профессиональная
+                        консультация" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">Профессиональная
                         консультация</h5>
                 </div>
                 <div class="intro__advatages-item">
-                    <img src="./img/intro/icons/Payments.svg" alt="Рассрочка 4 мес./0%
-                    без переплат" class="intro__advatages-pic">
+                    <div class="intro__advatanges-img-box">
+                        <img src="./img/intro/icons/Payments.svg" alt="Рассрочка 4 мес./0%
+                        без переплат" class="intro__advatages-pic">
+                    </div>
                     <h5 class="intro__advatages-title">Рассрочка 4 мес./0%
                         без переплат</h5>
                 </div>
@@ -1216,7 +1274,10 @@
                                 <span class="product__price ">5000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1261,7 +1322,10 @@
                                 <span class="product__price ">5000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1306,7 +1370,10 @@
                                 <span class="product__price ">3500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1351,7 +1418,10 @@
                                 <span class="product__price ">2500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1396,7 +1466,10 @@
                                 <span class="product__price ">3500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1441,7 +1514,10 @@
                                 <span class="product__price ">10000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1491,7 +1567,10 @@
                                 <span class="product__price ">3500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1536,7 +1615,10 @@
                                 <span class="product__price ">5000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1581,7 +1663,10 @@
                                 <span class="product__price ">3500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1626,7 +1711,10 @@
                                 <span class="product__price ">5000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1671,7 +1759,10 @@
                                 <span class="product__price ">2500</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
                 <div class="top__item product">
@@ -1716,7 +1807,10 @@
                                 <span class="product__price ">10000</span> грн.
                             </div>
                         </div>
-                        <button class="product__button" type="button">Купить</button>
+                        <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1771,7 +1865,10 @@
                                         <span class="product__price ">5000</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                         <div class="game__item product">
@@ -1816,7 +1913,10 @@
                                         <span class="product__price ">5000</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                         <div class="game__item product">
@@ -1861,7 +1961,10 @@
                                         <span class="product__price ">3500</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                         <div class="game__item product product--blue">
@@ -1906,7 +2009,10 @@
                                         <span class="product__price ">2500</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                         <div class="game__item product">
@@ -1951,7 +2057,10 @@
                                         <span class="product__price ">3500</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                         <div class="game__item product">
@@ -1996,7 +2105,10 @@
                                         <span class="product__price ">10000</span> грн.
                                     </div>
                                 </div>
-                                <button class="product__button" type="button">Купить</button>
+                                <button class="product__button" type="button">
+                            <span class="product__button-text">Купить</span>
+                            <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                        </button>
                             </div>
                         </div>
                     </div>

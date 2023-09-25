@@ -1,10 +1,34 @@
+.contact-box {
+    @include breakpoint($tablet-pt) {
+        &--menu {
+            .contact-box__address,
+            .contact-box__location,
+            .contact-box__link {
+                font-size: 1.8vw;
+            }
+        }
+    }
+    @include breakpoint($mobile) {
+        &--menu {
+            .contact-box__address,
+            .contact-box__location,
+            .contact-box__link {
+                font-size: 3.6vw;
+            }
+        }
+    }
+}
+
 .contact-box__item {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
 
     &:last-child {
         margin-bottom: 0;
     }
 
+    @include breakpoint($desktop) {
+        margin-bottom: 1.2rem;
+    }
     @include breakpoint($laptop) {
         margin-bottom: 1rem;
     }
@@ -21,6 +45,9 @@
         color: $gray;
     }
 
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
     @include breakpoint($tablet) {
         font-size: 1.2vw;
     }
@@ -36,6 +63,9 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
     @include breakpoint($tablet) {
         font-size: 1.2vw;
     }
@@ -56,5 +86,13 @@
     }
     @include breakpoint($tablet-pt) {
         font-size: 1.6vw;
+    }
+}
+
+.contact-box__paragraph {
+    margin-bottom: 1.2rem;
+
+    @include breakpoint($desktop) {
+        margin-bottom: 0.6rem;
     }
 }

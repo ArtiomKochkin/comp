@@ -101,11 +101,16 @@
 
         @include breakpoint($mobile) {
             width: 100%;
-            font-size: 4.5vw;
+            font-size: 4vw;
 
             &::placeholder {
-                font-size: 4.5vw;
+                font-size: 4vw;
             }
         }
+    }
+
+    &--filter {
+        width: 5.5rem;
+        height: 32px;
     }
 }

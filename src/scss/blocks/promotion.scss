@@ -1,0 +1,273 @@
+.promotion {
+    @include breakpoint($mobile) {
+       margin-top: 2.4rem;
+    }
+}
+
+.promotion__wrap {
+    &--large {
+        max-width: 85.83vw;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @include breakpoint($tablet) {
+            max-width: 97vw;
+        }
+        @include breakpoint($tablet-pt) {
+            max-width: none;
+        }
+    }
+}
+
+.promotion__items {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.6rem;
+    margin: 2.4rem 0;
+}
+
+.promotion__item {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($tablet-pt) {
+        grid-column: span 4;
+    }
+    @include breakpoint($mobile) {
+        grid-column: span 8;
+    }
+}
+
+
+.promotion__title {
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    margin-top: 1.6rem;
+
+    @include breakpoint($laptop) {
+        line-height: 20px;
+    }
+    @include breakpoint($tablet) {
+        line-height: 16px;
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet-pt) {
+        line-height: 14px;
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 5vw;
+        line-height: 22px;
+    }
+}
+
+.promotion__title-link {
+    text-decoration: none;
+    color: $dark;
+}
+
+.promotion__footer {
+    margin: auto 0 0 0;
+}
+
+.promotion__time {
+    margin: 1rem 0;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    border: 1px solid #E6E6E6;
+    width: max-content;
+
+    &--red {
+        border: 1px solid $red;
+
+        .promotion__text {
+            color: $red;
+        }
+    }
+
+    @include breakpoint($tablet) {
+        padding: 0.5rem 1.2rem;
+    }
+    @include breakpoint($tablet-pt) {
+        margin: 0.4rem 0;
+
+        &--red {
+            margin: 0 0 1.6rem 0;
+        }
+    }
+    @include breakpoint($mobile) {
+        margin: 1rem 0;
+    }
+}
+
+.promotion__text {
+    color: #666;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    margin-right: 1rem;
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.6vw;
+    }
+}
+
+.promotion__days {
+    color: $red;
+    font-size: 0.9vw;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.7vw;
+    }
+}
+
+.promotion__link {
+    color: $secondary;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.6vw;
+    }
+}
+
+
+.promotion__content {
+    background-color: $dark;
+    padding: 4rem 0;
+}
+
+.promotion__banners {
+    margin: 0 2.4rem;
+}
+
+.promotion__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($tablet-pt) {
+        flex-wrap: wrap;
+    }
+}
+
+.promotion__banner-info {
+    margin-right: 10.2vw;
+
+    @include breakpoint($tablet) {
+        width: 50%;
+        margin-right: 5vw;
+    } 
+    @include breakpoint($tablet-pt) {
+       width: 100%;
+       margin: 0;
+    }
+}
+
+.promotion__banner-title {
+    color: $white;
+    font-size: 1.7vw;
+    font-weight: 600;
+    line-height: 36px; /* 112.5% */
+    margin-bottom: 2.4rem;
+
+    @include breakpoint($laptop) {
+        line-height: 28px;
+    }
+    @include breakpoint($tablet) {
+        line-height: 22px;
+        font-size: 2.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 3.5vw;
+    }
+    @include breakpoint($mobile) {
+        line-height: 28px;
+        font-size: 7vw;
+    }
+}
+
+.promotion__banner-link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.promotion__banner-desc {
+    color: $white;
+    margin-bottom: 3.2rem;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+
+    @include breakpoint($laptop) {
+        line-height: 20px;
+    }
+    @include breakpoint($tablet) {
+        line-height: 18px;
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.5vw;
+    }
+    @include breakpoint($mobile) {
+        line-height: 24px;
+        font-size: 5vw;
+    }
+}
+
+.promotion__banner-img-box {
+    @include breakpoint($tablet) {
+        width: 50%;
+    } 
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
+}
+
+.promotion__banner-img {
+    border-radius: 8px;
+    display: block;
+}
+
+
+.promotion__arrow {
+    cursor: pointer;
+
+    @include breakpoint($tablet-pt) {
+        display: none;
+    }
+}

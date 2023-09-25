@@ -228,8 +228,11 @@
 }
 
 .header__actions-img {
-    &--comparison {
-        width: 4vw;
+    
+    @include breakpoint($tablet) {
+        &--comparison {
+            width: 4vw;
+        }
     }
 
     @include breakpoint($tablet) {

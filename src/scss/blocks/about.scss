@@ -40,8 +40,8 @@
         font-size: 1.7vw;
         line-height: 18px;
     }
-    @include breakpoint($tablet-pt) {
-        font-size: 4vw;
+    @include breakpoint($mobile) {
+        font-size: 3.8vw;
         line-height: 22px;
     }
 }

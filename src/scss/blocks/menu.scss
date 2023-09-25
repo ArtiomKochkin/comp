@@ -10,7 +10,12 @@
     display: none;
 
     &.show {
-        display: block
+        display: block;
+    }
+
+    @include breakpoint($mobile) {
+       padding: 1.6rem;
+       width: 80vw
     }
 }
 
@@ -36,11 +41,24 @@
     color: $light-gray;
     font-size: 1vw;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
     text-decoration: none;
 
     &:hover {
         color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4.4vw;
     }
 }
 
@@ -48,8 +66,21 @@
     color: $light-gray;
     font-size: 1vw;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
     margin: 0 0.8rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4.4vw;
+    }
 }
 
 .menu__user {
@@ -77,12 +108,26 @@
     color: $white;
     font-size: 1vw;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
     text-decoration: none;
     display: block;
 
     &:hover {
         color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -95,6 +140,19 @@
 
     &:hover {
         color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.9vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
     }
 }
 
@@ -140,6 +198,19 @@
     font-size: 0.8vw;
     font-weight: 500;
     line-height: 16px; /* 133.333% */
+
+    @include breakpoint($laptop) {
+        font-size: 1dvw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.8vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.8vw;
+    }
 }
 
 .menu__actions {
@@ -197,4 +268,17 @@
     font-weight: 600;
     line-height: 24px; /* 133.333% */
     margin-bottom: 1.2rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+    }
 }

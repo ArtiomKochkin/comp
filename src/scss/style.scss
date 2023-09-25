@@ -20,6 +20,9 @@ body {
     font-weight: 400;
     font-style: normal;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 img {
@@ -53,11 +56,12 @@ img {
 @import "blocks/news";
 @import "blocks/about";
 @import "blocks/category";
-@import "blocks/subcategory";
 @import "blocks/error";
 @import "blocks/post";
-@import "blocks/stock";
+@import "blocks/promotion";
+@import "blocks/promo";
 @import "blocks/contacts";
+@import "blocks/search";
 
 @import "components/nav";
 @import "components/rating";
@@ -71,3 +75,6 @@ img {
 @import "components/pagination";
 @import "components/social";
 @import "components/contact-box";
+@import "components/filter";
+@import "components/select";
+@import "components/checkbox";

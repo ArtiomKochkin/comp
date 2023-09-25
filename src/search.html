@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Поиск"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <section class="search container">
+            <div class="search__header">
+                <h3 class="section__title">Результаты поиска для "<span class="search__text">Материнские платы</span>"
+                </h3>
+                <p class="search__subtitle">
+                    Найдено 
+                    <span class="search__num">28</span>
+                    товаров
+                </p>
+            </div>
+            <div class="search__content">
+                <div class="filter__line">
+                    <div class="filter__line-left">
+                        <ul class="filter__line-list">
+                            <li class="filter__line-item">
+                                <span class="filter__line-item-text">Производитель</span>
+                                <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                            </li>
+                            <li class="filter__line-item">
+                                <span class="filter__line-item-text">Сокет</span>
+                                <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                            </li>
+                            <li class="filter__line-item">
+                                <span class="filter__line-item-text">Тип поддерживаемой памяти</span>
+                                <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                            </li>
+                        </ul>
+                        <button class="filter__reset">Очистить фильтры</button>
+                    </div>
+                    <div class="filter__line-right">
+                        <div class="select">
+                            <select name="filter" id="filter" class="select__element">
+                                <option class="select__item" value="rating">По рейтингу</option>
+                                <option class="select__item" value="popular">По популярности</option>
+                                <option class="select__item" value="high-price">Сначала дорогие</option>
+                                <option class="select__item" value="low-price">Сначала недорогие</option>
+                            </select>
+                        </div>
+                        <div class="filter__view">
+                           <div class="filter__view-item">
+                                <img src="./img/filter/list.svg" alt="" class="filter__view-img">
+                           </div>
+                           <div class="filter__view-item active">
+                                <img src="./img/filter/table.svg" alt="" class="filter__view-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__wrap">
+                    <div class="filter">
+                        <div class="filter__panel">
+                            <div class="filter__results">
+                                <h5 class="filter__results-text">Все результаты</h5>
+                                <span class="filter__results-num">(211)</span>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/Monitor.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Мониторы</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Мониторы</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Акксессуары для мониторов</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Игровые мониторы</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Мультимедийные мониторы</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/pc.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Компьютеры и ПО</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Персональные компьютеры</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Моноблоки</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Платформы</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Платформы для моноблоков</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Микрокомпьютеры</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Программное обеспечение</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/components.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Комплектующие для ПК</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Материнские платы</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Процессоры</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item ">
+                                        <div class="filter__category">Видеокарты</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Оперативная память</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Блоки питания</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Корпуса</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Охлаждение</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Твердотельные накопители</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Жесткие диски</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/laptop.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Ноутбуки</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Все ноутбуки</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Игровые ноутбуки</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Ультрабуки</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Ноутбуки-трансформеры</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item ">
+                                        <div class="filter__category">Комплектующие к ноутбукам</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/consoles.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Игровые консоли</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Видеоигры</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Microsoft Xbox</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item ">
+                                        <div class="filter__category">PlayStation</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Nintendo</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Другое</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/tablet.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Планшеты</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Планшеты</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Аксессуары для планшетов</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Другое</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/printer.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Принтеры и МФУ</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Техника для печати</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Сканеры</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item ">
+                                        <div class="filter__category">Расходные материалы и постпечатное оборудование</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/Speakers.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Аудиотехника</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Наушники и гарнитуры</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Домашняя акустика</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Портативная акустика</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Колонки</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Микрофоны и радиосистемы</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item disabled">
+                                        <div class="filter__category">Виниловые проигрыватели</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <button class="filter__view-all filter__view-all--left">Еще</button>
+                                </div>
+                            </div>
+                            <div class="filter__item disabled">
+                                <div class="filter__item-header">
+                                    <img src="./img/intro/sidebar/printer.svg" alt="" class="filter__img">
+                                    <h6 class="filter__title filter__title--category">Сетевое оборудование</h6>
+                                </div>
+                                <div class="filter__categories">
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Wi-Fi роутеры и оборудование для малых сетей</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                    <div class="filter__category-item">
+                                        <div class="filter__category">Видеонаблюдение</div>
+                                        <span class="filter__category-num">(3)</span>
+                                    </div>
+                                    <div class="filter__category-item ">
+                                        <div class="filter__category">Профессиональное сетевое оборудование</div>
+                                        <span class="filter__category-num">(10)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter__view-all filter__view-all--left filter__view-all--large">Все категории</button>
+                        </div>
+                        <div class="filter__panel">
+                            <div class="filter__item">
+                                <h6 class="filter__title filter__title--without-arrow">По цене</h6>
+                                <div class="filter__content ">
+                                    <div class="filter__numbers">
+                                        <input type="text" class="input input--filter" value="0">
+                                        <span class="filter__span">-</span>
+                                        <input type="text" class="input input--filter" value="15000">
+                                        <button class="button button--secondary">ок</button>
+                                    </div>
+                                    <div class="filter__num">
+                                        <input id="rangeMin" type="range" class="filter__range" value="0">
+                                        <input id="rangeMax" type="range" class="filter__range" value="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <h6 class="filter__title">Наличие в магазинах</h6>
+                                <div class="filter__content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-has">
+                                        <label for="filter-has" class="checkbox__label">В наличии</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-today">
+                                        <label for="filter-today" class="checkbox__label">Под заказ: сегодня</label>
+                                        <span class="checkbox__label-num">(12)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-tomorrow">
+                                        <label for="filter-tomorrow" class="checkbox__label">Под заказ: завтра</label>
+                                        <span class="checkbox__label-num">(13)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-later">
+                                        <label for="filter-later" class="checkbox__label">Под заказ: позже</label>
+                                        <span class="checkbox__label-num">(23)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-not">
+                                        <label for="filter-not" class="checkbox__label">Отсутствующие в продаже</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <button class="filter__view-all">Показать все</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <h6 class="filter__title">Производитель</h6>
+                                <div class="filter__content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-all">
+                                        <label for="filter-all" class="checkbox__label">Все производители</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-ASUS">
+                                        <label for="filter-ASUS" class="checkbox__label">ASUS</label>
+                                        <span class="checkbox__label-num">(20)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-Asrock">
+                                        <label for="filter-Asrock" class="checkbox__label">Asrock</label>
+                                        <span class="checkbox__label-num">(23)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-MSI">
+                                        <label for="filter-MSI" class="checkbox__label">MSI</label>
+                                        <span class="checkbox__label-num">(12)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-GIGABYTE">
+                                        <label for="filter-GIGABYTE" class="checkbox__label">GIGABYTE</label>
+                                        <span class="checkbox__label-num">(1)</span>
+                                    </div>
+                                    <button class="filter__view-all">Показать все</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <h6 class="filter__title">Сокет</h6>
+                                <div class="filter__content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-AM5">
+                                        <label for="filter-AM5" class="checkbox__label">AM5</label>
+                                        <span class="checkbox__label-num">(13)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-AM4">
+                                        <label for="filter-AM4" class="checkbox__label">AM4</label>
+                                        <span class="checkbox__label-num">(3)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-LGA1700">
+                                        <label for="filter-LGA1700" class="checkbox__label">LGA 1700</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-LGA1200">
+                                        <label for="filter-LGA1200" class="checkbox__label">LGA 1200</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <button class="filter__view-all">Показать все</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <h6 class="filter__title">Тип поддерживаемой памяти</h6>
+                                <div class="filter__content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-DDR5">
+                                        <label for="filter-DDR5" class="checkbox__label">DDR5</label>
+                                        <span class="checkbox__label-num">(13)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input"checked id="filter-DDR4">
+                                        <label for="filter-DDR4" class="checkbox__label">DDR4</label>
+                                        <span class="checkbox__label-num">(56)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-DDR3">
+                                        <label for="filter-DDR3" class="checkbox__label">DDR3</label>
+                                        <span class="checkbox__label-num">(23)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-DDR3L">
+                                        <label for="filter-DDR3L" class="checkbox__label">DDR3L</label>
+                                        <span class="checkbox__label-num">(13)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__wrap">
+                        <div class="product__items">
+                            <div class="product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">5</span>
+                                        <div class="product__actions product__actions--rating">
+                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old disabled">6000 грн.</div>
+                                        <div class="product__price-actual">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-4.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">40</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">6000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">4</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">2500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-7.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">23</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-8.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">15</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">12000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">10000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">5</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old disabled">6000 грн.</div>
+                                        <div class="product__price-actual">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-3.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">40</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">6000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-5.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">4</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">2500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">23</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-6.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">15</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">12000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">10000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-3.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">40</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">6000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-4.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">12</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-5.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">4</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">2500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">23</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-6.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">15</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">12000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">10000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">5</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old disabled">6000 грн.</div>
+                                        <div class="product__price-actual">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-4.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">40</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">6000 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">5000</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">12</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-7.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">23</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" product product--with-filter">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <img src="./img/goods/motherboards/motherboard-7.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
+                                    <div class="product__name">
+                                        Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                    </div>
+                                    <div class="product__reviews">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        Отзывов: <span class="product__reviews-counter">23</span>
+                                    </div>
+                                </div>
+                                <div class="product__footer">
+                                    <div class="product__prices">
+                                        <div class="product__price-old">3600 грн.</div>
+                                        <div class="product__price-actual product__price-actual--sale">
+                                            <span class="product__price ">3500</span> грн.
+                                        </div>
+                                    </div>
+                                    <button class="product__button" type="button">
+                                        <span class="product__button-text">Купить</span>
+                                        <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                    </button>
+                                </div>
+                                <div class="product__info">
+                                    <h6 class="product__info-title">Характеристики</h6>
+                                    <div class="product__info-content">
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Форм-фактор</div>
+                                            <div class="product__info-value">Micro-ATX</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Сокет</div>
+                                            <div class="product__info-value">LGA 1700</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                            <div class="product__info-value">2</div>
+                                        </div>
+                                        <div class="product__info-item">
+                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                            <div class="product__info-value">DDR4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination container">
+                    <div class="pagination__show-more">
+                        <p class="pagination__text">Показать больше новостей</p>
+                        <img src="./img/svg/update.svg" alt="" class="pagination__show-more-img">
+                    </div>
+                    <div class="pagination__pages">
+                        <a href="#!" class="pagination__link-page">
+                            <img src="./img/svg/arrow/arrow-left-blue-s.svg" alt="" class="pagination__img">
+                            <span class="pagination__text pagination__text--prev">Назад</span>
+                        </a>
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <a href="#!" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#!" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#!" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#!" class="pagination__link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#!" class="pagination__link">33</a>
+                            </li>
+                        </ul>
+                        <a href="#!" class="pagination__link-page">
+                            <span class="pagination__text pagination__text--next">Вперед</span>
+                            <img src="./img/svg/arrow/arrow-right-blue-s.svg" alt="" class="pagination__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

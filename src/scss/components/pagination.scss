@@ -17,6 +17,16 @@
     font-size: 0.8vw;
     font-weight: 500;
     line-height: 16px; /* 114.286% */
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.2vw;
+    }
 }
 
 
@@ -25,6 +35,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 2.4rem;
+
+    @include breakpoint($mobile) {
+        margin-top: 1.2rem;
+    }
 }
 
 .pagination__link-page {
@@ -40,6 +54,13 @@
     &:hover {
         background-color: $soft;
     }
+
+    @include breakpoint($tablet-pt) {
+        padding: 0.6rem 2rem;
+    }
+    @include breakpoint($mobile) {
+        padding: 0.4rem 1rem;
+    }
 }
 
 .pagination__text {
@@ -49,6 +70,16 @@
 
     &--next {
         margin-right: 1.4rem;
+    }
+
+    @include breakpoint($mobile) {
+        &--prev {
+            margin-left: 0.7rem;
+        }
+    
+        &--next {
+            margin-right: 0.7rem;
+        }
     }
 }
 
@@ -69,5 +100,17 @@
 
     &:hover {
         background-color: $soft;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+        padding: 0.6rem 1.5rem;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.3vw;
+        padding: 0.4rem 1rem;
     }
 }

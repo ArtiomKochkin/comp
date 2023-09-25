@@ -5,7 +5,7 @@
     display: block;
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 4;
 
     @include breakpoint($laptop) {
         width: 26vw;
@@ -13,6 +13,10 @@
 
     @include breakpoint($tablet) {
         display: none;
+    }
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
     }
 }
 
@@ -27,14 +31,35 @@
     width: 100%;
     padding: 1.2rem;
     cursor: pointer;
+    background-color: $white;
 
-    &:hover {
+    &:hover,
+    &.active {
         background-color: $soft;
 
         .catalog__content {
             display: flex;
         }
     }
+
+    @include breakpoint($tablet-pt) {
+        margin-top: -0.1rem;
+        flex-direction: column;
+
+            .catalog__content {
+                height: auto;
+                position: static;
+                flex-direction: column;
+                padding: 1.2rem 0 0 2.4rem;
+            }
+    }
+}
+
+.catalog__intro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .catalog__info {
@@ -44,6 +69,18 @@
 
 .catalog__pic {
     margin-right: 0.8rem;
+
+    &--components {
+        margin-right: 1rem;
+    }
+
+    @include breakpoint($tablet-pt) {
+        margin-right: 1.6rem;
+
+        &--components {
+            margin-right: 2rem;
+        }
+    }
 }
 
 .catalog__name {
@@ -53,6 +90,18 @@
     color: $dark;  
     text-decoration: none;
 
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+        line-height: 18px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.2vw;
+        color: #01579B;
+        font-weight: 700;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.2vw;
+    }
 }
 
 .catalog__arrow {
@@ -66,23 +115,65 @@
     left: 100%;
     top: 0;
     z-index: 3;
-    width: 65vw;
-    height: 100%;
+    width: 60.5vw;
+    height: 105%;
     background-color: $soft;
     padding: 1.4rem 0 3rem 3rem;
+
+    @include breakpoint($desktop) {
+        width: 70.8vw;
+    }
+    @include breakpoint($laptop) {
+        width: 64vw;
+    }
+    @include breakpoint($tablet) {
+        width: 74vw;
+    }
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
 }
 
 .catalog__column {
     margin-right: 6.61vw;
+
+    @include breakpoint($tablet-pt) {
+        margin-right: 0;
+    }
 }
 
 .catalog__column-item {
     margin-bottom: 2.6rem;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include breakpoint($tablet-pt) {
+        margin-bottom: 1.2rem;
+        background: url("../../img/svg/arrow-right.svg") 100% 100% no-repeat;
+
+
+        &:last-child {
+            margin-bottom: 1.2rem;
+        }
+    }
 }
+
+.catalog__column-item-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint($tablet-pt) {
+        z-index: 5;
+    }
+} 
 
 .catalog__title {
     color:  #01579B;
@@ -90,16 +181,35 @@
     font-weight: 700;
     line-height: 20px;
     
+    @include breakpoint($tablet) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+        color: $dark;
+        font-weight: 500;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3vw;
+    }
 }
 
 .catalog__list {
     margin-top: 1.5rem;
+
+    @include breakpoint($tablet-pt) {
+        display: none;
+    }
 }
 
 .catalog__column-element {
     margin-bottom: 1rem;
 
     &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($tablet-pt) {
         margin-bottom: 0;
     }
 }
@@ -113,6 +223,10 @@
 
     &:hover {
         color: $dark;
+    }
+    
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
     }
 }
 

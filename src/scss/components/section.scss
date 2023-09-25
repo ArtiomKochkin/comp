@@ -9,15 +9,19 @@
         line-height: 36px;
     }
 
-    @include breakpoint($tablet) {
+    @include breakpoint($laptop) {
         font-size: 2vw;
     }
-    @include breakpoint($tablet-pt) {
+    @include breakpoint($tablet) {
         font-size: 2.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 3vw;
         line-height: 20px;
     }
     @include breakpoint($mobile) {
-        font-size: 4.5vw;
+        font-size: 6vw;
+        line-height: 22px;
     }
 }
 
@@ -29,4 +33,9 @@
     @include breakpoint($tablet) {
         flex-wrap: wrap;
     }
+}
+
+.section__wrap {
+    display: flex;
+    
 }
