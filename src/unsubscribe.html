@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Настройка рассылок"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <div class="unsubscribe">
+            <div class="unsubcribe__header">
+                <h2 class="section__title">
+                    Настройка рассылок
+                </h2>
+                <p class="unsubscribe__text">
+                    Жаль, что вы больше не заинтересованы в нашей рассылке.
+                </p>
+            </div>
+            <form action="/" class="unsubcribe__form">
+                <div class="unsubcribe__form-checkboxes">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="system-alerts" disabled>
+                        <label for="system-alerts" class="checkbox__label">Системные оповещения</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="promotion">
+                        <label for="promotion" class="checkbox__label">Акции</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="news-1" checked>
+                        <label for="news-1" class="checkbox__label">Новости компании</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="news-2">
+                        <label for="news-2" class="checkbox__label">Новости индустрии</label>
+                    </div>
+                </div>
+                <p class="unsubscribe__text">
+                    Мы будем благодарны, если вы оставите <span class="unsubscribe__span">короткий отзыв</span> о нашей рассылке. Это позволит нам стать лучшими для вас.
+                </p>
+                <div class="unsubscribe__form-footer">
+                    <textarea class="input input--textarea unsubscribe__textarea" placeholder="Комментарий"></textarea>
+                    <button class="button button--secondary button--large" type="submit">Подтвердить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

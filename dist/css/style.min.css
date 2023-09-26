@@ -3415,6 +3415,66 @@ img {
   margin-top: 1.2rem;
 }
 
+.unsubscribe {
+  max-width: 26vw;
+  width: 100%;
+  margin: 9rem auto;
+}
+@media screen and (max-width: 1366px) {
+  .unsubscribe {
+    max-width: 36vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .unsubscribe {
+    max-width: 46vw;
+    margin: 5rem auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .unsubscribe {
+    max-width: 64vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .unsubscribe {
+    max-width: 90vw;
+  }
+}
+
+.unsubcribe__header {
+  text-align: center;
+}
+
+.unsubscribe__text {
+  color: #333333;
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin: 2.4rem 0;
+  text-align: center;
+}
+
+.unsubscribe__span {
+  font-weight: 700;
+}
+
+.unsubcribe__form-checkboxes {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.unsubscribe__form-footer {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.unsubscribe__textarea {
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+
 .nav--menu {
   display: none;
 }
@@ -4161,6 +4221,10 @@ img {
 .button--secondary:hover {
   background-color: #3582BF;
 }
+.button--large {
+  width: 18rem;
+  justify-content: center;
+}
 .button--small {
   padding: 0.6rem 1.6rem;
   font-size: 0.7vw;
@@ -4298,6 +4362,10 @@ img {
 .input--filter {
   width: 5.5rem;
   height: 32px;
+}
+.input--textarea {
+  min-height: 9.6rem;
+  resize: none;
 }
 
 .breadcrumbs {
@@ -4943,9 +5011,12 @@ img {
 .checkbox:last-child {
   margin-bottom: none;
 }
+.checkbox:hover .checkbox__label::before {
+  border: 2px solid #3582BF;
+}
 .checkbox:hover .checkbox__label::after {
-  border-bottom: 2px solid #999;
-  border-left: 2px solid #999;
+  border-bottom: 2px solid #3582BF;
+  border-left: 2px solid #3582BF;
 }
 
 .checkbox__input {
@@ -4956,7 +5027,13 @@ img {
   opacity: 1;
 }
 .checkbox__input:checked + .checkbox__label::before {
-  border: 1.5px solid #01579B;
+  border: 2px solid #01579B;
+}
+.checkbox__input:disabled + .checkbox__label {
+  color: #999;
+}
+.checkbox__input:disabled + .checkbox__label::before {
+  border: 2px solid #ccc;
 }
 
 .checkbox__label {
@@ -4989,7 +5066,7 @@ img {
   background-color: transparent;
   border-bottom: 2px solid #01579B;
   border-left: 2px solid #01579B;
-  left: 5px;
+  left: 4px;
   top: 6px;
   z-index: 3;
   transform: rotate(-45deg);

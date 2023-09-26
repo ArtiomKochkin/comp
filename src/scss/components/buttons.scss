@@ -36,6 +36,11 @@
         }
     }
 
+    &--large {
+        width: 18rem;
+        justify-content: center;
+    }
+
     &--small {
         padding: 0.6rem 1.6rem;
         font-size: 0.7vw;

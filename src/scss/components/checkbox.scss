@@ -6,9 +6,13 @@
         margin-bottom: none;
     }
     
+    &:hover .checkbox__label::before {
+        border: 2px solid #3582BF;
+    }
+    
     &:hover .checkbox__label::after {
-        border-bottom: 2px solid $gray;
-        border-left: 2px solid $gray;
+        border-bottom: 2px solid #3582BF;
+        border-left: 2px solid #3582BF;
     }
 }
 
@@ -21,7 +25,15 @@
     }
 
     &:checked + .checkbox__label::before {
-        border: 1.5px solid $secondary;
+        border: 2px solid $secondary;
+    }
+
+    &:disabled + .checkbox__label {
+        color: $gray;
+    }
+
+    &:disabled + .checkbox__label::before {
+        border: 2px solid #ccc;
     }
 }
 
@@ -56,7 +68,7 @@
         background-color: transparent;
         border-bottom: 2px solid $secondary;
         border-left: 2px solid $secondary;
-        left: 5px;
+        left: 4px;
         top: 6px;
         z-index: 3;
         transform: rotate(-45deg);

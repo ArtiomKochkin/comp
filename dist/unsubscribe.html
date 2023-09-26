@@ -9,7 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Акции</title>
+    <title>Настройка рассылок</title>
 </head>
 <body>
     <header class="header">
@@ -316,155 +316,43 @@
     </div>
 </header>
     <main class="main">
-        <div class="breadcrumbs container">
-            <a href="index.html" class="breadcrumbs__link">Главная</a>
-            <img src="./img/svg/arrow/arrow-right-gray-s.svg" alt="" class="breadcrumbs__arrow">
-            <a href="promotion.html" class="breadcrumbs__link breadcrumbs__link--current">Акции</a>
+        <div class="unsubscribe">
+            <div class="unsubcribe__header">
+                <h2 class="section__title">
+                    Настройка рассылок
+                </h2>
+                <p class="unsubscribe__text">
+                    Жаль, что вы больше не заинтересованы в нашей рассылке.
+                </p>
+            </div>
+            <form action="/" class="unsubcribe__form">
+                <div class="unsubcribe__form-checkboxes">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="system-alerts" disabled>
+                        <label for="system-alerts" class="checkbox__label">Системные оповещения</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="promotion">
+                        <label for="promotion" class="checkbox__label">Акции</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="news-1" checked>
+                        <label for="news-1" class="checkbox__label">Новости компании</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="news-2">
+                        <label for="news-2" class="checkbox__label">Новости индустрии</label>
+                    </div>
+                </div>
+                <p class="unsubscribe__text">
+                    Мы будем благодарны, если вы оставите <span class="unsubscribe__span">короткий отзыв</span> о нашей рассылке. Это позволит нам стать лучшими для вас.
+                </p>
+                <div class="unsubscribe__form-footer">
+                    <textarea class="input input--textarea unsubscribe__textarea" placeholder="Комментарий"></textarea>
+                    <button class="button button--secondary button--large" type="submit">Подтвердить</button>
+                </div>
+            </form>
         </div>
-        <section class="promotion">
-            <div class="promotion__wrap container">
-                <h3 class="section__title">Акции</h3>
-                <div class="promotion__items">
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-1.jpg" alt="Покупай мониторы ASUS - получай скидки до 28%" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Покупай мониторы ASUS - получай скидки до 28%</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-2.jpg" alt="Приведи друга - получи скидку!" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Приведи друга - получи скидку!</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-3.jpg" alt="Акция!  Cкидка 40% на игровые клавиатуры" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Акция!  Cкидка 40% на игровые клавиатуры</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-4.jpg" alt="Скидка 30% на монитор Dell E2016HV" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Скидка 30% на монитор Dell E2016HV</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="promotion__content">
-                <div class="promotion__wrap promotion__wrap--large">
-                    <div class="promotion__arrow">
-                        <img src="./img/svg/arrow/arrow-left-white-l.svg" alt="" class="promotion__arrow-img">
-                    </div>
-                    <div class="promotion__banners">
-                        <div class="promotion__banner">
-                            <div class="promotion__banner-info">
-                                <h5 class="promotion__banner-title">
-                                    <a href="#!" class="promotion__banner-link">Скидки на игровые ноутбуки до 40%!</a>
-                                </h5>
-                                <p class="promotion__banner-desc">
-                                    Суперцены на геймерские ноутбуки! Успей приобрести себе!
-                                </p>
-                                <div class="promotion__time promotion__time--red">
-                                    <span class="promotion__text">До конца акции</span>
-                                    <span class="promotion__days">14 дней</span>
-                                </div>
-                            </div>
-                            <div class="promotion__banner-img-box">
-                                <img src="./img/promotion/promotion-0.jpg" alt="Скидки на игровые ноутбуки до 40%!" class="promotion__banner-img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promotion__arrow">
-                        <img src="./img/svg/arrow/arrow-right-white-l.svg" alt="" class="promotion__arrow-img">
-                    </div>
-                </div>
-            </div>
-            <div class="promotion__wrap container">
-                <div class="promotion__items">
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-3.jpg" alt="Акция!  Cкидка 40% на игровые клавиатуры" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Акция!  Cкидка 40% на игровые клавиатуры</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-1.jpg" alt="Покупай мониторы ASUS - получай скидки до 28%" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Покупай мониторы ASUS - получай скидки до 28%</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-4.jpg" alt="Скидка 30% на монитор Dell E2016HV" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Скидка 30% на монитор Dell E2016HV</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                    <div class="promotion__item">
-                        <img src="./img/promotion/promotion-2.jpg" alt="Приведи друга - получи скидку!" class="promotion__img">
-                        <h5 class="promotion__title">
-                            <a href="./promo.html" class="promotion__title-link">Приведи друга - получи скидку!</a>
-                        </h5>
-                        <div class="promotion__footer">
-                            <div class="promotion__time">
-                                <span class="promotion__text">До конца акции</span>
-                                <span class="promotion__days">14 дней</span>
-                            </div>
-                            <a href="./promo.html" class="promotion__link">Смотреть подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <footer class="footer">
     <div class="footer__up container">
