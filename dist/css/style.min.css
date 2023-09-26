@@ -88,6 +88,20 @@ button {
   font-weight: 700;
   src: url("../fonts/montserrat-v25-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/montserrat-v25-cyrillic_latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F4F8FB;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #060F42;
+  transition: all linear 0.5s;
+  border-radius: 40px;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   transition: all linear 0.3s;
