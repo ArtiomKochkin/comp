@@ -24,6 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 img {
@@ -46,6 +50,7 @@ img {
 
 @import "blocks/header";
 @import "blocks/menu";
+@import "blocks/cart";
 @import "blocks/footer";
 @import "blocks/catalog";
 @import "blocks/intro";
@@ -65,6 +70,7 @@ img {
 @import "blocks/search";
 @import "blocks/unsubscribe";
 @import "blocks/comparison";
+@import "blocks/modal";
 
 @import "components/nav";
 @import "components/rating";
@@ -81,3 +87,4 @@ img {
 @import "components/filter";
 @import "components/select";
 @import "components/checkbox";
+@import "components/close";
