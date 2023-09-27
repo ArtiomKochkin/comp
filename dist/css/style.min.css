@@ -774,37 +774,6 @@ img {
   }
 }
 
-.cart {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100%;
-}
-.cart.show {
-  display: flex;
-}
-
-.cart__content {
-  max-width: 60vw;
-  padding: 2.4rem;
-  background-color: #fff;
-  width: 100%;
-  border-radius: 4px;
-  position: relative;
-  overflow: auto;
-}
-.cart__content::-webkit-scrollbar {
-  width: 0;
-}
-
 .cart__header {
   margin-bottom: 2.4rem;
 }
@@ -4275,6 +4244,207 @@ img {
   margin-bottom: 0;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+}
+.modal.show {
+  display: flex;
+}
+
+.modal__content {
+  max-width: 33vw;
+  padding: 2.4rem;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  overflow: auto;
+}
+.modal__content::-webkit-scrollbar {
+  width: 0;
+}
+.modal__content--cart {
+  max-width: 60vw;
+}
+@media screen and (max-width: 991px) {
+  .modal__content {
+    max-width: 38vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__content {
+    max-width: 50vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__content {
+    max-width: 90vw;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modal__close:hover {
+  transform: rotate(90deg);
+}
+
+.modal__header {
+  margin-bottom: 2.4rem;
+}
+
+.modal__title {
+  color: #060F42;
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 24px;
+}
+@media screen and (max-width: 1366px) {
+  .modal__title {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__title {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__title {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__title {
+    font-size: 4vw;
+  }
+}
+
+.modal__text {
+  color: #333333;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 12px; /* 120% */
+}
+.modal__text--link {
+  text-decoration: none;
+  color: #01579B;
+}
+.modal__text--link:hover {
+  color: #999;
+}
+.modal__text--right {
+  margin-bottom: 1.2rem;
+  text-align: right;
+}
+.modal__text--left {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.modal__text--center {
+  text-align: center;
+  color: #ccc;
+  position: relative;
+}
+@media screen and (max-width: 1366px) {
+  .modal__text {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__text {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__text {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__text {
+    font-size: 2.6vw;
+    line-height: 14px;
+  }
+}
+
+.modal__sign {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  width: 100%;
+  position: relative;
+}
+
+.modal__eye-img {
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 0.8rem;
+  transform: translateY(-30%);
+  cursor: pointer;
+}
+
+.modal__social {
+  overflow: hidden;
+}
+
+.modal__social-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  margin: 2.4rem 0;
+}
+.modal__social-buttons .button {
+  grid-column: span 1;
+  justify-content: center;
+  text-transform: none;
+}
+@media screen and (max-width: 1366px) {
+  .modal__social-buttons .button {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__social-buttons .button {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__social-buttons .button {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__social-buttons .button {
+    font-size: 2.6vw;
+  }
+}
+
+.modal__footer {
+  text-align: center;
+}
+
 .nav--menu {
   display: none;
 }
@@ -5015,6 +5185,23 @@ img {
   background-color: #ccc;
   color: #999999;
 }
+@media screen and (max-width: 991px) {
+  .button {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 1.3vw;
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .button {
+    padding: 0.9rem 1.2rem;
+    font-size: 3vw;
+  }
+}
 .button--secondary {
   background-color: #01579B;
 }
@@ -5038,29 +5225,41 @@ img {
   color: #fff;
   background-color: #01579B;
 }
-@media screen and (max-width: 991px) {
-  .button {
-    font-size: 1.2vw;
-  }
+.button--sign {
+  justify-content: center;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.4rem;
 }
 @media screen and (max-width: 768px) {
-  .button {
-    font-size: 1.3vw;
-    padding: 0.5rem 0.8rem;
+  .button--sign {
+    padding: 1.2rem 1.6rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .button {
-    padding: 0.9rem 1.2rem;
-    font-size: 3vw;
+  .button--sign {
+    padding: 1.2rem 1.6rem;
   }
+}
+.button--red {
+  background-color: #E93232;
+}
+.button--red .button-img {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.button--blue {
+  background-color: #3582BF;
+}
+.button--blue .button-img {
+  margin-left: 0;
+  margin-right: 1rem;
 }
 
 .button-img {
   display: block;
   margin-left: 1rem;
 }
-.button-img:left {
+.button-img--left {
   margin-right: 1rem;
 }
 
@@ -5182,6 +5381,39 @@ img {
   margin: 0 2.2rem;
   text-align: center;
   font-size: 0.8vw;
+}
+.input--modal {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 0.8rem;
+  font-size: 0.8vw;
+}
+.input--modal::placeholder {
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 991px) {
+  .input--modal {
+    font-size: 1.1vw;
+  }
+  .input--modal::placeholder {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input--modal {
+    font-size: 1.5vw;
+  }
+  .input--modal::placeholder {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .input--modal {
+    font-size: 2.8vw;
+  }
+  .input--modal::placeholder {
+    font-size: 2.8vw;
+  }
 }
 
 .breadcrumbs {
@@ -5895,18 +6127,4 @@ img {
   font-size: 0.8vw;
   font-weight: 500;
   line-height: 16px; /* 133.333% */
-}
-
-.close {
-  position: absolute;
-  top: 2.4rem;
-  right: 2.4rem;
-  padding: 0;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.close:hover {
-  transform: rotate(90deg);
 }

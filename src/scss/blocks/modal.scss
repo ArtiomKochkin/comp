@@ -1,0 +1,183 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__content {
+    max-width: 33vw;
+    padding: 2.4rem;
+    background-color: $white;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &--cart {
+        max-width: 60vw;
+    }
+
+    @include breakpoint($tablet) {
+        max-width: 38vw;
+    }
+    @include breakpoint($tablet-pt) {
+        max-width: 50vw;
+    }
+    @include breakpoint($mobile) {
+        max-width: 90vw;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+.modal__header {
+    margin-bottom: 2.4rem;
+}
+
+.modal__title {
+    color: $dark;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 24px; 
+
+    @include breakpoint($laptop) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+    }
+}
+
+.modal__text {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+
+    &--link {
+        text-decoration: none;
+        color: $secondary;
+
+        &:hover {
+            color: $gray;
+        }
+    }
+
+    &--right {
+        margin-bottom: 1.2rem;
+        text-align: right;
+    }
+    &--left {
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+        color: #ccc;
+        position: relative;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+        line-height: 14px;
+    }
+}
+
+.modal__sign {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__input {
+    width: 100%;
+    position: relative;
+}
+
+.modal__eye-img {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 0.8rem;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+.modal__social {
+    overflow: hidden;
+}
+
+.modal__social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+    margin: 2.4rem 0;
+
+    .button {
+        grid-column: span 1;
+        justify-content: center;
+        text-transform: none;
+
+        @include breakpoint($laptop) {
+            font-size: 0.9vw;
+        }
+        @include breakpoint($tablet) {
+            font-size: 1.1vw;
+        }
+        @include breakpoint($tablet-pt) {
+            font-size: 1.5vw;
+        }
+        @include breakpoint($mobile) {
+            font-size: 2.6vw;
+        }
+    }
+}
+
+.modal__footer {
+    text-align: center;
+}

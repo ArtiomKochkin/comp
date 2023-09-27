@@ -28,6 +28,18 @@
         color: #999999;
     }
 
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.3vw;
+        padding: 0.5rem 0.8rem;
+    }
+    @include breakpoint($mobile) {
+        padding: 0.9rem 1.2rem;
+        font-size: 3vw;
+    }
+    
     &--secondary {
         background-color: $secondary;
 
@@ -57,16 +69,35 @@
         }
     }
 
-    @include breakpoint($tablet) {
-        font-size: 1.2vw;
+    &--sign {
+        justify-content: center;
+        padding: 1.2rem 1.6rem;
+        margin-bottom: 2.4rem;
+
+        @include breakpoint($tablet-pt) {
+            padding: 1.2rem 1.6rem;
+        }
+        @include breakpoint($mobile) {
+            padding: 1.2rem 1.6rem;
+        }
     }
-    @include breakpoint($tablet-pt) {
-        font-size: 1.3vw;
-        padding: 0.5rem 0.8rem;
+
+    &--red {
+        background-color: $red;
+
+        .button-img {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
     }
-    @include breakpoint($mobile) {
-        padding: 0.9rem 1.2rem;
-        font-size: 3vw;
+
+    &--blue {
+        background-color: #3582BF;
+
+        .button-img {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
     }
 }
 
@@ -74,7 +105,7 @@
     display: block;
     margin-left: 1rem;
 
-    &:left {
+    &--left {
         margin-right: 1rem;
     }
 }
