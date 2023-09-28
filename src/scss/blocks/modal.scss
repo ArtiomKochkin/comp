@@ -43,6 +43,27 @@
     @include breakpoint($mobile) {
         max-width: 90vw;
     }
+    @include breakpoint($laptop) {
+        &--cart {
+            max-width: 80vw;
+        }
+    }
+    @include breakpoint($tablet-pt) {
+        &--cart {
+            max-width: 94vw;
+        }
+    }
+    @include breakpoint($mobile) {
+        &--cart {
+            padding: 1.6rem;
+            max-width: 90vw;
+
+            .modal__close {
+                top: 2rem;
+                right: 1.6rem;
+            }
+        }
+    }
 }
 
 .modal__close {

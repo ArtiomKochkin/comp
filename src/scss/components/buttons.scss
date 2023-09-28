@@ -67,6 +67,10 @@
             color: $white;
             background-color: $secondary;
         }
+
+        @include breakpoint($mobile) {
+            margin-top: 1.2rem;
+        }
     }
 
     &--sign {
