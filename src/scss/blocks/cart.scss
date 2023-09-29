@@ -273,6 +273,10 @@
             display: none;
         }
     }
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1.2rem;
+    }
 }
 
 .cart__kit {

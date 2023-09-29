@@ -112,6 +112,33 @@
     &--filter {
         width: 5.5rem;
         height: 32px;
+        text-align: center;
+
+        @include breakpoint($laptop) {
+            width: 3rem;
+        }
+        @include breakpoint($tablet) {
+            font-size: 1vw;
+            width: 4rem;
+
+            &::placeholder {
+                font-size: 1vw;
+            }
+        }
+        @include breakpoint($tablet-pt) {
+            font-size: 1.5vw;
+
+            &::placeholder {
+                font-size: 1.5vw;
+            }
+        }
+        @include breakpoint($mobile) {
+            font-size: 2.4vw;
+
+            &::placeholder {
+                font-size: 2.4vw;
+            }
+        }
     }
 
     &--textarea {

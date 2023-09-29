@@ -25,7 +25,7 @@
                             <a href="../promotion.html" class="nav__link">Акции</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../unsubscribe.html" class="nav__link">Кредит</a>
+                            <a href="./pages/unsubscribe.html" class="nav__link">Кредит</a>
                         </li>
                         <li class="nav__item">
                             <a href="../search.html" class="nav__link">Оплата и доставка</a>
@@ -885,6 +885,9 @@
                         <button class="filter__reset">Очистить фильтры</button>
                     </div>
                     <div class="filter__line-right">
+                        <button class="button button--secondary">
+                            <img src="./img/svg/filter.svg" alt="" class="button__img">
+                        </button>
                         <div class="select">
                             <select name="filter" id="filter" class="select__element">
                                 <option class="select__item" value="rating">По рейтингу</option>
@@ -905,6 +908,29 @@
                 </div>
                 <div class="section__wrap">
                     <div class="filter">
+                        <div class="filter__header">
+                            <h4 class="filter__header-title">Фильтры</h4>
+                            <button class="filter__close" type="button">
+                                <img src="../img/svg/close-red.svg" alt="" class="filter__close-img">
+                            </button>
+                        </div>
+                        <div class="filter__line-left filter__line-left--panel">
+                            <ul class="filter__line-list">
+                                <li class="filter__line-item">
+                                    <span class="filter__line-item-text">Производитель</span>
+                                    <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                                </li>
+                                <li class="filter__line-item">
+                                    <span class="filter__line-item-text">Сокет</span>
+                                    <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                                </li>
+                                <li class="filter__line-item">
+                                    <span class="filter__line-item-text">Тип поддерживаемой памяти</span>
+                                    <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
+                                </li>
+                            </ul>
+                            <button class="filter__reset">Очистить фильтры</button>
+                        </div>
                         <div class="filter__panel">
                             <div class="filter__results">
                                 <h5 class="filter__results-text">Все результаты</h5>
@@ -1296,6 +1322,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="filter__footer">
+                            <button class="button button--transparent">Сбросить</button>
+                            <button class="button button--secondary">Применить</button>
                         </div>
                     </div>
                     <div class="product__wrap">
@@ -1857,7 +1887,7 @@
                 </div>
                 <div class="pagination container">
                     <div class="pagination__show-more">
-                        <p class="pagination__text">Показать больше новостей</p>
+                        <p class="pagination__text">Показать больше товаров</p>
                         <img src="./img/svg/update.svg" alt="" class="pagination__show-more-img">
                     </div>
                     <div class="pagination__pages">

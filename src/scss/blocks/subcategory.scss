@@ -1,0 +1,5 @@
+.subcategory {
+    @include breakpoint($mobile) {
+        padding-top: 3.2rem;
+    }
+}

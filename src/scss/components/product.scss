@@ -1,5 +1,18 @@
 .product__wrap {
     width: 83%;
+
+    @include breakpoint($laptop) {
+        width: 80%;
+    }
+    @include breakpoint($tablet) {
+        width: 75%;
+    }
+    @include breakpoint($tablet-pt) {
+        width: 70%;
+    }
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
 }
 
 .product__items {
@@ -54,13 +67,6 @@
         &.list {
             grid-column: span 20;
 
-            @include breakpoint($laptop) {
-                grid-column: span 20;
-            }
-            @include breakpoint($tablet) {
-                grid-column: span 20;
-            }
-
             .product__actions {
                 display: none;
             }
@@ -100,6 +106,61 @@
             .product__button {
                 margin-left: 3.5rem;
                 height: auto;
+            }
+
+            @include breakpoint($laptop) {
+                grid-column: span 20;
+            }
+            @include breakpoint($tablet) {
+                grid-column: span 20;
+
+                .product__info-title {
+                    font-size: 1.2vw;
+                }
+                .product__info-feature,
+                .product__info-value,
+                .product__number {
+                    font-size: 1.1vw;
+                }
+                .product__line,
+                .product__row {
+                    flex-wrap: wrap;
+                }
+                .product__content {
+                    width: 100%;
+                }
+                .product__footer {
+                    width: 100%;
+                    padding: 1.2rem 0;
+                }
+                .product__actions {
+                    display: flex;
+                }
+                .product__actions--rating {
+                    display: none;
+                }
+                .product__header {
+                    padding: 0.8rem 1.2rem 0 0; 
+                }
+            }
+
+            @include breakpoint($tablet-pt) {
+                .product__info {
+                    display: none;
+                }
+                .product__number {
+                    font-size: 1.6vw;
+                }
+                .product__name {
+                    margin: 0;
+                }
+            }
+
+            @include breakpoint($mobile) {
+                .product__number {
+                    font-size: 2.6vw;
+                    margin: 0.6rem 0;
+                }
             }
         }
     }

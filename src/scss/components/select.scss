@@ -1,5 +1,10 @@
 .select {
     position: relative;
+
+    @include breakpoint($mobile) {
+        flex-grow: 1;
+        margin-left: 1.2rem
+    }
 }
 
 .select__element {
@@ -24,16 +29,44 @@
         background: url("../../img/svg/arrow/arrow-up-gray-16.svg") no-repeat 95% center;
         border: 1px solid $secondary;
     }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+        min-width: 200px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+        min-width: 135px;
+        height: 100%;
+    }
 }
 
 .select__item {
     display: block;
-    color: $white;
+    color: $dark;
     font-family: inherit;
     font-size: 0.9vw;
     font-weight: 500;
     line-height: 16px; 
     padding: 1.3rem 1rem;
-    background-color: $secondary;
+    background-color: $soft;
 
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }

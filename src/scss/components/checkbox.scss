@@ -80,7 +80,7 @@
         font-size: 1vw;
     }
     @include breakpoint($tablet-pt) {
-        font-size: 1.4vw;
+        font-size: 1.5vw;
     }
     @include breakpoint($mobile) {
         font-size: 2.4vw;
@@ -97,7 +97,7 @@
         font-size: 1vw;
     }
     @include breakpoint($tablet-pt) {
-        font-size: 1.4vw;
+        font-size: 1.5vw;
     }
     @include breakpoint($mobile) {
         font-size: 2.4vw;

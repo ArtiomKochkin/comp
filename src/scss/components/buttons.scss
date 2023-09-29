@@ -10,7 +10,7 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all linear .3s;
-    border: none;
+    border: 2px solid $primary;
     font-family: 'Montserrat';
     outline: none;
 
@@ -42,6 +42,7 @@
     
     &--secondary {
         background-color: $secondary;
+        border: 2px solid $secondary;
 
         &:hover {
             background-color: #3582BF;
@@ -75,9 +76,9 @@
             background-color: $secondary;
         }
 
-        @include breakpoint($mobile) {
-            margin-top: 1.2rem;
-        }
+        // @include breakpoint($mobile) {
+        //     margin-top: 1.2rem;
+        // }
     }
 
     &--sign {

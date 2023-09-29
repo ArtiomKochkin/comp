@@ -1,13 +1,39 @@
 .promo__intro {
     display: flex;
 
+    @include breakpoint($tablet-pt) {
+        flex-wrap: wrap;
+    }
 }
-
 
 .promo__img-box {
     width: 57%;
     height: 100%;
     margin-right: 2.4rem;
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+        margin: 0 0 2.4rem 0;
+    }
+}
+
+.promo__img {
+    @include breakpoint($tablet) {
+        height: 20rem;
+    }
+    @include breakpoint($tablet-pt) {
+        height: auto;
+    }
+}
+
+.promo__intro-content {
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+        text-align: center;
+    }
+    @include breakpoint($mobile) {
+        text-align: left;
+    }
 }
 
 .promo__title {
@@ -16,6 +42,19 @@
     font-weight: 600;
     line-height: 32px;
     margin-bottom: 2.4rem;
+
+    @include breakpoint($tablet) {
+        line-height: 22px;
+        font-size: 2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 3vw;
+        margin-bottom: 1.2rem;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+        line-height: 18px;
+    }
 }
 
 .promo__subtitle {
@@ -24,6 +63,16 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 1.2rem;
+
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .promo__paragraph {
@@ -31,7 +80,19 @@
     font-size: 0.9vw;
     font-weight: 700;
     line-height: 20px; /* 125% */
-    margin: 2px 0;
+
+    @include breakpoint($laptop) {
+        line-height: 16px;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .promo__link {
@@ -52,6 +113,10 @@
     border-radius: 4px;
     box-shadow: 0px 2px 10px 0px rgba(50, 50, 71, 0.14);
     width: 28rem;
+
+    @include breakpoint($tablet-pt) {
+        margin: 2.4rem auto 0;
+    }
 }
 
 .promo__timer-header {
@@ -68,6 +133,16 @@
     font-weight: 500;
     line-height: 16px; /* 114.286% */
     margin-left: 1.2rem;
+
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.8vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.4vw;
+    }
 }
 
 .promo__timer-time {
@@ -76,6 +151,16 @@
     font-weight: 600;
     line-height: 36px; /* 112.5% */
     text-align: center;
+
+    @include breakpoint($tablet) {
+        font-size: 2.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.8vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4.8vw;
+    }
 }
 
 
@@ -88,5 +173,15 @@
 
     &--red {
         color: $red;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 2.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.8vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4.8vw;
     }
 }
