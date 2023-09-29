@@ -101,10 +101,10 @@
 
         @include breakpoint($mobile) {
             width: 100%;
-            font-size: 4vw;
+            font-size: 2.6vw;
 
             &::placeholder {
-                font-size: 4vw;
+                font-size: 2.6vw;
             }
         }
     }
@@ -117,6 +117,28 @@
     &--textarea {
         min-height: 9.6rem;
         resize: none;
+
+        @include breakpoint($tablet) {
+            font-size: 1.1vw;
+
+            &::placeholder {
+                font-size: 1.1vw;
+            }
+        }
+        @include breakpoint($tablet-pt) {
+            font-size: 1.5vw;
+
+            &::placeholder {
+                font-size: 1.5vw;
+            }
+        }
+        @include breakpoint($mobile) {
+            font-size: 2.4vw;
+
+            &::placeholder {
+                font-size: 2.4vw;
+            }
+        }
     }
 
     &--cart {

@@ -76,6 +76,15 @@
         transition: all linear .3s;
     }
 
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.4vw;
+    }
 }
 
 .checkbox__label-num {
@@ -83,4 +92,14 @@
     font-size: 0.8vw;
     font-weight: 500;
     line-height: 16px; /* 133.333% */
+
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.4vw;
+    }
 }

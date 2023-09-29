@@ -176,6 +176,10 @@
     padding: 2rem 0 3rem;
     margin-left: 26vw;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     @include breakpoint($tablet) {
         grid-template-columns: repeat(7, 130px);
         overflow: auto;

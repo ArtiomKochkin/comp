@@ -8,6 +8,10 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 1.6rem;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     @include breakpoint($tablet) {
         overflow-x: auto;
         grid-template-columns: repeat(12, 100px);
