@@ -1,0 +1,72 @@
+.radio {
+    position: relative;
+    padding-top: 0.6rem;
+
+    &:hover .radio__label::before {
+        border: 2px solid $secondary;
+    }
+
+    &:hover .radio__input:checked + .radio__label::after {
+        background-color: #3582BF;
+    }
+}
+
+.radio__input {
+    appearance: none;
+    position: absolute;
+
+    &:checked + .radio__label::after {
+        opacity: 1;
+    }
+    &:checked + .radio__label::before {
+        border: 2px solid $secondary;
+    }
+}
+
+.radio__label {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 16px; 
+    padding-left: 3rem;
+
+    &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 2px;
+        z-index: 2;
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        z-index: 3;
+        height: 1rem;
+        width: 1rem;
+        background-color: $secondary;
+        border-radius: 50%;
+        left: 5px;
+        top: 7px;
+        z-index: 3;
+        opacity: 0;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.4vw;
+    }
+}
+

@@ -1,0 +1,449 @@
+.order {
+    margin: 2.4rem auto;
+}
+
+.order__content {
+    display: flex;
+    margin-top: 2.4rem;
+}
+
+.order__making {
+    width: 69.5%;
+    margin-right: 1.6rem;
+}
+
+.order__confirmation {
+    width: 29.5%; 
+}
+
+.order__confirmation-wrap {
+    padding: 1.6rem;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 71, 0.14);
+}
+
+.order__confirmation-title {
+    color: $dark-grey;
+    font-size: 1.2vw;
+    font-weight: 600;
+    line-height: 28px; 
+}
+
+.order__confirmation-text {
+    color: #666;
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.order__link {
+    color: $secondary;
+    font-size: 0.8vw;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        color: $gray;
+    }
+}
+
+.order__price {
+    color: $dark;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px;
+
+    &--large {
+        font-size: 1.4vw;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
+.order__price-currency {
+    color: $dark;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 8px;
+
+    &--large {
+        font-size: 1vw;
+        font-weight: 700;
+        line-height: 16px; 
+        letter-spacing: 0.32px;
+    }
+}
+
+.order__confirmation-content {
+    margin: 2.4rem 0;
+}
+
+.order__confirmation-item {
+    @include flex;
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-top: 1.6rem;
+        border-top: 1px solid #E6E6E6;
+    }
+}
+
+.order__confirmation-footer {
+    display: flex;
+    flex-direction: column;
+
+    .button {
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.order__making-item {
+    margin-bottom: 2.4rem;
+}
+
+.order__making-title {
+    color: $dark-grey;
+    font-size: 1.1vw;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 1.6rem;
+}
+
+.order__making-product {
+    display: flex;
+    padding: 1.2rem;
+    border-top: 1px solid #E6E6E6;
+
+    &:last-child {
+        border-bottom: 1px solid #E6E6E6;
+    }
+}
+
+.order__making-product-content {
+    margin-left: 3rem;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.order__making-product-up {
+    display: flex;
+    align-items: center;
+}
+
+.order__making-product-icon {
+    display: none;
+}
+
+.order__making-product-info {
+    display: flex;
+    align-items: center;
+}
+
+.order__making-product-column {
+    display: block;
+    flex-direction: column;
+    margin-right: 3.2rem;
+    text-align: center;
+}
+
+.order__making-product-name {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.order__making-product-button {
+    color: $secondary;
+    font-size: 0.7vw;
+    border: none;
+    background: none;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    
+    &:hover {
+        color: $gray;
+    }
+}
+
+.order__making-product-desc {
+    color: $gray;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 12px; 
+    margin-bottom: 1.2rem;
+}
+
+.order__making-product-value {
+    color: $dark;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+.order__contact-details {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-areas: 
+    "name surname"
+    "email tel";
+}
+
+.order__contact-details-item {
+
+    &:nth-child(1) {
+        grid-area: name;
+    }
+    &:nth-child(2) {
+        grid-area: surname;
+    }
+    &:nth-child(3) {
+        grid-area: email;
+    }
+    &:nth-child(4) {
+        grid-area: tel;
+    }
+
+    .input {
+        width: 100%;
+        padding: 0.9rem 0.8rem;
+    }
+}
+
+.order__making-wrap {
+    width: 100%;
+    max-width: 50%;
+    padding-right: 0.8rem;
+}
+
+.order__making-select {
+    .select__element {
+        width: 100%;
+    }
+}
+
+.order__method {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &.active {
+        border: 2px solid $secondary;
+        padding: 1.2rem;
+        border-radius: 4px;
+    }
+}
+
+.order__method-left {
+    width: 58%;
+}
+
+.order__method-right {
+    padding-top: 0.8rem;
+}
+
+.order__method-desc {
+    color: #666;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 0.8rem;
+}
+
+.order__method-price {
+    color: $dark;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 16px; 
+
+    &--primary {
+        color: $primary;
+    }
+}
+
+.order__recipient {
+    margin-top: 2.4rem;
+}
+
+
+.order__recipient-text {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 16px;
+    padding-left: 0.8rem;
+}
+
+.order__making-text {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 16px; 
+    margin-bottom: 1.6rem;
+}
+
+.order__recipient-contact-details {
+    margin-top: 1.2rem;
+    padding-left: 4rem;
+}
+
+.order__radios {
+    width: 50%;
+}
+
+.order__radios-item {
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.active {
+        border: 2px solid $secondary;
+        padding: 1.2rem;
+        border-radius: 4px;
+    }
+}
+
+.order__textarea {
+    margin-top: 1.6rem;
+
+    .input {
+        width: 100%;
+        padding: 0.8rem 0.9rem;
+    }
+}
+
+.order__making-footer {
+    width: 50%;
+    margin-bottom: 2.4rem;
+}
+
+.order__making-text {
+    color: #666;
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.order__making-button {
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.order__radios-item-requisites {
+    padding: 1.2rem 0 0 3.2rem;
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+.order__radios-item-requisites-title {
+    color: $dark-grey;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 16px; 
+}
+
+.order__radios-item-requisites-box {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    grid-template-areas: 
+    "number number number"
+    "month year cvv";
+}
+
+.order__radios-requisites-item {
+
+    &:nth-child(1) {
+        grid-area: number;
+    }
+    &:nth-child(2) {
+        grid-area: month;
+    }
+    &:nth-child(3) {
+        grid-area: year;
+    }
+    &:nth-child(4) {
+        grid-area: cvv;
+    }
+
+    .input {
+        padding: 0.9rem 0.8rem;
+        width: 100%;
+    }
+}
+
+.order__method-addition {
+    margin-top: 1.2rem;
+    display: none;
+    
+    &.show {
+        display: block;
+    }
+}
+
+.order__method-map {
+    width: 120%;
+    height: 14rem;
+    background-color: #666;
+}
+
+.order__method-text {
+    margin-bottom: 1.2rem;
+    color: $dark-grey;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.order__method-address {
+    display: grid;
+    gap: 1.6rem;
+    width: 150%;
+    grid-template-areas: 
+    "street street house apartment";
+}
+
+.order__method-address-item {
+    &:nth-child(1) {
+        grid-area: street;
+    }
+    &:nth-child(2) {
+        grid-area: house;
+    }
+    &:nth-child(3) {
+        grid-area: apartment;
+    }
+
+    .input {
+        padding: 0.9rem 0.8rem;
+        width: 100%;
+    }
+}
+
+.order__method-addition-radio {
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.order__method-addition-mail-block {
+    margin-bottom: 1.2rem;
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}

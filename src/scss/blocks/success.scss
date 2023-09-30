@@ -1,0 +1,55 @@
+.success {
+    display: none;
+    max-width: 26vw;
+    width: 100%;
+    margin: 6rem auto 20rem;
+    text-align: center;
+    color: $dark-grey;
+
+    &.show {
+        display: block;
+    }
+
+    @include breakpoint($laptop) {
+        max-width: 36vw;
+    }
+    @include breakpoint($tablet) {
+        max-width: 46vw;
+        margin: 5rem auto;
+    }
+    @include breakpoint($tablet-pt) {
+        max-width: 64vw;
+    }
+    @include breakpoint($mobile) {
+        max-width: 90vw;
+    }
+}
+
+.success__img-box {
+    margin-bottom: 2.4rem;
+}
+
+.success__subtitle {
+    font-size: 0.9vw;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin-top: 1.6rem;
+}
+
+.success__link {
+    color: $secondary;
+    text-decoration: none;
+}
+
+.success__text {
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 1.6rem 0;
+}
+
+.success__button {
+    margin: 0 auto;
+}

@@ -72,6 +72,8 @@ img {
 @import "blocks/unsubscribe";
 @import "blocks/comparison";
 @import "blocks/modal";
+@import "blocks/order";
+@import "blocks/success";
 
 @import "components/nav";
 @import "components/rating";
@@ -88,3 +90,5 @@ img {
 @import "components/filter";
 @import "components/select";
 @import "components/checkbox";
+@import "components/radio";
+@import "components/switch";

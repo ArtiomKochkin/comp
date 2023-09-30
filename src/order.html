@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Оформление заказа"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <section class="order container">
+            <h2 class="section__title">Оформление заказа</h2>
+            <div class="order__content">
+                <div class="order__making">
+                    <div class="order__making-item">
+                        <h6 class="order__making-title">Ваш заказ</h6>
+                        <div class="order__making-products">
+                            <div class="order__making-product">
+                                <div class="order__making-product-img-box">
+                                    <img src="./img/order/product-1.svg" alt="Процессор Intel Core i5-10400F, Box (BX8070110400F)" class="order__making-product-img">
+                                </div>
+                                <div class="order__making-product-content">
+                                    <div class="order__making-product-up">
+                                        <div class="order__making-product-name">
+                                            Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                        </div>
+                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-icon">
+                                    </div>
+                                    <div class="order__making-product-info">
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Количество
+                                            </div>
+                                            <div class="order__making-product-value">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Цена
+                                            </div>
+                                            <div class="order__price">
+                                                7200
+                                                <span class="order__price-currency">
+                                                    грн.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Сумма
+                                            </div>
+                                            <div class="order__price">
+                                                7200
+                                                <span class="order__price-currency">
+                                                    грн.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-edit">
+                                            <button class="order__making-product-button">Редактировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__making-product">
+                                <div class="order__making-product-img-box">
+                                    <img src="./img/order/product-2.svg" alt="Процессор Intel Core i5-10400F, Box (BX8070110400F)" class="order__making-product-img">
+                                </div>
+                                <div class="order__making-product-content">
+                                    <div class="order__making-product-up">
+                                        <div class="order__making-product-name">
+                                            Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                        </div>
+                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-icon">
+                                    </div>
+                                    <div class="order__making-product-info">
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Количество
+                                            </div>
+                                            <div class="order__making-product-value">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Цена
+                                            </div>
+                                            <div class="order__price">
+                                                3600
+                                                <span class="order__price-currency">
+                                                    грн.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-column">
+                                            <div class="order__making-product-desc">
+                                                Сумма
+                                            </div>
+                                            <div class="order__price">
+                                                3600
+                                                <span class="order__price-currency">
+                                                    грн.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="order__making-product-edit">
+                                            <button class="order__making-product-button">Редактировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__making-item">
+                        <h6 class="order__making-title">Ваши контактные данные</h6>
+                        <div class="order__contact-details">
+                            <div class="order__contact-details-item">
+                                <input type="text" class="input" placeholder="Имя">
+                            </div>
+                            <div class="order__contact-details-item">
+                                <input type="text" class="input" placeholder="Фамилия">
+                            </div>
+                            <div class="order__contact-details-item">
+                                <input type="email" class="input" placeholder="Email">
+                            </div>
+                            <div class="order__contact-details-item">
+                                <input type="tel" class="input" placeholder="Номер телефона">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__making-item">
+                        <h6 class="order__making-title">Способ доставки</h6>
+                        <div class="order__making-wrap">
+                            <div class="order__making-select select">
+                                <select name="city" id="city" class="select__element">
+                                    <option class="select__item" value="msk">Москва</option>
+                                    <option class="select__item" value="spb">Санкт-Петербург</option>
+                                    <option class="select__item" value="nsk">Новосибирск</option>
+                                </select>
+                            </div>
+                            <div class="order__methods">
+                                <div class="order__method active">
+                                    <div class="order__method-left">
+                                        <div class="radio">
+                                            <input type="radio" class="radio__input" id="shop" name="methods" checked>
+                                            <label for="shop" class="radio__label">Самовывоз</label>
+                                        </div>
+                                        <div class="order__method-desc">
+                                            Адрес:  г. Днепр, Европейская, 8, Пн-Пт 9:00-19:00, Сб-Вс: с 9:00-16:00 
+                                        </div>
+                                        <div class="order__method-addition show">
+                                            <div class="order__method-map"></div>
+                                        </div>
+                                    </div>
+                                    <div class="order__method-right">
+                                        <div class="order__method-price order__method-price--primary">
+                                            Бесплатно
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__method active">
+                                    <div class="order__method-left">
+                                        <div class="radio">
+                                            <input type="radio" class="radio__input" id="courier" name="methods">
+                                            <label for="courier" class="radio__label">Доставка курьером</label>
+                                        </div>
+                                        <div class="order__method-desc">
+                                            Доставим завтра
+                                        </div>
+                                        <div class="order__method-addition show">
+                                            <div class="order__method-text">Введите ваш адрес</div>
+                                            <div class="order__method-address">
+                                                <div class="order__method-address-item">
+                                                    <input type="text" class="input" placeholder="Улица">
+                                                </div>
+                                                <div class="order__method-address-item">
+                                                    <input type="text" class="input" placeholder="Дом">
+                                                </div>
+                                                <div class="order__method-address-item">
+                                                    <input type="text" class="input" placeholder="Квартира">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__method-right">
+                                        <div class="order__method-price">
+                                            От 150 грн.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__method active">
+                                    <div class="order__method-left">
+                                        <div class="radio">
+                                            <input type="radio" class="radio__input" id="mail" name="methods">
+                                            <label for="mail" class="radio__label">Самовывоз из отделения Почты</label>
+                                        </div>
+                                        <div class="order__method-desc">
+                                            Доставим 4 августа
+                                        </div>
+                                        <div class="order__method-addition show">
+                                            <div class="order__method-addition-mail">
+                                                <div class="radio order__method-addition-radio">
+                                                    <input type="radio" class="radio__input" id="delivery-departament" name="mail">
+                                                    <label for="delivery-departament" class="radio__label">Доставка в отделение</label>
+                                                </div>
+                                                <div class="order__method-addition-mail-block show">
+                                                    <div class="order__method-text">Выберите отделение</div>
+                                                    <div class="select">
+                                                        <select name="city" id="city" class="select__element">
+                                                            <option class="select__item" value="one">Отделение Почты России</option>
+                                                            <option class="select__item" value="two">two</option>
+                                                            <option class="select__item" value="three">three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order__method-addition-mail">
+                                                <div class="radio order__method-addition-radio">
+                                                    <input type="radio" class="radio__input" id="delivery-courier" name="mail">
+                                                    <label for="delivery-courier" class="radio__label">Доставка курьером</label>
+                                                </div>
+                                                <div class="order__method-addition-mail-block show">
+                                                    <div class="order__method-text">Введите ваш адрес</div>
+                                                    <div class="order__method-address">
+                                                        <div class="order__method-address-item">
+                                                            <input type="text" class="input" placeholder="Улица">
+                                                        </div>
+                                                        <div class="order__method-address-item">
+                                                            <input type="text" class="input" placeholder="Дом">
+                                                        </div>
+                                                        <div class="order__method-address-item">
+                                                            <input type="text" class="input" placeholder="Квартира">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__method-right">
+                                        <div class="order__method-price">
+                                            По тарифам перевозчика
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__recipient">
+                                <div class="switch">
+                                    <input type="checkbox" id="switch" class="switch__input" checked>
+                                    <label for="switch" class="switch__thumb"></label>
+                                </div>
+                                <span class="order__recipient-text">Получатель не я</span>
+                                <div class="order__recipient-contact-details">
+                                    <div class="order__making-text">Контактные данные получателя</div>
+                                    <div class="order__contact-details">
+                                        <div class="order__contact-details-item">
+                                            <input type="text" class="input" placeholder="Имя">
+                                        </div>
+                                        <div class="order__contact-details-item">
+                                            <input type="text" class="input" placeholder="Фамилия">
+                                        </div>
+                                        <div class="order__contact-details-item">
+                                            <input type="email" class="input" placeholder="Email">
+                                        </div>
+                                        <div class="order__contact-details-item">
+                                            <input type="tel" class="input" placeholder="Номер телефона">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__making-item">
+                        <h6 class="order__making-title">Способ оплаты</h6>
+                        <div class="order__radios">
+                            <div class="order__radios-item">
+                                <div class="radio">
+                                    <input type="radio" class="radio__input" id="cash" name="payment">
+                                    <label for="cash" class="radio__label">Наличными при получении</label>
+                                </div>
+                            </div>
+                            <div class="order__radios-item active">
+                                <div class="radio">
+                                    <input type="radio" class="radio__input" id="cashless" name="payment">
+                                    <label for="cashless" class="radio__label">Оплата картой</label>
+                                </div>
+                                <div class="order__radios-item-requisites show">
+                                    <div class="order__radios-item-requisites-title">Данные карты</div>
+                                    <div class="order__radios-item-requisites-box">
+                                        <div class="order__radios-requisites-item">
+                                            <input type="text" class="input" placeholder="Номер карты">
+                                        </div>
+                                        <div class="order__radios-requisites-item">
+                                            <input type="text" class="input" placeholder="ММ">
+                                        </div>
+                                        <div class="order__radios-requisites-item">
+                                            <input type="text" class="input" placeholder="ГГ">
+                                        </div>
+                                        <div class="order__radios-requisites-item">
+                                            <input type="text" class="input" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__making-item">
+                        <h6 class="order__making-title">Комментарий к заказу</h6>
+                        <div class="order__textarea">
+                            <textarea class="input input--textarea" placeholder="Комментарий"></textarea>
+                        </div>
+                    </div>
+                    <div class="order__making-footer">
+                        <div class="order__making-text">
+                            Подтверждая заказ, я принимаю условия
+                            <a href="#!" class="order__link">пользовательского соглашения</a>
+                        </div>
+                        <div class="order__making-button">
+                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__confirmation">
+                    <div class="order__confirmation-wrap">
+                        <h5 class="order__confirmation-title">Итого</h5>
+                        <div class="order__confirmation-content">
+                            <div class="order__confirmation-item">
+                                <div class="order__confirmation-text">
+                                    2 товара на сумму
+                                </div>
+                                <div class="order__price">
+                                    7200
+                                    <span class="order__price-currency">
+                                        грн.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order__confirmation-item">
+                                <div class="order__confirmation-text">
+                                    Стоимость доставки
+                                </div>
+                                <div class="order__confirmation-text">
+                                    Бесплатно
+                                </div>
+                            </div>
+                            <div class="order__confirmation-item">
+                                <div class="order__confirmation-text">
+                                    Итого к оплате
+                                </div>
+                                <div class="order__price order__price--large">
+                                    7200
+                                    <span class="order__price-currency order__price-currency--large">
+                                        грн.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__confirmation-footer">
+                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        </div>
+                        <div class="order__confirmation-text">
+                            Подтверждая заказ, я принимаю условия
+                            <a href="#!" class="order__link">пользовательского соглашения</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="success container">
+            <div class="success-img-box">
+                <img src="./img/order/success.svg" alt="" class="success__img">
+            </div>
+            <h2 class="section__title">Благодарим за заказ</h2>
+            <p class="success__subtitle">
+                ваш заказ
+                <a href="#!" class="success__link">№324</a>
+            </p>
+            <p class="success__text">
+                Ваш заказ был успешно оформлен. Письмо с подтверждением покупки выслано вам на электронную почту.
+            </p>
+            <button class="button success__button">Продолжить покупки</button>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>
