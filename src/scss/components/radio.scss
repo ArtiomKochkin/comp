@@ -58,7 +58,10 @@
         z-index: 3;
         opacity: 0;
     }
-
+    
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
     @include breakpoint($tablet) {
         font-size: 1vw;
     }

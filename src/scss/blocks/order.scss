@@ -1,19 +1,67 @@
 .order {
     margin: 2.4rem auto;
+
+    .input {
+        &[type=text],
+        &[type=tel],
+        &[type=email] {
+            @include breakpoint($laptop) {
+                font-size: 1vw;
+
+                &::placeholder {
+                    font-size: 1vw;
+                }
+            }
+            @include breakpoint($tablet) {
+                font-size: 1.2vw;
+
+                &::placeholder {
+                    font-size: 1.2vw;
+                }
+            }
+            @include breakpoint($tablet-pt) {
+                font-size: 1.6vw;
+
+                &::placeholder {
+                    font-size: 1.6vw;
+                }
+            }
+            @include breakpoint($mobile) {
+                font-size: 2.6vw;
+
+                &::placeholder {
+                    font-size: 2.6vw;
+                }
+            }
+        }
+    }
 }
 
 .order__content {
     display: flex;
     margin-top: 2.4rem;
+
+    @include breakpoint($tablet-pt) {
+        flex-wrap: wrap;
+    }
 }
 
 .order__making {
     width: 69.5%;
     margin-right: 1.6rem;
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .order__confirmation {
     width: 29.5%; 
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
 }
 
 .order__confirmation-wrap {
@@ -27,6 +75,19 @@
     font-size: 1.2vw;
     font-weight: 600;
     line-height: 28px; 
+
+    @include breakpoint($laptop) {
+        font-size: 1.4vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+    }
 }
 
 .order__confirmation-text {
@@ -35,6 +96,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+        line-height: 14px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__link {
@@ -45,6 +120,19 @@
 
     &:hover {
         color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
     }
 }
 
@@ -58,6 +146,37 @@
         font-size: 1.4vw;
         font-weight: 700;
         line-height: 24px;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+        margin-top: 1.2rem;
+        line-height: 14px;
+
+        &--large {
+            font-size: 1.6vw;
+        }
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+
+        &--large {
+            font-size: 1.8vw;
+        }
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+
+        &--large {
+            font-size: 2.6vw;
+        }
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+
+        &--large {
+            font-size: 3.6vw;
+        }
     }
 }
 
@@ -73,10 +192,43 @@
         line-height: 16px; 
         letter-spacing: 0.32px;
     }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+        
+        &--large {
+            font-size: 1.2vw;
+        }
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+
+        &--large {
+            font-size: 1.4vw;
+        }
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+
+        &--large {
+            font-size: 2vw;
+        }
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+
+        &--large {
+            font-size: 3vw;
+        }
+    }
 }
 
 .order__confirmation-content {
     margin: 2.4rem 0;
+
+    @include breakpoint($tablet) {
+        margin: 1.6rem 0;
+    }
 }
 
 .order__confirmation-item {
@@ -87,6 +239,14 @@
         margin-bottom: 0;
         padding-top: 1.6rem;
         border-top: 1px solid #E6E6E6;
+    }
+
+    @include breakpoint($tablet-pt) {
+        margin-bottom: 1.2rem;
+
+        &:last-child {
+            padding-top: 1.2rem;
+        }
     }
 }
 
@@ -110,6 +270,19 @@
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 1.6rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2.2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 3.2vw;
+    }
 }
 
 .order__making-product {
@@ -127,20 +300,42 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+
+    @include breakpoint($tablet-pt) {
+        flex-wrap: wrap;
+    }
 }
 
 .order__making-product-up {
     display: flex;
     align-items: center;
+
+    @include breakpoint($tablet-pt) {
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+    }
 }
 
 .order__making-product-icon {
     display: none;
+
+    @include breakpoint($tablet-pt) {
+        display: block;
+    }
 }
 
 .order__making-product-info {
     display: flex;
-    align-items: center;
+
+    @include breakpoint($tablet) {
+        margin-left: 1.2rem;
+    }
+    @include breakpoint($tablet-pt) {
+        margin-left: 0;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
 }
 
 .order__making-product-column {
@@ -148,6 +343,10 @@
     flex-direction: column;
     margin-right: 3.2rem;
     text-align: center;
+
+    @include breakpoint($tablet-pt) {
+        margin-right: 0;
+    }
 }
 
 .order__making-product-name {
@@ -155,6 +354,27 @@
     font-size: 0.8vw;
     font-weight: 400;
     line-height: normal;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
+}
+
+.order__making-product-edit {
+    align-self: center;
+
+    @include breakpoint($tablet-pt) {
+        display: none;
+    }
 }
 
 .order__making-product-button {
@@ -168,6 +388,19 @@
     &:hover {
         color: $gray;
     }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__making-product-desc {
@@ -175,13 +408,40 @@
     font-size: 0.7vw;
     font-weight: 500;
     line-height: 12px; 
-    margin-bottom: 1.2rem;
+    margin: auto 0 0 0;
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__making-product-value {
     color: $dark;
     font-size: 0.8vw;
     font-weight: 400;
+    margin-top: 1.2rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__contact-details {
@@ -190,6 +450,14 @@
     grid-template-areas: 
     "name surname"
     "email tel";
+
+    @include breakpoint($mobile) {
+        grid-template-areas: 
+        "name"
+        "surname"
+        "email"
+        "tel";
+    }
 }
 
 .order__contact-details-item {
@@ -217,6 +485,10 @@
     width: 100%;
     max-width: 50%;
     padding-right: 0.8rem;
+
+    @include breakpoint($tablet-pt) {
+        max-width: none;
+    }
 }
 
 .order__making-select {
@@ -243,6 +515,7 @@
 
 .order__method-right {
     padding-top: 0.8rem;
+    text-align: right;
 }
 
 .order__method-desc {
@@ -251,6 +524,20 @@
     font-weight: 500;
     line-height: 16px;
     margin-top: 0.8rem;
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+        line-height: 14px;
+    }
 }
 
 .order__method-price {
@@ -261,6 +548,20 @@
 
     &--primary {
         color: $primary;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+        line-height: 12px;
     }
 }
 
@@ -275,6 +576,19 @@
     font-weight: 700;
     line-height: 16px;
     padding-left: 0.8rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__making-text {
@@ -283,15 +597,42 @@
     font-weight: 700;
     line-height: 16px; 
     margin-bottom: 1.6rem;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+        line-height: normal;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__recipient-contact-details {
     margin-top: 1.2rem;
     padding-left: 4rem;
+    display: none;
+
+    .show {
+        display: block;
+    }
+
+    @include breakpoint($tablet) {
+        padding-left: 2rem;
+    }
 }
 
 .order__radios {
     width: 50%;
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
 }
 
 .order__radios-item {
@@ -314,12 +655,45 @@
     .input {
         width: 100%;
         padding: 0.8rem 0.9rem;
+
+        @include breakpoint($laptop) {
+            font-size: 1vw;
+
+            &::placeholder {
+                font-size: 1vw;
+            }
+        }
+        @include breakpoint($tablet) {
+            font-size: 1.2vw;
+
+            &::placeholder {
+                font-size: 1.2vw;
+            }
+        }
+        @include breakpoint($tablet-pt) {
+            font-size: 1.6vw;
+
+            &::placeholder {
+                font-size: 1.6vw;
+            }
+        }
+        @include breakpoint($mobile) {
+            font-size: 2.6vw;
+
+            &::placeholder {
+                font-size: 2.6vw;
+            }
+        }
     }
 }
 
 .order__making-footer {
     width: 50%;
     margin-bottom: 2.4rem;
+
+    @include breakpoint($tablet-pt) {
+        display: none;
+    }
 }
 
 .order__making-text {
@@ -328,6 +702,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+        line-height: 14px;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__making-button {
@@ -351,6 +739,19 @@
     font-size: 0.8vw;
     font-weight: 700;
     line-height: 16px; 
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__radios-item-requisites-box {
@@ -396,6 +797,17 @@
     width: 120%;
     height: 14rem;
     background-color: #666;
+
+    @include breakpoint($tablet) {
+        width: 170%;
+        height: 10rem;
+    }
+    @include breakpoint($tablet-pt) {
+        width: auto;
+    }
+    @include breakpoint($mobile) {
+        width: 170%;
+    }
 }
 
 .order__method-text {
@@ -404,6 +816,19 @@
     font-size: 0.7vw;
     font-weight: 500;
     line-height: 12px;
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
 }
 
 .order__method-address {
@@ -412,6 +837,25 @@
     width: 150%;
     grid-template-areas: 
     "street street house apartment";
+
+    @include breakpoint($laptop) {
+        gap: 0.8rem;
+        width: 170%;
+    }
+    @include breakpoint($tablet) {
+        grid-template-areas: 
+        "street street"
+        "house apartment";
+    }
+    @include breakpoint($tablet-pt) {
+        grid-template-areas: 
+        "street street house apartment";
+    }
+    @include breakpoint($mobile) {
+        grid-template-areas: 
+        "street street"
+        "house apartment";
+    }
 }
 
 .order__method-address-item {
@@ -445,5 +889,38 @@
 
     &.show {
         display: block;
+    }
+
+    @include breakpoint($tablet) {
+        .select {
+            width: 170%;
+
+            .select__element {
+                width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint($mobile) {
+        .select {
+            margin-left: 0;
+        }        
+    }
+}
+
+.order__making-fixed {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background: $soft;
+    padding: 1.6rem;
+    box-shadow: 0px 2px 30px 0px rgba(50, 50, 71, 0.25);
+
+    .order__price {
+        margin-top: 0;
+    }
+
+    @include breakpoint($tablet-pt) {
+        display: flex;
     }
 }

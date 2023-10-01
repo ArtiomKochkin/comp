@@ -158,7 +158,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order__method active">
+                                <div class="order__method ">
                                     <div class="order__method-left">
                                         <div class="radio">
                                             <input type="radio" class="radio__input" id="courier" name="methods">
@@ -167,7 +167,7 @@
                                         <div class="order__method-desc">
                                             Доставим завтра
                                         </div>
-                                        <div class="order__method-addition show">
+                                        <div class="order__method-addition ">
                                             <div class="order__method-text">Введите ваш адрес</div>
                                             <div class="order__method-address">
                                                 <div class="order__method-address-item">
@@ -188,7 +188,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order__method active">
+                                <div class="order__method ">
                                     <div class="order__method-left">
                                         <div class="radio">
                                             <input type="radio" class="radio__input" id="mail" name="methods">
@@ -197,13 +197,13 @@
                                         <div class="order__method-desc">
                                             Доставим 4 августа
                                         </div>
-                                        <div class="order__method-addition show">
+                                        <div class="order__method-addition ">
                                             <div class="order__method-addition-mail">
                                                 <div class="radio order__method-addition-radio">
                                                     <input type="radio" class="radio__input" id="delivery-departament" name="mail">
                                                     <label for="delivery-departament" class="radio__label">Доставка в отделение</label>
                                                 </div>
-                                                <div class="order__method-addition-mail-block show">
+                                                <div class="order__method-addition-mail-block ">
                                                     <div class="order__method-text">Выберите отделение</div>
                                                     <div class="select">
                                                         <select name="city" id="city" class="select__element">
@@ -219,7 +219,7 @@
                                                     <input type="radio" class="radio__input" id="delivery-courier" name="mail">
                                                     <label for="delivery-courier" class="radio__label">Доставка курьером</label>
                                                 </div>
-                                                <div class="order__method-addition-mail-block show">
+                                                <div class="order__method-addition-mail-block ">
                                                     <div class="order__method-text">Введите ваш адрес</div>
                                                     <div class="order__method-address">
                                                         <div class="order__method-address-item">
@@ -245,7 +245,7 @@
                             </div>
                             <div class="order__recipient">
                                 <div class="switch">
-                                    <input type="checkbox" id="switch" class="switch__input" checked>
+                                    <input type="checkbox" id="switch" class="switch__input">
                                     <label for="switch" class="switch__thumb"></label>
                                 </div>
                                 <span class="order__recipient-text">Получатель не я</span>
@@ -280,7 +280,7 @@
                             </div>
                             <div class="order__radios-item active">
                                 <div class="radio">
-                                    <input type="radio" class="radio__input" id="cashless" name="payment">
+                                    <input type="radio" class="radio__input" id="cashless" name="payment" checked>
                                     <label for="cashless" class="radio__label">Оплата картой</label>
                                 </div>
                                 <div class="order__radios-item-requisites show">
@@ -313,6 +313,17 @@
                         <div class="order__making-text">
                             Подтверждая заказ, я принимаю условия
                             <a href="#!" class="order__link">пользовательского соглашения</a>
+                        </div>
+                        <div class="order__making-button">
+                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        </div>
+                    </div>
+                    <div class="order__making-fixed">
+                        <div class="order__price order__price--large">
+                            7200
+                            <span class="order__price-currency order__price-currency--large">
+                                грн.
+                            </span>
                         </div>
                         <div class="order__making-button">
                             <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
