@@ -78,6 +78,7 @@
             }
             .product__number {
                 display: block;
+                text-align: right;
             }
             .product__info {
                 display: block;
@@ -121,6 +122,9 @@
                 .product__info-value,
                 .product__number {
                     font-size: 1.1vw;
+                }
+                .product__number {
+                    margin-bottom: 0.8rem;
                 }
                 .product__line,
                 .product__row {
@@ -173,7 +177,7 @@
     color: #ccc;
     font-size: 0.9vw;
     font-weight: 500;
-    line-height: 20px; /* 125% */
+    line-height: 16px; /* 125% */
 }
 
 .product__link {
@@ -490,6 +494,7 @@
     font-size: 0.8vw;
     font-weight: 500;
     line-height: 16px; /* 133.333% */
+    margin-right: 0.8rem;
 }
 
 
@@ -498,4 +503,35 @@
     font-size: 0.8vw;
     font-weight: 500;
     line-height: 16px; /* 133.333% */
+}
+
+.product__addition-btn {
+    margin: 1.2rem 0 1.2rem auto;
+    position: relative;
+    z-index: 5;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    color: $secondary;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px;
+
+    &:hover {
+        color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.7vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+    }
 }

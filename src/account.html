@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Личный кабинет"
+    })
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <section class="account container">
+            <div class="account__left">
+                <ul class="account__menu">
+                    <li class="account__menu-item">
+                        <img src="./img/account/cart.svg" alt="" class="account__menu-icon">
+                        <div class="account__menu-name">История заказов</div>
+                    </li>
+                    <li class="account__menu-item">
+                        <img src="./img/account/favorites.svg" alt="" class="account__menu-icon">
+                        <div class="account__menu-name">Избранное</div>
+                    </li>
+                    <li class="account__menu-item">
+                        <img src="./img/account/eye.svg" alt="" class="account__menu-icon">
+                        <div class="account__menu-name">Просмотренные товары</div>
+                    </li>
+                    <li class="account__menu-item account__menu-item--reply">
+                        <img src="./img/account/reply.svg" alt="" class="account__menu-icon">
+                        <div class="account__menu-name">Мои отзывы</div>
+                    </li>
+                    <li class="account__menu-item">
+                        <img src="./img/account/user.svg" alt="" class="account__menu-icon">
+                        <div class="account__menu-name">Личные данные</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="account__right">
+                <div class="account__right-item active">
+                    <h2 class="section__title">История заказов</h2>
+                    <div class="account__history">
+                        <ul class="account__history-list">
+                            <li class="account__history-item active">
+                                <div class="account__history-preview">
+                                    <div class="account__history-column">
+                                        <div class="account__history-info">
+                                            <span class="account__history-number">#545211</span>
+                                            от
+                                            <time class="reviews__date" datetime="2022-04-05">05.04.2022</time>
+                                        </div>
+                                        <div class="account__history-status">Выполнен</div>
+                                    </div>
+                                    <div class="account__history-column">
+                                        <div class="account__history-desc">Сумма</div>
+                                        <div class="account__history-text">3600
+                                            <span class="account__history-text-span">грн.</span>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-column account__history-column--row">
+                                        <div class="account__history-images">
+                                            <img src="./img/account/history/product-4.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-5.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-3.svg" alt="" class="account__history-img">
+                                        </div>
+                                        <div class="account__history-toggle">
+                                            <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__history-toggle-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account__history-information">
+                                    <div class="account__history-information-inner">
+                                        <div class="account__history-products">
+                                            <div class="account__history-desc account__history-desc--large">Товары</div>
+                                            <div class="account__history-products-inner">
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/order/product-1.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-products-result">
+                                                <div class="account__history-desc account__history-desc--large">Итого</div>
+                                                <div class="account__history-result">7200
+                                                    <span class="account__history-result-span">грн.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account__history-data">
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные о доставке</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ доставки</div>
+                                                    <div class="account__history-text">Самовывоз из Новой почты</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Отделение</div>
+                                                    <div class="account__history-text">г. Днепр, Отделение №73, бульвар Кобзаря, д. 4</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">ФИО получателя</div>
+                                                    <div class="account__history-text">Иванов Иван Иванович</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Телефон получателя</div>
+                                                    <div class="account__history-text">+380670099009</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Номер ТТН</div>
+                                                    <div class="account__history-text">20400209140000</div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные об оплате</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ оплаты</div>
+                                                    <div class="account__history-text">Картой</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Статус</div>
+                                                    <div class="account__history-text account__history-text--primary">Оплачено</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-information-btn">
+                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__history-item">
+                                <div class="account__history-preview">
+                                    <div class="account__history-column">
+                                        <div class="account__history-info">
+                                            <span class="account__history-number">#424133</span>
+                                            от
+                                            <time class="reviews__date" datetime="2021-04-07">07.04.2021</time>
+                                        </div>
+                                        <div class="account__history-status">Выполнен</div>
+                                    </div>
+                                    <div class="account__history-column">
+                                        <div class="account__history-desc">Сумма</div>
+                                        <div class="account__history-text">3600
+                                            <span class="account__history-text-span">грн.</span>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-column account__history-column--row">
+                                        <div class="account__history-images">
+                                            <img src="./img/account/history/product-6.svg" alt="" class="account__history-img">
+                                           
+                                        </div>
+                                        <div class="account__history-toggle">
+                                            <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__history-toggle-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account__history-information">
+                                    <div class="account__history-information-inner">
+                                        <div class="account__history-products">
+                                            <div class="account__history-desc account__history-desc--large">Товары</div>
+                                            <div class="account__history-products-inner">
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-products-result">
+                                                <div class="account__history-desc account__history-desc--large">Итого</div>
+                                                <div class="account__history-result">7200
+                                                    <span class="account__history-result-span">грн.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account__history-data">
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные о доставке</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ доставки</div>
+                                                    <div class="account__history-text">Самовывоз из Новой почты</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Отделение</div>
+                                                    <div class="account__history-text">г. Днепр, Отделение №73, бульвар Кобзаря, д. 4</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">ФИО получателя</div>
+                                                    <div class="account__history-text">Иванов Иван Иванович</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Телефон получателя</div>
+                                                    <div class="account__history-text">+380670099009</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Номер ТТН</div>
+                                                    <div class="account__history-text">20400209140000</div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные об оплате</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ оплаты</div>
+                                                    <div class="account__history-text">Картой</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Статус</div>
+                                                    <div class="account__history-text account__history-text--primary">Оплачено</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-information-btn">
+                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__history-item">
+                                <div class="account__history-preview">
+                                    <div class="account__history-column">
+                                        <div class="account__history-info">
+                                            <span class="account__history-number">#124133</span>
+                                            от
+                                            <time class="reviews__date" datetime="2021-04-07">07.04.2021</time>
+                                        </div>
+                                        <div class="account__history-status">Выполнен</div>
+                                    </div>
+                                    <div class="account__history-column">
+                                        <div class="account__history-desc">Сумма</div>
+                                        <div class="account__history-text">3600
+                                            <span class="account__history-text-span">грн.</span>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-column account__history-column--row">
+                                        <div class="account__history-images">
+                                            <img src="./img/account/history/product-1.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-2.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-3.svg" alt="" class="account__history-img">
+                                            <div class="account__history-img-addition">+3</div>
+                                        </div>
+                                        <div class="account__history-toggle">
+                                            <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__history-toggle-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account__history-information">
+                                    <div class="account__history-information-inner">
+                                        <div class="account__history-products">
+                                            <div class="account__history-desc account__history-desc--large">Товары</div>
+                                            <div class="account__history-products-inner">
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/order/product-1.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-products-result">
+                                                <div class="account__history-desc account__history-desc--large">Итого</div>
+                                                <div class="account__history-result">7200
+                                                    <span class="account__history-result-span">грн.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account__history-data">
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные о доставке</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ доставки</div>
+                                                    <div class="account__history-text">Самовывоз из Новой почты</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Отделение</div>
+                                                    <div class="account__history-text">г. Днепр, Отделение №73, бульвар Кобзаря, д. 4</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">ФИО получателя</div>
+                                                    <div class="account__history-text">Иванов Иван Иванович</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Телефон получателя</div>
+                                                    <div class="account__history-text">+380670099009</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Номер ТТН</div>
+                                                    <div class="account__history-text">20400209140000</div>
+                                                </div>
+                                            </div>
+                                            <div class="account__history-data-column">
+                                                <div class="account__history-desc account__history-desc--large">Данные об оплате</div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Способ оплаты</div>
+                                                    <div class="account__history-text">Картой</div>
+                                                </div>
+                                                <div class="account__history-data-item">
+                                                    <div class="account__history-desc">Статус</div>
+                                                    <div class="account__history-text account__history-text--primary">Оплачено</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__history-information-btn">
+                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account__right-item">
+                    <h2 class="section__title">Список желаний</h2>
+                    <div class="account__wishlist">
+                        <div class="account__wishlist-header">
+                            <ul class="account__wishlist-list">
+                                <li class="account__wishlist-item">
+                                    <img src="./img/svg/share.svg" alt="" class="account__wishlist-icon">
+                                    <div class="account__wishlist-text">Поделиться в Facebook</div>
+                                </li>
+                                <li class="account__wishlist-item">
+                                    <img src="./img/svg/copy.svg" alt="" class="account__wishlist-icon">
+                                    <div class="account__wishlist-text">Копировать ссылку</div>
+                                </li>
+                                <li class="account__wishlist-item">
+                                    <img src="./img/svg/mail.svg" alt="" class="account__wishlist-icon">
+                                    <div class="account__wishlist-text">Отправить другу</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account__product-list">
+                            <div class="product product--with-filter list">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <div class="product__img-box">
+                                        <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    </div> 
+                                    <div class="product__right">
+                                        <div class="product__line">
+                                            <div class="product__name">
+                                                Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                            </div>
+                                            <div class="product__number">
+                                                Код товара: 1231324156
+                                            </div>
+                                        </div>
+                                        <div class="product__row">
+                                            <div class="product__content">
+                                                <div class="product__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                    </div>
+                                                    Отзывов: <span class="product__reviews-counter">5</span>
+                                                    <div class="product__actions product__actions--rating">
+                                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                                    </div>
+                                                </div>
+                                                <div class="product__info">
+                                                    <h6 class="product__info-title">Характеристики</h6>
+                                                    <div class="product__info-content">
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Форм-фактор</div>
+                                                            <div class="product__info-value">Micro-ATX</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Сокет</div>
+                                                            <div class="product__info-value">LGA 1700</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                                            <div class="product__info-value">2</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                                            <div class="product__info-value">DDR4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__footer">
+                                                <div class="product__prices">
+                                                    <div class="product__price-old ">6000 грн.</div>
+                                                    <div class="product__price-actual product__price-actual--sale">
+                                                        <span class="product__price">5000</span> грн.
+                                                    </div>
+                                                </div>
+                                                <button class="product__button" type="button">
+                                                    <span class="product__button-text">Купить</span>
+                                                    <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="product__addition-btn" type="button">Удалить из списка</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product--with-filter list">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <div class="product__img-box">
+                                        <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    </div> 
+                                    <div class="product__right">
+                                        <div class="product__line">
+                                            <div class="product__name">
+                                                Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                            </div>
+                                            <div class="product__number">
+                                                Код товара: 1231324156
+                                            </div>
+                                        </div>
+                                        <div class="product__row">
+                                            <div class="product__content">
+                                                <div class="product__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                    </div>
+                                                    Отзывов: <span class="product__reviews-counter">5</span>
+                                                    <div class="product__actions product__actions--rating">
+                                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                                    </div>
+                                                </div>
+                                                <div class="product__info">
+                                                    <h6 class="product__info-title">Характеристики</h6>
+                                                    <div class="product__info-content">
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Форм-фактор</div>
+                                                            <div class="product__info-value">Micro-ATX</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Сокет</div>
+                                                            <div class="product__info-value">LGA 1700</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                                            <div class="product__info-value">2</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                                            <div class="product__info-value">DDR4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__footer">
+                                                <div class="product__prices">
+                                                    <div class="product__price-old ">6000 грн.</div>
+                                                    <div class="product__price-actual product__price-actual--sale">
+                                                        <span class="product__price">5000</span> грн.
+                                                    </div>
+                                                </div>
+                                                <button class="product__button" type="button">
+                                                    <span class="product__button-text">Купить</span>
+                                                    <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="product__addition-btn" type="button">Удалить из списка</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product--with-filter list">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <div class="product__img-box">
+                                        <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    </div> 
+                                    <div class="product__right">
+                                        <div class="product__line">
+                                            <div class="product__name">
+                                                Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                            </div>
+                                            <div class="product__number">
+                                                Код товара: 1231324156
+                                            </div>
+                                        </div>
+                                        <div class="product__row">
+                                            <div class="product__content">
+                                                <div class="product__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                    </div>
+                                                    Отзывов: <span class="product__reviews-counter">5</span>
+                                                    <div class="product__actions product__actions--rating">
+                                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                                    </div>
+                                                </div>
+                                                <div class="product__info">
+                                                    <h6 class="product__info-title">Характеристики</h6>
+                                                    <div class="product__info-content">
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Форм-фактор</div>
+                                                            <div class="product__info-value">Micro-ATX</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Сокет</div>
+                                                            <div class="product__info-value">LGA 1700</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                                            <div class="product__info-value">2</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                                            <div class="product__info-value">DDR4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__footer">
+                                                <div class="product__prices">
+                                                    <div class="product__price-old ">6000 грн.</div>
+                                                    <div class="product__price-actual product__price-actual--sale">
+                                                        <span class="product__price">5000</span> грн.
+                                                    </div>
+                                                </div>
+                                                <button class="product__button" type="button">
+                                                    <span class="product__button-text">Купить</span>
+                                                    <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="product__addition-btn" type="button">Удалить из списка</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination container">
+                            <div class="pagination__show-more">
+                                <p class="pagination__text">Показать больше товаров</p>
+                                <img src="./img/svg/update.svg" alt="" class="pagination__show-more-img">
+                            </div>
+                            <div class="pagination__pages">
+                                <a href="#!" class="pagination__link-page">
+                                    <img src="./img/svg/arrow/arrow-left-blue-s.svg" alt="" class="pagination__img">
+                                    <span class="pagination__text pagination__text--prev">Назад</span>
+                                </a>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">...</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">33</a>
+                                    </li>
+                                </ul>
+                                <a href="#!" class="pagination__link-page">
+                                    <span class="pagination__text pagination__text--next">Вперед</span>
+                                    <img src="./img/svg/arrow/arrow-right-blue-s.svg" alt="" class="pagination__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__right-item">
+                    <h2 class="section__title">Просмотренные товары</h2>
+                    <div class="account__viewed">
+                        <div class="account__product-list">
+                            <div class="product product--with-filter list">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <div class="product__img-box">
+                                        <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    </div> 
+                                    <div class="product__right">
+                                        <div class="product__line">
+                                            <div class="product__name">
+                                                Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                            </div>
+                                            <div class="product__number">
+                                                Код товара: 1231324156
+                                            </div>
+                                        </div>
+                                        <div class="product__row">
+                                            <div class="product__content">
+                                                <div class="product__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                    </div>
+                                                    Отзывов: <span class="product__reviews-counter">5</span>
+                                                    <div class="product__actions product__actions--rating">
+                                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                                    </div>
+                                                </div>
+                                                <div class="product__info">
+                                                    <h6 class="product__info-title">Характеристики</h6>
+                                                    <div class="product__info-content">
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Форм-фактор</div>
+                                                            <div class="product__info-value">Micro-ATX</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Сокет</div>
+                                                            <div class="product__info-value">LGA 1700</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                                            <div class="product__info-value">2</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                                            <div class="product__info-value">DDR4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__footer">
+                                                <div class="product__prices">
+                                                    <div class="product__price-old ">6000 грн.</div>
+                                                    <div class="product__price-actual product__price-actual--sale">
+                                                        <span class="product__price">5000</span> грн.
+                                                    </div>
+                                                </div>
+                                                <button class="product__button" type="button">
+                                                    <span class="product__button-text">Купить</span>
+                                                    <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product--with-filter list">
+                                <a href="#!" class="product__link"></a>
+                                <div class="product__header">
+                                    <div class="product__new active">Новинка</div>
+                                    <div class="product__actions">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                    </div>
+                                </div>
+                                <div class="product__main">
+                                    <div class="product__img-box">
+                                        <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                    </div> 
+                                    <div class="product__right">
+                                        <div class="product__line">
+                                            <div class="product__name">
+                                                Материнская плата GIGABYTE B550 AORUS ELITE V2
+                                            </div>
+                                            <div class="product__number">
+                                                Код товара: 1231324156
+                                            </div>
+                                        </div>
+                                        <div class="product__row">
+                                            <div class="product__content">
+                                                <div class="product__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                                        </div>
+                                                    </div>
+                                                    Отзывов: <span class="product__reviews-counter">5</span>
+                                                    <div class="product__actions product__actions--rating">
+                                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
+                                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                                    </div>
+                                                </div>
+                                                <div class="product__info">
+                                                    <h6 class="product__info-title">Характеристики</h6>
+                                                    <div class="product__info-content">
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Форм-фактор</div>
+                                                            <div class="product__info-value">Micro-ATX</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Сокет</div>
+                                                            <div class="product__info-value">LGA 1700</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Количество слотов памяти</div>
+                                                            <div class="product__info-value">2</div>
+                                                        </div>
+                                                        <div class="product__info-item">
+                                                            <div class="product__info-feature">Тип поддерживаемой памяти</div>
+                                                            <div class="product__info-value">DDR4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__footer">
+                                                <div class="product__prices">
+                                                    <div class="product__price-old ">6000 грн.</div>
+                                                    <div class="product__price-actual product__price-actual--sale">
+                                                        <span class="product__price">5000</span> грн.
+                                                    </div>
+                                                </div>
+                                                <button class="product__button" type="button">
+                                                    <span class="product__button-text">Купить</span>
+                                                    <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination container">
+                            <div class="pagination__show-more">
+                                <p class="pagination__text">Показать больше товаров</p>
+                                <img src="./img/svg/update.svg" alt="" class="pagination__show-more-img">
+                            </div>
+                            <div class="pagination__pages">
+                                <a href="#!" class="pagination__link-page">
+                                    <img src="./img/svg/arrow/arrow-left-blue-s.svg" alt="" class="pagination__img">
+                                    <span class="pagination__text pagination__text--prev">Назад</span>
+                                </a>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">...</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">33</a>
+                                    </li>
+                                </ul>
+                                <a href="#!" class="pagination__link-page">
+                                    <span class="pagination__text pagination__text--next">Вперед</span>
+                                    <img src="./img/svg/arrow/arrow-right-blue-s.svg" alt="" class="pagination__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__right-item">
+                    <h2 class="section__title">Мои отзывы</h2>
+                    <div class="account__feedback">
+                        <ul class="account__feedback-list">
+                            <li class="account__feedback-item active">
+                                <div class="account__feedback-preview">
+                                    <div class="account__feedback-preview-info">
+                                        <img src="./img/account/feedback/product-2.svg" alt="" class="account__feedback-preview-img">
+                                        <div class="account__feedback-preview-name">Процессор Intel Core i5-10400F, Box (BX8070110400F)</div>
+                                    </div>
+                                    <div class="account__feedback-preview-btn">
+                                        <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__feedback-preview-toggle">
+                                    </div>
+                                </div>
+                                <div class="account__feedback-review">
+                                    <div class="account__feedback-review-header">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        <time class="reviews__date" datetime="2021-04-07">07.04.2021</time>
+                                    </div>
+                                    <div class="account__feedback-review-main">
+                                        <div class="account__feedback-review-text">
+                                            <p>
+                                                Хороший процессор, успешно пережил без заметных изменений много лет. Считаю его хорошим выбором для своего компьютреа в категории процессоров.
+                                            </p>
+                                        </div>
+                                        <div class="account__feedback-review-like">
+                                            <img src="./img/svg/like.svg" alt="" class="account__feedback-review-icon">
+                                            <div class="account__feedback-review-like-counter">12</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__feedback-item">
+                                <div class="account__feedback-preview">
+                                    <div class="account__feedback-preview-info">
+                                        <img src="./img/account/feedback/product-1.svg" alt="" class="account__feedback-preview-img">
+                                        <div class="account__feedback-preview-name">Процессор Intel Core i5-10400F, Box (BX8070110400F)</div>
+                                    </div>
+                                    <div class="account__feedback-preview-btn">
+                                        <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__feedback-preview-toggle">
+                                    </div>
+                                </div>
+                                <div class="account__feedback-review">
+                                    <div class="account__feedback-review-header">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        <time class="reviews__date" datetime="2021-04-07">07.04.2021</time>
+                                    </div>
+                                    <div class="account__feedback-review-main">
+                                        <div class="account__feedback-review-text">
+                                            <p>
+                                                Хороший процессор, успешно пережил без заметных изменений много лет. Считаю его хорошим выбором для своего компьютреа в категории процессоров.
+                                            </p>
+                                        </div>
+                                        <div class="account__feedback-review-like">
+                                            <img src="./img/svg/like.svg" alt="" class="account__feedback-review-icon">
+                                            <div class="account__feedback-review-like-counter">12</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__feedback-item">
+                                <div class="account__feedback-preview">
+                                    <div class="account__feedback-preview-info">
+                                        <img src="./img/account/feedback/product-2.svg" alt="" class="account__feedback-preview-img">
+                                        <div class="account__feedback-preview-name">Процессор Intel Core i5-10400F, Box (BX8070110400F)</div>
+                                    </div>
+                                    <div class="account__feedback-preview-btn">
+                                        <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__feedback-preview-toggle">
+                                    </div>
+                                </div>
+                                <div class="account__feedback-review">
+                                    <div class="account__feedback-review-header">
+                                        <div class="rating">
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-true.svg" alt="" class="rating-img">
+                                            </div>
+                                            <div class="rating-item">
+                                                <img src="./img/svg/rating-false.svg" alt="" class="rating-img">
+                                            </div>
+                                        </div>
+                                        <time class="reviews__date" datetime="2021-04-07">07.04.2021</time>
+                                    </div>
+                                    <div class="account__feedback-review-main">
+                                        <div class="account__feedback-review-text">
+                                            <p>
+                                                Хороший процессор, успешно пережил без заметных изменений много лет. Считаю его хорошим выбором для своего компьютреа в категории процессоров.
+                                            </p>
+                                        </div>
+                                        <div class="account__feedback-review-like">
+                                            <img src="./img/svg/like.svg" alt="" class="account__feedback-review-icon">
+                                            <div class="account__feedback-review-like-counter">12</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination container">
+                            <div class="pagination__show-more">
+                                <p class="pagination__text">Показать больше товаров</p>
+                                <img src="./img/svg/update.svg" alt="" class="pagination__show-more-img">
+                            </div>
+                            <div class="pagination__pages">
+                                <a href="#!" class="pagination__link-page">
+                                    <img src="./img/svg/arrow/arrow-left-blue-s.svg" alt="" class="pagination__img">
+                                    <span class="pagination__text pagination__text--prev">Назад</span>
+                                </a>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">...</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#!" class="pagination__link">33</a>
+                                    </li>
+                                </ul>
+                                <a href="#!" class="pagination__link-page">
+                                    <span class="pagination__text pagination__text--next">Вперед</span>
+                                    <img src="./img/svg/arrow/arrow-right-blue-s.svg" alt="" class="pagination__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__right-item">
+                    <h2 class="section__title">Личные данные</h2>
+                    <div class="account__profile">
+                        <div class="account__avatar">
+                            <div class="account__avatar-img-box">
+                                <img src="" alt="" class="account__avatar-img">
+                                <div class="account__avatar-text">И</div>
+                            </div>
+                            <div class="account__upload">
+                                <input type="file" class="account__upload-input" id="avatar">
+                                <label for="avatar" class="account__upload-text">Загрузить фото</label>
+                            </div>
+                        </div>
+                        <div class="account__info">
+                            <div class="account__info-item">
+                               <div class="account__info-line">
+                                    <h6 class="account__info-title account__info-title--line">ФИО</h6>
+                                    <div class="account__value">
+                                        <div class="account__text">
+                                            Иванов Иван Иванович
+                                        </div>
+                                        <button type="button" class="account__btn">Добавить</button>
+                                    </div>
+                                    <button type="button" class="account__edit">
+                                        <img src="./img/svg/edit.svg" alt="">
+                                    </button>
+                               </div>
+                               <div class="account__info-line">
+                                    <h6 class="account__info-title account__info-title--line">Телефон</h6>
+                                    <div class="account__value">
+                                        <div class="account__text disabled">
+                                            +38 067 009 90 09
+                                        </div>
+                                        <button type="button" class="account__btn show">Добавить</button>
+                                    </div>
+                                    <button type="button" class="account__edit">
+                                        <img src="./img/svg/edit.svg" alt="">
+                                    </button>
+                               </div>
+                               <div class="account__info-line">
+                                    <h6 class="account__info-title account__info-title--line">Email</h6>
+                                    <div class="account__value">
+                                        <div class="account__text">
+                                            ivanov@gmail.com
+                                        </div>
+                                        <div class="account__confirmation">
+                                            Email не подтвержден
+                                        </div>
+                                        <button type="button" class="account__btn account__btn--confirmation">Подтвердить</button>
+                                        <button type="button" class="account__btn">Добавить</button>
+                                    </div>
+                                    <button type="button" class="account__edit">
+                                        <img src="./img/svg/edit.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="account__info-line">
+                                    <h6 class="account__info-title account__info-title--line">Основной способ доставки</h6>
+                                    <div class="account__value">
+                                        <div class="account__text">
+                                            <p class="account__paragraph">Доставка Почтой</p>
+                                            <p class="account__paragraph">Самовывоз из отделения</p>
+                                            <p class="account__paragraph">Отделение № 70</p>
+                                            <p class="account__paragraph">ул. Сафонова, 45</p>
+                                        </div>
+                                        <button type="button" class="account__btn">Добавить</button>
+                                    </div>
+                                    <button type="button" class="account__edit">
+                                        <img src="./img/svg/edit.svg" alt="">
+                                    </button>
+                               </div>
+                            </div>
+                            <div class="account__info-item">
+                                <h6 class="account__info-title">Социальные сети</h6>
+                                <div class="account__socials">
+                                    <div class="account__socials-item">
+                                        <img src="./img/svg/socials/facebook-3.svg" alt="" class="account__socials-icon">
+                                        <div class="account__socials-info">
+                                            <div class="account__socials-info-header">
+                                                <div class="account__socials-name">Facebook</div>
+                                                <img src="./img/svg/check.svg" alt="" class="account__socials-check">
+                                            </div>
+                                            <button type="button" class="account__btn">Связать с аккаунтом</button>
+                                        </div>
+                                    </div>
+                                    <div class="account__socials-item">
+                                        <img src="./img/svg/socials/google-2.svg" alt="" class="account__socials-icon">
+                                        <div class="account__socials-info">
+                                            <div class="account__socials-info-header">
+                                                <div class="account__socials-name">Google</div>
+                                                <img src="./img/svg/check.svg" alt="" class="account__socials-check">
+                                            </div>
+                                            <button type="button" class="account__btn">Связать с аккаунтом</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account__info-item">
+                                <h6 class="account__info-title">Настройки рассылки</h6>
+                                <div class="account__mailing-list">
+                                    <div class="account__mailing-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" id="system-alerts" disabled>
+                                            <label for="system-alerts" class="checkbox__label">Системные оповещения</label>
+                                        </div>
+                                    </div>
+                                    <div class="account__mailing-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" id="promotion">
+                                            <label for="promotion" class="checkbox__label">Акции</label>
+                                        </div>
+                                    </div>
+                                    <div class="account__mailing-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" id="news-1" checked>
+                                            <label for="news-1" class="checkbox__label">Новости компании</label>
+                                        </div>
+                                    </div>
+                                    <div class="account__mailing-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" id="news-2">
+                                            <label for="news-2" class="checkbox__label">Новости индустрии</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account__info-footer">
+                                <button type="button" class="account__btn">Изменить пароль</button>
+                                <button type="button" class="account__btn">Выход</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>
