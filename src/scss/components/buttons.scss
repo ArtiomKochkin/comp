@@ -10,7 +10,7 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all linear .3s;
-    border: 2px solid $primary;
+    border: 1px solid $primary;
     font-family: 'Montserrat';
     outline: none;
 
@@ -42,7 +42,7 @@
     
     &--secondary {
         background-color: $secondary;
-        border: 2px solid $secondary;
+        border: 1px solid $secondary;
 
         &:hover {
             background-color: #3582BF;
@@ -69,16 +69,12 @@
     &--transparent {
         background-color: transparent;
         color: $secondary;
-        border: 2px solid $secondary;
+        border: 1px solid $secondary;
 
         &:hover {
             color: $white;
             background-color: $secondary;
         }
-
-        // @include breakpoint($mobile) {
-        //     margin-top: 1.2rem;
-        // }
     }
 
     &--sign {

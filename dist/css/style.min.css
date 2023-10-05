@@ -5138,18 +5138,39 @@ img {
 .modal__content--cart {
   max-width: 60vw;
 }
+.modal__content--account {
+  max-width: 40vw;
+}
+.modal__content--result {
+  max-width: 34vw;
+}
 @media screen and (max-width: 991px) {
   .modal__content {
     max-width: 38vw;
+  }
+  .modal__content--account {
+    max-width: 45vw;
+  }
+  .modal__content--result {
+    max-width: 43vw;
   }
 }
 @media screen and (max-width: 768px) {
   .modal__content {
     max-width: 50vw;
   }
+  .modal__content--account {
+    max-width: 57vw;
+  }
+  .modal__content--result {
+    max-width: 63vw;
+  }
 }
 @media screen and (max-width: 500px) {
   .modal__content {
+    max-width: 90vw;
+  }
+  .modal__content--result {
     max-width: 90vw;
   }
 }
@@ -5164,11 +5185,11 @@ img {
   }
 }
 @media screen and (max-width: 500px) {
-  .modal__content--cart {
+  .modal__content--cart, .modal__content--account {
     padding: 1.6rem;
     max-width: 90vw;
   }
-  .modal__content--cart .modal__close {
+  .modal__content--cart .modal__close, .modal__content--account .modal__close {
     top: 2rem;
     right: 1.6rem;
   }
@@ -5206,11 +5227,13 @@ img {
 @media screen and (max-width: 991px) {
   .modal__title {
     font-size: 1.5vw;
+    padding-right: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
   .modal__title {
     font-size: 2.2vw;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -5218,12 +5241,42 @@ img {
     font-size: 4vw;
   }
 }
+.modal__title--large {
+  color: #333333;
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 1.6rem;
+  padding-right: 0;
+}
+@media screen and (max-width: 1366px) {
+  .modal__title--large {
+    font-size: 2vw;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__title--large {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__title--large {
+    font-size: 3vw;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__title--large {
+    font-size: 6vw;
+  }
+}
 
 .modal__text {
   color: #333333;
   font-size: 0.8vw;
   font-weight: 500;
-  line-height: 12px; /* 120% */
+  line-height: 18px; /* 120% */
 }
 .modal__text--link {
   text-decoration: none;
@@ -5245,9 +5298,13 @@ img {
   color: #ccc;
   position: relative;
 }
+.modal__text--margin {
+  margin-bottom: 1.2rem;
+}
 @media screen and (max-width: 1366px) {
   .modal__text {
     font-size: 0.9vw;
+    line-height: 14px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -5324,6 +5381,259 @@ img {
 
 .modal__footer {
   text-align: center;
+}
+
+.modal__products {
+  margin-top: 1.2rem;
+}
+
+.modal__product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 1.2rem;
+}
+.modal__product:last-child {
+  border: none;
+}
+
+.modal__product-info {
+  display: flex;
+  align-items: center;
+  margin-right: 2.4rem;
+}
+
+.modal__product-img {
+  display: block;
+  margin-right: 1.2rem;
+}
+
+.modal__product-btn {
+  flex-grow: 1;
+}
+.modal__product-btn .button {
+  width: 100%;
+  justify-content: center;
+}
+
+.modal__input--margin {
+  margin-top: 1.2rem;
+}
+
+.modal__button {
+  width: 39%;
+}
+.modal__button .button {
+  width: 100%;
+  justify-content: center;
+}
+.modal__button--right {
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 500px) {
+  .modal__button--right {
+    width: 100%;
+  }
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.modal__buttons .modal__button {
+  width: 39%;
+}
+@media screen and (max-width: 500px) {
+  .modal__buttons {
+    flex-wrap: wrap;
+  }
+  .modal__buttons .modal__button {
+    width: 100%;
+  }
+  .modal__buttons .modal__button:first-child {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.modal__paragraph {
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 500px) {
+  .modal__paragraph {
+    margin-bottom: 0;
+  }
+}
+
+.modal__bold {
+  color: #060F42;
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 1.2rem;
+}
+@media screen and (max-width: 1366px) {
+  .modal__bold {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__bold {
+    font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__bold {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__bold {
+    font-size: 2.7vw;
+  }
+}
+
+.modal__btn-box {
+  align-self: center;
+}
+@media screen and (max-width: 500px) {
+  .modal__btn-box {
+    flex-grow: 1;
+    margin-bottom: 1.2rem;
+    text-align: right;
+  }
+}
+
+.modal__btn {
+  color: #01579B;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 16px;
+  border: none;
+  outline: none;
+}
+.modal__btn:hover {
+  color: #999;
+}
+@media screen and (max-width: 1366px) {
+  .modal__btn {
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal__btn {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__btn {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal__btn {
+    font-size: 2.6vw;
+  }
+}
+
+.modal__select {
+  margin-bottom: 1.2rem;
+}
+.modal__select .select__element {
+  width: 100%;
+}
+
+.modal__delivery {
+  margin-bottom: 1.2rem;
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 4px;
+}
+.modal__delivery:last-child {
+  margin: 0;
+}
+.modal__delivery.active {
+  border: 1px solid #01579B;
+}
+
+.modal__radio {
+  margin-bottom: 1.2rem;
+}
+.modal__radio:last-child {
+  margin: 0;
+}
+
+.modal__map {
+  height: 14rem;
+  background-color: #ccc;
+}
+@media screen and (max-width: 768px) {
+  .modal__map {
+    height: 10rem;
+  }
+}
+
+.modal__addition,
+.modal__delivery-item-addition {
+  display: none;
+}
+.modal__addition.show,
+.modal__delivery-item-addition.show {
+  display: block;
+}
+
+.modal__delivery-address {
+  display: grid;
+  grid-template-areas: "street street house apartment";
+  gap: 1.6rem;
+}
+.modal__delivery-address .input {
+  margin-bottom: 0;
+}
+.modal__delivery-address .modal__input:nth-child(1) {
+  grid-area: street;
+}
+.modal__delivery-address .modal__input:nth-child(2) {
+  grid-area: house;
+}
+.modal__delivery-address .modal__input:nth-child(3) {
+  grid-area: apartment;
+}
+.modal__delivery-address .modal__input .input {
+  padding: 0.9rem 0.8rem;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .modal__delivery-address {
+    gap: 0.8rem;
+    grid-template-areas: "street street" "house apartment";
+  }
+}
+
+.modal__delivery-item {
+  padding-left: 1.2rem;
+}
+
+.modal__radio-groups {
+  margin-bottom: 1.2rem;
+}
+
+.modal__result {
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+@media screen and (max-width: 500px) {
+  .modal__result .modal__btn-box {
+    text-align: center;
+  }
+}
+
+.modal__main-img-box {
+  margin-bottom: 1.8rem;
+}
+
+.modal__main-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .order {
@@ -6817,6 +7127,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0.4rem;
 }
 
 .account__socials-check {
@@ -7421,13 +7732,30 @@ img {
   display: none;
 }
 
-.account__history-information-btn {
+.account__history-information-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 2.4rem;
+}
+@media screen and (max-width: 500px) {
+  .account__history-information-footer {
+    flex-wrap: wrap;
+  }
+}
+
+.account__history-information-btn {
   width: 23rem;
 }
 .account__history-information-btn .button {
   justify-content: center;
   width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .account__history-information-btn {
+    margin-bottom: 1.2rem;
+    width: 100%;
+  }
 }
 
 .account__history-information-inner {
@@ -7500,6 +7828,7 @@ img {
 
 .account__history-product-info-item {
   text-align: center;
+  margin-right: 0.2rem;
 }
 
 .account__history-products-result {
@@ -8421,7 +8750,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   transition: all linear 0.3s;
-  border: 2px solid #06A56C;
+  border: 1px solid #06A56C;
   font-family: "Montserrat";
   outline: none;
 }
@@ -8455,7 +8784,7 @@ img {
 }
 .button--secondary {
   background-color: #01579B;
-  border: 2px solid #01579B;
+  border: 1px solid #01579B;
 }
 .button--secondary:hover {
   background-color: #3582BF;
@@ -8481,7 +8810,7 @@ img {
 .button--transparent {
   background-color: transparent;
   color: #01579B;
-  border: 2px solid #01579B;
+  border: 1px solid #01579B;
 }
 .button--transparent:hover {
   color: #fff;

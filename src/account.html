@@ -15,7 +15,7 @@
                     </li>
                     <li class="account__menu-item">
                         <img src="./img/account/favorites.svg" alt="" class="account__menu-icon">
-                        <div class="account__menu-name">Избранное</div>
+                        <div class="account__menu-name">Список желаний</div>
                     </li>
                     <li class="account__menu-item">
                         <img src="./img/account/eye.svg" alt="" class="account__menu-icon">
@@ -32,7 +32,7 @@
                 </ul>
             </div>
             <div class="account__right">
-                <div class="account__right-item active">
+                <div class="account__right-item">
                     <h2 class="section__title">История заказов</h2>
                     <div class="account__history">
                         <ul class="account__history-list">
@@ -173,8 +173,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="account__history-information-btn">
-                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    <div class="account__history-information-footer">
+                                        <div class="account__history-information-btn">
+                                            <button class="button button--transparent">Оставить отзыв</button>
+                                        </div>
+                                        <button type="button" class="account__btn">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
@@ -284,8 +287,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="account__history-information-btn">
-                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    <div class="account__history-information-footer">
+                                        <div class="account__history-information-btn">
+                                            <button class="button button--transparent">Оставить отзыв</button>
+                                        </div>
+                                        <button type="button" class="account__btn">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
@@ -427,12 +433,78 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="account__history-information-btn">
-                                        <button class="button button--transparent">Оставить отзыв</button>
+                                    <div class="account__history-information-footer">
+                                        <div class="account__history-information-btn">
+                                            <button class="button button--transparent">Оставить отзыв</button>
+                                        </div>
+                                        <button type="button" class="account__btn">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="modal">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Оставить отзыв</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>Оцените приобретенные вами товары.</p>
+                                </div>
+                                <div class="modal__products">
+                                    <div class="modal__product">
+                                        <div class="modal__product-info">
+                                            <img src="./img/account/feedback/product-1.svg" alt="" class="modal__product-img">
+                                            <div class="modal__text">
+                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                            </div>
+                                        </div>
+                                        <div class="modal__product-btn">
+                                            <button class="button button--transparent">Оставить отзыв</button>
+                                        </div>
+                                    </div>
+                                    <div class="modal__product">
+                                        <div class="modal__product-info">
+                                            <img src="./img/account/feedback/product-2.svg" alt="" class="modal__product-img">
+                                            <div class="modal__text">
+                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                            </div>
+                                        </div>
+                                        <div class="modal__product-btn">
+                                            <button class="button button--transparent">Оставить отзыв</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Оформить возврат</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>Укажите ваш номер телефона и укажите причину возврата.</p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="tel" class="input input--modal" placeholder="Ваш телефон">
+                                </div>
+                                <div class="modal__input ">
+                                    <textarea class="input input--textarea input--modal" placeholder="Причина возврата"></textarea>
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="account__right-item">
@@ -748,6 +820,29 @@
                                     <span class="pagination__text pagination__text--next">Вперед</span>
                                     <img src="./img/svg/arrow/arrow-right-blue-s.svg" alt="" class="pagination__img">
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Отправить список желаний другу</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Укажите адрес элекронной почты вашего  для отправки списка желаний.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1136,7 +1231,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item">
+                <div class="account__right-item active">
                     <h2 class="section__title">Личные данные</h2>
                     <div class="account__profile">
                         <div class="account__avatar">
@@ -1264,6 +1359,718 @@
                             <div class="account__info-footer">
                                 <button type="button" class="account__btn">Изменить пароль</button>
                                 <button type="button" class="account__btn">Выход</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="welcome">
+                        <div class="modal__content ">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Приветствуем!</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text modal__text--margin">
+                                    <p>
+                                        Вы уже были нашим клиентом ранее, поэтому в вашем личном кабинете мы уже отобразили всю информацию по вашим предыдущим покупкам в нашем магазине.
+                                    </p>
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">Хорошо</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="add-name">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Добавление ФИО</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Введите ФИО">
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="edit-name">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение ФИО</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Введите ФИО">
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="add-email">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Добавление элекронной почты</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Введите адрес элекронной почты. На вашу почту будет выслано письмо со ссылкой для подтверждения.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="edit-email">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение элекронной почты</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Введите адрес новой элекронной почты и код. На вашу почту будет выслано письмо для подтверждения.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                </div>
+                                <div class="modal__input ">
+                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="ask-edit-tel">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text modal__text--margin">
+                                    <p class="modal__paragraph">
+                                        Вы хотите изменить номер телефона?
+                                    </p>
+                                    <p class="modal__paragraph">
+                                        Ваш текущий номер: <span class="modal__bold">+380670099009</span>
+                                    </p>
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">изменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="code-edit-tel">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        На текущий номер телефона было выслано сообщение с кодом для подтверждения. Введите этот код ниже.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Нет доступа к текущему номеру?</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="edit-tel">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Укажите новый номер телефона
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="tel" class="input input--modal" placeholder="Новый номер телефона">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="code-edit-tel">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        На новый номер телефона было выслано сообщение с кодом для подтверждения. Введите этот код ниже.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="text-edit-tel">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Введите номер для того, чтобы мы связались с вами. 
+                                        <a href="#!" class="modal__text--link">Или свяжитесь с нами.</a>
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="tel" class="input input--modal" placeholder="Номер телефона">
+                                </div>
+                                <div class="modal__input ">
+                                    <textarea class="input input--textarea input--modal" placeholder="Комментарий"></textarea>
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="edit-password">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__input">
+                                    <input type="password" class="input input--modal" placeholder="Старый пароль">
+                                    <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                </div>
+                                <div class="modal__input">
+                                    <input type="password" class="input input--modal" placeholder="Новый пароль">
+                                    <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Забыли пароль?</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="recovery-password">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Восстановление пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>
+                                        Введите ваш номер телефона. На него будет выслан код для подтверждения.
+                                    </p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="tel" class="input input--modal" placeholder="Номер телефона">
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="code-recovery-password">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Восстановление пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text">
+                                    <p>Введите код из СМС</p>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__btn-box ">
+                                        <span class="modal__text">Не пришел код?</span>
+                                        <button class="modal__btn" type="button">Отправить еще раз</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button">отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="new-password">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Восстановление пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__text modal__text--margin">Придумайте новый пароль</div>
+                                <div class="modal__input">
+                                    <input type="password" class="input input--modal" placeholder="Новый пароль">
+                                    <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="edit-delivery">
+                        <div class="modal__content modal__content--account">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение основного способа доставки</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__select select">
+                                    <select name="city" id="city" class="select__element">
+                                        <option class="select__item" value="msk">Москва</option>
+                                        <option class="select__item" value="spb">Санкт-Петербург</option>
+                                        <option class="select__item" value="nsk">Новосибирск</option>
+                                    </select>
+                                </div>
+                                <div class="modal__radio-groups">
+                                    <div class="modal__delivery active">
+                                        <div class="radio modal__radio">
+                                            <input type="radio" class="radio__input" id="shop-modal" name="methods-modal" checked>
+                                            <label for="shop-modal" class="radio__label">Самовывоз из магазина</label>
+                                        </div>
+                                        <div class="modal__addition show">
+                                            <div class="modal__text modal__text--margin">
+                                                <p>
+                                                    Магазин находится по адресу г. Днепр, ул. Европейская, 8 
+                                                </p>
+                                            </div>
+                                            <div class="modal__map"></div>
+                                        </div>
+                                    </div>
+                                    <div class="modal__delivery active">
+                                        <div class="radio modal__radio">
+                                            <input type="radio" class="radio__input" id="courier-modal" name="methods-modal">
+                                            <label for="courier-modal" class="radio__label">Доставка курьером</label>
+                                        </div>
+                                        <div class="modal__addition show">
+                                            <div class="modal__text modal__text--margin">
+                                                <p>
+                                                    Введите ваш адрес 
+                                                </p>
+                                            </div>
+                                            <div class="modal__delivery-address">
+                                                <div class="modal__input">
+                                                    <input type="text" class="input input--modal" placeholder="Улица">
+                                                </div>
+                                                <div class="modal__input">
+                                                    <input type="text" class="input input--modal" placeholder="Дом">
+                                                </div>
+                                                <div class="modal__input">
+                                                    <input type="text" class="input input--modal" placeholder="Квартира">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal__delivery active">
+                                        <div class="radio modal__radio">
+                                            <input type="radio" class="radio__input" id="mail-modal" name="methods-modal">
+                                            <label for="mail-modal" class="radio__label">Самовывоз из отделения Почты</label>
+                                        </div>
+                                        <div class="modal__addition show">
+                                            <div class="modal__delivery-item">
+                                                <div class="radio modal__radio">
+                                                    <input type="radio" checked class="radio__input" id="delivery-departament-modal" name="mail-modal">
+                                                    <label for="delivery-departament-modal" class="radio__label">Доставка в отделение</label>
+                                                </div>
+                                                <div class="modal__delivery-item-addition ">
+                                                    <div class="modal__text modal__text--margin">
+                                                        <p>
+                                                            Выберите подходящее отделение
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal__select select">
+                                                        <select name="delivery-departament-modal" id="delivery-departament-modal" class="select__element">
+                                                            <option class="select__item" value="one">Отделение Почты России</option>
+                                                            <option class="select__item" value="two">two</option>
+                                                            <option class="select__item" value="three">three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal__delivery-item">
+                                                <div class="radio modal__radio">
+                                                    <input type="radio" class="radio__input" id="delivery-courier-modal" name="mail-modal">
+                                                    <label for="delivery-courier-modal" class="radio__label">Доставка курьером</label>
+                                                </div>
+                                                <div class="modal__delivery-item-addition show">
+                                                    <div class="modal__text modal__text--margin">
+                                                        <p>
+                                                            Введите ваш адрес 
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal__delivery-address">
+                                                        <div class="modal__input">
+                                                            <input type="text" class="input input--modal" placeholder="Улица">
+                                                        </div>
+                                                        <div class="modal__input">
+                                                            <input type="text" class="input input--modal" placeholder="Дом">
+                                                        </div>
+                                                        <div class="modal__input">
+                                                            <input type="text" class="input input--modal" placeholder="Квартира">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__button modal__button--right">
+                                    <button class="button button--secondary" type="button">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="failure-delivery">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение основного способа доставки</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/failure.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Что-то пошло не так</h4>
+                                    <div class="modal__text">
+                                        <p>
+                                            Произошла ошибка. Ваш способ доставки не был изменен. 
+                                            Попробуйте позже или <a href="#!" class="modal__text modal__text--link">свяжитесь с нами.</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="success-delivery">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение основного способа доставки</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/success.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Способ доставки был успешно изменен</h4>
+                                    <div class="modal__text modal__text--margin">
+                                        <p>
+                                            Ваш способ доставки был успешно изменен. 
+                                        </p>
+                                    </div>
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Перейти в личный кабинет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="success-password-recovery">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Восстановление пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/success.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Пароль был успешно изменен</h4>
+                                    <div class="modal__text modal__text--margin">
+                                        <p>
+                                            Ваш пароль для входа в аккаунт был успешно восстановлен.
+                                        </p>
+                                    </div>
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Перейти в личный кабинет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="failure-password-recovery">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Восстановление пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/failure.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Что-то пошло не так</h4>
+                                    <div class="modal__text">
+                                        <p>
+                                            Произошла ошибка. Ваш пароль для входа в аккаунт не был восстановлен. Попробуйте позже или <a href="#!" class="modal__text modal__text--link">свяжитесь с нами.</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="failure-password">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/failure.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Что-то пошло не так</h4>
+                                    <div class="modal__text">
+                                        <p>
+                                            Произошла ошибка. Ваш пароль для входа в аккаунт не был изменен. Попробуйте позже или <a href="#!" class="modal__text modal__text--link">свяжитесь с нами.</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="success-password">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение пароля</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/success.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Пароль был успешно изменен</h4>
+                                    <div class="modal__text modal__text--margin">
+                                        <p>
+                                            Ваш пароль для входа в аккаунт был успешно изменен.
+                                        </p>
+                                    </div>
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Перейти в личный кабинет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="failure-tel">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/failure.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Что-то пошло не так</h4>
+                                    <div class="modal__text">
+                                        <p>
+                                            Произошла ошибка. Ваш номер телефона не был изменен. Попробуйте позже или <a href="#!" class="modal__text modal__text--link">свяжитесь с нами.</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="success-tel">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение номера телефона</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/success.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Номер телефона был успешно изменен</h4>
+                                    <div class="modal__text modal__text--margin">
+                                        <p>
+                                            Ваш номер телефона был успешно изменен.
+                                        </p>
+                                    </div>
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Перейти в личный кабинет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="failure-email">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение электронной почты</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/failure.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Что-то пошло не так</h4>
+                                    <div class="modal__text">
+                                        <p>
+                                            Произошла ошибка. Ваш адрес электронной почты не был изменен. Попробуйте позже или  <a href="#!" class="modal__text modal__text--link">свяжитесь с нами.</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="success-email">
+                        <div class="modal__content modal__content--result">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Изменение электронной почты</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__result">
+                                    <div class="modal__main-img-box">
+                                        <img src="./img/modal/success.svg" alt="" class="modal__main-img">
+                                    </div>
+                                    <h4 class="modal__title modal__title--large">Электронная почта была успешно изменена</h4>
+                                    <div class="modal__text modal__text--margin">
+                                        <p>
+                                            Ваш адрес электронной почты был успешно изменен.
+                                        </p>
+                                    </div>
+                                    <div class="modal__btn-box ">
+                                        <button class="modal__btn" type="button">Перейти в личный кабинет</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

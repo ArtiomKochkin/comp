@@ -339,6 +339,7 @@
 
 .account__socials-info-header {
     @include flex;
+    margin-bottom: 0.4rem;
 }
 
 .account__socials-check {
@@ -869,12 +870,25 @@
     display: none;
 }
 
-.account__history-information-btn {
+.account__history-information-footer {
+    @include flex;
     margin-top: 2.4rem;
+
+    @include breakpoint($mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+.account__history-information-btn {
     width: 23rem;
 
     .button {
         justify-content: center;
+        width: 100%;
+    }
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1.2rem;
         width: 100%;
     }
 }
@@ -946,6 +960,7 @@
 
 .account__history-product-info-item {
     text-align: center;
+    margin-right: 0.2rem
 }
 
 .account__history-products-result {

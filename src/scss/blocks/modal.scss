@@ -33,15 +33,38 @@
     &--cart {
         max-width: 60vw;
     }
+    &--account {
+        max-width: 40vw;
+    }
+    &--result {
+        max-width: 34vw;
+    }
 
     @include breakpoint($tablet) {
         max-width: 38vw;
+
+        &--account {
+            max-width: 45vw;
+        }
+        &--result {
+            max-width: 43vw;
+        }
     }
     @include breakpoint($tablet-pt) {
         max-width: 50vw;
+
+        &--account {
+            max-width: 57vw;
+        }
+        &--result {
+            max-width: 63vw;
+        }
     }
     @include breakpoint($mobile) {
         max-width: 90vw;
+        &--result {
+            max-width: 90vw;
+        }
     }
     @include breakpoint($laptop) {
         &--cart {
@@ -54,7 +77,8 @@
         }
     }
     @include breakpoint($mobile) {
-        &--cart {
+        &--cart,
+        &--account {
             padding: 1.6rem;
             max-width: 90vw;
 
@@ -96,12 +120,38 @@
     }
     @include breakpoint($tablet) {
         font-size: 1.5vw;
+        padding-right: 2rem;
     }
     @include breakpoint($tablet-pt) {
         font-size: 2.2vw;
+        line-height: 18px; 
     }
     @include breakpoint($mobile) {
         font-size: 4vw;
+    }
+
+    &--large {
+        color: $dark-grey;
+        font-size: 1.5vw;
+        font-weight: 600;
+        line-height: 32px;
+        margin-bottom: 1.6rem;
+        padding-right: 0;
+
+        @include breakpoint($laptop) {
+            font-size: 2vw;
+            line-height: 26px;
+        }
+        @include breakpoint($tablet) {
+            font-size: 2.5vw;
+        }
+        @include breakpoint($tablet-pt) {
+            font-size: 3vw;
+            line-height: 22px;
+        }
+        @include breakpoint($mobile) {
+            font-size: 6vw;
+        }
     }
 }
 
@@ -109,7 +159,7 @@
     color: $dark-grey;
     font-size: 0.8vw;
     font-weight: 500;
-    line-height: 12px; /* 120% */
+    line-height: 18px; /* 120% */
 
     &--link {
         text-decoration: none;
@@ -135,8 +185,13 @@
         position: relative;
     }
 
+    &--margin {
+        margin-bottom: 1.2rem;
+    }
+
     @include breakpoint($laptop) {
         font-size: 0.9vw;
+        line-height: 14px;
     }
     @include breakpoint($tablet) {
         font-size: 1.1vw;
@@ -201,4 +256,260 @@
 
 .modal__footer {
     text-align: center;
+}
+
+.modal__products {
+    margin-top: 1.2rem;
+}
+
+.modal__product {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1.2rem;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.modal__product-info {
+    display: flex;
+    align-items: center;
+    margin-right: 2.4rem;
+}
+
+.modal__product-img {
+    display: block;
+    margin-right: 1.2rem;
+}
+
+.modal__product-btn {
+    flex-grow: 1;
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.modal__input {
+    &--margin {
+        margin-top: 1.2rem;
+    }
+}
+
+.modal__button {
+    width: 39%;
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    &--right {
+        margin: 0 0 0 auto;
+
+        @include breakpoint($mobile) {
+            width: 100%;
+        }
+    }
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .modal__button {
+        width: 39%;
+    }
+
+    @include breakpoint($mobile) {
+        flex-wrap: wrap;
+
+        .modal__button {
+            width: 100%;
+
+            &:first-child {
+                margin-bottom: 0.6rem;
+            }
+        }
+    }
+}
+
+.modal__paragraph {
+    margin-bottom: 1.2rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 0;
+    }
+}
+
+.modal__bold {
+    color: $dark;
+    font-size: 0.9vw;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-left: 1.2rem;
+    
+    @include breakpoint($laptop) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.3vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.7vw;
+    }
+}
+
+.modal__btn-box {
+    align-self: center;
+
+    @include breakpoint($mobile) {
+        flex-grow: 1;
+        margin-bottom: 1.2rem;
+        text-align: right;
+    }
+}
+
+.modal__btn {
+    color: $secondary;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 16px;
+    border: none;
+    outline: none; 
+    
+    &:hover {
+        color: $gray;
+    }
+
+    @include breakpoint($laptop) {
+        font-size: 0.9vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.6vw;
+    }
+}
+
+.modal__select {
+    margin-bottom: 1.2rem;
+    
+    .select__element {
+        width: 100%;
+    }
+}
+
+.modal__delivery {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 4px;
+
+    &:last-child {
+        margin: 0;
+    } 
+
+    &.active {
+        border: 1px solid $secondary;
+    }
+}
+
+.modal__radio {
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.modal__map {
+    height: 14rem;
+    background-color: #ccc;
+
+    @include breakpoint($tablet-pt) {
+        height: 10rem;
+    }
+}
+
+.modal__addition,
+.modal__delivery-item-addition {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+.modal__delivery-address {
+    display: grid;
+    grid-template-areas: 
+    "street street house apartment";
+    gap: 1.6rem;
+
+    .input {
+        margin-bottom: 0;
+    }
+
+    .modal__input {
+        &:nth-child(1) {
+            grid-area: street;
+        }
+        &:nth-child(2) {
+            grid-area: house;
+        }
+        &:nth-child(3) {
+            grid-area: apartment;
+        }
+    
+        .input {
+            padding: 0.9rem 0.8rem;
+            width: 100%;
+        }
+    }
+
+    @include breakpoint($tablet) {
+        gap: 0.8rem;
+        grid-template-areas: 
+        "street street"
+        "house apartment";
+    }
+}
+
+.modal__delivery-item {
+    padding-left: 1.2rem;
+}
+
+.modal__radio-groups {
+    margin-bottom: 1.2rem;
+}
+
+.modal__result {
+    text-align: center;
+    margin-bottom: 2.8rem;
+
+    @include breakpoint($mobile) {
+        .modal__btn-box {
+            text-align: center;
+        }
+    }
+}
+
+.modal__main-img-box {
+    margin-bottom: 1.8rem;
+}
+
+.modal__main-img {
+    display: block;
+    margin: 0 auto;
 }
