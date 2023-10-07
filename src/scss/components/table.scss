@@ -1,0 +1,15 @@
+.table__item {
+    background-color: $white;
+
+    &--soft {
+        background-color: $soft;
+    }
+}
+
+.table__cell {
+    color: $dark-grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    padding: 8px 16px;
+}

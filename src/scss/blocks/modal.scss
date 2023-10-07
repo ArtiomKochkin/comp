@@ -39,7 +39,19 @@
     &--result {
         max-width: 34vw;
     }
+    &--feedback {
+        max-width: 45vw;
+    }
+    &--photos {
+        max-width: 55vw;
+    }
 
+
+    @include breakpoint($laptop) {
+        &--feedback {
+            max-width: 54vw;
+        }
+    }
     @include breakpoint($tablet) {
         max-width: 38vw;
 
@@ -48,6 +60,9 @@
         }
         &--result {
             max-width: 43vw;
+        }
+        &--feedback {
+            max-width: 68vw;
         }
     }
     @include breakpoint($tablet-pt) {
@@ -58,6 +73,9 @@
         }
         &--result {
             max-width: 63vw;
+        }
+        &--feedback {
+            max-width: 90vw;
         }
     }
     @include breakpoint($mobile) {
@@ -271,12 +289,21 @@
     &:last-child {
         border: none;
     }
+
+    @include breakpoint($mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .modal__product-info {
     display: flex;
     align-items: center;
     margin-right: 2.4rem;
+
+    @include breakpoint($mobile) {
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+    }
 }
 
 .modal__product-img {
@@ -338,7 +365,7 @@
 }
 
 .modal__paragraph {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 
     @include breakpoint($mobile) {
         margin-bottom: 0;
@@ -512,4 +539,58 @@
 .modal__main-img {
     display: block;
     margin: 0 auto;
+}
+
+.modal__bank {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.modal__bank-img {
+    display: block;
+    margin-right: 1.2rem;
+}
+
+.modal__order {
+    display: flex;
+    justify-content: center;
+
+    .product-page__prices {
+        margin-right: 2.4rem;
+        align-self: center;
+    }
+
+    .modal__button {
+        width: 17rem;
+    }
+}
+
+.modal__dots {
+    margin: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__dot {
+    width: 9px;
+    height: 9px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 1.6rem;
+
+    &.active {
+        width: 20px;
+        height: 20px;
+        background-color: $secondary;
+    }
+
+    &:last-child {
+        margin-right: 0
+    }
+}
+
+.modal__slider-wrap {
+    @include flex;
 }

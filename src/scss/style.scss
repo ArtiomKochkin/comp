@@ -48,6 +48,25 @@ img {
     }
 }
 
+@import "components/nav";
+@import "components/rating";
+@import "components/product";
+@import "components/section";
+@import "components/show-more";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/breadcrumbs";
+@import "components/recommendation";
+@import "components/pagination";
+@import "components/social";
+@import "components/contact-box";
+@import "components/filter";
+@import "components/select";
+@import "components/checkbox";
+@import "components/radio";
+@import "components/switch";
+@import "components/table";
+
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/cart";
@@ -75,21 +94,4 @@ img {
 @import "blocks/order";
 @import "blocks/success";
 @import "blocks/account";
-
-@import "components/nav";
-@import "components/rating";
-@import "components/product";
-@import "components/section";
-@import "components/show-more";
-@import "components/buttons";
-@import "components/inputs";
-@import "components/breadcrumbs";
-@import "components/recommendation";
-@import "components/pagination";
-@import "components/social";
-@import "components/contact-box";
-@import "components/filter";
-@import "components/select";
-@import "components/checkbox";
-@import "components/radio";
-@import "components/switch";
+@import "blocks/product-page";
