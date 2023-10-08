@@ -911,16 +911,20 @@
 .order__making-fixed {
     display: none;
     justify-content: space-between;
-    align-items: center;
     background: $soft;
     padding: 1.6rem;
     box-shadow: 0px 2px 30px 0px rgba(50, 50, 71, 0.25);
 
     .order__price {
         margin-top: 0;
+        align-self: center;
     }
 
     @include breakpoint($tablet-pt) {
         display: flex;
+
+        .button {
+            padding: 0.9rem 1.2rem;
+        }
     }
 }

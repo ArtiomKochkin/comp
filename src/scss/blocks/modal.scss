@@ -64,6 +64,9 @@
         &--feedback {
             max-width: 68vw;
         }
+        &--photos {
+            max-width: 65vw;
+        }
     }
     @include breakpoint($tablet-pt) {
         max-width: 50vw;
@@ -76,6 +79,9 @@
         }
         &--feedback {
             max-width: 90vw;
+        }
+        &--photos {
+            max-width: 70vw;
         }
     }
     @include breakpoint($mobile) {
@@ -564,6 +570,15 @@
     .modal__button {
         width: 17rem;
     }
+    .product-page__price-actual {
+        font-weight: 700;
+    }
+
+    @include breakpoint($mobile) {
+        .modal__button {
+            width: 14rem;
+        }
+    }
 }
 
 .modal__dots {
@@ -584,6 +599,11 @@
         width: 20px;
         height: 20px;
         background-color: $secondary;
+
+        @include breakpoint($mobile) {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     &:last-child {
@@ -593,4 +613,28 @@
 
 .modal__slider-wrap {
     @include flex;
+}
+
+.modal__slider-item {
+    display: none;
+    margin: auto;
+
+    &.active {
+        display: block;
+    }
+
+    @include breakpoint($desktop) {
+        width: 90%;
+    }
+    @include breakpoint($laptop) {
+        width: 85%;
+    }
+}
+
+.modal__slider-img {
+    @include breakpoint($laptop) {
+        width: 85%;
+        display: block;
+        margin: auto;
+    }
 }
