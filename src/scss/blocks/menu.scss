@@ -6,11 +6,12 @@
     background-color: $dark;
     padding: 3rem;
     width: 43rem;
-    min-height: 100vh; 
-    display: none;
+    height: 100vh;
+    overflow-y: auto; 
+    transform: translateX(-100%);
 
     &.show {
-        display: block;
+        transform: translateX(0%);
     }
 
     @include breakpoint($mobile) {

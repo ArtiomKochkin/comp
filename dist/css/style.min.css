@@ -2923,11 +2923,12 @@ img {
   background-color: #060F42;
   padding: 3rem;
   width: 43rem;
-  min-height: 100vh;
-  display: none;
+  height: 100vh;
+  overflow-y: auto;
+  transform: translateX(-100%);
 }
 .menu.show {
-  display: block;
+  transform: translateX(0%);
 }
 @media screen and (max-width: 500px) {
   .menu {
