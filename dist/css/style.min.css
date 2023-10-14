@@ -93,7 +93,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #F4F8FB;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2922,6 +2922,7 @@ img {
   z-index: 1000;
   background-color: #060F42;
   padding: 3rem;
+  padding-right: 3rem;
   width: 43rem;
   height: 100vh;
   overflow-y: auto;
@@ -2929,6 +2930,12 @@ img {
 }
 .menu.show {
   transform: translateX(0%);
+}
+.menu::-webkit-scrollbar {
+  width: 5px;
+}
+.menu::-webkit-scrollbar-thumb {
+  background-color: #F4F8FB;
 }
 @media screen and (max-width: 500px) {
   .menu {
@@ -3141,7 +3148,7 @@ img {
 }
 @media screen and (max-width: 1366px) {
   .menu__user-actions-name {
-    font-size: 1dvw;
+    font-size: 1vw;
   }
 }
 @media screen and (max-width: 991px) {
@@ -3156,7 +3163,7 @@ img {
 }
 @media screen and (max-width: 500px) {
   .menu__user-actions-name {
-    font-size: 3.8vw;
+    font-size: 3.4vw;
   }
 }
 
@@ -3195,17 +3202,37 @@ img {
 .menu__actions-name--margin {
   margin-left: 2.3rem;
 }
+@media screen and (max-width: 1366px) {
+  .menu__actions-name {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu__actions-name {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__actions-name {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu__actions-name {
+    font-size: 4vw;
+  }
+}
 
 .menu__content-item {
   margin-top: 1.6rem;
+  overflow: hidden;
 }
 
 .menu__title {
   color: #D9D9D9;
   font-size: 1vw;
   font-weight: 600;
-  line-height: 24px; /* 133.333% */
-  margin-bottom: 1.2rem;
+  line-height: 24px;
 }
 @media screen and (max-width: 1366px) {
   .menu__title {
@@ -3226,6 +3253,11 @@ img {
   .menu__title {
     font-size: 4vw;
   }
+}
+
+.menu__accordion {
+  cursor: pointer;
+  margin-bottom: 1.2rem;
 }
 
 .cart__header {

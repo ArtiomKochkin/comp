@@ -5,6 +5,7 @@
     z-index: 1000;
     background-color: $dark;
     padding: 3rem;
+    padding-right: 3rem;
     width: 43rem;
     height: 100vh;
     overflow-y: auto; 
@@ -12,6 +13,13 @@
 
     &.show {
         transform: translateX(0%);
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $soft;
     }
 
     @include breakpoint($mobile) {
@@ -201,7 +209,7 @@
     line-height: 16px; /* 133.333% */
 
     @include breakpoint($laptop) {
-        font-size: 1dvw;
+        font-size: 1vw;
     }
     @include breakpoint($tablet) {
         font-size: 1.4vw;
@@ -210,7 +218,7 @@
         font-size: 1.8vw;
     }
     @include breakpoint($mobile) {
-        font-size: 3.8vw;
+        font-size: 3.4vw;
     }
 }
 
@@ -254,21 +262,32 @@
     &--margin {
         margin-left: 2.3rem;
     }
+
+    @include breakpoint($laptop) {
+        font-size: 1.2vw;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.6vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 2vw;
+    }
+    @include breakpoint($mobile) {
+        font-size: 4vw;
+    }
 }
 
 
 .menu__content-item {
     margin-top: 1.6rem;
-
-
+    overflow: hidden;
 }
 
 .menu__title {
     color: $light-gray;
     font-size: 1vw;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
-    margin-bottom: 1.2rem;
+    line-height: 24px;
 
     @include breakpoint($laptop) {
         font-size: 1.3vw;
@@ -282,4 +301,9 @@
     @include breakpoint($mobile) {
         font-size: 4vw;
     }
+}
+
+.menu__accordion {
+    cursor: pointer;
+    margin-bottom: 1.2rem;
 }
