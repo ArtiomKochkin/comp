@@ -1,10 +1,5 @@
 .intro {
-    margin-top: 2.4rem;
     position: relative;
-
-    @include breakpoint($tablet) {
-        margin: 0;
-    }
 }
 
 .intro__banners {

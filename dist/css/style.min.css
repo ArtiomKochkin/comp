@@ -132,6 +132,15 @@ img {
   max-width: 100%;
 }
 
+.main {
+  margin-top: 17rem;
+}
+@media screen and (max-width: 991px) {
+  .main {
+    margin-top: 13rem;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 80vw;
@@ -2892,14 +2901,11 @@ img {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
   width: 100%;
-}
-.header.fixed {
-  position: fixed;
 }
 
 .header__up {
@@ -3168,7 +3174,7 @@ img {
 }
 
 .header__comparison {
-  transform: translateY(-100%);
+  transform: translateY(-106%);
   position: absolute;
   right: 0;
   top: 130%;
@@ -4681,13 +4687,7 @@ img {
 }
 
 .intro {
-  margin-top: 2.4rem;
   position: relative;
-}
-@media screen and (max-width: 991px) {
-  .intro {
-    margin: 0;
-  }
 }
 
 .intro__banners {

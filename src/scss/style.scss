@@ -35,6 +35,14 @@ img {
     max-width: 100%;
 }
 
+.main {
+    margin-top: 17rem;
+
+    @include breakpoint($tablet) {
+        margin-top: 13rem;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 80vw;

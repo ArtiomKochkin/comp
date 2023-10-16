@@ -1,13 +1,9 @@
 .header {
-    position: relative;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
     width: 100%;
-
-    &.fixed {
-        position: fixed;
-    }
 }
 
 .header__up {
@@ -269,7 +265,7 @@
 }
 
 .header__comparison {
-    transform: translateY(-100%);
+    transform: translateY(-106%);
     position: absolute;
     right: 0;
     top: 130%;
