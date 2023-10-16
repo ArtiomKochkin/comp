@@ -19,13 +19,16 @@ export function menuContent() {
             let navMenu = parentItem.querySelector(".nav--menu");
             
             if (!navMenu.classList.contains("show")) {
-                arrow.setAttribute("src", "../img/svg/arrow/arrow-up-white-l.svg");
-                navMenu.classList.add("show");
+                setTimeout(() => {
+                    arrow.setAttribute("src", "../img/svg/arrow/arrow-up-white-l.svg");
+                    navMenu.classList.add("show");
+                }, 10);
             } else {
-                arrow.setAttribute("src", "../img/svg/arrow/arrow-down-white-l.svg");
-                navMenu.classList.remove("show");
+                setTimeout(() => {
+                    arrow.setAttribute("src", "../img/svg/arrow/arrow-down-white-l.svg");
+                    navMenu.classList.remove("show");
+                }, 50);
             }
-
         });
     });
 }

@@ -2,6 +2,10 @@
     &--menu {
         display: none;
 
+        .nav__item {
+            margin-bottom: 1.6rem;
+        }
+
         &.show {
             display: block;
         }
@@ -16,7 +20,7 @@
                 margin-bottom: 1.2rem;
             }
             .nav__link {
-                font-size: 3.6vw;
+                font-size: 3vw;
             }
         }
     }

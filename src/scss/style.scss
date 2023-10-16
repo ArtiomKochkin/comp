@@ -23,7 +23,8 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 
     &.no-scroll {
         overflow: hidden;
@@ -36,7 +37,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 79.79vw;
+    max-width: 80vw;
     margin: 0 auto;
 
     @include breakpoint($desktop) {
@@ -46,6 +47,18 @@ img {
         max-width: 100%;
         padding: 0 1.6rem;
     }
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
 }
 
 @import "components/nav";
@@ -67,11 +80,11 @@ img {
 @import "components/switch";
 @import "components/table";
 
+@import "blocks/catalog";
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/cart";
 @import "blocks/footer";
-@import "blocks/catalog";
 @import "blocks/intro";
 @import "blocks/top";
 @import "blocks/game";

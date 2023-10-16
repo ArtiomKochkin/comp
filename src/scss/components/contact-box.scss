@@ -1,4 +1,8 @@
 .contact-box {
+    &--menu {
+        margin-top: 1.2rem;
+    }
+
     @include breakpoint($tablet-pt) {
         &--menu {
             .contact-box__address,

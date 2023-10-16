@@ -3,6 +3,7 @@
     left: 0;
     top: 0;
     z-index: 1000;
+    display: block;
     background-color: $dark;
     padding: 3rem;
     padding-right: 3rem;
@@ -16,10 +17,7 @@
     }
 
     &::-webkit-scrollbar {
-        width: 5px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: $soft;
+        width: 0;
     }
 
     @include breakpoint($mobile) {
@@ -52,6 +50,8 @@
     font-weight: 600;
     line-height: 24px;
     text-decoration: none;
+    border: none;
+    background: none;
 
     &:hover {
         color: $gray;

@@ -25,6 +25,7 @@
     border-radius: 4px;
     position: relative;
     overflow: auto;
+    opacity: 0;
 
     &::-webkit-scrollbar {
         width: 0;
@@ -637,4 +638,10 @@
         display: block;
         margin: auto;
     }
+}
+
+.modal__text--link {
+    background: none;
+    border: none;
+    outline: none;
 }
