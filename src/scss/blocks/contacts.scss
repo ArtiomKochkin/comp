@@ -31,7 +31,7 @@
 }
 
 .contacts__map {
-    background-color: #666;
+    background-color: $white;
 
     @include breakpoint($tablet) {
         height: 30rem;

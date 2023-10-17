@@ -6856,7 +6856,7 @@ img {
 }
 
 .contacts__map {
-  background-color: #666;
+  background-color: #fff;
 }
 @media screen and (max-width: 991px) {
   .contacts__map {

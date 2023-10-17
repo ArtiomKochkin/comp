@@ -143,11 +143,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="contacts__map"></div>
+                <div class="contacts__map" id="map"></div>
             </div>
         </section>
     </main>
     @@include('html/footer.html', {})
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<3b140827-3adf-40f1-a8e6-f42dc13f8f39>" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            let myMap = new ymaps.Map("map", {
+                center: [48.466736, 35.049055],
+                zoom: 12
+            });
+
+            myMap.geoObjects
+                .add(new ymaps.Placemark([48.466736, 35.049055], {
+                    balloonContent: 'Интернет-магазин V-Comp. Ул. Европейская, 8',
+                    iconCaption: 'Интернет-магазин V-Comp'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#0095b6',
+                    iconCaptionMaxWidth: '150'
+                }));
+        }
+    </script> 
     <script src="js/app.min.js"></script>
 </body>
 </html>
