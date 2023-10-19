@@ -167,13 +167,12 @@
     padding: 4rem 0;
 }
 
-.promotion__banners {
-    margin: 0 2.4rem;
+.promotion__slider {
     overflow: hidden;
 }
 
 .promotion__banner {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 

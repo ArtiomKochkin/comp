@@ -6,6 +6,8 @@ import * as modalGeneral from "./components/modalGeneral.js";
 import * as comparisonHeader from "./components/comparisonHeader.js";
 import * as contacts from "./components/contacts.js";
 import * as sliderPromotion from "./components/sliderPromotion.js";
+import * as sliderIntro from "./components/sliderIntro.js";
+
 
 functions.isWebp();
 menu.toggleMenu();
@@ -15,6 +17,9 @@ modalGeneral.toggleModalGeneral();
 catalog.toggleCatalog();
 
 switch (window.location.pathname) {
+    case "/index.html" : {   
+        sliderIntro.initSlider();
+    } break;
     case "/contacts.html" : {
         contacts.map();
     } break;
