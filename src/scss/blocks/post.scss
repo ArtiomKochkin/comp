@@ -6,15 +6,16 @@
     }
 }
 
-.post__socials-list {
-    position: fixed;
-    right: 21vw;
-    top: 215px;
-    z-index: 2;
+.post__socials {
+    position: relative;
+}
 
-    @include breakpoint($laptop) {
-        right: 5vw;
-    }
+.post__socials-list {
+    position: sticky;
+    height: fit-content;
+    top: 17rem;
+    left: 0;
+
     @include breakpoint($tablet-pt) {
         position: static;
         display: flex;

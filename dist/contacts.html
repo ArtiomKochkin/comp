@@ -8,6 +8,9 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Контакты</title>
 </head>
@@ -1666,6 +1669,11 @@
     </div>
 </aside>
     <main class="main">
+        <div class="breadcrumbs breadcrumbs--has container">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+            <img src="./img/svg/arrow/arrow-right-gray-s.svg" alt="" class="breadcrumbs__arrow">
+            <a href="contacts.html" class="breadcrumbs__link breadcrumbs__link--current">Контакты</a>
+        </div>
         <section class="contacts container">
             <h3 class="section__title">Контакты</h3>
             <div class="contacts__wrap">
@@ -1976,26 +1984,6 @@
     </div>
 </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<3b140827-3adf-40f1-a8e6-f42dc13f8f39>" type="text/javascript"></script>
-    <script>
-        ymaps.ready(init);
-
-        function init() {
-            let myMap = new ymaps.Map("map", {
-                center: [48.466736, 35.049055],
-                zoom: 12
-            });
-
-            myMap.geoObjects
-                .add(new ymaps.Placemark([48.466736, 35.049055], {
-                    balloonContent: 'Интернет-магазин V-Comp. Ул. Европейская, 8',
-                    iconCaption: 'Интернет-магазин V-Comp'
-                }, {
-                    preset: 'islands#icon',
-                    iconColor: '#0095b6',
-                    iconCaptionMaxWidth: '150'
-                }));
-        }
-    </script> 
     <script src="js/app.min.js"></script>
 </body>
 </html>

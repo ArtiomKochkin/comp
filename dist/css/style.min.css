@@ -6140,16 +6140,15 @@ img {
   }
 }
 
-.post__socials-list {
-  position: fixed;
-  right: 21vw;
-  top: 215px;
-  z-index: 2;
+.post__socials {
+  position: relative;
 }
-@media screen and (max-width: 1366px) {
-  .post__socials-list {
-    right: 5vw;
-  }
+
+.post__socials-list {
+  position: sticky;
+  height: fit-content;
+  top: 17rem;
+  left: 0;
 }
 @media screen and (max-width: 768px) {
   .post__socials-list {
@@ -6475,12 +6474,16 @@ img {
 
 .promotion__banners {
   margin: 0 2.4rem;
+  overflow: hidden;
 }
 
 .promotion__banner {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
+}
+.promotion__banner.active {
+  display: flex;
 }
 @media screen and (max-width: 768px) {
   .promotion__banner {
@@ -6586,6 +6589,7 @@ img {
 .promotion__banner-img {
   border-radius: 8px;
   display: block;
+  width: 100%;
 }
 
 .promotion__arrow {

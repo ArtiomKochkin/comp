@@ -169,12 +169,17 @@
 
 .promotion__banners {
     margin: 0 2.4rem;
+    overflow: hidden;
 }
 
 .promotion__banner {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
+
+    &.active {
+        display: flex;
+    }
 
     @include breakpoint($tablet-pt) {
         flex-wrap: wrap;
@@ -261,6 +266,7 @@
 .promotion__banner-img {
     border-radius: 8px;
     display: block;
+    width: 100%;
 }
 
 
