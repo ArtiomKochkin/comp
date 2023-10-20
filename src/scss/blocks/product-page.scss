@@ -704,14 +704,9 @@
     border-radius: 4px;
     display: flex;   
 
-    @include breakpoint($mobile) {
-        display: none;
-
-        &.active {
-            display: flex;
-            width: 75vw;
-            margin: 0 auto;
-        }
+    @include breakpoint($tablet-pt) {
+        padding: 1.2rem;
+        margin: 1.2rem;
     }
 }
 
@@ -722,6 +717,10 @@
 .product-page__feedback-content {
     flex-grow: 1;
     width: 87%;
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
 }
 
 .product-page__feedback-info {

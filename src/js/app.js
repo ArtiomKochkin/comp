@@ -8,6 +8,7 @@ import * as contacts from "./components/contacts.js";
 import * as sliderPromotion from "./components/sliderPromotion.js";
 import * as sliderIntro from "./components/sliderIntro.js";
 import * as sliderReviews from "./components/sliderReviews.js";
+import * as sliderProduct from "./components/sliderProduct.js";
 
 
 functions.isWebp();
@@ -28,4 +29,7 @@ switch (window.location.pathname) {
     case "/promotion.html" : {
         sliderPromotion.initSlider();
     } break;
+    case "/product.html" : {
+        sliderProduct.initSlider();
+    }
 }
