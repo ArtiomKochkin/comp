@@ -82,3 +82,34 @@
         outline: none;
     }
 }
+
+.reviews__slider {
+    position: relative;
+
+    .slick-slide {
+        display: flex;
+        height: auto;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        font-size: 0;
+        border: none;
+        outline: none;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        top: 0%;
+        z-index: 10;
+
+        &.slick-prev {
+            left: 0;
+            background: url("../../img/svg/arrow/arrow-left-blue-s.svg") 0 0 / 100% no-repeat;
+        }
+
+        &.slick-next {
+            right: 0;
+            background: url("../../img/svg/arrow/arrow-right-blue-s.svg") 0 0 / 100% no-repeat;
+        }
+    }
+}

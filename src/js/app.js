@@ -7,6 +7,7 @@ import * as comparisonHeader from "./components/comparisonHeader.js";
 import * as contacts from "./components/contacts.js";
 import * as sliderPromotion from "./components/sliderPromotion.js";
 import * as sliderIntro from "./components/sliderIntro.js";
+import * as sliderReviews from "./components/sliderReviews.js";
 
 
 functions.isWebp();
@@ -19,6 +20,7 @@ catalog.toggleCatalog();
 switch (window.location.pathname) {
     case "/index.html" : {   
         sliderIntro.initSlider();
+        sliderReviews.initSlider();
     } break;
     case "/contacts.html" : {
         contacts.map();
