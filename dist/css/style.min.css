@@ -4847,12 +4847,12 @@ img {
 }
 @media screen and (min-height: 768px) {
   .intro__slider-img {
-    height: 44vh;
+    height: 48vh;
   }
 }
 @media screen and (min-height: 900px) {
   .intro__slider-img {
-    height: 42vh;
+    height: 44vh;
   }
 }
 @media screen and (min-height: 1024px) {
