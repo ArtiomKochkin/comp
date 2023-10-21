@@ -1,8 +1,11 @@
 .breadcrumbs {
-    margin: 3.2rem auto 2.4rem;
+    margin: 2.4rem auto;
     display: flex;
     align-items: center;
 
+    @include breakpoint($tablet-pt) {
+        margin: 1.6rem auto;
+    }
     @include breakpoint($mobile) {
         display: none;
 

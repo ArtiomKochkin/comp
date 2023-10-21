@@ -1466,9 +1466,14 @@ img {
 }
 
 .breadcrumbs {
-  margin: 3.2rem auto 2.4rem;
+  margin: 2.4rem auto;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    margin: 1.6rem auto;
+  }
 }
 @media screen and (max-width: 500px) {
   .breadcrumbs {
