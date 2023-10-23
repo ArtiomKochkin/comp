@@ -10,6 +10,7 @@ import * as sliderIntro from "./components/sliderIntro.js";
 import * as sliderReviews from "./components/sliderReviews.js";
 import * as sliderProduct from "./components/sliderProduct.js";
 import * as pagination from "./components/pagination.js";
+import * as countdown from "./components/countdown.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -39,5 +40,6 @@ switch (window.location.pathname) {
     case "/promo.html" : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
+        countdown.initCountdown();
     } break;
 }
