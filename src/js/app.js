@@ -33,9 +33,11 @@ switch (window.location.pathname) {
         sliderProduct.initSlider();
     } break;
     case "/news.html" : {
-        pagination.initPagination();
-    }
+        let pages = document.querySelectorAll(".news__wrap"); 
+        pagination.initPagination(pages);
+    } break;
     case "/promo.html" : {
-        pagination.initPagination();
-    }
+        let pages = document.querySelectorAll(".product__items"); 
+        pagination.initPagination(pages);
+    } break;
 }

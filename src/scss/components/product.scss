@@ -16,10 +16,14 @@
 }
 
 .product__items {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(20, 1fr);
     gap: 1.6rem;
     margin-bottom: 1.6rem;
+
+    &.active {
+        display: grid;
+    }
 }
 
 .product {

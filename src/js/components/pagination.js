@@ -1,9 +1,8 @@
-export function initPagination() {
+export function initPagination(pagintationItems) {
     const pagination = document.querySelector(".pagination");
     const buttonShowMore = document.querySelector(".pagination__show-more");
     const buttonPrev = document.querySelector(".pagination__link-page--prev");
     const buttonNext = document.querySelector(".pagination__link-page--next");
-    const pagintationItems = document.querySelectorAll(".news__wrap");  // !!!!!!!!!!!!!!!!!!!
     const paginationLinks = document.querySelectorAll(".pagination__link--active");
     const lastLink = document.querySelector(".pagination__link--last");
     let i = 0;
