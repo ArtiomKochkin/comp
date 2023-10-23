@@ -9,7 +9,7 @@ import * as sliderPromotion from "./components/sliderPromotion.js";
 import * as sliderIntro from "./components/sliderIntro.js";
 import * as sliderReviews from "./components/sliderReviews.js";
 import * as sliderProduct from "./components/sliderProduct.js";
-
+import * as pagination from "./components/pagination.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -31,5 +31,11 @@ switch (window.location.pathname) {
     } break;
     case "/product.html" : {
         sliderProduct.initSlider();
+    } break;
+    case "/news.html" : {
+        pagination.initPagination();
+    }
+    case "/promo.html" : {
+        pagination.initPagination();
     }
 }

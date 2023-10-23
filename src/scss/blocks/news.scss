@@ -1,4 +1,10 @@
 .news__wrap {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
     @include breakpoint($tablet) {
         margin-top: 1.6rem;
     }
