@@ -691,7 +691,13 @@
     grid-area: feedback;
 }
 
-.product-page__feedback-list {
+.product-page__feedback-items {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
     @include breakpoint($mobile) {
         margin-bottom: 1.2rem;
     }

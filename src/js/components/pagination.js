@@ -32,13 +32,14 @@ export function initPagination(pagintationItems) {
                     buttonNext.classList.remove("hidden");
                 }
                 if (paginationLinks[j] == paginationLinks[2]) {
-                    if (i < 5) {
+                    if (i < pagintationItems.length - 1) {
                         i = +paginationLinks[j].innerText - 1;
                         scrollForward();
                         paginationLinks[j - 1].classList.add("active");
-                    } else if (i == 5) {
+                    } else if (i == pagintationItems.length - 1) {
                         paginationLinks[j].classList.add("active");
                         buttonNext.classList.add("hidden");
+                        buttonShowMore.classList.add("hidden");
                     }
                 } else if (paginationLinks[j] == paginationLinks[0]) {
                     if (i > 0) {
@@ -48,14 +49,16 @@ export function initPagination(pagintationItems) {
                         i = +paginationLinks[j].innerText - 1;
                         scrollBack();
                         paginationLinks[j + 1].classList.add("active");
+                        buttonShowMore.classList.remove("hidden");
                     } else {
                         paginationLinks[j].classList.add("active");
                     }
                 } else if (paginationLinks[j] == paginationLinks[1]) {
-                    if (i == 1) {
+                    if (i == 0) {
                         buttonPrev.classList.add("hidden");
                     }
                     paginationLinks[j].classList.add("active");
+                    buttonShowMore.classList.remove("hidden");
                 }
                 pagintationItems[i].classList.add("active");
             });
@@ -81,8 +84,10 @@ export function initPagination(pagintationItems) {
         i++;
         if (i < pagintationItems.length - 1) {
             buttonPrev.classList.remove("hidden");
+            buttonShowMore.classList.remove("hidden");
         } else if (i == pagintationItems.length - 1) {
             buttonNext.classList.add("hidden");
+            buttonShowMore.classList.add("hidden");
         }
         if (i < pagintationItems.length - 2) {
             scrollForward();
@@ -98,6 +103,7 @@ export function initPagination(pagintationItems) {
             buttonPrev.classList.add("hidden");
         } else if (i < pagintationItems.length - 1) {
             buttonNext.classList.remove("hidden");
+            buttonShowMore.classList.remove("hidden");
         } else {
             pagintationItems[i].classList.add("active");
         }
@@ -120,7 +126,7 @@ export function initPagination(pagintationItems) {
         pagintationItems[i].classList.add("active");
         paginationLinks[paginationLinks.length - 1].classList.add("active");
         scrollToLastItem(indexPrevItem);
-
+        buttonShowMore.classList.add("hidden");
     }
 
     function scrollForward() {

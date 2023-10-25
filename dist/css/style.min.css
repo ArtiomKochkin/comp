@@ -11701,8 +11701,14 @@ img {
   grid-area: feedback;
 }
 
+.product-page__feedback-items {
+  display: none;
+}
+.product-page__feedback-items.active {
+  display: block;
+}
 @media screen and (max-width: 500px) {
-  .product-page__feedback-list {
+  .product-page__feedback-items {
     margin-bottom: 1.2rem;
   }
 }

@@ -31,6 +31,8 @@ switch (window.location.pathname) {
         sliderPromotion.initSlider();
     } break;
     case "/product.html" : {
+        let pages = document.querySelectorAll(".product-page__feedback-items"); 
+        pagination.initPagination(pages);
         sliderProduct.initSlider();
     } break;
     case "/news.html" : {
@@ -41,5 +43,17 @@ switch (window.location.pathname) {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         countdown.initCountdown();
+    } break;
+    case "/products.html" : {
+        let pages = document.querySelectorAll(".product__items"); 
+        pagination.initPagination(pages);
+    } break;
+    case "/subcategory.html" : {
+        let pages = document.querySelectorAll(".product__items"); 
+        pagination.initPagination(pages);
+    } break;
+    case "/search.html" : {
+        let pages = document.querySelectorAll(".product__items"); 
+        pagination.initPagination(pages);
     } break;
 }
