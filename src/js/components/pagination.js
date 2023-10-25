@@ -1,11 +1,38 @@
 export function initPagination(pagintationItems) {
-    const pagination = document.querySelector(".pagination");
-    const buttonShowMore = document.querySelector(".pagination__show-more");
-    const buttonPrev = document.querySelector(".pagination__link-page--prev");
-    const buttonNext = document.querySelector(".pagination__link-page--next");
-    const paginationLinks = document.querySelectorAll(".pagination__link--active");
-    const lastLink = document.querySelector(".pagination__link--last");
     let i = 0;
+    let pagination, buttonShowMore, buttonPrev, buttonNext, paginationLinks, lastLink;
+
+    if (window.location.pathname != "/account.html") {
+        pagination = document.querySelector(".pagination");
+        buttonShowMore = document.querySelector(".pagination__show-more");
+        buttonPrev = document.querySelector(".pagination__link-page--prev");
+        buttonNext = document.querySelector(".pagination__link-page--next");
+        paginationLinks = document.querySelectorAll(".pagination__link--active");
+        lastLink = document.querySelector(".pagination__link--last");
+    } else {
+        if (pagintationItems[i].classList.contains("account__product-list--wishlist")) {
+            pagination = document.querySelector(".pagination--wishlist");
+            buttonShowMore = document.querySelector(".pagination__show-more--wishlist");
+            buttonPrev = document.querySelector(".pagination__link-page--wishlist-prev");
+            buttonNext = document.querySelector(".pagination__link-page--wishlist-next");
+            paginationLinks = document.querySelectorAll(".pagination__link--wishlist-active");
+            lastLink = document.querySelector(".pagination__link--wishlist-last");
+        } else if (pagintationItems[i].classList.contains("account__product-list--viewed")) {
+            pagination = document.querySelector(".pagination--viewed");
+            buttonShowMore = document.querySelector(".pagination__show-more--viewed");
+            buttonPrev = document.querySelector(".pagination__link-page--viewed-prev");
+            buttonNext = document.querySelector(".pagination__link-page--viewed-next");
+            paginationLinks = document.querySelectorAll(".pagination__link--viewed-active");
+            lastLink = document.querySelector(".pagination__link--viewed-last");
+        } else if (pagintationItems[i].classList.contains("account__feedback-list")) {
+            pagination = document.querySelector(".pagination--feedback");
+            buttonShowMore = document.querySelector(".pagination__show-more--feedback");
+            buttonPrev = document.querySelector(".pagination__link-page--feedback-prev");
+            buttonNext = document.querySelector(".pagination__link-page--feedback-next");
+            paginationLinks = document.querySelectorAll(".pagination__link--feedback-active");
+            lastLink = document.querySelector(".pagination__link--feedback-last");
+        }
+    }
 
     pagintationItems[i].classList.add("active");
     buttonShowMore.addEventListener("click", showMore);

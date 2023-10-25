@@ -56,4 +56,13 @@ switch (window.location.pathname) {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
     } break;
+    case "/account.html" : {
+        let wishlistPages =  document.querySelectorAll(".account__product-list--wishlist");
+        let viewedPages =  document.querySelectorAll(".account__product-list--viewed");
+        let feedbackPages =  document.querySelectorAll(".account__feedback-list");
+        let pages = [wishlistPages, viewedPages, feedbackPages];
+        pages.forEach(function(page) {
+            pagination.initPagination(page);
+        });
+    } break;
 }

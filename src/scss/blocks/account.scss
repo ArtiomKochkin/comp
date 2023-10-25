@@ -423,11 +423,20 @@
     }
 }
 
-.account__product-list {
+.account__product-list-wrap {
     margin-top: 2.4rem;
 
     .product {
         margin-bottom: 1.2rem;
+    }
+}
+
+.account__product-list,
+.account__feedback-list {
+    display: none;
+
+    &.active {
+        display: block;
     }
 }
 

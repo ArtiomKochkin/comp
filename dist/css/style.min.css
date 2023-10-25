@@ -482,6 +482,7 @@ img {
   top: 0;
   border: none;
   padding: 0;
+  box-shadow: none;
 }
 .product--with-filter.list .product__info-title {
   border: none;
@@ -10232,11 +10233,20 @@ img {
   padding: 0.4rem 0;
 }
 
-.account__product-list {
+.account__product-list-wrap {
   margin-top: 2.4rem;
 }
-.account__product-list .product {
+.account__product-list-wrap .product {
   margin-bottom: 1.2rem;
+}
+
+.account__product-list,
+.account__feedback-list {
+  display: none;
+}
+.account__product-list.active,
+.account__feedback-list.active {
+  display: block;
 }
 
 .account__wishlist-header {
