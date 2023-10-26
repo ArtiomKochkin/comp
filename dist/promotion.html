@@ -9,6 +9,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <title>Акции</title>
 </head>
@@ -971,7 +973,7 @@
             </button>
         </div>
         <div class="cart__products">
-            <div class="cart__product">
+            <div class="cart__product cart-product">
                 <div class="cart__product-img-box">
                     <img src="../img/cart/product-1.svg" alt="" class="cart__product-img">
                 </div>
@@ -993,7 +995,7 @@
                             </div>
                         </div>
                         <div class="cart__product-price">
-                            3600 
+                            <span class="cart__product-cost">1000</span> 
                             <span class="cart__product-price-curency">грн</span>
                         </div>
                     </div>
@@ -1002,7 +1004,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cart__product">
+            <div class="cart__product cart-product">
                 <div class="cart__product-img-box">
                     <img src="../img/cart/product-2.svg" alt="" class="cart__product-img">
                 </div>
@@ -1024,7 +1026,7 @@
                             </div>
                         </div>
                         <div class="cart__product-price">
-                            3600 
+                            <span class="cart__product-cost">2000</span> 
                             <span class="cart__product-price-curency">грн</span>
                         </div>
                     </div>
@@ -1033,7 +1035,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cart__set">
+            <div class="cart__set cart-product">
                 <h6 class="cart__set-name">Комлект 1</h6>
                 <div class="card__set-products">
                     <div class="cart__set__product">
@@ -1042,7 +1044,7 @@
                             <div class="cart__set-product-name">Корпус 2E Gaming Spargo GX910, Black (2E-GX910) </div>
                         </div>
                         <div class="cart__product-price">
-                            3600 
+                            3000 
                             <span class="cart__product-price-curency">грн</span>
                         </div>
                     </div>
@@ -1052,7 +1054,7 @@
                             <div class="cart__set-product-name">Монитор 23.8" Acer </div>
                         </div>
                         <div class="cart__product-price">
-                            3600 
+                            4000 
                             <span class="cart__product-price-curency">грн</span>
                         </div>
                     </div>
@@ -1068,7 +1070,7 @@
                         </div>
                     </div>
                     <div class="cart__product-price">
-                        3600 
+                        <span class="cart__product-cost">7000</span> 
                         <span class="cart__product-price-curency">грн</span>
                     </div>
                     <div class="cart__product-bin-box">
@@ -1081,15 +1083,15 @@
             <div class="cart__buy-up">
                 <div class="cart__buy-text">Итого:</div>
                 <div class="cart__buy-price">
-                    3600 
+                    <span class="cart__buy-total">0</span> 
                     <span class="cart__buy-price-curency">грн</span>
                 </div>
             </div>
             <div class="cart__buy-down">
-                <button class="button button--transparent" type="button">Продолжить покупки</button>
+                <button id="continueShopping" class="button button--transparent" type="button">Продолжить покупки</button>
                 <div class="cart__buy-order">
                     <div class="cart__buy-price">
-                        3600 
+                        <span class="cart__buy-total">0</span> 
                         <span class="cart__buy-price-curency">грн</span>
                     </div>
                     <a class="button" href="../order.html">Оформить заказ</a>
@@ -1099,65 +1101,217 @@
         <div class="cart__kit">
             <h4 class="section__title">Вместе дешевле</h4>
             <div class="cart__kit-content">
-                <div class="cart__kit-arrow-box">
-                    <img src="../img/svg/arrow/arrow-left-blue-24.svg" alt="" class="cart__kit-arrow">
-                </div>
                 <div class="cart__kit-cards">
-                    <div class="cart__kit-card">
-                        <div class="cart__kit-products">
-                            <div class="cart__kit-product">
-                                <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
-                                <div class="cart__kit-product-info">
-                                    <div class="cart__kit-product-name">
-                                        Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                    <div class="cart__slider">
+                        <div class="cart__kit-card">
+                            <div class="cart__kit-products">
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="product__prices cart__kit-product__prices">
-                                        <div class="product__price-old">6000 грн.</div>
-                                        <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                                </div>
+                                <div class="cart__kit-add-box">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                </div>
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Монитор 23.8" Acer 
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="cart__kit-add-box">
-                                <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
-                            </div>
-                            <div class="cart__kit-product">
-                                <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
-                                <div class="cart__kit-product-info">
-                                    <div class="cart__kit-product-name">
-                                        Монитор 23.8" Acer 
-                                    </div>
-                                    <div class="product__prices cart__kit-product__prices">
-                                        <div class="product__price-old">6000 грн.</div>
-                                        <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                            <div class="cart__kit-card-info">
+                                <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                <div class="cart__kit-order">
+                                    <div class="card__kit-order-info">
+                                        <div class="cart__kit-price">
+                                            3600 
+                                            <span class="cart__kit-price-curency">грн</span>
+                                        </div>
+                                        <div class="card__kit-saving">
+                                            Экономия: 
+                                            <span class="cart__kit-saving-price">200</span>
+                                            <span class="cart__kit-saving-curency">грн</span>
                                         </div>
                                     </div>
+                                    <a class="button" href="../order.html">Купить комплект</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart__kit-card-info">
-                            <div class="cart__kit-number">Код комлекта: 1234567</div>
-                            <div class="cart__kit-order">
-                                <div class="card__kit-order-info">
-                                    <div class="cart__kit-price">
-                                        3600 
-                                        <span class="cart__kit-price-curency">грн</span>
-                                    </div>
-                                    <div class="card__kit-saving">
-                                        Экономия: 
-                                        <span class="cart__kit-saving-price">200</span>
-                                        <span class="cart__kit-saving-curency">грн</span>
+                        <div class="cart__kit-card">
+                            <div class="cart__kit-products">
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a class="button" href="../order.html">Купить комплект</a>
+                                <div class="cart__kit-add-box">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                </div>
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Монитор 23.8" Acer 
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__kit-card-info">
+                                <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                <div class="cart__kit-order">
+                                    <div class="card__kit-order-info">
+                                        <div class="cart__kit-price">
+                                            3600 
+                                            <span class="cart__kit-price-curency">грн</span>
+                                        </div>
+                                        <div class="card__kit-saving">
+                                            Экономия: 
+                                            <span class="cart__kit-saving-price">200</span>
+                                            <span class="cart__kit-saving-curency">грн</span>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="../order.html">Купить комплект</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__kit-card">
+                            <div class="cart__kit-products">
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart__kit-add-box">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                </div>
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Монитор 23.8" Acer 
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__kit-card-info">
+                                <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                <div class="cart__kit-order">
+                                    <div class="card__kit-order-info">
+                                        <div class="cart__kit-price">
+                                            3600 
+                                            <span class="cart__kit-price-curency">грн</span>
+                                        </div>
+                                        <div class="card__kit-saving">
+                                            Экономия: 
+                                            <span class="cart__kit-saving-price">200</span>
+                                            <span class="cart__kit-saving-curency">грн</span>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="../order.html">Купить комплект</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__kit-card">
+                            <div class="cart__kit-products">
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart__kit-add-box">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                </div>
+                                <div class="cart__kit-product">
+                                    <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                    <div class="cart__kit-product-info">
+                                        <div class="cart__kit-product-name">
+                                            Монитор 23.8" Acer 
+                                        </div>
+                                        <div class="product__prices cart__kit-product__prices">
+                                            <div class="product__price-old">6000 грн.</div>
+                                            <div class="product__price-actual product__price-actual--sale">
+                                                <span class="product__price ">5000</span> грн.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__kit-card-info">
+                                <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                <div class="cart__kit-order">
+                                    <div class="card__kit-order-info">
+                                        <div class="cart__kit-price">
+                                            3600 
+                                            <span class="cart__kit-price-curency">грн</span>
+                                        </div>
+                                        <div class="card__kit-saving">
+                                            Экономия: 
+                                            <span class="cart__kit-saving-price">200</span>
+                                            <span class="cart__kit-saving-curency">грн</span>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="../order.html">Купить комплект</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cart__kit-arrow-box">
-                    <img src="../img/svg/arrow/arrow-right-blue-24.svg" alt="" class="cart__kit-arrow">
                 </div>
             </div>
         </div>
@@ -2014,8 +2168,6 @@
         </div>
     </div>
 </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

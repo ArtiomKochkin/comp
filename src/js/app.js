@@ -8,10 +8,12 @@ import * as sliderPromotion from "./components/sliderPromotion.js";
 import * as sliderIntro from "./components/sliderIntro.js";
 import * as sliderReviews from "./components/sliderReviews.js";
 import * as sliderProduct from "./components/sliderProduct.js";
+import * as sliderCart from "./components/sliderCart.js";
 import * as pagination from "./components/pagination.js";
 import * as countdown from "./components/countdown.js";
 import * as orderConfiguration from "./components/orderConfiguration.js";
 import * as orderDetails from "./components/orderDetails.js";
+import * as cartConfiguration from "./components/cartConfiguration.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -19,6 +21,8 @@ menuContent.menuContent();
 comparisonHeader.toggleComparisonList();
 modalGeneral.toggleModalGeneral();
 catalog.toggleCatalog();
+cartConfiguration.cartManager();
+sliderCart.initSlider();
 
 switch (window.location.pathname) {
     case "/index.html" : {   
