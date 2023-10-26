@@ -1691,7 +1691,7 @@
                                                 Количество
                                             </div>
                                             <div class="order__making-product-value">
-                                                1
+                                                2
                                             </div>
                                         </div>
                                         <div class="order__making-product-column">
@@ -1699,7 +1699,7 @@
                                                 Цена
                                             </div>
                                             <div class="order__price">
-                                                7200
+                                                <span class="order__price-product">3600</span>
                                                 <span class="order__price-currency">
                                                     грн.
                                                 </span>
@@ -1710,7 +1710,7 @@
                                                 Сумма
                                             </div>
                                             <div class="order__price">
-                                                7200
+                                                <span class="order__price-sum">0</span>
                                                 <span class="order__price-currency">
                                                     грн.
                                                 </span>
@@ -1747,7 +1747,7 @@
                                                 Цена
                                             </div>
                                             <div class="order__price">
-                                                3600
+                                                <span class="order__price-product">3600</span>
                                                 <span class="order__price-currency">
                                                     грн.
                                                 </span>
@@ -1758,7 +1758,7 @@
                                                 Сумма
                                             </div>
                                             <div class="order__price">
-                                                3600
+                                                <span class="order__price-sum">0</span>
                                                 <span class="order__price-currency">
                                                     грн.
                                                 </span>
@@ -1817,7 +1817,7 @@
                                     </div>
                                     <div class="order__method-right">
                                         <div class="order__method-price order__method-price--primary">
-                                            Бесплатно
+                                            <span class="order__method-price-span">Бесплатно</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1847,7 +1847,7 @@
                                     </div>
                                     <div class="order__method-right">
                                         <div class="order__method-price">
-                                            От 150 грн.
+                                            От <span class="order__method-price-span">150</span> грн.
                                         </div>
                                     </div>
                                 </div>
@@ -1901,7 +1901,7 @@
                                     </div>
                                     <div class="order__method-right">
                                         <div class="order__method-price">
-                                            По тарифам перевозчика
+                                            От <span class="order__method-price-span">50</span> грн.
                                         </div>
                                     </div>
                                 </div>
@@ -1983,7 +1983,7 @@
                     </div>
                     <div class="order__making-fixed">
                         <div class="order__price order__price--large">
-                            7200
+                            <span class="totalCost">0</span>
                             <span class="order__price-currency order__price-currency--large">
                                 грн.
                             </span>
@@ -1999,10 +1999,11 @@
                         <div class="order__confirmation-content">
                             <div class="order__confirmation-item">
                                 <div class="order__confirmation-text">
-                                    2 товара на сумму
+                                    <span id="amountProducts">0</span>
+                                    <span id="wordEnding">товаров</span> на сумму
                                 </div>
                                 <div class="order__price">
-                                    7200
+                                    <span id="priceProducts">0</span>
                                     <span class="order__price-currency">
                                         грн.
                                     </span>
@@ -2012,7 +2013,7 @@
                                 <div class="order__confirmation-text">
                                     Стоимость доставки
                                 </div>
-                                <div class="order__confirmation-text">
+                                <div class="order__confirmation-text" id="shippingCost">
                                     Бесплатно
                                 </div>
                             </div>
@@ -2021,7 +2022,7 @@
                                     Итого к оплате
                                 </div>
                                 <div class="order__price order__price--large">
-                                    7200
+                                    <span class="totalCost">0</span>
                                     <span class="order__price-currency order__price-currency--large">
                                         грн.
                                     </span>

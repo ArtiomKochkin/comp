@@ -11,6 +11,7 @@ import * as sliderProduct from "./components/sliderProduct.js";
 import * as pagination from "./components/pagination.js";
 import * as countdown from "./components/countdown.js";
 import * as orderConfiguration from "./components/orderConfiguration.js";
+import * as orderDetails from "./components/orderDetails.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -29,6 +30,7 @@ switch (window.location.pathname) {
     } break;
     case "/order.html" : {
         orderConfiguration.makeOrder();
+        orderDetails.calculateOrderDetails();
     } break;
     case "/product.html" : {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 

@@ -10,6 +10,7 @@ export function makeOrder() {
     const orderPayment = document.querySelectorAll(".order__radios-item");
     const orderDeliveryItems = document.querySelectorAll(".order__method");
     const buttonsConfirm = document.querySelectorAll(".order__making-button");
+    const amountProducts = document.getElementById("amountProducts");
 
     buttonsConfirm.forEach(confirmOrder);
     orderRecipient.addEventListener("change", toggleSwitch);
@@ -76,8 +77,10 @@ export function makeOrder() {
 
     function confirmOrder(item) {
         item.addEventListener("click", () => {
-            orderPage.classList.add("hidden");
-            successPage.classList.add("show");
+            if (amountProducts.innerText != "0") {
+                orderPage.classList.add("hidden");
+                successPage.classList.add("show");
+            }
         });
     }
 }
