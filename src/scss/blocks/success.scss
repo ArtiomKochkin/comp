@@ -79,4 +79,9 @@
 
 .success__button {
     margin: 0 auto;
+    display: inline-block;
+
+    @include breakpoint($tablet-pt) {
+        padding: 0.9rem 1.2rem;
+    }
 }

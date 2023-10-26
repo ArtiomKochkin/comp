@@ -23,7 +23,7 @@
                                         <div class="order__making-product-name">
                                             Процессор Intel Core i5-10400F, Box (BX8070110400F)
                                         </div>
-                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-icon">
+                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-edit order__making-product-edit--icon">
                                     </div>
                                     <div class="order__making-product-info">
                                         <div class="order__making-product-column">
@@ -71,7 +71,7 @@
                                         <div class="order__making-product-name">
                                             Процессор Intel Core i5-10400F, Box (BX8070110400F)
                                         </div>
-                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-icon">
+                                        <img src="./img/svg/edit.svg" alt="" class="order__making-product-edit order__making-product-edit--icon">
                                     </div>
                                     <div class="order__making-product-info">
                                         <div class="order__making-product-column">
@@ -149,8 +149,10 @@
                                         <div class="order__method-desc">
                                             Адрес:  г. Днепр, Европейская, 8, Пн-Пт 9:00-19:00, Сб-Вс: с 9:00-16:00 
                                         </div>
-                                        <div class="order__method-addition show">
-                                            <div class="order__method-map"></div>
+                                        <div class="order__method-addition ">
+                                            <div class="order__method-map ">
+                                                <iframe class="order__method-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2645.4669663051677!2d35.0465041!3d48.466756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3281a2fffff%3A0xd25fce6d67252e75!2sV-COMP!5e0!3m2!1sru!2sru!4v1698235893887!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="order__method-right">
@@ -215,9 +217,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="order__method-addition-mail">
+                                            <div class="order__method-addition-mail active">
                                                 <div class="radio order__method-addition-radio">
-                                                    <input type="radio" class="radio__input" id="delivery-courier" name="mail">
+                                                    <input type="radio" class="radio__input" id="delivery-courier" name="mail" checked>
                                                     <label for="delivery-courier" class="radio__label">Доставка курьером</label>
                                                 </div>
                                                 <div class="order__method-addition-mail-block ">
@@ -273,18 +275,18 @@
                     <div class="order__making-item">
                         <h6 class="order__making-title">Способ оплаты</h6>
                         <div class="order__radios">
-                            <div class="order__radios-item">
+                            <div class="order__radios-item ">
                                 <div class="radio">
-                                    <input type="radio" class="radio__input" id="cash" name="payment">
+                                    <input type="radio" class="radio__input" id="cash" name="payment" checked>
                                     <label for="cash" class="radio__label">Наличными при получении</label>
                                 </div>
                             </div>
-                            <div class="order__radios-item active">
+                            <div class="order__radios-item ">
                                 <div class="radio">
-                                    <input type="radio" class="radio__input" id="cashless" name="payment" checked>
+                                    <input type="radio" class="radio__input" id="cashless" name="payment" >
                                     <label for="cashless" class="radio__label">Оплата картой</label>
                                 </div>
-                                <div class="order__radios-item-requisites show">
+                                <div class="order__radios-item-requisites ">
                                     <div class="order__radios-item-requisites-title">Данные карты</div>
                                     <div class="order__radios-item-requisites-box">
                                         <div class="order__radios-requisites-item">
@@ -366,7 +368,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="order__confirmation-footer">
+                        <div class="order__making-button order__making-button--confirmation">
                             <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                         </div>
                         <div class="order__confirmation-text">
@@ -389,7 +391,7 @@
             <p class="success__text">
                 Ваш заказ был успешно оформлен. Письмо с подтверждением покупки выслано вам на электронную почту.
             </p>
-            <button class="button success__button">Продолжить покупки</button>
+            <a href="./index.html" class="button success__button">Продолжить покупки</a>
         </section>
     </main>
     @@include('html/footer.html', {})
