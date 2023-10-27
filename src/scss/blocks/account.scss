@@ -4,7 +4,7 @@
 }
 
 .account__left {
-    width: 24%;
+    width: 25vw;
     margin-right: 1.6rem;
 
     @include breakpoint($tablet-pt) {
@@ -14,6 +14,7 @@
 
 .account__right {
     flex-grow: 1;
+    width: 70vw;
 }
 
 .account__right-item {
@@ -96,7 +97,7 @@
         width: 70%;
     }
     @include breakpoint($tablet) {
-        width: 80%;
+        width: 90%;
     }
     @include breakpoint($tablet-pt) {
         width: 100%;
@@ -455,7 +456,7 @@
     }
 
     &.active .account__feedback-review {
-        display: block
+        display: block;
     }
 }
 

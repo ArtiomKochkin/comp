@@ -17,7 +17,6 @@ export function wishlistConfiguration() {
     function checkCountProduct() {
         wishlistItems.forEach(item => {
             let products = item.querySelectorAll(".product");
-            console.log(products.length);
             if (products.length < 3) {
                 pagination.querySelector(".pagination__show-more").click();
             }

@@ -17,6 +17,8 @@ import * as cartConfiguration from "./components/cartConfiguration.js";
 import * as comparisonConfiguration from "./components/comparisonConfiguration.js";
 import * as accountTabs from "./components/accountTabs.js";
 import * as accountWishlist from "./components/accountWishlist.js";
+import * as accountFeedback from "./components/accountFeedback.js";
+import * as accountHistory from "./components/accountHistory.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -78,5 +80,7 @@ switch (window.location.pathname) {
         });
         accountTabs.toggleTabs();
         accountWishlist.wishlistConfiguration();
+        accountFeedback.feedbackConfiguration();
+        accountHistory.historyConfiguration();
     } break;
 }

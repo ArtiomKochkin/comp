@@ -9834,7 +9834,7 @@ img {
 }
 
 .account__left {
-  width: 24%;
+  width: 25vw;
   margin-right: 1.6rem;
 }
 @media screen and (max-width: 768px) {
@@ -9845,6 +9845,7 @@ img {
 
 .account__right {
   flex-grow: 1;
+  width: 70vw;
 }
 
 .account__right-item {
@@ -9923,7 +9924,7 @@ img {
 }
 @media screen and (max-width: 991px) {
   .account__profile {
-    width: 80%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 768px) {
