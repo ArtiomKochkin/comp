@@ -38,6 +38,7 @@
     align-items: center;
     cursor: pointer;
     margin-left: 2.4rem;
+    text-decoration: none;
 
     @include breakpoint($tablet-pt) {
         margin-left: 1.2rem;
@@ -58,7 +59,7 @@
         }
     }    
 
-    &--disabled {
+    &.disabled {
         cursor: auto;
 
         .comparison__desc {
@@ -189,6 +190,12 @@
 
 .comparison__content {
     margin-bottom: 2.4rem;
+    display: block;
+    position: relative;
+
+    &.hidden {
+        display: none;
+    }
 
     &::-webkit-scrollbar {
         display: none;
@@ -202,6 +209,9 @@
 .comparison__content-header {
     display: flex;
     border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 13.5rem;
+    background-color: $white;
 
     &.scroll {
         box-shadow: 0px 2px 10px 0px rgba(50, 50, 71, 0.14);

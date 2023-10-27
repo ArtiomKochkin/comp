@@ -3,6 +3,7 @@ export function toggleCatalog() {
     const catalog = document.querySelector(".header__catalog");
     const catalogButton = document.getElementById("catalogButton");
     const catalogButtonIntro = document.getElementById("introButton");
+    const catalogButtonComparison = document.querySelector(".comparison__empty-button");
     const catalogWrap = document.querySelector(".header__catalog-wrap");
     const catalogClose = document.querySelector(".catalog__close");
     const catalogItems = document.querySelectorAll(".catalog__item");
@@ -10,6 +11,7 @@ export function toggleCatalog() {
     catalogWrap.addEventListener("click", closeCatalog);
     catalogClose.addEventListener("click", closeCatalog);
     (catalogButtonIntro != null) ? (catalogButtonIntro.addEventListener("click", showCatalog)) : false;
+    (catalogButtonComparison != null) ? (catalogButtonComparison.addEventListener("click", showCatalog)) : false;
     catalogButton.addEventListener("click", () => {
         (!catalogWrap.classList.contains("show")) ? showCatalog() : closeCatalog();
     });

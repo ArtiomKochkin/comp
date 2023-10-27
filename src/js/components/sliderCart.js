@@ -3,7 +3,6 @@ export function initSlider() {
 
     $(slider).slick({
         arrows: true,
-        autoplay: false,
         infinite: true,
         speed: 1000,
         autoplay: true,

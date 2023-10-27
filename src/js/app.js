@@ -14,6 +14,7 @@ import * as countdown from "./components/countdown.js";
 import * as orderConfiguration from "./components/orderConfiguration.js";
 import * as orderDetails from "./components/orderDetails.js";
 import * as cartConfiguration from "./components/cartConfiguration.js";
+import * as comparisonConfiguration from "./components/comparisonConfiguration.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -35,6 +36,9 @@ switch (window.location.pathname) {
     case "/order.html" : {
         orderConfiguration.makeOrder();
         orderDetails.calculateOrderDetails();
+    } break;
+    case "/comparison.html" : {
+        comparisonConfiguration.comparisonManager();
     } break;
     case "/product.html" : {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 

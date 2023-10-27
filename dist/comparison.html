@@ -1826,29 +1826,23 @@
                 <h2 class="section__title">Список сравнений</h2>
                 <div class="comparison__icons">
                     <div class="comparison__icons-left">
-                        <div class="comparison__icon comparison__icon--disabled">
-                            <img src="./img/comparison/differences-disabled.svg" alt="" class="comparison__pic">
-                            <div class="comparison__desc">
-                                Только отличия
-                            </div>
-                        </div>
-                        <div class="comparison__icon comparison__icon--disabled">
+                        <div id="buttonClear" class="comparison__icon ">
                             <img src="./img/comparison/bin-disabled.svg" alt="" class="comparison__pic">
                             <div class="comparison__desc">
                                 Очистить список
                             </div>
                         </div>
-                        <div class="comparison__icon">
+                        <a id="buttonAdd" href="./products.html" class="comparison__icon">
                             <img src="./img/comparison/add.svg" alt="" class="comparison__pic">
                             <div class="comparison__desc">
                                 Добавить модель
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="comparison__icons-right show">
                         <div class="comparison__icon comparison__icon--counter">
                             <img src="./img/comparison/comparison.svg" alt="" class="comparison__pic">
-                            <div class="comparison__counter">2</div>
+                            <div class="comparison__counter">3</div>
                             <div class="comparison__desc">
                                 Списки сравнений
                             </div>
@@ -1856,28 +1850,28 @@
                     </div>
                 </div>
             </div>
-            <div class="comparison__empty">
+            <div class="comparison__empty ">
                 <h3 class="comparison__empty-title">Список сравнения пуст</h3>
                 <p class="comparison__empty-text">
                     Вы можете добавить сюда товары для сравнения, перейдя в каталог товаров.
                 </p>
-                <a href="./category.html" class="button comparison__empty-button" >
+                <button class="button comparison__empty-button" >
                     <div class="button-text">каталог товаров</div>
                     <img src="../img/header/сatalog.svg" alt="" class="button-img">
-                </a>
+                </button>
             </div>
-            <div class="comparison__content">
+            <div class="comparison__content ">
                 <div class="comparison__content-header">
                     <div class="comparison__content-header-left"></div>
                     <div class="comparison__content-header-right">
-                        <div class="comparison__content-product">
+                        <div class="comparison__content-product" data-comparison-product="product1">
                             <div class="comparison__content-close">
                                 <img src="./img/svg/close-red.svg" alt="">
                             </div>
                             <div class="comparison__content-product-info">
                                 <img src="./img/comparison/products/product-1.svg" alt="Монитор 23.8' Acer K240YB, Black (UM.QE0EE.B01)" class="comparison__content-product-img">
                                 <a href="#!" class="comparison__content-product-name">
-                                    Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
+                                    Монитор 21" Acer K240YB, Black (UM.QE0EE.B01)
                                 </a>
                             </div>
                             <div class="comparison__content-product__footer">
@@ -1893,14 +1887,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="comparison__content-product">
+                        <div class="comparison__content-product" data-comparison-product="product2">
                             <div class="comparison__content-close">
                                 <img src="./img/svg/close-red.svg" alt="">
                             </div>
                             <div class="comparison__content-product-info">
                                 <img src="./img/comparison/products/product-1.svg" alt="Монитор 23.8' Acer K240YB, Black (UM.QE0EE.B01)" class="comparison__content-product-img">
                                 <a href="#!" class="comparison__content-product-name">
-                                    Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
+                                    Монитор 22" Acer K240YB, Black (UM.QE0EE.B01)
                                 </a>
                             </div>
                             <div class="comparison__content-product__footer">
@@ -1916,14 +1910,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="comparison__content-product">
+                        <div class="comparison__content-product" data-comparison-product="product3" >
                             <div class="comparison__content-close">
                                 <img src="./img/svg/close-red.svg" alt="">
                             </div>
                             <div class="comparison__content-product-info">
                                 <img src="./img/comparison/products/product-1.svg" alt="Монитор 23.8' Acer K240YB, Black (UM.QE0EE.B01)" class="comparison__content-product-img">
                                 <a href="#!" class="comparison__content-product-name">
-                                    Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
+                                    Монитор 23" Acer K240YB, Black (UM.QE0EE.B01)
                                 </a>
                             </div>
                             <div class="comparison__content-product__footer">
@@ -1939,14 +1933,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="comparison__content-product">
+                        <div class="comparison__content-product" data-comparison-product="product4">
                             <div class="comparison__content-close">
                                 <img src="./img/svg/close-red.svg" alt="">
                             </div>
                             <div class="comparison__content-product-info">
                                 <img src="./img/comparison/products/product-1.svg" alt="Монитор 23.8' Acer K240YB, Black (UM.QE0EE.B01)" class="comparison__content-product-img">
                                 <a href="#!" class="comparison__content-product-name">
-                                    Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
+                                    Монитор 24" Acer K240YB, Black (UM.QE0EE.B01)
                                 </a>
                             </div>
                             <div class="comparison__content-product__footer">
@@ -2024,7 +2018,7 @@
                         </div>
                     </div>
                     <div class="comparison__content-main-right">
-                        <div class="comparison__content-main-product">
+                        <div class="comparison__content-main-product" id="product1">
                             <ul class="comparison__content-characteristic-values">
                                 <li class="comparison__content-characteristic-value">
                                     15.6" (1920x1080) Full HD
@@ -2070,7 +2064,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="comparison__content-main-product">
+                        <div class="comparison__content-main-product" id="product2">
                             <ul class="comparison__content-characteristic-values">
                                 <li class="comparison__content-characteristic-value">
                                     15.6" (1920x1080) Full HD
@@ -2116,7 +2110,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="comparison__content-main-product">
+                        <div class="comparison__content-main-product" id="product3">
                             <ul class="comparison__content-characteristic-values">
                                 <li class="comparison__content-characteristic-value">
                                     15.6" (1920x1080) Full HD
@@ -2162,7 +2156,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="comparison__content-main-product">
+                        <div class="comparison__content-main-product" id="product4">
                             <ul class="comparison__content-characteristic-values">
                                 <li class="comparison__content-characteristic-value">
                                     15.6" (1920x1080) Full HD
