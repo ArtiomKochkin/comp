@@ -1824,30 +1824,30 @@
         <section class="account container">
             <div class="account__left">
                 <ul class="account__menu">
-                    <li class="account__menu-item">
+                    <li class="account__menu-item" data-tab="history">
                         <img src="./img/account/cart.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">История заказов</div>
                     </li>
-                    <li class="account__menu-item">
+                    <li class="account__menu-item active" data-tab="wishlist">
                         <img src="./img/account/favorites.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Список желаний</div>
                     </li>
-                    <li class="account__menu-item">
+                    <li class="account__menu-item" data-tab="viewed">
                         <img src="./img/account/eye.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Просмотренные товары</div>
                     </li>
-                    <li class="account__menu-item account__menu-item--reply">
+                    <li class="account__menu-item account__menu-item--reply" data-tab="feedback">
                         <img src="./img/account/reply.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Мои отзывы</div>
                     </li>
-                    <li class="account__menu-item">
+                    <li class="account__menu-item " data-tab="personalData">
                         <img src="./img/account/user.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Личные данные</div>
                     </li>
                 </ul>
             </div>
             <div class="account__right">
-                <div class="account__right-item ">
+                <div class="account__right-item " id="history">
                     <h2 class="section__title">История заказов</h2>
                     <div class="account__history">
                         <ul class="account__history-list">
@@ -2322,25 +2322,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item ">
+                <div class="account__right-item active" id="wishlist">
                     <h2 class="section__title">Список желаний</h2>
                     <div class="account__wishlist">
-                        <div class="account__wishlist-header">
-                            <ul class="account__wishlist-list">
-                                <li class="account__wishlist-item">
-                                    <img src="./img/svg/share.svg" alt="" class="account__wishlist-icon">
-                                    <div class="account__wishlist-text">Поделиться в Facebook</div>
-                                </li>
-                                <li class="account__wishlist-item">
-                                    <img src="./img/svg/copy.svg" alt="" class="account__wishlist-icon">
-                                    <div class="account__wishlist-text">Копировать ссылку</div>
-                                </li>
-                                <li class="account__wishlist-item">
-                                    <img src="./img/svg/mail.svg" alt="" class="account__wishlist-icon">
-                                    <div class="account__wishlist-text">Отправить другу</div>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="account__product-list-wrap">
                             <div class="account__product-list account__product-list--wishlist">
                                 <div class="product product--with-filter list">
@@ -2441,7 +2425,7 @@
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
-                                            <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                            <img src="./img/goods/motherboards/motherboard-3.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
                                         </div> 
                                         <div class="product__right">
                                             <div class="product__line">
@@ -2528,7 +2512,7 @@
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
-                                            <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                            <img src="./img/goods/motherboards/motherboard-4.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
                                         </div> 
                                         <div class="product__right">
                                             <div class="product__line">
@@ -2615,7 +2599,7 @@
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
-                                            <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                            <img src="./img/goods/motherboards/motherboard-5.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
                                         </div> 
                                         <div class="product__right">
                                             <div class="product__line">
@@ -2702,7 +2686,7 @@
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
-                                            <img src="./img/goods/motherboards/motherboard-2.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
+                                            <img src="./img/goods/motherboards/motherboard-6.jpg" alt="Материнская плата GIGABYTE B550 AORUS ELITE V2" class="product__img">
                                         </div> 
                                         <div class="product__right">
                                             <div class="product__line">
@@ -3422,31 +3406,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal ">
-                        <div class="modal__content modal__content--account">
-                            <div class="modal__header">
-                                <h3 class="modal__title">Отправить список желаний другу</h3>
-                                <button class="modal__close" type="button">
-                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
-                                </button>
-                            </div>
-                            <div class="modal__main">
-                                <div class="modal__text">
-                                    <p>
-                                        Укажите адрес элекронной почты вашего  для отправки списка желаний.
-                                    </p>
-                                </div>
-                                <div class="modal__input modal__input--margin">
-                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
-                                </div>
-                                <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button">отправить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="account__right-item ">
+                <div class="account__right-item " id="viewed">
                     <h2 class="section__title">Просмотренные товары</h2>
                     <div class="account__viewed">
                         <div class="account__product-list-wrap">
@@ -3831,7 +3792,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item active">
+                <div class="account__right-item " id="feedback">
                     <h2 class="section__title">Мои отзывы</h2>
                     <div class="account__feedback">
                         <div class="account__feedback-list-wrap">
@@ -4185,7 +4146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item ">
+                <div class="account__right-item " id="personalData">
                     <h2 class="section__title">Личные данные</h2>
                     <div class="account__profile">
                         <div class="account__avatar">

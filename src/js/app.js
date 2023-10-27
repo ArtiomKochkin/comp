@@ -15,6 +15,8 @@ import * as orderConfiguration from "./components/orderConfiguration.js";
 import * as orderDetails from "./components/orderDetails.js";
 import * as cartConfiguration from "./components/cartConfiguration.js";
 import * as comparisonConfiguration from "./components/comparisonConfiguration.js";
+import * as accountTabs from "./components/accountTabs.js";
+import * as accountWishlist from "./components/accountWishlist.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -74,5 +76,7 @@ switch (window.location.pathname) {
         pages.forEach(function(page) {
             pagination.initPagination(page);
         });
+        accountTabs.toggleTabs();
+        accountWishlist.wishlistConfiguration();
     } break;
 }

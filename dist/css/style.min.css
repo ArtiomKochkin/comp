@@ -10311,68 +10311,6 @@ img {
   display: block;
 }
 
-.account__wishlist-header {
-  margin: 2.4rem 0;
-}
-
-.account__wishlist-list {
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 500px) {
-  .account__wishlist-list {
-    flex-wrap: wrap;
-  }
-}
-
-.account__wishlist-item {
-  display: flex;
-  align-items: center;
-  color: #01579B;
-  cursor: pointer;
-  margin-right: 2.4rem;
-}
-.account__wishlist-item:hover {
-  color: #999;
-}
-.account__wishlist-item:last-child {
-  margin: 0;
-}
-@media screen and (max-width: 500px) {
-  .account__wishlist-item {
-    margin-right: 0;
-    margin-bottom: 1.2rem;
-    width: 100%;
-  }
-}
-
-.account__wishlist-text {
-  margin-left: 1.2rem;
-  font-size: 0.8vw;
-  font-weight: 500;
-  line-height: 16px;
-}
-@media screen and (max-width: 1366px) {
-  .account__wishlist-text {
-    font-size: 1vw;
-  }
-}
-@media screen and (max-width: 991px) {
-  .account__wishlist-text {
-    font-size: 1.2vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .account__wishlist-text {
-    font-size: 1.7vw;
-  }
-}
-@media screen and (max-width: 500px) {
-  .account__wishlist-text {
-    font-size: 2.7vw;
-  }
-}
-
 .account__feedback {
   margin: 2.4rem 0;
 }
@@ -10994,6 +10932,11 @@ img {
 }
 .account__history-data-item:last-child {
   margin-bottom: 0;
+}
+
+.account__wishlist,
+.account__viewed {
+  margin-bottom: 2.4rem;
 }
 
 .product-page__header {
