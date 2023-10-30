@@ -51,7 +51,7 @@
             <a href="tel:+79069991234" class="header__up-phone">
                 <img src="../img/header/phone.svg" alt="" class="header__up-phone-img">
             </a>
-            <button type="button" class="header__up-account" data-modal-general="signUpModal">
+            <button type="button" class="header__up-account" data-modal="signUpModal">
                 <img src="../img/header/account.svg" alt="" class="header__up-account-img">
             </button>
         </div>
@@ -108,11 +108,11 @@
                     <img src="../img/header/favorites.svg" alt="" class="header__actions-img " width="40">
                     <div class="header__actions-count"><span class="header__actions-num"></span></div>
                 </div>
-                <div class="header__actions-item header__actions-item--mobile " data-modal-general="cartModal">
+                <div class="header__actions-item header__actions-item--mobile " data-modal="cartModal">
                     <img src="../img/header/cart-white.svg" alt="" class="header__actions-img " width="46">
                     <div class="header__actions-count header__actions-count--cart active"><span class="header__actions-num">10</span></div>
                 </div>
-                <div class="header__actions-item " data-modal-general="cartModal">
+                <div class="header__actions-item " data-modal="cartModal">
                     <img src="../img/header/cart.svg" alt="" class="header__actions-img" width="36">
                     <div class="header__actions-count header__actions-count--cart"><span class="header__actions-num"></span></div>
                 </div>
@@ -1548,7 +1548,7 @@
         </div>
         <div class="modal__footer">
             <span class="modal__text">Нет аккаунта?</span>
-            <button type="button" data-modal-general="signUpModal" class="modal__text modal__text--link">Зарегистрироваться</button>
+            <button type="button" data-modal="signUpModal" class="modal__text modal__text--link">Зарегистрироваться</button>
         </div>
     </div>
 </div>
@@ -1591,7 +1591,7 @@
         </div>
         <div class="modal__footer">
             <span class="modal__text">Уже зарегистрированы?</span>
-            <button type="button" class="modal__text modal__text--link" data-modal-general="signInModal">Войти</button>
+            <button type="button" class="modal__text modal__text--link" data-modal="signInModal">Войти</button>
         </div>
     </div>
 </div>
@@ -1605,9 +1605,9 @@
     </div>
     <div class="menu__account">
         <div class="menu__login show">
-            <button id="signInButton" data-modal-general="signInModal" type="button" class="menu__login-link">Вход</button>
+            <button id="signInButton" data-modal="signInModal" type="button" class="menu__login-link">Вход</button>
             <span class="menu__span">|</span>
-            <button id="signUpButton" data-modal-general="signUpModal" type="button" class="menu__login-link">Регистрация</button>
+            <button id="signUpButton" data-modal="signUpModal" type="button" class="menu__login-link">Регистрация</button>
         </div>
         <div class="menu__user ">
             <div class="menu__item-wrap">

@@ -10,7 +10,7 @@
         <section class="account container">
             <div class="account__left">
                 <ul class="account__menu">
-                    <li class="account__menu-item active" data-tab="history">
+                    <li class="account__menu-item " data-tab="history">
                         <img src="./img/account/cart.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">История заказов</div>
                     </li>
@@ -26,18 +26,18 @@
                         <img src="./img/account/reply.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Мои отзывы</div>
                     </li>
-                    <li class="account__menu-item " data-tab="personalData">
+                    <li class="account__menu-item active" data-tab="personalData">
                         <img src="./img/account/user.svg" alt="" class="account__menu-icon">
                         <div class="account__menu-name">Личные данные</div>
                     </li>
                 </ul>
             </div>
             <div class="account__right">
-                <div class="account__right-item active" id="history">
+                <div class="account__right-item " id="history">
                     <h2 class="section__title">История заказов</h2>
                     <div class="account__history">
                         <ul class="account__history-list">
-                            <li class="account__history-item active">
+                            <li class="account__history-item ">
                                 <div class="account__history-preview">
                                     <div class="account__history-column">
                                         <div class="account__history-info">
@@ -55,9 +55,8 @@
                                     </div>
                                     <div class="account__history-column account__history-column--row">
                                         <div class="account__history-images">
-                                            <img src="./img/account/history/product-4.svg" alt="" class="account__history-img">
-                                            <img src="./img/account/history/product-5.svg" alt="" class="account__history-img">
-                                            <img src="./img/account/history/product-3.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-1.svg" alt="" class="account__history-img">
+                                            <img src="./img/account/history/product-2.svg" alt="" class="account__history-img">
                                         </div>
                                         <div class="account__history-toggle">
                                             <img src="./img/svg/arrow/arrow-down-dark-24.svg" alt="" class="account__history-toggle-img">
@@ -71,7 +70,7 @@
                                             <div class="account__history-products-inner">
                                                 <div class="account__history-product">
                                                     <div class="account__history-product-img-box">
-                                                        <img src="./img/order/product-1.svg" alt="" class="account__history-product-img">
+                                                        <img src="./img/account/history/product-1.svg" alt="" class="account__history-product-img">
                                                     </div>
                                                     <div class="account__history-product-content">
                                                         <div class="account__history-product-name">
@@ -101,7 +100,7 @@
                                                 </div>
                                                 <div class="account__history-product">
                                                     <div class="account__history-product-img-box">
-                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                        <img src="./img/account/history/product-2.svg" alt="" class="account__history-product-img">
                                                     </div>
                                                     <div class="account__history-product-content">
                                                         <div class="account__history-product-name">
@@ -176,9 +175,9 @@
                                     </div>
                                     <div class="account__history-information-footer">
                                         <div class="account__history-information-btn">
-                                            <button class="button button--transparent">Оставить отзыв</button>
+                                            <button class="button button--transparent" data-modal="review">Оставить отзыв</button>
                                         </div>
-                                        <button type="button" class="account__btn">Оформить возврат</button>
+                                        <button type="button" class="account__btn account__btn--return " data-modal="refund">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
@@ -215,7 +214,7 @@
                                             <div class="account__history-products-inner">
                                                 <div class="account__history-product">
                                                     <div class="account__history-product-img-box">
-                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                        <img src="./img/account/history/product-6.svg" alt="" class="account__history-product-img">
                                                     </div>
                                                     <div class="account__history-product-content">
                                                         <div class="account__history-product-name">
@@ -246,7 +245,7 @@
                                             </div>
                                             <div class="account__history-products-result">
                                                 <div class="account__history-desc account__history-desc--large">Итого</div>
-                                                <div class="account__history-result">7200
+                                                <div class="account__history-result">3600
                                                     <span class="account__history-result-span">грн.</span>
                                                 </div>
                                             </div>
@@ -290,9 +289,9 @@
                                     </div>
                                     <div class="account__history-information-footer">
                                         <div class="account__history-information-btn">
-                                            <button class="button button--transparent">Оставить отзыв</button>
+                                            <button class="button button--transparent" data-modal="review">Оставить отзыв</button>
                                         </div>
-                                        <button type="button" class="account__btn">Оформить возврат</button>
+                                        <button type="button" class="account__btn account__btn--return " data-modal="refund">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
@@ -331,7 +330,7 @@
                                             <div class="account__history-products-inner">
                                                 <div class="account__history-product">
                                                     <div class="account__history-product-img-box">
-                                                        <img src="./img/order/product-1.svg" alt="" class="account__history-product-img">
+                                                        <img src="./img/account/history/product-1.svg" alt="" class="account__history-product-img">
                                                     </div>
                                                     <div class="account__history-product-content">
                                                         <div class="account__history-product-name">
@@ -361,7 +360,97 @@
                                                 </div>
                                                 <div class="account__history-product">
                                                     <div class="account__history-product-img-box">
-                                                        <img src="./img/order/product-2.svg" alt="" class="account__history-product-img">
+                                                        <img src="./img/account/history/product-2.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/account/history/product-3.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/account/history/product-4.svg" alt="" class="account__history-product-img">
+                                                    </div>
+                                                    <div class="account__history-product-content">
+                                                        <div class="account__history-product-name">
+                                                            <p class="account__history-text">
+                                                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                                                            </p>
+                                                        </div>
+                                                        <div class="account__history-product-info">
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Количество</div>
+                                                                <div class="account__history-text">1</div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Цена</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="account__history-product-info-item">
+                                                                <div class="account__history-desc">Сумма</div>
+                                                                <div class="account__history-text">3600
+                                                                    <span class="account__history-text-span">грн.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="account__history-product">
+                                                    <div class="account__history-product-img-box">
+                                                        <img src="./img/account/history/product-5.svg" alt="" class="account__history-product-img">
                                                     </div>
                                                     <div class="account__history-product-content">
                                                         <div class="account__history-product-name">
@@ -436,15 +525,15 @@
                                     </div>
                                     <div class="account__history-information-footer">
                                         <div class="account__history-information-btn">
-                                            <button class="button button--transparent">Оставить отзыв</button>
+                                            <button class="button button--transparent" data-modal="review">Оставить отзыв</button>
                                         </div>
-                                        <button type="button" class="account__btn">Оформить возврат</button>
+                                        <button type="button" class="account__btn account__btn--return " data-modal="refund">Оформить возврат</button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="modal ">
+                    <div class="modal " id="review">
                         <div class="modal__content modal__content--feedback">
                             <div class="modal__header">
                                 <h3 class="modal__title">Оставить отзыв</h3>
@@ -483,7 +572,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal ">
+                    <div class="modal " id="refund">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
                                 <h3 class="modal__title">Оформить возврат</h3>
@@ -2816,7 +2905,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item " id="personalData">
+                <div class="account__right-item active" id="personalData">
                     <h2 class="section__title">Личные данные</h2>
                     <div class="account__profile">
                         <div class="account__avatar">

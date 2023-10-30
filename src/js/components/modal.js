@@ -1,5 +1,5 @@
-export function toggleModalGeneral() {
-    const modalButtons = document.querySelectorAll("[data-modal-general]");
+export function toggleModal() {
+    const modalButtons = document.querySelectorAll("[data-modal]");
     const modalClose = document.querySelectorAll(".modal__close");
     const modal = document.querySelectorAll(".modal");
     const menu = document.querySelector(".menu");
@@ -10,7 +10,7 @@ export function toggleModalGeneral() {
         item.addEventListener("click", showModal);
 
         function showModal() {
-            let modalID = item.getAttribute("data-modal-general");
+            let modalID = item.getAttribute("data-modal");
             let modal = document.getElementById(modalID);
             let modalContent = modal.querySelector(".modal__content");
 

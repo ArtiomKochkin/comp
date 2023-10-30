@@ -1,5 +1,4 @@
 export function feedbackConfiguration() {
-    const feedback = document.getElementById("feedback");
     const feedbackItems = document.querySelectorAll(".account__feedback-item");
 
     feedbackItems.forEach(feedbackAccordion);
