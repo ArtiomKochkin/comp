@@ -2923,55 +2923,45 @@
                                <div class="account__info-line">
                                     <h6 class="account__info-title account__info-title--line">ФИО</h6>
                                     <div class="account__value">
-                                        <div class="account__text">
-                                            Иванов Иван Иванович
-                                        </div>
-                                        <button type="button" class="account__btn">Добавить</button>
+                                        <div class="account__text disabled" id="nameText"></div>
+                                        <button type="button" class="account__btn show" data-modal="add-name" id="addName">Добавить</button>
                                     </div>
-                                    <button type="button" class="account__edit">
+                                    <button type="button" class="account__edit" data-modal="edit-name">
                                         <img src="./img/svg/edit.svg" alt="">
                                     </button>
                                </div>
                                <div class="account__info-line">
                                     <h6 class="account__info-title account__info-title--line">Телефон</h6>
                                     <div class="account__value">
-                                        <div class="account__text disabled">
-                                            +38 067 009 90 09
-                                        </div>
-                                        <button type="button" class="account__btn show">Добавить</button>
+                                        <div class="account__text disabled" id="telText"></div>
+                                        <button type="button" class="account__btn show" data-modal="edit-tel" id="addTelButton">Добавить</button>
                                     </div>
-                                    <button type="button" class="account__edit">
+                                    <button type="button" class="account__edit" data-modal="edit-tel">
                                         <img src="./img/svg/edit.svg" alt="">
                                     </button>
                                </div>
                                <div class="account__info-line">
                                     <h6 class="account__info-title account__info-title--line">Email</h6>
                                     <div class="account__value">
-                                        <div class="account__text">
-                                            ivanov@gmail.com
-                                        </div>
-                                        <div class="account__confirmation">
+                                        <div class="account__text" id="emailText"></div>
+                                        <div class="account__confirmation disabled" >
                                             Email не подтвержден
                                         </div>
-                                        <button type="button" class="account__btn account__btn--confirmation">Подтвердить</button>
-                                        <button type="button" class="account__btn">Добавить</button>
+                                        <button type="button" class="account__btn account__btn--confirmation disabled" data-modal="edit-email">Подтвердить</button>
+                                        <button type="button" class="account__btn show" data-modal="add-email" id="addEmailButton">Добавить</button>
                                     </div>
-                                    <button type="button" class="account__edit">
+                                    <button type="button" class="account__edit" data-modal="edit-email">
                                         <img src="./img/svg/edit.svg" alt="">
                                     </button>
                                 </div>
                                 <div class="account__info-line">
                                     <h6 class="account__info-title account__info-title--line">Основной способ доставки</h6>
                                     <div class="account__value">
-                                        <div class="account__text">
-                                            <p class="account__paragraph">Доставка Почтой</p>
-                                            <p class="account__paragraph">Самовывоз из отделения</p>
-                                            <p class="account__paragraph">Отделение № 70</p>
-                                            <p class="account__paragraph">ул. Сафонова, 45</p>
+                                        <div class="account__text disabled" id="deliveryText">
                                         </div>
-                                        <button type="button" class="account__btn">Добавить</button>
+                                        <button type="button" class="account__btn show" data-modal="edit-delivery" id="addDeliveryButton">Добавить</button>
                                     </div>
-                                    <button type="button" class="account__edit">
+                                    <button type="button" class="account__edit" data-modal="edit-delivery">
                                         <img src="./img/svg/edit.svg" alt="">
                                     </button>
                                </div>
@@ -3030,8 +3020,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="account__info-footer">
-                                <button type="button" class="account__btn">Изменить пароль</button>
+                            <div class="account__info-footer ">
+                                <button type="button" class="account__btn" data-modal="edit-password">Изменить пароль</button>
                                 <button type="button" class="account__btn">Выход</button>
                             </div>
                         </div>
@@ -3131,14 +3121,14 @@
                             <div class="modal__main">
                                 <div class="modal__text">
                                     <p>
-                                        Введите адрес новой элекронной почты и код. На вашу почту будет выслано письмо для подтверждения.
+                                        Введите адрес элекронной почты и код. На вашу почту будет выслано письмо для подтверждения.
                                     </p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                    <input type="email" class="input input--modal input--value" placeholder="Электронная почта">
                                 </div>
                                 <div class="modal__input ">
-                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                    <input type="text" class="input input--modal input--code" placeholder="Код из СМС" maxlength="4">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__button ">
@@ -3151,7 +3141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal " id="ask-edit-tel">
+                    <!-- <div class="modal " id="ask-edit-tel">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
                                 <h3 class="modal__title">Изменение номера телефона</h3>
@@ -3206,7 +3196,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="modal " id="edit-tel">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
@@ -3218,7 +3208,7 @@
                             <div class="modal__main">
                                 <div class="modal__text">
                                     <p>
-                                        Укажите новый номер телефона
+                                        Укажите номер телефона
                                     </p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
@@ -3235,7 +3225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal " id="code-edit-tel">
+                    <!-- <div class="modal " id="code-new-tel">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
                                 <h3 class="modal__title">Изменение номера телефона</h3>
@@ -3289,7 +3279,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="modal " id="edit-password">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
@@ -3300,16 +3290,16 @@
                             </div>
                             <div class="modal__main">
                                 <div class="modal__input">
-                                    <input type="password" class="input input--modal" placeholder="Старый пароль">
+                                    <input type="password" class="input input--modal old-password" placeholder="Старый пароль">
                                     <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
                                 </div>
                                 <div class="modal__input">
-                                    <input type="password" class="input input--modal" placeholder="Новый пароль">
+                                    <input type="password" class="input input--modal new-password" placeholder="Новый пароль">
                                     <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__btn-box ">
-                                        <button class="modal__btn" type="button">Забыли пароль?</button>
+                                        <button class="modal__btn" type="button" data-modal="recovery-password">Забыли пароль?</button>
                                     </div>
                                     <div class="modal__button ">
                                         <button class="button button--secondary" type="button">сохранить</button>
@@ -3336,7 +3326,7 @@
                                     <input type="tel" class="input input--modal" placeholder="Номер телефона">
                                 </div>
                                 <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button">отправить</button>
+                                    <button class="button button--secondary" type="button" data-modal="code-recovery-password">отправить</button>
                                 </div>
                             </div>
                         </div>
@@ -3354,7 +3344,7 @@
                                     <p>Введите код из СМС</p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="text" class="input input--modal" placeholder="Код из СМС">
+                                    <input type="text" class="input input--modal" placeholder="Код из СМС" maxlength="4">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__btn-box ">
@@ -3362,7 +3352,7 @@
                                         <button class="modal__btn" type="button">Отправить еще раз</button>
                                     </div>
                                     <div class="modal__button ">
-                                        <button class="button button--secondary" type="button">отправить</button>
+                                        <button class="button button--secondary" type="button" data-modal="new-password">отправить</button>
                                     </div>
                                 </div>
                             </div>
@@ -3398,10 +3388,10 @@
                             </div>
                             <div class="modal__main">
                                 <div class="modal__select select">
-                                    <select name="city" id="city" class="select__element">
-                                        <option class="select__item" value="msk">Москва</option>
-                                        <option class="select__item" value="spb">Санкт-Петербург</option>
-                                        <option class="select__item" value="nsk">Новосибирск</option>
+                                    <select name="city" id="cityModal" class="select__element">
+                                        <option class="select__item" value="Москва">Москва</option>
+                                        <option class="select__item" value="Санкт-Петербург">Санкт-Петербург</option>
+                                        <option class="select__item" value="Новосибирск">Новосибирск</option>
                                     </select>
                                 </div>
                                 <div class="modal__radio-groups">
@@ -3410,21 +3400,23 @@
                                             <input type="radio" class="radio__input" id="shop-modal" name="methods-modal" checked>
                                             <label for="shop-modal" class="radio__label">Самовывоз из магазина</label>
                                         </div>
-                                        <div class="modal__addition show">
+                                        <div class="modal__addition">
                                             <div class="modal__text modal__text--margin">
                                                 <p>
                                                     Магазин находится по адресу г. Днепр, ул. Европейская, 8 
                                                 </p>
                                             </div>
-                                            <div class="modal__map"></div>
+                                            <div class="modal__map">
+                                                <iframe class="modal__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2645.4669663051677!2d35.0465041!3d48.466756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3281a2fffff%3A0xd25fce6d67252e75!2sV-COMP!5e0!3m2!1sru!2sru!4v1698672070764!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="modal__delivery active">
+                                    <div class="modal__delivery ">
                                         <div class="radio modal__radio">
                                             <input type="radio" class="radio__input" id="courier-modal" name="methods-modal">
                                             <label for="courier-modal" class="radio__label">Доставка курьером</label>
                                         </div>
-                                        <div class="modal__addition show">
+                                        <div class="modal__addition ">
                                             <div class="modal__text modal__text--margin">
                                                 <p>
                                                     Введите ваш адрес 
@@ -3432,26 +3424,26 @@
                                             </div>
                                             <div class="modal__delivery-address">
                                                 <div class="modal__input">
-                                                    <input type="text" class="input input--modal" placeholder="Улица">
+                                                    <input type="text" class="input input--modal" placeholder="Улица" id="modalStreet">
                                                 </div>
                                                 <div class="modal__input">
-                                                    <input type="text" class="input input--modal" placeholder="Дом">
+                                                    <input type="text" class="input input--modal" placeholder="Дом" id="modalHouse">
                                                 </div>
                                                 <div class="modal__input">
-                                                    <input type="text" class="input input--modal" placeholder="Квартира">
+                                                    <input type="text" class="input input--modal" placeholder="Квартира" id="modalApartament">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal__delivery active">
+                                    <div class="modal__delivery ">
                                         <div class="radio modal__radio">
                                             <input type="radio" class="radio__input" id="mail-modal" name="methods-modal">
                                             <label for="mail-modal" class="radio__label">Самовывоз из отделения Почты</label>
                                         </div>
-                                        <div class="modal__addition show">
+                                        <div class="modal__addition ">
                                             <div class="modal__delivery-item">
                                                 <div class="radio modal__radio">
-                                                    <input type="radio" checked class="radio__input" id="delivery-departament-modal" name="mail-modal">
+                                                    <input type="radio"  class="radio__input" id="delivery-departament-modal" name="mail-modal">
                                                     <label for="delivery-departament-modal" class="radio__label">Доставка в отделение</label>
                                                 </div>
                                                 <div class="modal__delivery-item-addition ">
@@ -3461,7 +3453,7 @@
                                                         </p>
                                                     </div>
                                                     <div class="modal__select select">
-                                                        <select name="delivery-departament-modal" id="delivery-departament-modal" class="select__element">
+                                                        <select name="delivery-departament-modal" id="delivery-departament-select" class="select__element">
                                                             <option class="select__item" value="one">Отделение Почты России</option>
                                                             <option class="select__item" value="two">two</option>
                                                             <option class="select__item" value="three">three</option>
@@ -3469,12 +3461,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="modal__delivery-item">
+                                            <div class="modal__delivery-item active">
                                                 <div class="radio modal__radio">
-                                                    <input type="radio" class="radio__input" id="delivery-courier-modal" name="mail-modal">
+                                                    <input type="radio" class="radio__input" id="delivery-courier-modal" name="mail-modal" checked>
                                                     <label for="delivery-courier-modal" class="radio__label">Доставка курьером</label>
                                                 </div>
-                                                <div class="modal__delivery-item-addition show">
+                                                <div class="modal__delivery-item-addition ">
                                                     <div class="modal__text modal__text--margin">
                                                         <p>
                                                             Введите ваш адрес 
@@ -3482,13 +3474,13 @@
                                                     </div>
                                                     <div class="modal__delivery-address">
                                                         <div class="modal__input">
-                                                            <input type="text" class="input input--modal" placeholder="Улица">
+                                                            <input type="text" class="input input--modal" placeholder="Улица" id="modalStreetMail">
                                                         </div>
                                                         <div class="modal__input">
-                                                            <input type="text" class="input input--modal" placeholder="Дом">
+                                                            <input type="text" class="input input--modal" placeholder="Дом" id="modalHouseMail">
                                                         </div>
                                                         <div class="modal__input">
-                                                            <input type="text" class="input input--modal" placeholder="Квартира">
+                                                            <input type="text" class="input input--modal" placeholder="Квартира" id="modalApartamentMail">
                                                         </div>
                                                     </div>
                                                 </div>

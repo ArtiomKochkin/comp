@@ -19,6 +19,7 @@ import * as accountTabs from "./components/accountTabs.js";
 import * as accountWishlist from "./components/accountWishlist.js";
 import * as accountFeedback from "./components/accountFeedback.js";
 import * as accountHistory from "./components/accountHistory.js";
+import * as accountPersonalDataModal from "./components/accountPersonalDataModal.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -82,5 +83,6 @@ switch (window.location.pathname) {
         accountWishlist.wishlistConfiguration();
         accountFeedback.feedbackConfiguration();
         accountHistory.historyConfiguration();
+        accountPersonalDataModal.accountModal();
     } break;
 }

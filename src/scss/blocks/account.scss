@@ -422,6 +422,10 @@
     .account__btn {
         padding: 0.4rem 0;
     }
+
+    &.disabled {
+        display: none;
+    }
 }
 
 .account__product-list-wrap {
