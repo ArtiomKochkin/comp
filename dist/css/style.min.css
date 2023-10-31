@@ -11054,6 +11054,7 @@ img {
   font-size: 0.8vw;
   font-weight: 500;
   line-height: 16px;
+  cursor: pointer;
 }
 .product-page__tab.active {
   color: #01579B;

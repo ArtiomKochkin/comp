@@ -20,6 +20,7 @@ import * as accountWishlist from "./components/accountWishlist.js";
 import * as accountFeedback from "./components/accountFeedback.js";
 import * as accountHistory from "./components/accountHistory.js";
 import * as accountPersonalDataModal from "./components/accountPersonalDataModal.js";
+import * as productTabs from "./components/productTabs.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -49,6 +50,7 @@ switch (window.location.pathname) {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 
         pagination.initPagination(pages);
         sliderProduct.initSlider();
+        productTabs.toggleTabs();
     } break;
     case "/news.html" : {
         let pages = document.querySelectorAll(".news__wrap"); 

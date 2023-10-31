@@ -13,7 +13,6 @@ export function accountModal() {
     const codeRecoveryPassword = document.getElementById("code-recovery-password");
     const newPassword = document.getElementById("new-password");
 
-
     const successEmail = document.getElementById("success-email");
     const failureEmail = document.getElementById("failure-email");
     const successTel = document.getElementById("success-tel");
@@ -22,7 +21,6 @@ export function accountModal() {
     const failurePassword = document.getElementById("failure-password");
     const successDelivery = document.getElementById("success-delivery");
     const failureDelivery = document.getElementById("failure-delivery");
-
 
     const nameText = document.getElementById("nameText");
     const addNameButton = document.getElementById("addName");
