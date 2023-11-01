@@ -22,6 +22,8 @@ import * as accountHistory from "./components/accountHistory.js";
 import * as accountPersonalDataModal from "./components/accountPersonalDataModal.js";
 import * as productTabs from "./components/productTabs.js";
 import * as productModal from "./components/productModal.js";
+import * as productShowMore from "./components/productShowMore.js";
+import * as productReviews from "./components/productReviews.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -53,6 +55,8 @@ switch (window.location.pathname) {
         sliderProduct.initSlider();
         productTabs.toggleTabs();
         productModal.showModalWindows();
+        productShowMore.showMore();
+        productReviews.likeConfiguration();
     } break;
     case "/news.html" : {
         let pages = document.querySelectorAll(".news__wrap"); 

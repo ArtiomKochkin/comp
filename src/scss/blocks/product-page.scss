@@ -823,6 +823,10 @@
     line-height: 20px; 
     margin-left: 0.8rem;
 
+    &.hidden {
+        display: none;
+    }
+
     @include breakpoint($laptop) {
         font-size: 1vw;
     }
@@ -1352,4 +1356,8 @@
         }
 
     }
+}
+
+.product-page__feedback-icon {
+    cursor: pointer;
 }

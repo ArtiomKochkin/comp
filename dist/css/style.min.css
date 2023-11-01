@@ -11918,6 +11918,9 @@ img {
   line-height: 20px;
   margin-left: 0.8rem;
 }
+.product-page__feedback-like-counter.hidden {
+  display: none;
+}
 @media screen and (max-width: 1366px) {
   .product-page__feedback-like-counter {
     font-size: 1vw;
@@ -12481,4 +12484,8 @@ img {
     display: flex;
     width: auto;
   }
+}
+
+.product-page__feedback-icon {
+  cursor: pointer;
 }
