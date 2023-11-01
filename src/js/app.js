@@ -24,6 +24,7 @@ import * as productTabs from "./components/productTabs.js";
 import * as productModal from "./components/productModal.js";
 import * as productShowMore from "./components/productShowMore.js";
 import * as productReviews from "./components/productReviews.js";
+import * as sliderImages from "./components/sliderImages.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -53,6 +54,7 @@ switch (window.location.pathname) {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 
         pagination.initPagination(pages);
         sliderProduct.initSlider();
+        sliderImages.initSlider();
         productTabs.toggleTabs();
         productModal.showModalWindows();
         productShowMore.showMore();
