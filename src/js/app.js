@@ -25,6 +25,8 @@ import * as productModal from "./components/productModal.js";
 import * as productShowMore from "./components/productShowMore.js";
 import * as productReviews from "./components/productReviews.js";
 import * as sliderImages from "./components/sliderImages.js";
+import * as favorites from "./components/favorites.js";
+import * as goToFavorites from "./components/goToFavorites.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -34,6 +36,7 @@ modal.toggleModal();
 catalog.toggleCatalog();
 cartConfiguration.cartManager();
 sliderCart.initSlider();
+favorites.openFavorites();
 
 switch (window.location.pathname) {
     case "/index.html" : {   
@@ -90,6 +93,7 @@ switch (window.location.pathname) {
             pagination.initPagination(page);
         });
         accountTabs.toggleTabs();
+        goToFavorites.onClick();
         accountWishlist.wishlistConfiguration();
         accountFeedback.feedbackConfiguration();
         accountHistory.historyConfiguration();
