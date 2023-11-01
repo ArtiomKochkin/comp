@@ -57,23 +57,23 @@
                                 <div class="product-page__photo-slider-arrow">
                                     <img src="./img/product/svg/arrow-down-blue-32.svg" alt="">
                                 </div>
-                                <div class="product-page__photo-slider-item active">
+                                <div class="product-page__photo-slider-item active" data-modal="images">
                                     <img src="./img/product/laptop-2.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page__photo-slider-img">
                                 </div>
-                                <div class="product-page__photo-slider-item">
+                                <div class="product-page__photo-slider-item" data-modal="images">
                                     <img src="./img/product/laptop-2.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page__photo-slider-img">
                                 </div>
-                                <div class="product-page__photo-slider-item">
+                                <div class="product-page__photo-slider-item" data-modal="images">
                                     <img src="./img/product/laptop-3.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page__photo-slider-img">
                                 </div>
-                                <div class="product-page__photo-slider-item">
+                                <div class="product-page__photo-slider-item" data-modal="images">
                                     <img src="./img/product/laptop-4.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page__photo-slider-img">
                                 </div>
-                                <div class="product-page__photo-slider-item">
+                                <div class="product-page__photo-slider-item" data-modal="images">
                                     <img src="./img/product/laptop-5.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page__photo-slider-img">
                                 </div>
                             </div>
-                            <div class="product-page-img-box">
+                            <div class="product-page-img-box" data-modal="images">
                                 <img src="./img/product/laptop-1.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page-img">
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                                 <div class="product-page__stock">
                                     <img src="./img/product/svg/in-stock.svg" alt="" class="product-page__stock-img">
                                     <div class="product-page__stock-text">В наличии</div>
-                                    <button class="button button--secondary product-page__stock-button ">Сообщить когда появится</button>
+                                    <button class="button button--secondary product-page__stock-button " data-modal="report-an-appearance">Сообщить когда появится</button>
                                 </div>
                                 <div class="product__actions">
                                     <img src="./img/svg/comparison.svg" alt="" class="product__icon">
@@ -565,7 +565,7 @@
                                 </li>
                             </ul>
                             <div class="product-page__feedback-footer">
-                                <button type="button" class="button button--secondary">добавить отзыв</button>
+                                <button type="button" class="button button--secondary" data-modal="add-feedback">Добавить отзыв</button>
                                 <div class="show-more">
                                     <a href="#!" class="show-more__link">Смотреть все отзывы</a>
                                 </div>
@@ -940,7 +940,7 @@
                                         <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                         <div class="product-page__credit-text">ПриватБанк</div>
                                     </div>
-                                    <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                    <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                 </div>
                                 <div class="product-page__credit-column">
                                     <div class="product-page__credit-name">Условия кредита</div>
@@ -981,7 +981,7 @@
                                         <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                         <div class="product-page__credit-text">ПриватБанк</div>
                                     </div>
-                                    <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                    <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                 </div>
                                 <div class="product-page__credit-column">
                                     <div class="product-page__credit-name">Условия кредита</div>
@@ -1022,7 +1022,7 @@
                                         <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                         <div class="product-page__credit-text">ПриватБанк</div>
                                     </div>
-                                    <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                    <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                 </div>
                                 <div class="product-page__credit-column">
                                     <div class="product-page__credit-name">Условия кредита</div>
@@ -1057,197 +1057,6 @@
                                 <button class="button product-page__credit-button" type="button">Купить в кредит</button>
                             </li>
                         </ul>
-                    </div>
-                    <div class="product-page__modal">
-                        <div class="modal " id="report-an-appearance">
-                            <div class="modal__content ">
-                                <div class="modal__header">
-                                    <h3 class="modal__title">Сообщить о появлении</h3>
-                                    <button class="modal__close" type="button">
-                                        <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
-                                    </button>
-                                </div>
-                                <div class="modal__main">
-                                    <div class="modal__text ">
-                                        <p>
-                                            Укажите ваш email, и мы сообщим вам, когда товар появится в наличии.
-                                        </p>
-                                    </div>
-                                    <div class="modal__input modal__input--margin">
-                                        <input type="email" class="input input--modal" placeholder="Электронная почта">
-                                    </div>
-                                    <div class="modal__buttons">
-                                        <div class="modal__button ">
-                                            <button class="button button--transparent" type="button">отменить</button>
-                                        </div>
-                                        <div class="modal__button ">
-                                            <button class="button button--secondary" type="button">отправить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal " id="add-feedback">
-                            <div class="modal__content ">
-                                <div class="modal__header">
-                                    <h3 class="modal__title">Написать отзыв</h3>
-                                    <button class="modal__close" type="button">
-                                        <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
-                                    </button>
-                                </div>
-                                <div class="modal__main">
-                                    <div class="rating">
-                                        <div class="rating-item">
-                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                        </div>
-                                        <div class="rating-item">
-                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                        </div>
-                                        <div class="rating-item">
-                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                        </div>
-                                        <div class="rating-item">
-                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                        </div>
-                                        <div class="rating-item">
-                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                        </div>
-                                    </div>
-                                    <div class="modal__input modal__input--margin">
-                                        <input type="text" class="input input--modal" placeholder="Имя">
-                                    </div>
-                                    <div class="modal__input modal__input--margin">
-                                        <input type="email" class="input input--modal" placeholder="Электронная почта">
-                                    </div>
-                                    <div class="modal__input modal__input--margin">
-                                        <input type="text" class="input input--modal" placeholder="Достоинства">
-                                    </div>
-                                    <div class="modal__input modal__input--margin">
-                                        <input type="text" class="input input--modal" placeholder="Недостатки">
-                                    </div>
-                                    <div class="modal__input ">
-                                        <textarea class="input input--textarea input--modal" placeholder="Комментарий"></textarea>
-                                    </div>
-                                    <div class="modal__buttons">
-                                        <div class="modal__button ">
-                                            <button class="button button--transparent" type="button">отменить</button>
-                                        </div>
-                                        <div class="modal__button ">
-                                            <button class="button button--secondary" type="button">отправить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal " id="creditModal">
-                            <div class="modal__content ">
-                                <div class="modal__header">
-                                    <h3 class="modal__title">Условия кредитования</h3>
-                                    <button class="modal__close" type="button">
-                                        <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
-                                    </button>
-                                </div>
-                                <div class="modal__main">
-                                    <div class="modal__bank">
-                                        <img src="./img/product/svg/bank.svg" alt="" class="modal__bank-img">
-                                        <div class="modal__text">ПриватБанк</div>
-                                    </div>
-                                    <div class="modal__text modal__text--margin">
-                                        <p class="modal__paragraph">
-                                            Оплата частями *
-                                        </p>
-                                        <p class="modal__paragraph">
-                                            "Оплата частями" - это уникальный сервис. С его помощью вы оплачиваете стоимость товара частями сроком до 22 платежей. Без стандартного пакета документов (паспорт, ИНН). Услуга распространяется на оплату заказов через интернет-магазин и розничную покупку в магазинах.
-                                        </p>
-                                        <p class="modal__paragraph">
-                                            Акция действует на территории Украины в интернет-магазине АЛЛО с 28.07.2021 г. по 08.09.2021 г. включительно, или пока акционный товар есть в наличии. Под " срок кредита (платежей)"* необходимо понимать "количество платежей" с учетом первого платежа, который будет снят с карты в день оформления заказа. В случае отсутствия карты, оформить ее можно в любом отделении Приватбанка. Для пользователей потребительского кредита "оплата частями" годовой процент составляет 0,01% в месяц , реальная годовая процентная ставка составляет 0,24% от общей суммы кредита. Срок-21 месяца, 22 платежа с учетом первого платежа. Льготный (грейс) период-21 месяц. По условиям банка, получателем товара может быть только плательщик - владелец карты. Минимальная сумма покупки 500 грн., максимальная сумма ограничена доступным кредитным лимитом по карте.
-                                        </p>
-                                        <p class="modal__paragraph">
-                                            Как воспользоваться предложением при покупке в интернет-магазине:
-                                            Узнать доступную сумму лимита по вашей карте Приватбанка, отправив SMS на номер 3700 с текстом "chast". Важно! SMS необходимо отправить с номера телефона активации кредитной карты (контактный номер телефона, указанный клиентом в договоре с банком).
-                                            Сумма покупки не должна превышать кредитный лимит вашей карты, установленный по оплате частями.
-                                            Максимальный размер стоимости покупки для возможности ее приобретения в кредит на данных условиях составляет:
-                                        </p>
-                                        <p class="modal__paragraph">
-                                            Карты Универсальная до 50 000 грн.
-                                            Карты Универсальная Gold до 75 000 грн.
-                                            Карты Platinum до 100 000 грн.
-                                            Оплата покупки разбивается от 2 до 22 равных платежей при проведении оплаты. В момент приобретения товара на кредитной карте должен быть остаток собственных средств, достаточный для оплаты первого платежа. Размер первого платежа по кредитному договору составляет 4,55% от стоимости товара .
-                                            Выбрать товар, который вас на сайте, соответствующий сумме кредитного лимита.
-                                            Выбрать способ оплаты "Оплата частями 2-22", где цифра означает количество платежей.
-                                            На странице Приватбанка введите данные вашей карты, подтвердите оплату.
-                                            Получите номер заказа в SMS сообщении. После оповещения сотрудником ООО "АЛЛО«, вы можете получить товар в магазине» Алло«; у курьера или в любом отделении» Новой Почты«,» Мист Экспресс", у курьера"Корса".
-                                            Оплата частями доступна владельцам:
-                                        </p>
-                                        <p class="modal__paragraph">
-                                            Карты»Универсальная";
-                                            Карты "Универсальная Gold";
-                                            Элитных карт для VIP-клиентов (Platinum, Infinite, World Signia / Elite).
-                                            Узнайте прямо сейчас доступную вам сумму лимита по карте ПриватБанк-отправьте SMS на номер 3700 с текстом "chast". Кредит предоставляет и является заказчиком соответствующей рекламы: АО КБ "ПриватБанк", лицензия НБУ 22 от 05.10.11. детальные условия кредитования на сайте банка или по телефону горячей линии 3700. Звонки с мобильного в пределах Украины бесплатные. Стоимость отправки смс-согласно тарифам вашего мобильного оператора.
-                                        </p>
-                                    </div>
-                                    <div class="modal__button modal__button--right">
-                                        <button class="button button--secondary" type="button">Хорошо</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal " id="images">
-                            <div class="modal__content modal__content--photos">
-                                <div class="modal__header">
-                                    <h3 class="modal__title">Фотографии Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)</h3>
-                                    <button class="modal__close" type="button">
-                                        <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
-                                    </button>
-                                </div>
-                                <div class="modal__main">
-                                    <div class="modal__slider-wrap">
-                                        <div class="modal__arrow">
-                                            <img src="./img/product/svg/arrow-left-blue-64.svg" alt="" class="modal__arrow-pic">
-                                        </div>
-                                        <div class="modal__slider">
-                                            <div class="modal__slider-item active">
-                                                <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
-                                            </div>
-                                            <div class="modal__slider-item">
-                                                <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
-                                            </div>
-                                            <div class="modal__slider-item">
-                                                <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
-                                            </div>
-                                            <div class="modal__slider-item">
-                                                <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
-                                            </div>
-                                            <div class="modal__slider-item">
-                                                <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
-                                            </div>
-                                        </div>
-                                        <div class="modal__arrow">
-                                            <img src="./img/product/svg/arrow-right-blue-64.svg" alt="" class="modal__arrow-pic">
-                                        </div>
-                                    </div>
-                                    <div class="modal__dots">
-                                        <div class="modal__dot active"></div>
-                                        <div class="modal__dot "></div>
-                                        <div class="modal__dot "></div>
-                                        <div class="modal__dot "></div>
-                                        <div class="modal__dot "></div>
-                                        <div class="modal__dot "></div>
-                                    </div>
-                                </div>
-                                <div class="modal__order">
-                                    <div class="product-page__prices">
-                                        <div class="product-page__price-old disabled">37000 грн.</div>
-                                        <div class="product-page__price-actual ">
-                                            <span class="product-page__price ">28999</span> грн.
-                                        </div>
-                                    </div>
-                                    <div class="modal__button">
-                                        <button class="button " type="button">купить</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="product-page__tab-content " id="characteristics">
@@ -1708,7 +1517,7 @@
                                 <div class="product-page__feedback-add-text">
                                     Оставьте свой отзыв о товаре
                                 </div>
-                                <button class="button button--secondary">Добавить отзыв</button>
+                                <button class="button button--secondary" data-modal="add-feedback">Добавить отзыв</button>
                             </div>
                             <div class="product-page__feedback-pages">
                                 <ul class="product-page__feedback-items">
@@ -2148,7 +1957,7 @@
                                 <div class="product-page__feedback-add-text">
                                     Оставьте свой отзыв о товаре
                                 </div>
-                                <button class="button button--secondary">Добавить отзыв</button>
+                                <button class="button button--secondary" data-modal="add-feedback">Добавить отзыв</button>
                             </div>
                             <div class="pagination ">
                                 <div class="pagination__show-more">
@@ -2537,7 +2346,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -2578,7 +2387,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -2619,7 +2428,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -2660,7 +2469,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -2701,7 +2510,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -2742,7 +2551,7 @@
                                             <img src="./img/product/svg/bank.svg" alt="" class="product-page__credit-bank-img">
                                             <div class="product-page__credit-text">ПриватБанк</div>
                                         </div>
-                                        <div class="product-page__text product-page__text--secondary">Читать условия</div>
+                                        <div class="product-page__text product-page__text--secondary" data-modal="creditModal">Читать условия</div>
                                     </div>
                                     <div class="product-page__credit-column">
                                         <div class="product-page__credit-name">Условия кредита</div>
@@ -3115,6 +2924,181 @@
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-page__modal">
+                <div class="modal " id="report-an-appearance">
+                    <div class="modal__content ">
+                        <div class="modal__header">
+                            <h3 class="modal__title">Сообщить о появлении</h3>
+                            <button class="modal__close" type="button">
+                                <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                            </button>
+                        </div>
+                        <div class="modal__main">
+                            <div class="modal__text ">
+                                <p>
+                                    Укажите ваш email, и мы сообщим вам, когда товар появится в наличии.
+                                </p>
+                            </div>
+                            <div class="modal__input modal__input--margin">
+                                <input type="email" class="input input--modal" placeholder="Электронная почта">
+                            </div>
+                            <div class="modal__buttons">
+                                <div class="modal__button ">
+                                    <button class="button button--transparent" type="button">отменить</button>
+                                </div>
+                                <div class="modal__button ">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal " id="add-feedback">
+                    <div class="modal__content ">
+                        <div class="modal__header">
+                            <h3 class="modal__title">Написать отзыв</h3>
+                            <button class="modal__close" type="button">
+                                <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                            </button>
+                        </div>
+                        <div class="modal__main">
+                            <div class="rating">
+                                <div class="rating-item">
+                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                                </div>
+                                <div class="rating-item">
+                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                                </div>
+                                <div class="rating-item">
+                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                                </div>
+                                <div class="rating-item">
+                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                                </div>
+                                <div class="rating-item">
+                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                                </div>
+                            </div>
+                            <div class="modal__input modal__input--margin">
+                                <input type="text" class="input input--modal" placeholder="Имя" id="feedbackName">
+                            </div>
+                            <div class="modal__input modal__input--margin">
+                                <input type="email" class="input input--modal" placeholder="Электронная почта" id="feedbackEmail">
+                            </div>
+                            <div class="modal__input modal__input--margin">
+                                <input type="text" class="input input--modal" placeholder="Достоинства" id="feedbackAdvantages">
+                            </div>
+                            <div class="modal__input modal__input--margin">
+                                <input type="text" class="input input--modal" placeholder="Недостатки" id="feedbackDisadvantages">
+                            </div>
+                            <div class="modal__input ">
+                                <textarea class="input input--textarea input--modal" placeholder="Комментарий" id="feedbackComment"></textarea>
+                            </div>
+                            <div class="modal__buttons">
+                                <div class="modal__button ">
+                                    <button class="button button--transparent" type="button">отменить</button>
+                                </div>
+                                <div class="modal__button ">
+                                    <button class="button button--secondary" type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal " id="creditModal">
+                    <div class="modal__content ">
+                        <div class="modal__header">
+                            <h3 class="modal__title">Условия кредитования</h3>
+                            <button class="modal__close" type="button">
+                                <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                            </button>
+                        </div>
+                        <div class="modal__main">
+                            <div class="modal__bank">
+                                <img src="./img/product/svg/bank.svg" alt="" class="modal__bank-img">
+                                <div class="modal__text">ПриватБанк</div>
+                            </div>
+                            <div class="modal__text modal__text--margin">
+                                <p class="modal__paragraph">
+                                    Оплата частями *
+                                </p>
+                                <p class="modal__paragraph">
+                                    "Оплата частями" - это уникальный сервис. С его помощью вы оплачиваете стоимость товара частями сроком до 22 платежей. Без стандартного пакета документов (паспорт, ИНН). Услуга распространяется на оплату заказов через интернет-магазин и розничную покупку в магазинах.
+                                </p>
+                                <p class="modal__paragraph">
+                                    Акция действует на территории Украины в интернет-магазине АЛЛО с 28.07.2021 г. по 08.09.2021 г. включительно, или пока акционный товар есть в наличии. Под " срок кредита (платежей)"* необходимо понимать "количество платежей" с учетом первого платежа, который будет снят с карты в день оформления заказа. В случае отсутствия карты, оформить ее можно в любом отделении Приватбанка. Для пользователей потребительского кредита "оплата частями" годовой процент составляет 0,01% в месяц , реальная годовая процентная ставка составляет 0,24% от общей суммы кредита. Срок-21 месяца, 22 платежа с учетом первого платежа. Льготный (грейс) период-21 месяц. По условиям банка, получателем товара может быть только плательщик - владелец карты. Минимальная сумма покупки 500 грн., максимальная сумма ограничена доступным кредитным лимитом по карте.
+                                </p>
+                                <p class="modal__paragraph">
+                                    Как воспользоваться предложением при покупке в интернет-магазине:
+                                    Узнать доступную сумму лимита по вашей карте Приватбанка, отправив SMS на номер 3700 с текстом "chast". Важно! SMS необходимо отправить с номера телефона активации кредитной карты (контактный номер телефона, указанный клиентом в договоре с банком).
+                                    Сумма покупки не должна превышать кредитный лимит вашей карты, установленный по оплате частями.
+                                    Максимальный размер стоимости покупки для возможности ее приобретения в кредит на данных условиях составляет:
+                                </p>
+                                <p class="modal__paragraph">
+                                    Карты Универсальная до 50 000 грн.
+                                    Карты Универсальная Gold до 75 000 грн.
+                                    Карты Platinum до 100 000 грн.
+                                    Оплата покупки разбивается от 2 до 22 равных платежей при проведении оплаты. В момент приобретения товара на кредитной карте должен быть остаток собственных средств, достаточный для оплаты первого платежа. Размер первого платежа по кредитному договору составляет 4,55% от стоимости товара .
+                                    Выбрать товар, который вас на сайте, соответствующий сумме кредитного лимита.
+                                    Выбрать способ оплаты "Оплата частями 2-22", где цифра означает количество платежей.
+                                    На странице Приватбанка введите данные вашей карты, подтвердите оплату.
+                                    Получите номер заказа в SMS сообщении. После оповещения сотрудником ООО "АЛЛО«, вы можете получить товар в магазине» Алло«; у курьера или в любом отделении» Новой Почты«,» Мист Экспресс", у курьера"Корса".
+                                    Оплата частями доступна владельцам:
+                                </p>
+                                <p class="modal__paragraph">
+                                    Карты»Универсальная";
+                                    Карты "Универсальная Gold";
+                                    Элитных карт для VIP-клиентов (Platinum, Infinite, World Signia / Elite).
+                                    Узнайте прямо сейчас доступную вам сумму лимита по карте ПриватБанк-отправьте SMS на номер 3700 с текстом "chast". Кредит предоставляет и является заказчиком соответствующей рекламы: АО КБ "ПриватБанк", лицензия НБУ 22 от 05.10.11. детальные условия кредитования на сайте банка или по телефону горячей линии 3700. Звонки с мобильного в пределах Украины бесплатные. Стоимость отправки смс-согласно тарифам вашего мобильного оператора.
+                                </p>
+                            </div>
+                            <div class="modal__button modal__button--right">
+                                <button class="button button--secondary" type="button">Хорошо</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal " id="images">
+                    <div class="modal__content modal__content--photos">
+                        <div class="modal__header">
+                            <h3 class="modal__title">Фотографии Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)</h3>
+                            <button class="modal__close" type="button">
+                                <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                            </button>
+                        </div>
+                        <div class="modal__main">
+                            <div class="modal__slider">
+                                <div class="modal__slider-item">
+                                    <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
+                                </div>
+                                <div class="modal__slider-item">
+                                    <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
+                                </div>
+                                <div class="modal__slider-item">
+                                    <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
+                                </div>
+                                <div class="modal__slider-item">
+                                    <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
+                                </div>
+                                <div class="modal__slider-item">
+                                    <img src="./img/product/laptop-modal.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="modal__slider-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__order">
+                            <div class="product-page__prices">
+                                <div class="product-page__price-old disabled">37000 грн.</div>
+                                <div class="product-page__price-actual ">
+                                    <span class="product-page__price ">28999</span> грн.
+                                </div>
+                            </div>
+                            <div class="modal__button">
+                                <button class="button " type="button">купить</button>
                             </div>
                         </div>
                     </div>

@@ -1251,14 +1251,14 @@
         .button {
             padding: 0.9rem 1.2rem;
         }
-        #credit {
+        #creditModal {
             .modal__text {
                 font-size: 1.7vw;
             }
         }
     }
     @include breakpoint($mobile) {
-        #credit {
+        #creditModal {
             .modal__text {
                 font-size: 2.7vw;
             }

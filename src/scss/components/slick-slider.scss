@@ -140,3 +140,77 @@
         }
     }
 }
+
+.modal__slider {
+    position: relative;
+
+    .slick-slide {
+        display: flex;
+        height: auto;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        font-size: 0;
+        border: none;
+        outline: none;
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        &.slick-prev {
+            left: -2.4rem;
+            background: url("../../img/product/svg/arrow-left-blue-64.svg") 0 0 / 100% no-repeat;
+        }
+
+        &.slick-next {
+            right: -2.4rem;
+            background: url("../../img/product/svg/arrow-right-blue-64.svg") 0 0 / 100% no-repeat;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.6rem 0;
+    }
+    .slick-dots li {
+        list-style: none;
+        margin-right: 1.6rem;
+
+        &:last-child {
+            margin-right: 0
+        }
+    }
+    .slick-dots li.slick-active button {
+        background-color: $secondary;
+        width: 20px;
+        height: 20px;
+
+        @include breakpoint($mobile) {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        background-color: #ccc;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+}
