@@ -11692,6 +11692,7 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-top: 0.6rem;
 }
 @media screen and (max-width: 500px) {
   .product-page__show-more {
@@ -11880,6 +11881,8 @@ img {
   font-size: 0.9vw;
   font-weight: 400;
   line-height: 20px;
+  height: 206px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1366px) {
   .product-page__feedback-text {
@@ -11899,6 +11902,44 @@ img {
 }
 @media screen and (max-width: 500px) {
   .product-page__feedback-text {
+    font-size: 2.8vw;
+  }
+}
+
+.product-page__feedback-show-more {
+  color: #01579B;
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0.6rem 0;
+  display: block;
+  cursor: pointer;
+}
+.product-page__feedback-show-more:hover {
+  color: #999;
+}
+.product-page__feedback-show-more.hidden {
+  display: none;
+}
+@media screen and (max-width: 1366px) {
+  .product-page__feedback-show-more {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product-page__feedback-show-more {
+    font-size: 1.3vw;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-page__feedback-show-more {
+    font-size: 1.8vw;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product-page__feedback-show-more {
     font-size: 2.8vw;
   }
 }
@@ -12488,4 +12529,13 @@ img {
 
 .product-page__feedback-icon {
   cursor: pointer;
+}
+
+.product-page__feedback-item-inner {
+  display: flex;
+}
+
+.product-page__description-content {
+  height: 306px;
+  overflow: hidden;
 }
