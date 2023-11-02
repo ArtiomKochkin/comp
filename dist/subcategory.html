@@ -9,9 +9,11 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Материнские платы</title>
 </head>
 <body>
@@ -1846,7 +1848,7 @@
                             <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
                         </li>
                     </ul>
-                    <button class="filter__reset">Очистить фильтры</button>
+                    <button type="button" class="filter__reset">Очистить фильтры</button>
                 </div>
                 <div class="filter__line-right">
                     <button class="button button--secondary">
@@ -1900,15 +1902,12 @@
                             <h6 class="filter__title filter__title--without-arrow">По цене</h6>
                             <div class="filter__content ">
                                 <div class="filter__numbers">
-                                    <input type="text" class="input input--filter" value="0">
+                                    <input id="priceMin" type="text" class="input input--filter" value="0">
                                     <span class="filter__span">-</span>
-                                    <input type="text" class="input input--filter" value="15000">
+                                    <input id="priceMax" type="text" class="input input--filter" value="15000">
                                     <button class="button button--secondary">ок</button>
                                 </div>
-                                <div class="filter__num">
-                                    <input id="rangeMin" type="range" class="filter__range" value="0">
-                                    <input id="rangeMax" type="range" class="filter__range" value="100">
-                                </div>
+                                <div class="filter__range"></div>
                             </div>
                         </div>
                         <div class="filter__item">

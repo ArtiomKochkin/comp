@@ -404,6 +404,34 @@ img {
   background: url("../../img/product/svg/arrow-down-blue-32.svg") 0 0/100% no-repeat;
 }
 
+.ui-slider-horizontal {
+  height: 2px;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  width: 20px;
+  height: 20px;
+  background: #01579B;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  background: #01579B;
+  cursor: pointer;
+}
+
 .nav--menu {
   display: none;
 }
@@ -2148,6 +2176,9 @@ img {
 .filter__reset:hover {
   color: #999;
 }
+.filter__reset.hidden {
+  display: none;
+}
 @media screen and (max-width: 1366px) {
   .filter__reset {
     font-size: 0.9vw;
@@ -2208,13 +2239,14 @@ img {
 .filter__view-item {
   cursor: pointer;
   padding: 4px;
+  padding-bottom: 0;
   border-radius: 4px;
 }
 .filter__view-item:first-child {
   margin-right: 1.2rem;
 }
 .filter__view-item.active {
-  border: 2px solid #01579B;
+  border: 1px solid #01579B;
 }
 
 .filter__panel {
@@ -2325,35 +2357,6 @@ img {
   .filter__span {
     font-size: 2.6vw;
   }
-}
-
-.filter__num {
-  margin-top: 1.6rem;
-  display: flex;
-  align-items: center;
-}
-
-.filter__range {
-  appearance: none;
-  width: 50%;
-  display: block;
-  margin: 0;
-  outline: none;
-}
-.filter__range::-webkit-slider-runnable-track {
-  height: 2px;
-  background-color: #D9D9D9;
-  cursor: pointer;
-}
-.filter__range::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
-  background: #01579B;
-  border-radius: 50%;
-  margin-top: -8px;
-  display: block;
-  cursor: pointer;
-  -webkit-appearance: none;
 }
 
 .filter__view-all {
@@ -2525,6 +2528,10 @@ img {
   .filter__category-num {
     font-size: 2.5vw;
   }
+}
+
+.filter__range {
+  margin-top: 1.6rem;
 }
 
 .select {

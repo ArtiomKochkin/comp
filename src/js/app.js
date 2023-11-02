@@ -27,6 +27,10 @@ import * as productReviews from "./components/productReviews.js";
 import * as sliderImages from "./components/sliderImages.js";
 import * as favorites from "./components/favorites.js";
 import * as goToFavorites from "./components/goToFavorites.js";
+import * as filter from "./components/filter.js";
+import * as sort from "./components/sort.js";
+import * as filterView from "./components/filterView.js";
+import * as filterRange from "./components/filterRange.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -79,6 +83,10 @@ switch (window.location.pathname) {
     case "/subcategory.html" : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
+        filter.filterProducts();
+        sort.sortProducts();
+        filterView.changeViewProducts();
+        filterRange.applyRange();
     } break;
     case "/search.html" : {
         let pages = document.querySelectorAll(".product__items"); 

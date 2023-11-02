@@ -1,0 +1,27 @@
+.ui-slider-horizontal {
+    height: 2px;
+    background-color: $light-gray;
+    cursor: pointer;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    width: 20px;
+    height: 20px;
+    background: $secondary;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    background: $secondary;
+    cursor: pointer;
+}

@@ -185,6 +185,10 @@
         color: $gray;
     }
 
+    &.hidden {
+        display: none;
+    }
+
     @include breakpoint($laptop) {
         font-size: 0.9vw;
     }
@@ -235,6 +239,7 @@
 .filter__view-item {
     cursor: pointer;
     padding: 4px;
+    padding-bottom: 0;
     border-radius: 4px;
     
     &:first-child {
@@ -242,7 +247,7 @@
     }
 
     &.active {
-        border: 2px solid $secondary;
+        border: 1px solid $secondary;
     }
 
 }
@@ -351,37 +356,6 @@
         font-size: 2.6vw;
     }
 }
-
-.filter__num {
-    margin-top: 1.6rem;
-    display: flex;
-    align-items: center;
-}
-
-.filter__range {
-    appearance: none;
-    width: 50%;
-    display: block;
-    margin: 0;
-    outline: none;
-
-    &::-webkit-slider-runnable-track {
-        height: 2px;
-        background-color: $light-gray;
-        cursor: pointer;
-    }
-    &::-webkit-slider-thumb {
-        width: 20px;
-        height: 20px;
-        background: $secondary;
-        border-radius: 50%;
-        margin-top: -8px;
-        display: block;
-        cursor: pointer;
-        -webkit-appearance: none;
-    }
-}
-
 
 .filter__view-all {
     color: $secondary;
@@ -532,4 +506,8 @@
     @include breakpoint($mobile) {
         font-size: 2.5vw;
     }
+}
+
+.filter__range {
+    margin-top: 1.6rem;
 }
