@@ -3,7 +3,7 @@
     margin-bottom: 1.2rem;
     
     &:last-child {
-        margin-bottom: none;
+        margin-bottom: 0;
     }
     
     &:hover .checkbox__label::before {
@@ -13,6 +13,10 @@
     &:hover .checkbox__label::after {
         border-bottom: 2px solid #3582BF;
         border-left: 2px solid #3582BF;
+    }
+
+    &.hidden {
+        display: none;
     }
 }
 
@@ -41,7 +45,7 @@
     color: $dark-grey;
     font-size: 0.8vw;
     font-weight: 500;
-    line-height: 16px; /* 133.333% */
+    line-height: 20px; 
     padding-left: 3rem;
     cursor: pointer;
 
@@ -82,6 +86,7 @@
     }
     @include breakpoint($tablet-pt) {
         font-size: 1.5vw;
+        line-height: 18px;
     }
     @include breakpoint($mobile) {
         font-size: 2.4vw;

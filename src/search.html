@@ -34,10 +34,10 @@
                                 <img src="./img/filter/close.svg" alt="" class="filter__line-item-img">
                             </li>
                         </ul>
-                        <button class="filter__reset">Очистить фильтры</button>
+                        <button type="button" class="filter__reset">Очистить фильтры</button>
                     </div>
                     <div class="filter__line-right">
-                        <button class="button button--secondary">
+                        <button class="button button--secondary" id="filterOpen">
                             <img src="./img/svg/filter.svg" alt="" class="button__img">
                         </button>
                         <div class="select">
@@ -88,7 +88,7 @@
                                 <h5 class="filter__results-text">Все результаты</h5>
                                 <span class="filter__results-num">(211)</span>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/Monitor.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Мониторы</h6>
@@ -102,18 +102,18 @@
                                         <div class="filter__category">Акксессуары для мониторов</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Игровые мониторы</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Мультимедийные мониторы</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/pc.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Компьютеры и ПО</h6>
@@ -127,26 +127,26 @@
                                         <div class="filter__category">Моноблоки</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Платформы</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Платформы для моноблоков</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Микрокомпьютеры</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Программное обеспечение</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/components.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Комплектующие для ПК</h6>
@@ -164,7 +164,7 @@
                                         <div class="filter__category">Видеокарты</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Оперативная память</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
@@ -172,26 +172,26 @@
                                         <div class="filter__category">Блоки питания</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Корпуса</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Охлаждение</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Твердотельные накопители</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Жесткие диски</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item filter__item--category ">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/laptop.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Ноутбуки</h6>
@@ -205,11 +205,11 @@
                                         <div class="filter__category">Игровые ноутбуки</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Ультрабуки</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Ноутбуки-трансформеры</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
@@ -220,7 +220,7 @@
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item  filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/consoles.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Игровые консоли</h6>
@@ -238,18 +238,18 @@
                                         <div class="filter__category">PlayStation</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Nintendo</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Другое</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item  filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/tablet.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Планшеты</h6>
@@ -263,14 +263,14 @@
                                         <div class="filter__category">Аксессуары для планшетов</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Другое</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item  filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/printer.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Принтеры и МФУ</h6>
@@ -290,7 +290,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item  filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/Speakers.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Аудиотехника</h6>
@@ -304,26 +304,26 @@
                                         <div class="filter__category">Домашняя акустика</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Портативная акустика</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Колонки</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Микрофоны и радиосистемы</div>
                                         <span class="filter__category-num">(3)</span>
                                     </div>
-                                    <div class="filter__category-item disabled">
+                                    <div class="filter__category-item ">
                                         <div class="filter__category">Виниловые проигрыватели</div>
                                         <span class="filter__category-num">(10)</span>
                                     </div>
                                     <button class="filter__view-all filter__view-all--left">Еще</button>
                                 </div>
                             </div>
-                            <div class="filter__item disabled">
+                            <div class="filter__item  filter__item--category">
                                 <div class="filter__item-header">
                                     <img src="./img/intro/sidebar/printer.svg" alt="" class="filter__img">
                                     <h6 class="filter__title filter__title--category">Сетевое оборудование</h6>
@@ -343,25 +343,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="filter__view-all filter__view-all--left filter__view-all--large">Все категории</button>
+                            <button id="viewAllCategories" class="filter__view-all filter__view-all--left filter__view-all--large">Все категории</button>
                         </div>
                         <div class="filter__panel">
                             <div class="filter__item">
-                                <h6 class="filter__title filter__title--without-arrow">По цене</h6>
+                                <h6 class="filter__title filter__title--without-arrow">Цена</h6>
                                 <div class="filter__content ">
                                     <div class="filter__numbers">
-                                        <input type="text" class="input input--filter" value="0">
+                                        <input id="priceMin" type="text" class="input input--filter" value="0">
                                         <span class="filter__span">-</span>
-                                        <input type="text" class="input input--filter" value="15000">
-                                        <button class="button button--secondary">ок</button>
+                                        <input id="priceMax" type="text" class="input input--filter" value="15000">
                                     </div>
-                                    <div class="filter__num">
-                                        <input id="rangeMin" type="range" class="filter__range" value="0">
-                                        <input id="rangeMax" type="range" class="filter__range" value="100">
-                                    </div>
+                                    <div class="filter__range"></div>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--characteristic">
                                 <h6 class="filter__title">Наличие в магазинах</h6>
                                 <div class="filter__content">
                                     <div class="checkbox">
@@ -389,10 +385,9 @@
                                         <label for="filter-not" class="checkbox__label">Отсутствующие в продаже</label>
                                         <span class="checkbox__label-num">(123)</span>
                                     </div>
-                                    <button class="filter__view-all">Показать все</button>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--characteristic">
                                 <h6 class="filter__title">Производитель</h6>
                                 <div class="filter__content">
                                     <div class="checkbox">
@@ -420,10 +415,30 @@
                                         <label for="filter-GIGABYTE" class="checkbox__label">GIGABYTE</label>
                                         <span class="checkbox__label-num">(1)</span>
                                     </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-ZOTAC">
+                                        <label for="filter-ZOTAC" class="checkbox__label">ZOTAC</label>
+                                        <span class="checkbox__label-num">(12)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-Sapphire">
+                                        <label for="filter-Sapphire" class="checkbox__label">Sapphire</label>
+                                        <span class="checkbox__label-num">(1)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-AMD">
+                                        <label for="filter-AMD" class="checkbox__label">AMD</label>
+                                        <span class="checkbox__label-num">(12)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="filter-Nvidia">
+                                        <label for="filter-Nvidia" class="checkbox__label">Nvidia</label>
+                                        <span class="checkbox__label-num">(1)</span>
+                                    </div>
                                     <button class="filter__view-all">Показать все</button>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--characteristic">
                                 <h6 class="filter__title">Сокет</h6>
                                 <div class="filter__content">
                                     <div class="checkbox">
@@ -446,10 +461,30 @@
                                         <label for="filter-LGA1200" class="checkbox__label">LGA 1200</label>
                                         <span class="checkbox__label-num">(123)</span>
                                     </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-1151">
+                                        <label for="filter-1151" class="checkbox__label">Socket 1151</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-11200">
+                                        <label for="filter-11200" class="checkbox__label">Socket 11200</label>
+                                        <span class="checkbox__label-num">(13)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-AM11">
+                                        <label for="filter-AM11" class="checkbox__label">AM11</label>
+                                        <span class="checkbox__label-num">(3)</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked id="filter-LGA666">
+                                        <label for="filter-LGA666" class="checkbox__label">LGA 666</label>
+                                        <span class="checkbox__label-num">(123)</span>
+                                    </div>
                                     <button class="filter__view-all">Показать все</button>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item filter__item--characteristic">
                                 <h6 class="filter__title">Тип поддерживаемой памяти</h6>
                                 <div class="filter__content">
                                     <div class="checkbox">

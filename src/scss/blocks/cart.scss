@@ -184,6 +184,10 @@
 
     @include breakpoint($mobile) {
         display: none;
+
+        &--set {
+            display: block;
+        }
     }
 }
 

@@ -19,7 +19,7 @@
 
         &.mobile {
             display: block;
-            width: 90%;
+            width: 101%;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -62,17 +62,6 @@
                 padding: 0;
             }
 
-            .filter__footer {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1.6rem;
-
-                .button {
-                    grid-column: span 1;
-                    justify-content: center;
-                }
-            }
-
             .filter__line-left {
                 &--panel {
                     display: flex;
@@ -83,9 +72,19 @@
     }
 }
 
-.filter__header,
-.filter__footer {
+.filter__header {
     display: none;
+}
+
+.filter__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+
+    .button {
+        grid-column: span 1;
+        justify-content: center;
+    }
 }
 
 .filter__line {
@@ -271,7 +270,7 @@
         margin-bottom: 0;
     }
 
-    &.disabled {
+    &.hidden {
         display: none;
     }
 }
@@ -282,7 +281,7 @@
     font-size: 1vw;
     font-weight: 600;
     line-height: 24px;
-    background: url("../../img/svg/arrow/arrow-down-gray-16.svg") no-repeat 100% center;
+    background: url("../../img/svg/arrow/arrow-up-gray-16.svg") no-repeat 100% center;
 
     &--without-arrow {
         background: none;
@@ -310,6 +309,10 @@
 
 .filter__content {
     margin-top: 1.2rem;
+
+    &.hidden {
+        display: none;
+    }
 }
 
 .filter__numbers {
@@ -340,7 +343,6 @@
 
 .filter__span {
     display: block;
-    margin: 0 1rem;
     color: $dark;
     font-size: 0.8vw;
     font-weight: 500;
@@ -348,6 +350,7 @@
 
     @include breakpoint($tablet) {
         font-size: 1.2vw;
+        margin: 0 0.5rem;
     }
     @include breakpoint($tablet-pt) {
         font-size: 1.6vw;
@@ -464,7 +467,7 @@
         color: $gray;
     }
 
-    &.disabled {
+    &.hidden {
         display: none;
     }
 }

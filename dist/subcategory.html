@@ -1075,7 +1075,7 @@
                         <span class="cart__product-cost">7000</span> 
                         <span class="cart__product-price-curency">грн</span>
                     </div>
-                    <div class="cart__product-bin-box">
+                    <div class="cart__product-bin-box cart__product-bin-box--set">
                         <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
                     </div>
                 </div>
@@ -1851,7 +1851,7 @@
                     <button type="button" class="filter__reset">Очистить фильтры</button>
                 </div>
                 <div class="filter__line-right">
-                    <button class="button button--secondary">
+                    <button class="button button--secondary" id="filterOpen">
                         <img src="./img/svg/filter.svg" alt="" class="button__img">
                     </button>
                     <div class="select">
@@ -1899,18 +1899,17 @@
                     </div>
                     <div class="filter__panel">
                         <div class="filter__item">
-                            <h6 class="filter__title filter__title--without-arrow">По цене</h6>
+                            <h6 class="filter__title filter__title--without-arrow">Цена</h6>
                             <div class="filter__content ">
                                 <div class="filter__numbers">
                                     <input id="priceMin" type="text" class="input input--filter" value="0">
                                     <span class="filter__span">-</span>
                                     <input id="priceMax" type="text" class="input input--filter" value="15000">
-                                    <button class="button button--secondary">ок</button>
                                 </div>
                                 <div class="filter__range"></div>
                             </div>
                         </div>
-                        <div class="filter__item">
+                        <div class="filter__item filter__item--characteristic">
                             <h6 class="filter__title">Наличие в магазинах</h6>
                             <div class="filter__content">
                                 <div class="checkbox">
@@ -1938,10 +1937,9 @@
                                     <label for="filter-not" class="checkbox__label">Отсутствующие в продаже</label>
                                     <span class="checkbox__label-num">(123)</span>
                                 </div>
-                                <button class="filter__view-all">Показать все</button>
                             </div>
                         </div>
-                        <div class="filter__item">
+                        <div class="filter__item filter__item--characteristic">
                             <h6 class="filter__title">Производитель</h6>
                             <div class="filter__content">
                                 <div class="checkbox">
@@ -1969,10 +1967,30 @@
                                     <label for="filter-GIGABYTE" class="checkbox__label">GIGABYTE</label>
                                     <span class="checkbox__label-num">(1)</span>
                                 </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" id="filter-ZOTAC">
+                                    <label for="filter-ZOTAC" class="checkbox__label">ZOTAC</label>
+                                    <span class="checkbox__label-num">(12)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" id="filter-Sapphire">
+                                    <label for="filter-Sapphire" class="checkbox__label">Sapphire</label>
+                                    <span class="checkbox__label-num">(1)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" id="filter-AMD">
+                                    <label for="filter-AMD" class="checkbox__label">AMD</label>
+                                    <span class="checkbox__label-num">(12)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" id="filter-Nvidia">
+                                    <label for="filter-Nvidia" class="checkbox__label">Nvidia</label>
+                                    <span class="checkbox__label-num">(1)</span>
+                                </div>
                                 <button class="filter__view-all">Показать все</button>
                             </div>
                         </div>
-                        <div class="filter__item">
+                        <div class="filter__item filter__item--characteristic">
                             <h6 class="filter__title">Сокет</h6>
                             <div class="filter__content">
                                 <div class="checkbox">
@@ -1995,10 +2013,30 @@
                                     <label for="filter-LGA1200" class="checkbox__label">LGA 1200</label>
                                     <span class="checkbox__label-num">(123)</span>
                                 </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked id="filter-1151">
+                                    <label for="filter-1151" class="checkbox__label">Socket 1151</label>
+                                    <span class="checkbox__label-num">(123)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked id="filter-11200">
+                                    <label for="filter-11200" class="checkbox__label">Socket 11200</label>
+                                    <span class="checkbox__label-num">(13)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked id="filter-AM11">
+                                    <label for="filter-AM11" class="checkbox__label">AM11</label>
+                                    <span class="checkbox__label-num">(3)</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked id="filter-LGA666">
+                                    <label for="filter-LGA666" class="checkbox__label">LGA 666</label>
+                                    <span class="checkbox__label-num">(123)</span>
+                                </div>
                                 <button class="filter__view-all">Показать все</button>
                             </div>
                         </div>
-                        <div class="filter__item">
+                        <div class="filter__item filter__item--characteristic">
                             <h6 class="filter__title">Тип поддерживаемой памяти</h6>
                             <div class="filter__content">
                                 <div class="checkbox">

@@ -31,6 +31,7 @@ import * as filter from "./components/filter.js";
 import * as sort from "./components/sort.js";
 import * as filterView from "./components/filterView.js";
 import * as filterRange from "./components/filterRange.js";
+import * as filterCategories from "./components/filterCategories.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -91,6 +92,11 @@ switch (window.location.pathname) {
     case "/search.html" : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
+        filter.filterProducts();
+        sort.sortProducts();
+        filterView.changeViewProducts();
+        filterRange.applyRange();
+        filterCategories.filterByCategories();
     } break;
     case "/account.html" : {
         let wishlistPages =  document.querySelectorAll(".account__product-list--wishlist");
