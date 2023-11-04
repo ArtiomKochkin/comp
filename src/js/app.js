@@ -21,6 +21,7 @@ import * as accountWishlist from "./components/accountWishlist.js";
 import * as accountFeedback from "./components/accountFeedback.js";
 import * as accountHistory from "./components/accountHistory.js";
 import * as accountPersonalDataModal from "./components/accountPersonalDataModal.js";
+import * as accountAvatar from "./components/accountAvatar.js";
 import * as productTabs from "./components/productTabs.js";
 import * as productModal from "./components/productModal.js";
 import * as productShowMore from "./components/productShowMore.js";
@@ -33,6 +34,7 @@ import * as sort from "./components/sort.js";
 import * as filterView from "./components/filterView.js";
 import * as filterRange from "./components/filterRange.js";
 import * as filterCategories from "./components/filterCategories.js";
+
 
 functions.isWebp();
 menu.toggleMenu();
@@ -114,5 +116,6 @@ switch (window.location.pathname) {
         accountFeedback.feedbackConfiguration();
         accountHistory.historyConfiguration();
         accountPersonalDataModal.accountModal();
+        accountAvatar.chooseAvatar();
     } break;
 }

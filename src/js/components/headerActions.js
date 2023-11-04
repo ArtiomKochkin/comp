@@ -44,7 +44,7 @@ export function applyActions() {
             .then(html => {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(html, "text/html");
-                let products = doc.querySelectorAll(".product");
+                let products = doc.querySelectorAll(".product--with-filter");
                 productsLength = products.length - 4;
                 
                 if (productsLength != 0) {

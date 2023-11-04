@@ -10046,6 +10046,9 @@ img {
   font-weight: 500;
   line-height: 28px; /* 116.667% */
 }
+.account__avatar-text.hidden {
+  display: none;
+}
 @media screen and (max-width: 1366px) {
   .account__avatar-text {
     font-size: 1.5vw;

@@ -3,6 +3,8 @@ export function wishlistConfiguration() {
     const wishlistItems = document.querySelectorAll(".account__product-list--wishlist");
     const pagination = wishlist.querySelector(".pagination");
     const buttonRemove = document.querySelectorAll(".product__addition-btn");
+    const countWishlist = document.getElementById("numFavorites");
+    const countWishlistWrap = countWishlist.closest(".header__actions-count");
 
     buttonRemove.forEach(removeFromWishlist);
 
@@ -10,6 +12,10 @@ export function wishlistConfiguration() {
         item.addEventListener("click", () => {
             let product = item.closest(".product");
             product.remove();
+            countWishlist.innerText = +countWishlist.innerText - 1;
+            if (countWishlist.innerText <= 0) {
+                countWishlistWrap.classList.remove("active");
+            }
             checkCountProduct();
         });
     }

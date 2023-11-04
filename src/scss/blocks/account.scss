@@ -130,6 +130,10 @@
     font-size: 1.3vw;
     font-weight: 500;
     line-height: 28px; /* 116.667% */
+    
+    &.hidden {
+        display: none;
+    }
 
     @include breakpoint($laptop) {
         font-size: 1.5vw;

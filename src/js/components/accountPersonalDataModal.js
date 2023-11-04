@@ -35,7 +35,7 @@ export function accountModal() {
     const select = document.getElementById("cityModal");
     const selectMail = document.getElementById("delivery-departament-select");
 
-    document.addEventListener("DOMContentLoaded", openModal(welcome));
+    // document.addEventListener("DOMContentLoaded", openModal(welcome));
     buttons.forEach(item => {
         item.addEventListener("click", () => {
             let modalID = item.getAttribute("data-modal");
