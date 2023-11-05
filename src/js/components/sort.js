@@ -50,7 +50,6 @@ export function sortProducts() {
         return Array.from(items).sort((a, b) => {
             let priceA = a.querySelector(".product__price").innerText;
             let priceB = b.querySelector(".product__price").innerText;
-            console.log(priceA, priceB);
             return parseInt(priceB) - parseInt(priceA);
         });
     }
@@ -64,14 +63,19 @@ export function sortProducts() {
     }
 
     function sortAndRenderProducts(sortFunction) {
-        productItems.forEach(item => {
-            const products = item.querySelectorAll(".product");
-            const sortedProducts = sortFunction(products);
-            item.innerHTML = "";
+        const products = document.querySelectorAll(".product--with-filter");
+        const sortedProducts = sortFunction(products);
+        let itemIndex = 0;
 
-            sortedProducts.forEach(product => {
-                item.append(product);
-            });
+        productItems.forEach(item => {
+            item.innerHTML = "";
+        });
+
+        productItems.forEach(item => {
+            for (let i = 0; i < 20 && itemIndex < sortedProducts.length; i++) {
+                item.append(sortedProducts[itemIndex]);
+                itemIndex++;
+            }
         });
     }
 }
