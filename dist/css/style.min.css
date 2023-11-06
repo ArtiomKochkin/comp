@@ -2531,6 +2531,10 @@ img {
   margin-top: 1.6rem;
 }
 
+.filter-reset.hidden {
+  display: none;
+}
+
 .select {
   position: relative;
 }

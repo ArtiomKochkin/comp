@@ -514,3 +514,9 @@
 .filter__range {
     margin-top: 1.6rem;
 }
+
+.filter-reset {
+    &.hidden {
+        display: none;
+    }
+}
