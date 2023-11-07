@@ -1,6 +1,7 @@
 .filter {
     width: 17%;
     margin-right: 1.6rem;
+    margin-bottom: 2.4rem;
 
     @include breakpoint($laptop) {
         width: 20%;

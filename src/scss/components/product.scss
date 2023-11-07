@@ -38,6 +38,10 @@
         box-shadow: 0px 4px 12px 0px rgba(50, 50, 71, 0.74);
     }
 
+    &.hidden {
+        display: none;
+    }
+
     &--blue {
         background: $dark;
         

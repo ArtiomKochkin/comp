@@ -1,4 +1,6 @@
 export function filterProducts () {
+    const productItems = document.querySelectorAll(".product__items");
+    const products = document.querySelectorAll(".product--with-filter");
     const filter = document.querySelector(".filter");
     const filterItem = document.querySelectorAll(".filter__item--characteristic");
     const filterLineList = document.querySelectorAll(".filter__line-list");
@@ -8,6 +10,9 @@ export function filterProducts () {
     const buttonClose = document.querySelector(".filter__close");
     const buttonOpen = document.getElementById("filterOpen");
     const buttonFilterApply = document.getElementById("applyFilter");
+    const pagination = document.querySelector(".pagination");
+    const paginationItems = document.querySelectorAll(".pagination__item");
+    const lastPaginationItem = document.querySelector(".pagination__link--last");
     let rangeWidth, rangeValues;
     document.addEventListener("DOMContentLoaded", () => {
         rangeWidth = document.querySelector(".ui-slider-range");
@@ -178,6 +183,55 @@ export function filterProducts () {
             }
         });
         removeFilter();
+        filter();
+
+        function filter() {
+            let checkboxes = document.querySelectorAll(".checkbox__input");
+            let checkboxStates = {};
+            let itemIndex = 0;
+            let filteredProducts = [];
+
+            checkboxes.forEach(checkbox => {
+                checkboxStates[checkbox.id] = checkbox.checked;
+            });
+
+            products.forEach(item => {
+                item.classList.add("hidden");
+            });
+            productItems.forEach(productItem => {
+                productItem.innerHTML = "";
+            });
+
+            products.forEach(item => {
+                let itemPrice = +(item.querySelector(".product__price").innerText);
+                let shouldDisplay = true;
+
+                for (let checkboxID in checkboxStates) {
+                    if (checkboxStates[checkboxID] && !item.classList.contains(checkboxID)) {
+                        shouldDisplay = false;
+                    }
+                }
+
+                if (itemPrice >= priceMinValue && itemPrice <= priceMaxValue && shouldDisplay == true) {
+                    item.classList.remove("hidden");
+                    filteredProducts.push(item);
+                }
+                
+            });
+
+            productItems.forEach(productItem => {
+                for (let i = 0; i < 20 && itemIndex < filteredProducts.length; i++) {
+                    productItem.append(filteredProducts[itemIndex]);
+                    itemIndex++;
+                }
+            });
+            if (itemIndex < 20) {
+                pagination.style.display = "none";
+            } else if (itemIndex < 40 && itemIndex > 20) {
+                paginationItems[2].style.display = "none";
+                lastPaginationItem.innerText = +lastPaginationItem.innerText - 1;
+            }
+        }
     }
 
     function addFilter(title, id) {
