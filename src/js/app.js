@@ -80,6 +80,11 @@ switch (window.location.pathname) {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         countdown.initCountdown();
+        filter.filterProducts();
+        sort.sortProducts();
+        filterView.changeViewProducts();
+        filterRange.applyRange();
+        filterCategories.filterByCategories();
     } break;
     case "/products.html" : {
         let pages = document.querySelectorAll(".product__items"); 

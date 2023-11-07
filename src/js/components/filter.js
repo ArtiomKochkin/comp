@@ -88,7 +88,7 @@ export function filterProducts () {
             });
 
             resetFilterSettings();
-
+            applyFilter();
             buttonsReset.forEach(btn => {
                 btn.classList.add("hidden");
             });
@@ -102,9 +102,16 @@ export function filterProducts () {
         rangeWidth.style.width = "100%";
         rangeValues[0].style.left = "0%";
         rangeValues[1].style.left = "100%";
-        pagination.style.display = "block";
-        paginationItems[2].style.display = "block";
-        lastPaginationItem.innerText = +lastPaginationItem.innerText - 1;
+        
+        if (productItems.length == 2) {
+            pagination.style.display = "block";
+            paginationItems[2].style.display = "block";
+            lastPaginationItem.innerText = 2;
+        } else if (productItems.length > 1) {
+            pagination.style.display = "block";
+            paginationItems[2].style.display = "block";
+            lastPaginationItem.innerText = +lastPaginationItem.innerText - 1;
+        }
 
         filterItem.forEach(item => {
             let characteristics = item.querySelectorAll(".checkbox__input");
@@ -238,6 +245,39 @@ export function filterProducts () {
             } else if (itemIndex < 40 && itemIndex > 20) {
                 paginationItems[2].style.display = "none";
                 lastPaginationItem.innerText = +lastPaginationItem.innerText - 1;
+            }
+
+            if (window.location.pathname == "/search.html") {
+                let counterSearch = document.querySelector(".search__num");
+                let endingWord = document.getElementById("search__ending-word");
+                counterSearch.innerText = filteredProducts.length;
+                counterSearch = counterSearch.innerText;
+                switch (counterSearch.slice(-1)) {
+                    case "1" : {
+                        if (+counterSearch == 11) {
+                            endingWord.innerText = " товаров";
+                        } else {
+                            endingWord.innerText = " товар";
+                        }
+                    } break;
+                    case "2" :
+                    case "3" :
+                    case "4" : {
+                        if (+counterSearch > 10 && +counterSearch < 20) {
+                            endingWord.innerText = " товаров";
+                        } else {
+                            endingWord.innerText = " товара";
+                        }
+                    } break;
+                    case "0" :
+                    case "5" :
+                    case "6" :
+                    case "7" :
+                    case "8" :
+                    case "9" : {
+                        endingWord.innerText = " товаров";
+                    } break;
+                }
             }
         }
     }

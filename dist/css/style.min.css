@@ -2471,6 +2471,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
+  text-decoration: none;
   cursor: pointer;
 }
 .filter__category-item:hover .filter__category {
