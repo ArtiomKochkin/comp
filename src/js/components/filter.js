@@ -70,6 +70,9 @@ export function filterProducts () {
                         rangeWidth.style.width = "100%";
                         rangeValues[0].style.left = "0%";
                         rangeValues[1].style.left = "100%";
+                        applyFilter();
+                    } else {
+                        applyFilter();
                     }
                 });
             });
@@ -99,12 +102,17 @@ export function filterProducts () {
         rangeWidth.style.width = "100%";
         rangeValues[0].style.left = "0%";
         rangeValues[1].style.left = "100%";
+        pagination.style.display = "block";
+        paginationItems[2].style.display = "block";
+        lastPaginationItem.innerText = +lastPaginationItem.innerText - 1;
+
         filterItem.forEach(item => {
             let characteristics = item.querySelectorAll(".checkbox__input");
             for (let characteristic of characteristics) {
                 characteristic.checked = false;
             }
         });
+        
     }
 
     function toggleItem(item) {
@@ -216,7 +224,6 @@ export function filterProducts () {
                     item.classList.remove("hidden");
                     filteredProducts.push(item);
                 }
-                
             });
 
             productItems.forEach(productItem => {
@@ -225,6 +232,7 @@ export function filterProducts () {
                     itemIndex++;
                 }
             });
+            
             if (itemIndex < 20) {
                 pagination.style.display = "none";
             } else if (itemIndex < 40 && itemIndex > 20) {
