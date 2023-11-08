@@ -9,6 +9,7 @@ export function calculateOrderDetails() {
     const orderDeliveryRadio = document.getElementsByName("methods");
     let sum = 0;
     let count = 0;
+    let shipping;
 
     document.addEventListener("DOMContentLoaded", calculateProductCount);
     document.addEventListener("DOMContentLoaded", calculateProductCost);
@@ -59,7 +60,6 @@ export function calculateOrderDetails() {
 
     function calculateShippingCost(radio) {
         radio.addEventListener("change", () => {
-            let shipping;
             orderDelivery.forEach(item => {
                 if (item.classList.contains("active")) {
                     shipping = item.querySelector(".order__method-price-span");
@@ -71,16 +71,17 @@ export function calculateOrderDetails() {
                 }
             });
             shippingCost.innerText = shipping;
+            calculateTotalCost();
         });
     }
 
     function calculateTotalCost() {
         totalCost.forEach(item => {
             if (shippingCost.innerText == "Бесплатно") {
-                let shipping = 0;
+                shipping = 0;
                 item.innerText = +priceProducts.innerText + shipping;
             } else {
-                item.innerText = +priceProducts.innerText + +shippingCost.innerText;
+                item.innerText = +priceProducts.innerText + parseInt(shippingCost.innerText);
             }
         });
     }
