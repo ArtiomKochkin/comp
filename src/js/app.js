@@ -34,6 +34,7 @@ import * as sort from "./components/sort.js";
 import * as filterView from "./components/filterView.js";
 import * as filterRange from "./components/filterRange.js";
 import * as filterCategories from "./components/filterCategories.js";
+import * as form from "./components/form.js";
 
 
 functions.isWebp();
@@ -58,6 +59,7 @@ switch (window.location.pathname) {
     case "/order.html" : {
         orderConfiguration.makeOrder();
         orderDetails.calculateOrderDetails();
+        form.checkEnteredData();
     } break;
     case "/comparison.html" : {
         comparisonConfiguration.comparisonManager();

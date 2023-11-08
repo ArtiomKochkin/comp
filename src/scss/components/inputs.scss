@@ -230,4 +230,29 @@
             }
         }
     }
+
+    &.errored {
+        border: 1px solid $red;
+        color: $red;
+    }
+}
+
+.input__text {
+    margin-top: 0.8rem;
+    color: $red;
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 12px; 
+
+    @include breakpoint($tablet) {
+        font-size: 1vw;
+    }
+    @include breakpoint($tablet-pt) {
+        font-size: 1.5vw;
+
+    }
+    @include breakpoint($mobile) {
+        font-size: 2.4vw;
+
+    }
 }

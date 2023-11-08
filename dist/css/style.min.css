@@ -1616,6 +1616,33 @@ img {
     font-size: 2.8vw;
   }
 }
+.input.errored {
+  border: 1px solid #E93232;
+  color: #E93232;
+}
+
+.input__text {
+  margin-top: 0.8rem;
+  color: #E93232;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 12px;
+}
+@media screen and (max-width: 991px) {
+  .input__text {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input__text {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .input__text {
+    font-size: 2.4vw;
+  }
+}
 
 .breadcrumbs {
   margin: 2.4rem auto;
@@ -9333,6 +9360,7 @@ img {
 }
 .order__method.active .order__method-addition {
   display: block;
+  padding-left: 1.2rem;
 }
 
 .order__method-left {

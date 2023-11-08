@@ -116,16 +116,16 @@
                         <h6 class="order__making-title">Ваши контактные данные</h6>
                         <div class="order__contact-details">
                             <div class="order__contact-details-item">
-                                <input type="text" class="input" placeholder="Имя">
+                                <input type="text" class="input" placeholder="Имя" id="name">
                             </div>
                             <div class="order__contact-details-item">
-                                <input type="text" class="input" placeholder="Фамилия">
+                                <input type="text" class="input" placeholder="Фамилия" id="surname">
                             </div>
                             <div class="order__contact-details-item">
-                                <input type="email" class="input" placeholder="Email">
+                                <input type="email" class="input" placeholder="Email" id="email">
                             </div>
                             <div class="order__contact-details-item">
-                                <input type="tel" class="input" placeholder="Номер телефона">
+                                <input type="tel" class="input" placeholder="Номер телефона" id="tel">
                             </div>
                         </div>
                     </div>
@@ -174,13 +174,13 @@
                                             <div class="order__method-text">Введите ваш адрес</div>
                                             <div class="order__method-address">
                                                 <div class="order__method-address-item">
-                                                    <input type="text" class="input" placeholder="Улица">
+                                                    <input type="text" class="input" placeholder="Улица" id="street">
                                                 </div>
                                                 <div class="order__method-address-item">
-                                                    <input type="text" class="input" placeholder="Дом">
+                                                    <input type="text" class="input" placeholder="Дом" id="house">
                                                 </div>
                                                 <div class="order__method-address-item">
-                                                    <input type="text" class="input" placeholder="Квартира">
+                                                    <input type="text" class="input" placeholder="Квартира" id="apartment">
                                                 </div>
                                             </div>
                                         </div>
@@ -201,9 +201,9 @@
                                             Доставим 4 августа
                                         </div>
                                         <div class="order__method-addition ">
-                                            <div class="order__method-addition-mail">
+                                            <div class="order__method-addition-mail active">
                                                 <div class="radio order__method-addition-radio">
-                                                    <input type="radio" class="radio__input" id="delivery-departament" name="mail">
+                                                    <input type="radio" class="radio__input" id="delivery-departament" name="mail" checked>
                                                     <label for="delivery-departament" class="radio__label">Доставка в отделение</label>
                                                 </div>
                                                 <div class="order__method-addition-mail-block ">
@@ -217,22 +217,22 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="order__method-addition-mail active">
+                                            <div class="order__method-addition-mail ">
                                                 <div class="radio order__method-addition-radio">
-                                                    <input type="radio" class="radio__input" id="delivery-courier" name="mail" checked>
+                                                    <input type="radio" class="radio__input" id="delivery-courier" name="mail" >
                                                     <label for="delivery-courier" class="radio__label">Доставка курьером</label>
                                                 </div>
                                                 <div class="order__method-addition-mail-block ">
                                                     <div class="order__method-text">Введите ваш адрес</div>
                                                     <div class="order__method-address">
                                                         <div class="order__method-address-item">
-                                                            <input type="text" class="input" placeholder="Улица">
+                                                            <input type="text" class="input" placeholder="Улица" id="streetDelivery">
                                                         </div>
                                                         <div class="order__method-address-item">
-                                                            <input type="text" class="input" placeholder="Дом">
+                                                            <input type="text" class="input" placeholder="Дом" id="houseDelivery">
                                                         </div>
                                                         <div class="order__method-address-item">
-                                                            <input type="text" class="input" placeholder="Квартира">
+                                                            <input type="text" class="input" placeholder="Квартира" id="apartmentDelivery">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -256,16 +256,16 @@
                                     <div class="order__making-text">Контактные данные получателя</div>
                                     <div class="order__contact-details">
                                         <div class="order__contact-details-item">
-                                            <input type="text" class="input" placeholder="Имя">
+                                            <input type="text" class="input" placeholder="Имя" id="recipientName">
                                         </div>
                                         <div class="order__contact-details-item">
-                                            <input type="text" class="input" placeholder="Фамилия">
+                                            <input type="text" class="input" placeholder="Фамилия" id="recipientSurname">
                                         </div>
                                         <div class="order__contact-details-item">
-                                            <input type="email" class="input" placeholder="Email">
+                                            <input type="email" class="input" placeholder="Email" id="recipientEmail">
                                         </div>
                                         <div class="order__contact-details-item">
-                                            <input type="tel" class="input" placeholder="Номер телефона">
+                                            <input type="tel" class="input" placeholder="Номер телефона" id="recipientTel">
                                         </div>
                                     </div>
                                 </div>
@@ -290,16 +290,16 @@
                                     <div class="order__radios-item-requisites-title">Данные карты</div>
                                     <div class="order__radios-item-requisites-box">
                                         <div class="order__radios-requisites-item">
-                                            <input type="text" class="input" placeholder="Номер карты">
+                                            <input type="text" class="input" placeholder="Номер карты" id="cardNumber" maxlength="16">
                                         </div>
                                         <div class="order__radios-requisites-item">
-                                            <input type="text" class="input" placeholder="ММ">
+                                            <input type="text" class="input" placeholder="ММ" id="cardMM" maxlength="2">
                                         </div>
                                         <div class="order__radios-requisites-item">
-                                            <input type="text" class="input" placeholder="ГГ">
+                                            <input type="text" class="input" placeholder="ГГ" id="cardYY" maxlength="2">
                                         </div>
                                         <div class="order__radios-requisites-item">
-                                            <input type="text" class="input" placeholder="CVV">
+                                            <input type="text" class="input" placeholder="CVV" id="cardCVV" maxlength="3">
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +318,7 @@
                             <a href="#!" class="order__link">пользовательского соглашения</a>
                         </div>
                         <div class="order__making-button">
-                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                            <button class="button confirm-button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                         </div>
                     </div>
                     <div class="order__making-fixed">
@@ -329,7 +329,7 @@
                             </span>
                         </div>
                         <div class="order__making-button">
-                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                            <button class="button confirm-button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                         </div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
                             </div>
                         </div>
                         <div class="order__making-button order__making-button--confirmation">
-                            <button class="button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                            <button class="button confirm-button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                         </div>
                         <div class="order__confirmation-text">
                             Подтверждая заказ, я принимаю условия

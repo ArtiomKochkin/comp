@@ -1,7 +1,5 @@
 export function makeOrder() {
     const body = document.body;
-    const successPage = document.querySelector(".success");
-    const orderPage = document.querySelector(".order");
     const modalCart = document.getElementById("cartModal");
     const modalCartContent = modalCart.querySelector(".modal__content");
     const editOrder = document.querySelectorAll(".order__making-product-edit");
@@ -9,10 +7,7 @@ export function makeOrder() {
     const orderRecipientContacts = document.querySelector(".order__recipient-contact-details");
     const orderPayment = document.querySelectorAll(".order__radios-item");
     const orderDeliveryItems = document.querySelectorAll(".order__method");
-    const buttonsConfirm = document.querySelectorAll(".order__making-button");
-    const amountProducts = document.getElementById("amountProducts");
 
-    buttonsConfirm.forEach(confirmOrder);
     orderRecipient.addEventListener("change", toggleSwitch);
     orderDeliveryItems.forEach(handleDeliveryChange);
     orderPayment.forEach(handlePaymentChange);
@@ -71,15 +66,6 @@ export function makeOrder() {
                         item.classList.add("active");
                     });
                 }); 
-            }
-        });
-    }
-
-    function confirmOrder(item) {
-        item.addEventListener("click", () => {
-            if (amountProducts.innerText != "0") {
-                orderPage.classList.add("hidden");
-                successPage.classList.add("show");
             }
         });
     }
