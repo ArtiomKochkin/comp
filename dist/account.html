@@ -1849,7 +1849,7 @@
                 </ul>
             </div>
             <div class="account__right">
-                <div class="account__right-item " id="history">
+                <div class="account__right-item active" id="history">
                     <h2 class="section__title">История заказов</h2>
                     <div class="account__history">
                         <ul class="account__history-list">
@@ -2370,7 +2370,7 @@
                                             </div>
                                         </div>
                                         <div class="modal__product-btn">
-                                            <button class="button button--transparent">Оставить отзыв</button>
+                                            <button class="button button--transparent" data-modal="add-feedback">Оставить отзыв</button>
                                         </div>
                                     </div>
                                     <div class="modal__product">
@@ -2381,7 +2381,7 @@
                                             </div>
                                         </div>
                                         <div class="modal__product-btn">
-                                            <button class="button button--transparent">Оставить отзыв</button>
+                                            <button class="button button--transparent" data-modal="add-feedback">Оставить отзыв</button>
                                         </div>
                                     </div>
                                 </div>
@@ -2401,13 +2401,67 @@
                                     <p>Укажите ваш номер телефона и укажите причину возврата.</p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="tel" class="input input--modal" placeholder="Ваш телефон">
+                                    <input type="tel" class="input input--modal" required placeholder="Ваш телефон" id="refundTel">
                                 </div>
                                 <div class="modal__input ">
-                                    <textarea class="input input--textarea input--modal" placeholder="Причина возврата"></textarea>
+                                    <textarea class="input input--textarea input--modal" required placeholder="Причина возврата" id="refundReason"></textarea>
                                 </div>
                                 <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button">отправить</button>
+                                    <button class="button button--secondary" type="button" id="buttonRefund">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal " id="add-feedback">
+                        <div class="modal__content ">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Написать отзыв</h3>
+                                <button class="modal__close" type="button">
+                                    <img src="../img/svg/close-red.svg" alt="" class="modal__close-img">
+                                </button>
+                            </div>
+                            <div class="modal__main">
+                                <div class="modal__main-wrap">
+                                    <div class="rating" id="rating">
+                                        <div class="rating-item">
+                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                        </div>
+                                        <div class="rating-item">
+                                            <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" required class="input input--modal" placeholder="Имя" id="feedbackName">
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="email" required class="input input--modal" placeholder="Электронная почта" id="feedbackEmail">
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Достоинства" id="feedbackAdvantages">
+                                </div>
+                                <div class="modal__input modal__input--margin">
+                                    <input type="text" class="input input--modal" placeholder="Недостатки" id="feedbackDisadvantages">
+                                </div>
+                                <div class="modal__input ">
+                                    <textarea class="input input--textarea input--modal" placeholder="Комментарий" id="feedbackComment"></textarea>
+                                </div>
+                                <div class="modal__buttons">
+                                    <div class="modal__button ">
+                                        <button class="button button--transparent" type="button" onclick="this.closest('.modal').click();">отменить</button>
+                                    </div>
+                                    <div class="modal__button ">
+                                        <button class="button button--secondary" type="button" id="buttonFeedback">отправить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -4197,7 +4251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item active" id="personalData">
+                <div class="account__right-item " id="personalData">
                     <h2 class="section__title">Личные данные</h2>
                     <div class="account__profile">
                         <div class="account__avatar">

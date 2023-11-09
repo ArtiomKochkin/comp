@@ -1,4 +1,4 @@
-export function checkEnteredData() {
+export function checkOrderData() {
     const successPage = document.querySelector(".success");
     const orderPage = document.querySelector(".order");
     const confirmButtons = document.querySelectorAll(".confirm-button");

@@ -244,6 +244,11 @@
     font-weight: 500;
     line-height: 12px; 
 
+    &--modal {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
     @include breakpoint($tablet) {
         font-size: 1vw;
     }

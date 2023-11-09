@@ -533,6 +533,7 @@ img {
 
 .rating-item {
   margin-right: 4px;
+  cursor: pointer;
 }
 .rating-item:last-child {
   margin-right: 0;
@@ -1627,6 +1628,10 @@ img {
   font-size: 0.8vw;
   font-weight: 500;
   line-height: 12px;
+}
+.input__text--modal {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 991px) {
   .input__text {
