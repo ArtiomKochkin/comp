@@ -36,7 +36,7 @@ import * as filterRange from "./components/filterRange.js";
 import * as filterCategories from "./components/filterCategories.js";
 import * as orderForm from "./components/orderForm.js";
 import * as accountForm from "./components/accountForm.js";
-
+import * as accountRating from "./components/accountRating.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -118,6 +118,7 @@ switch (window.location.pathname) {
         pages.forEach(function(page) {
             pagination.initPagination(page);
         });
+        accountRating.chooseRating();
         accountTabs.toggleTabs();
         goToFavorites.onClick();
         accountWishlist.wishlistConfiguration();
