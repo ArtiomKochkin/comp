@@ -35,7 +35,7 @@ import * as filterView from "./components/filterView.js";
 import * as filterRange from "./components/filterRange.js";
 import * as filterCategories from "./components/filterCategories.js";
 import * as orderForm from "./components/orderForm.js";
-import * as accountForm from "./components/accountForm.js";
+import * as form from "./components/form.js";
 import * as accountRating from "./components/accountRating.js";
 
 functions.isWebp();
@@ -74,6 +74,7 @@ switch (window.location.pathname) {
         productModal.showModalWindows();
         productShowMore.showMore();
         productReviews.likeConfiguration();
+        form.checkAccountData();
     } break;
     case "/news.html" : {
         let pages = document.querySelectorAll(".news__wrap"); 
@@ -126,6 +127,6 @@ switch (window.location.pathname) {
         accountHistory.historyConfiguration();
         accountPersonalDataModal.accountModal();
         accountAvatar.chooseAvatar();
-        accountForm.checkAccountData();
+        form.checkAccountData();
     } break;
 }

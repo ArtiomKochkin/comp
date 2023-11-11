@@ -1,49 +1,54 @@
 export function checkAccountData() {
-    let shouldSuccess = true;
-    let errorMessage = "";
-    let errorSubstr = "необходимые данные";
-    let allCharsRegexp = /\w/;
+    const rating = document.getElementById("rating");
+    const buttonRefund = document.getElementById("buttonRefund");
+    const buttonFeedback = document.getElementById("buttonFeedback");
+    const buttonReport = document.getElementById("buttonReport");
+    const refundReason = document.getElementById("refundReason");
+    const refundTel = document.getElementById("refundTel");
+    const feedbackName = document.getElementById("feedbackName");
+    const feedbackEmail = document.getElementById("feedbackEmail");
+    const feedbackRating = document.querySelectorAll(".rating-img--modal");
+    const reportEmail = document.getElementById("reportEmail");
+
     let letterRegexp = /[A-Za-zА-Яа-я']/;
     let emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i;
     let telRegexp = /(\+7[0-9]{10})|(8[0-9]{10})|(\+7\([0-9]{3}\)[0-9]{7})/;
     let streetRegexp = /^[A-Za-zА-Яа-я]+$/i;
     let houseRegexp = /(^[1-9]{1,}[A-Za-zА-Яа-я])|(^[0-9])/;
     let apartmentRegexp = /^[0-9]+$/;
-
-    const buttonRefund = document.getElementById("buttonRefund");
-    const buttonFeedback = document.getElementById("buttonFeedback");
-    const refundReason = document.getElementById("refundReason");
-    const refundTel = document.getElementById("refundTel");
-    const feedbackName = document.getElementById("feedbackName");
-    const feedbackEmail = document.getElementById("feedbackEmail");
-    const feedbackRating = document.querySelectorAll(".rating-img--modal");
-    const rating = document.getElementById("rating");
+    let shouldSuccess = true;
+    let errorMessage = "";
+    let errorSubstr = "необходимые данные";
+    let allCharsRegexp = /\w/;
 
     checkData(buttonRefund, refundTel, telRegexp, errorSubstr);
     checkData(buttonRefund, refundReason, allCharsRegexp, errorSubstr);
     checkData(buttonFeedback, feedbackName, letterRegexp, errorSubstr);
     checkData(buttonFeedback, feedbackEmail, emailRegexp, errorSubstr);
+    checkData(buttonReport, reportEmail, emailRegexp, errorSubstr);
     buttonFeedback.addEventListener("click", checkRating);
 
     function checkData(button, element, regExp, str) {
-        let modal = button.closest(".modal");
+        if (button) {
+            let modal = button.closest(".modal");
 
-        button.addEventListener("click", () => {
-            if (element.value == "" || element.value == " ") {
-                errorMessage = `Пожалуйста, введите ${str}.`;
-                shouldSuccess = false;
-            } else if (!regExp.test(element.value)) {
-                errorMessage = `Пожалуйста, укажите корректные ${str}.`;
-                shouldSuccess = false;
-            } else {
-                errorMessage = "";
-                shouldSuccess = true;
-            }
-            getError(element, errorMessage); 
-            if (modal.querySelectorAll(".input__text").length == 0) {
-                modal.click();
-            }
-        });
+            button.addEventListener("click", () => {
+                if (element.value == "" || element.value == " ") {
+                    errorMessage = `Пожалуйста, введите ${str}.`;
+                    shouldSuccess = false;
+                } else if (!regExp.test(element.value)) {
+                    errorMessage = `Пожалуйста, укажите корректные ${str}.`;
+                    shouldSuccess = false;
+                } else {
+                    errorMessage = "";
+                    shouldSuccess = true;
+                }
+                getError(element, errorMessage); 
+                if (modal.querySelectorAll(".input__text").length == 0) {
+                    modal.click();
+                }
+            });
+        }
     }
 
     function getError(element, str) {
@@ -102,7 +107,4 @@ export function checkAccountData() {
             modal.click();
         }
     }
-
-    chooseRating();
-
 }

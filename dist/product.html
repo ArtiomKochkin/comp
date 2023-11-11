@@ -1898,7 +1898,7 @@
                                 <div class="product-page__stock">
                                     <img src="./img/product/svg/in-stock.svg" alt="" class="product-page__stock-img">
                                     <div class="product-page__stock-text">В наличии</div>
-                                    <button class="button button--secondary product-page__stock-button " data-modal="report-an-appearance">Сообщить когда появится</button>
+                                    <button class="button button--secondary product-page__stock-button" data-modal="report-an-appearance">Сообщить когда появится</button>
                                 </div>
                                 <div class="product__actions">
                                     <img src="./img/svg/comparison.svg" alt="" class="product__icon">
@@ -4611,14 +4611,14 @@
                                 </p>
                             </div>
                             <div class="modal__input modal__input--margin">
-                                <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                <input type="email" class="input input--modal" placeholder="Электронная почта" id="reportEmail">
                             </div>
                             <div class="modal__buttons">
                                 <div class="modal__button ">
                                     <button class="button button--transparent" type="button">отменить</button>
                                 </div>
                                 <div class="modal__button ">
-                                    <button class="button button--secondary" type="button">отправить</button>
+                                    <button class="button button--secondary" type="button" id="buttonReport">отправить</button>
                                 </div>
                             </div>
                         </div>
@@ -4633,21 +4633,23 @@
                             </button>
                         </div>
                         <div class="modal__main">
-                            <div class="rating">
-                                <div class="rating-item">
-                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                </div>
-                                <div class="rating-item">
-                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                </div>
-                                <div class="rating-item">
-                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                </div>
-                                <div class="rating-item">
-                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
-                                </div>
-                                <div class="rating-item">
-                                    <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img">
+                            <div class="modal__main-wrap">
+                                <div class="rating" id="rating">
+                                    <div class="rating-item">
+                                        <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                    </div>
+                                    <div class="rating-item">
+                                        <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                    </div>
+                                    <div class="rating-item">
+                                        <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                    </div>
+                                    <div class="rating-item">
+                                        <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                    </div>
+                                    <div class="rating-item">
+                                        <img src="./img/product/svg/rating-false.svg" alt="" class="rating-img rating-img--modal">
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal__input modal__input--margin">
@@ -4670,7 +4672,7 @@
                                     <button class="button button--transparent" type="button">отменить</button>
                                 </div>
                                 <div class="modal__button ">
-                                    <button class="button button--secondary" type="button">отправить</button>
+                                    <button class="button button--secondary" type="button" id="buttonFeedback">отправить</button>
                                 </div>
                             </div>
                         </div>
