@@ -94,6 +94,11 @@ switch (window.location.pathname) {
     case "/products.html" : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
+        filter.filterProducts();
+        sort.sortProducts();
+        filterView.changeViewProducts();
+        filterRange.applyRange();
+        filterCategories.filterByCategories();
     } break;
     case "/subcategory.html" : {
         let pages = document.querySelectorAll(".product__items"); 
