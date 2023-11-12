@@ -389,6 +389,7 @@ export function accountModal() {
             shouldSuccess = true;
         }
         getError(element, errorMessage); 
+        shouldSuccess = false;
     }
     
     function getError(element, str) {
