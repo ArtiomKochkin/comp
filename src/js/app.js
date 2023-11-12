@@ -37,6 +37,7 @@ import * as filterCategories from "./components/filterCategories.js";
 import * as orderForm from "./components/orderForm.js";
 import * as form from "./components/form.js";
 import * as accountRating from "./components/accountRating.js";
+import * as password from "./components/password.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -119,6 +120,7 @@ switch (window.location.pathname) {
         pages.forEach(function(page) {
             pagination.initPagination(page);
         });
+        password.switchVisibility();
         accountRating.chooseRating();
         accountTabs.toggleTabs();
         goToFavorites.onClick();

@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="account__right">
-                <div class="account__right-item active" id="history">
+                <div class="account__right-item " id="history">
                     <h2 class="section__title">История заказов</h2>
                     <div class="account__history">
                         <ul class="account__history-list">
@@ -2435,7 +2435,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="account__right-item " id="personalData">
+                <div class="account__right-item active" id="personalData">
                     <h2 class="section__title">Личные данные</h2>
                     <div class="account__profile">
                         <div class="account__avatar">
@@ -2556,7 +2556,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal " id="welcome">
+                    <!-- <div class="modal " id="welcome">
                         <div class="modal__content ">
                             <div class="modal__header">
                                 <h3 class="modal__title">Приветствуем!</h3>
@@ -2575,7 +2575,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="modal " id="add-name">
                         <div class="modal__content modal__content--account">
                             <div class="modal__header">
@@ -2586,10 +2586,10 @@
                             </div>
                             <div class="modal__main">
                                 <div class="modal__input modal__input--margin">
-                                    <input type="text" class="input input--modal" placeholder="Введите ФИО">
+                                    <input type="text" class="input input--modal" placeholder="Введите ФИО" id="addNameModal">
                                 </div>
                                 <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button">сохранить</button>
+                                    <button class="button button--secondary" type="button" id="buttonAddName">сохранить</button>
                                 </div>
                             </div>
                         </div>
@@ -2604,10 +2604,10 @@
                             </div>
                             <div class="modal__main">
                                 <div class="modal__input modal__input--margin">
-                                    <input type="text" class="input input--modal" placeholder="Введите ФИО">
+                                    <input type="text" class="input input--modal" placeholder="Введите ФИО" id="editNameModal">
                                 </div>
                                 <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button">сохранить</button>
+                                    <button class="button button--secondary" type="button" id="buttonEditName">сохранить</button>
                                 </div>
                             </div>
                         </div>
@@ -2627,14 +2627,14 @@
                                     </p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="email" class="input input--modal" placeholder="Электронная почта">
+                                    <input type="email" class="input input--modal" placeholder="Электронная почта" id="addEmailModal">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__button ">
                                         <button class="button button--transparent" type="button">отменить</button>
                                     </div>
                                     <div class="modal__button ">
-                                        <button class="button button--secondary" type="button">сохранить</button>
+                                        <button class="button button--secondary" type="button" id="buttonAddEmail">сохранить</button>
                                     </div>
                                 </div>
                             </div>
@@ -2655,17 +2655,17 @@
                                     </p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="email" class="input input--modal input--value" placeholder="Электронная почта">
+                                    <input type="email" class="input input--modal input--value" placeholder="Электронная почта" id="editEmailModal">
                                 </div>
                                 <div class="modal__input ">
-                                    <input type="text" class="input input--modal input--code" placeholder="Код из СМС" maxlength="4">
+                                    <input type="text" class="input input--modal input--code" placeholder="Код из СМС" maxlength="4" id="editEmailCode">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__button ">
                                         <button class="button button--transparent" type="button">отменить</button>
                                     </div>
                                     <div class="modal__button ">
-                                        <button class="button button--secondary" type="button">сохранить</button>
+                                        <button class="button button--secondary" type="button" id="buttonEditEmail">сохранить</button>
                                     </div>
                                 </div>
                             </div>
@@ -2742,14 +2742,14 @@
                                     </p>
                                 </div>
                                 <div class="modal__input modal__input--margin">
-                                    <input type="tel" class="input input--modal" placeholder="Новый номер телефона">
+                                    <input type="tel" class="input input--modal" placeholder="Новый номер телефона" id="addTelModal">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__button ">
                                         <button class="button button--transparent" type="button">отменить</button>
                                     </div>
                                     <div class="modal__button ">
-                                        <button class="button button--secondary" type="button">сохранить</button>
+                                        <button class="button button--secondary" type="button" id="buttonEditTel">сохранить</button>
                                     </div>
                                 </div>
                             </div>
@@ -2820,12 +2820,12 @@
                             </div>
                             <div class="modal__main">
                                 <div class="modal__input">
-                                    <input type="password" class="input input--modal old-password" placeholder="Старый пароль">
                                     <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                    <input type="password" class="input input--modal old-password" placeholder="Старый пароль">
                                 </div>
                                 <div class="modal__input">
-                                    <input type="password" class="input input--modal new-password" placeholder="Новый пароль">
                                     <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                    <input type="password" class="input input--modal new-password" placeholder="Новый пароль">
                                 </div>
                                 <div class="modal__buttons">
                                     <div class="modal__btn-box ">
@@ -2856,7 +2856,8 @@
                                     <input type="tel" class="input input--modal" placeholder="Номер телефона">
                                 </div>
                                 <div class="modal__button modal__button--right">
-                                    <button class="button button--secondary" type="button" data-modal="code-recovery-password">отправить</button>
+                                    <button class="button button--secondary" type="button" >отправить</button>
+                                    <button class="button button--secondary hidden" type="button" data-modal="code-recovery-password">отправить</button>
                                 </div>
                             </div>
                         </div>
@@ -2882,7 +2883,8 @@
                                         <button class="modal__btn" type="button">Отправить еще раз</button>
                                     </div>
                                     <div class="modal__button ">
-                                        <button class="button button--secondary" type="button" data-modal="new-password">отправить</button>
+                                        <button class="button button--secondary" type="button">отправить</button>
+                                        <button class="button hidden" type="button" data-modal="new-password">отправить</button>
                                     </div>
                                 </div>
                             </div>
@@ -2899,8 +2901,8 @@
                             <div class="modal__main">
                                 <div class="modal__text modal__text--margin">Придумайте новый пароль</div>
                                 <div class="modal__input">
-                                    <input type="password" class="input input--modal" placeholder="Новый пароль">
                                     <img src="../img/svg/eye-on.svg" alt="" class="modal__eye-img">
+                                    <input type="password" class="input input--modal" placeholder="Новый пароль">
                                 </div>
                                 <div class="modal__button modal__button--right">
                                     <button class="button button--secondary" type="button">сохранить</button>
@@ -2971,9 +2973,9 @@
                                             <label for="mail-modal" class="radio__label">Самовывоз из отделения Почты</label>
                                         </div>
                                         <div class="modal__addition ">
-                                            <div class="modal__delivery-item">
+                                            <div class="modal__delivery-item active">
                                                 <div class="radio modal__radio">
-                                                    <input type="radio"  class="radio__input" id="delivery-departament-modal" name="mail-modal">
+                                                    <input type="radio"  class="radio__input" id="delivery-departament-modal" name="mail-modal" checked>
                                                     <label for="delivery-departament-modal" class="radio__label">Доставка в отделение</label>
                                                 </div>
                                                 <div class="modal__delivery-item-addition ">
@@ -2991,9 +2993,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="modal__delivery-item active">
+                                            <div class="modal__delivery-item ">
                                                 <div class="radio modal__radio">
-                                                    <input type="radio" class="radio__input" id="delivery-courier-modal" name="mail-modal" checked>
+                                                    <input type="radio" class="radio__input" id="delivery-courier-modal" name="mail-modal" >
                                                     <label for="delivery-courier-modal" class="radio__label">Доставка курьером</label>
                                                 </div>
                                                 <div class="modal__delivery-item-addition ">

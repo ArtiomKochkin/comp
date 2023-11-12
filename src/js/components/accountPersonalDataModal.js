@@ -34,6 +34,19 @@ export function accountModal() {
     const addDeliveryButton = document.getElementById("addDeliveryButton");
     const select = document.getElementById("cityModal");
     const selectMail = document.getElementById("delivery-departament-select");
+    const radioCourier = document.getElementById("courier-modal");
+    const radioCourierDelivery = document.getElementById("delivery-courier-modal");
+
+    let errorMessage = "";
+    let allCharsRegexp = /\w/;
+    let letterRegexp = /[A-Za-zА-Яа-я']/;
+    let emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i;
+    let telRegexp = /(\+7[0-9]{10})|(8[0-9]{10})|(\+7\([0-9]{3}\)[0-9]{7})/;
+    let passwordRegexp = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g;
+    let streetRegexp = /^[A-Za-zА-Яа-я]+$/i;
+    let houseRegexp = /(^[1-9]{1,}[A-Za-zА-Яа-я])|(^[0-9])/;
+    let numRegexp = /^[0-9]+$/;
+    let shouldSuccess = true;
 
     // document.addEventListener("DOMContentLoaded", openModal(welcome));
     buttons.forEach(item => {
@@ -69,17 +82,21 @@ export function accountModal() {
 
         name.focus();
         saveButton.addEventListener("click", () => {
-            if (name.value == "") {
+            if (name.value == "" || name.value == " ") {
+                errorMessage = `Пожалуйста, введите ФИО.`;
                 nameText.classList.add("disabled");
                 addNameButton.classList.add("show");
-                action.click();
-            } else if (name.value != "" && name.value.length > 10) {
+            } else if (!letterRegexp.test(name.value)) {
+                errorMessage = `Пожалуйста, укажите корректные данные ФИО.`;
+            } else {
                 nameText.textContent = name.value;
                 nameText.classList.remove("disabled");
                 addNameButton.classList.remove("show");
                 name.value = "";
+                errorMessage = "";
                 action.click();
             }
+            getError(name, errorMessage);
         });
     }
 
@@ -90,17 +107,21 @@ export function accountModal() {
 
         tel.focus();
         saveButton.addEventListener("click", () => {
-            if (tel.value == "") {
+            if (tel.value == "" || tel.value == " ") {
                 telText.classList.add("disabled");
                 addTelButton.classList.add("show");
-                action.click();
-            } else if (tel.value != "" && tel.value.length > 10) {
+                errorMessage = `Пожалуйста, введите номер телефона.`;
+            } else if (!telRegexp.test(tel.value)) {
+                errorMessage = `Пожалуйста, укажите корректный номер телефона.`;
+            } else {
                 telText.textContent = tel.value;
                 telText.classList.remove("disabled");
                 addTelButton.classList.remove("show");
                 action.click();
+                errorMessage = "";
                 openModal(successTel);
             }
+            getError(tel, errorMessage);
         });
 
         cancelButton.addEventListener("click", () => {
@@ -116,19 +137,23 @@ export function accountModal() {
 
         email.focus();
         saveButton.addEventListener("click", () => {
-            if (email.value == "") {
+            if (email.value == "" || email.value == " ") {
                 emailText.classList.add("disabled");
                 addEmailButton.classList.add("show");
-                action.click();
-            } else if (email.value != "" && email.value.length > 8) {
+                errorMessage = `Пожалуйста, введите адрес электронной почты.`;
+            } else if (!emailRegexp.test(email.value)) {
+                errorMessage = `Пожалуйста, укажите корректный адрес электронной почты.`;
+            } else {
                 emailText.textContent = email.value;
                 emailText.classList.remove("disabled");
                 addEmailButton.classList.remove("show");
                 confrimationEmail.classList.remove("disabled");
                 confirmationEmailButton.classList.remove("disabled");
                 action.click();
+                errorMessage = "";
                 openModal(successEmail);
             }
+            getError(email, errorMessage);
         });
 
         cancelButton.addEventListener("click", () => {
@@ -145,17 +170,18 @@ export function accountModal() {
 
         email.focus();
         saveButton.addEventListener("click", () => {
-            if (email.value == "" || code.value == "") {
-                emailText.classList.add("disabled");
-                addEmailButton.classList.add("show");
-                action.click();
-            } else if (email.value != "" && email.value.length > 8) {
+            checkSettings(email, emailRegexp);
+            checkSettings(code, numRegexp);
+            
+            if (shouldSuccess) {
                 emailText.textContent = email.value;
                 emailText.classList.remove("disabled");
                 addEmailButton.classList.remove("show");
                 confrimationEmail.classList.add("disabled");
                 confirmationEmailButton.classList.add("disabled");
                 action.click();
+                email.value = "";
+                code.value = "";
                 openModal(successEmail);
             }
         });
@@ -172,11 +198,18 @@ export function accountModal() {
         let newPassword = action.querySelector(".new-password");
         let oldPassword = action.querySelector(".old-password");
         let recoveryButton = action.querySelector(".modal__btn");
+        let message1 = "Пожалуйста, введите необходимые данные."
+        let message2 = "Пароль должен содержать как минимум 8 символов, строчные и заглавные буквы, цифры и спецсимволы";
 
         oldPassword.focus();
         saveButton.addEventListener("click", () => {
-            if (oldPassword.value == newPassword.value && oldPassword.value.length > 8) {
+            checkSettings(oldPassword, passwordRegexp, message1, message2);
+            checkSettings(newPassword, passwordRegexp, message1, message2);
+            
+            if (shouldSuccess) {
                 action.click();
+                oldPassword.value = "";
+                newPassword.value = "";
                 openModal(successPassword);
             }
         });
@@ -190,14 +223,22 @@ export function accountModal() {
 
     function checkNewPassword(action) {
         let saveButton = action.querySelector(".button--secondary");
-        let newPassword = action.querySelector("[type='password']");
+        let password = action.querySelector("[type='password']");
 
-        newPassword.focus();
+        password.focus();
         saveButton.addEventListener("click", () => {
-            if (newPassword.value.length > 8) {
+            if (password.value == "" || password.value == " ") {
+                errorMessage = `Пожалуйста, введите пароль.`;
+            } else if (password.value.length < 8) {
+                errorMessage = "Пароль должен быть длиной не менее 8 символов";
+            } else if ( !passwordRegexp.test(password.value)) {
+                errorMessage = "Пароль должен быть содержать прописные, строчные буквы латинского алфавита, а также цифры и спецсимволы";
+            } else {
+                errorMessage = "";
                 action.click();
                 openModal(successPassword);
             }
+            getError(password, errorMessage);
         });
     }
 
@@ -207,13 +248,18 @@ export function accountModal() {
 
         tel.focus();
         saveButton.addEventListener("click", () => {
-            if (tel.value == "") {
+            if (tel.value == "" || tel.value == " ") {
+                errorMessage = `Пожалуйста, введите номер телефона.`;
+            } else if (!telRegexp.test(tel.value)) {
+                errorMessage = `Пожалуйста, укажите корректный номер телефона.`;
+            } else {
+                errorMessage = "";
                 action.click();
-            } else if (tel.value != "" && tel.value.length > 10) {
-                action.click();
+                document.querySelector('[data-modal="code-recovery-password"]').click();
             }
+            getError(tel, errorMessage);
         });
-
+        
     }
 
     function checkRecoveryCode(action) {
@@ -221,12 +267,17 @@ export function accountModal() {
         let code = action.querySelector(".input");
 
         code.focus();
-        saveButton.addEventListener("click", () => {
-            if (code.value == "") {
+        saveButton.addEventListener("click", () => { 
+            if (code.value == "" || code.value == " ") {
+                errorMessage = `Пожалуйста, введите необходимые данные.`;
+            } else if (!numRegexp.test(code.value)) {
+                errorMessage = `Пожалуйста, укажите верный код из СМС`;
+            } else {
+                errorMessage = "";
                 action.click();
-            } else if (code.value != "" && code.value.length > 4) {
-                action.click();
+                document.querySelector('[data-modal="new-password"]').click();
             }
+            getError(code, errorMessage);
         });
     }
 
@@ -305,10 +356,62 @@ export function accountModal() {
                     addDeliveryButton.classList.add("show");
                 }
             }
-            deliveryText.appendChild(nameP);
-            deliveryText.appendChild(addressP);
-            editDelivery.click();
-            openModal(successDelivery);
+
+            if (radioCourier.checked) {
+                checkSettings(street, streetRegexp);
+                checkSettings(house, houseRegexp);
+                checkSettings(apartament, numRegexp);
+            }
+            if (radioCourierDelivery.checked) {
+                checkSettings(streetMail, streetRegexp);
+                checkSettings(houseMail, houseRegexp);
+                checkSettings(apartamentMail, numRegexp);
+            }
+            
+            if (shouldSuccess) {
+                deliveryText.appendChild(nameP);
+                deliveryText.appendChild(addressP);
+                editDelivery.click();
+                openModal(successDelivery);
+            }
         });
     }
+
+    function checkSettings(element, regExp, message1 = "Пожалуйста, введите необходимые данные.", message2 = "Пожалуйста, укажите корректные данные.") {
+        if (element.value == "" || element.value == " ") {
+            errorMessage = message1;
+            shouldSuccess = false;
+        } else if (!regExp.test(element.value)) {
+            errorMessage = message2;
+            shouldSuccess = false;
+        } else {
+            errorMessage = "";
+            shouldSuccess = true;
+        }
+        getError(element, errorMessage); 
+    }
+    
+    function getError(element, str) {
+        if (str != "") {
+            if (!element.nextElementSibling) {
+                let errorHTML = `
+                    <div class="input__text input__text--modal">${str}</div>
+                `;
+                element.insertAdjacentHTML("afterend", errorHTML);
+                element.classList.add("errored");
+            } else {
+                let errorHTML = `
+                    <div class="input__text input__text--modal">${str}</div>
+                `;
+                element.nextElementSibling.remove();
+                element.insertAdjacentHTML("afterend", errorHTML);
+            }
+        } else {
+            if (element.nextElementSibling) {
+                element.classList.remove("errored");
+                element.nextElementSibling.remove();
+            }
+        }
+    }
+    
 }

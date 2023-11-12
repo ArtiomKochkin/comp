@@ -118,6 +118,10 @@
             margin-right: 1rem;
         }
     }
+
+    &.hidden {
+        display: none;
+    }
 }
 
 .button-img {

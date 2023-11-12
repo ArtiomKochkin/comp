@@ -9,23 +9,20 @@ export function checkAccountData() {
     const feedbackEmail = document.getElementById("feedbackEmail");
     const feedbackRating = document.querySelectorAll(".rating-img--modal");
     const reportEmail = document.getElementById("reportEmail");
-
+    let allCharsRegexp = /\w/;
     let letterRegexp = /[A-Za-zА-Яа-я']/;
     let emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i;
     let telRegexp = /(\+7[0-9]{10})|(8[0-9]{10})|(\+7\([0-9]{3}\)[0-9]{7})/;
-    let streetRegexp = /^[A-Za-zА-Яа-я]+$/i;
-    let houseRegexp = /(^[1-9]{1,}[A-Za-zА-Яа-я])|(^[0-9])/;
-    let apartmentRegexp = /^[0-9]+$/;
-    let shouldSuccess = true;
-    let errorMessage = "";
     let errorSubstr = "необходимые данные";
-    let allCharsRegexp = /\w/;
+    let errorMessage = "";
+    let shouldSuccess = true;
 
     checkData(buttonRefund, refundTel, telRegexp, errorSubstr);
     checkData(buttonRefund, refundReason, allCharsRegexp, errorSubstr);
     checkData(buttonFeedback, feedbackName, letterRegexp, errorSubstr);
     checkData(buttonFeedback, feedbackEmail, emailRegexp, errorSubstr);
     checkData(buttonReport, reportEmail, emailRegexp, errorSubstr);
+
     buttonFeedback.addEventListener("click", checkRating);
 
     function checkData(button, element, regExp, str) {

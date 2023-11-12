@@ -1380,6 +1380,9 @@ img {
   margin-left: 0;
   margin-right: 1rem;
 }
+.button.hidden {
+  display: none;
+}
 
 .button-img {
   display: block;
@@ -1630,7 +1633,7 @@ img {
   line-height: 12px;
 }
 .input__text--modal {
-  margin-top: 0rem;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: 991px) {
@@ -8417,9 +8420,9 @@ img {
 .modal__eye-img {
   display: block;
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 0.8rem;
-  transform: translateY(-30%);
+  transform: translateY(-20%);
   cursor: pointer;
 }
 
