@@ -760,6 +760,8 @@ img {
 .product__icon {
   margin-right: 5px;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 .product__icon:last-child {
   margin-right: 0;
@@ -913,6 +915,9 @@ img {
 }
 .product__button:hover {
   background: #37BD8D;
+}
+.product__button.cart {
+  opacity: 0.5;
 }
 @media screen and (max-width: 1366px) {
   .product__button {
@@ -4079,7 +4084,7 @@ img {
   display: flex;
   align-items: center;
   margin-left: 3rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-grow: 1;
 }
 @media screen and (max-width: 1366px) {

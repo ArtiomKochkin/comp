@@ -38,6 +38,8 @@ import * as orderForm from "./components/orderForm.js";
 import * as form from "./components/form.js";
 import * as accountRating from "./components/accountRating.js";
 import * as password from "./components/password.js";
+// import * as toFavorites from "./components/toFavorites.js";
+// import * as wishlist from "./components/wishlist.js";
 
 functions.isWebp();
 menu.toggleMenu();
@@ -55,6 +57,9 @@ switch (window.location.pathname) {
         sliderIntro.initSlider();
         sliderReviews.initSlider();
     } break;
+    case "/category.html" : {
+        // toFavorites.addToFavorites();
+    }
     case "/promotion.html" : {
         sliderPromotion.initSlider();
     } break;
@@ -135,5 +140,6 @@ switch (window.location.pathname) {
         accountPersonalDataModal.accountModal();
         accountAvatar.chooseAvatar();
         form.checkAccountData();
+        // wishlist.insertProductsToWishlist();
     } break;
 }

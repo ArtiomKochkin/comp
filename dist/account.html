@@ -112,11 +112,11 @@
                 </div>
                 <div class="header__actions-item header__actions-item--mobile " data-modal="cartModal">
                     <img src="../img/header/cart-white.svg" alt="" class="header__actions-img " width="46">
-                    <div class="header__actions-count header__actions-count--cart active"><span id="numCartMobile" class="header__actions-num"></span></div>
+                    <div class="header__actions-count header__actions-count--cart active"><span id="numCartMobile" class="header__actions-num header__actions-num--cart"></span></div>
                 </div>
                 <div class="header__actions-item " data-modal="cartModal">
                     <img src="../img/header/cart.svg" alt="" class="header__actions-img" width="36">
-                    <div class="header__actions-count header__actions-count--cart"><span id="numCart" class="header__actions-num"></span></div>
+                    <div class="header__actions-count header__actions-count--cart"><span id="numCart" class="header__actions-num header__actions-num--cart"></span></div>
                 </div>
             </div>
         </div>
@@ -975,65 +975,67 @@
             </button>
         </div>
         <div class="cart__products">
-            <div class="cart__product cart-product">
-                <div class="cart__product-img-box">
-                    <img src="../img/cart/product-1.svg" alt="" class="cart__product-img">
+            <div class="cart__products-wrap">
+                <div class="cart__product cart-product">
+                    <div class="cart__product-img-box">
+                        <img src="../img/cart/product-1.svg" alt="" class="cart__product-img">
+                    </div>
+                    <div class="cart__product-content">
+                        <div class="cart__product-info">
+                            <div class="cart__product-name">
+                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
+                            </div>
+                            <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
+                        </div>
+                        <div class="cart__product-footer">
+                            <div class="cart__product-counter">
+                                <div class="cart__product-action">
+                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
+                                </div>
+                                <input type="text" class="input input--cart" value="1">
+                                <div class="cart__product-action">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                                </div>
+                            </div>
+                            <div class="cart__product-price">
+                                <span class="cart__product-cost">1000</span> 
+                                <span class="cart__product-price-curency">грн</span>
+                            </div>
+                        </div>
+                        <div class="cart__product-bin-box">
+                            <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
+                        </div>
+                    </div>
                 </div>
-                <div class="cart__product-content">
-                    <div class="cart__product-info">
-                        <div class="cart__product-name">
-                            Процессор Intel Core i5-10400F, Box (BX8070110400F)
-                        </div>
-                        <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
+                <div class="cart__product cart-product">
+                    <div class="cart__product-img-box">
+                        <img src="../img/cart/product-2.svg" alt="" class="cart__product-img">
                     </div>
-                    <div class="cart__product-footer">
-                        <div class="cart__product-counter">
-                            <div class="cart__product-action">
-                                <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
+                    <div class="cart__product-content">
+                        <div class="cart__product-info">
+                            <div class="cart__product-name">
+                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
                             </div>
-                            <input type="text" class="input input--cart" value="1">
-                            <div class="cart__product-action">
-                                <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                            <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
+                        </div>
+                        <div class="cart__product-footer">
+                            <div class="cart__product-counter">
+                                <div class="cart__product-action">
+                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
+                                </div>
+                                <input type="text" class="input input--cart" value="1">
+                                <div class="cart__product-action">
+                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart__product-price">
-                            <span class="cart__product-cost">1000</span> 
-                            <span class="cart__product-price-curency">грн</span>
-                        </div>
-                    </div>
-                    <div class="cart__product-bin-box">
-                        <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
-                    </div>
-                </div>
-            </div>
-            <div class="cart__product cart-product">
-                <div class="cart__product-img-box">
-                    <img src="../img/cart/product-2.svg" alt="" class="cart__product-img">
-                </div>
-                <div class="cart__product-content">
-                    <div class="cart__product-info">
-                        <div class="cart__product-name">
-                            Процессор Intel Core i5-10400F, Box (BX8070110400F)
-                        </div>
-                        <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
-                    </div>
-                    <div class="cart__product-footer">
-                        <div class="cart__product-counter">
-                            <div class="cart__product-action">
-                                <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
-                            </div>
-                            <input type="text" class="input input--cart" value="1">
-                            <div class="cart__product-action">
-                                <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                            <div class="cart__product-price">
+                                <span class="cart__product-cost">2000</span> 
+                                <span class="cart__product-price-curency">грн</span>
                             </div>
                         </div>
-                        <div class="cart__product-price">
-                            <span class="cart__product-cost">2000</span> 
-                            <span class="cart__product-price-curency">грн</span>
+                        <div class="cart__product-bin-box">
+                            <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
                         </div>
-                    </div>
-                    <div class="cart__product-bin-box">
-                        <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
                     </div>
                 </div>
             </div>
@@ -2476,10 +2478,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2517,7 +2516,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -2563,10 +2561,6 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2604,7 +2598,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -2650,10 +2643,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2691,7 +2681,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -2737,10 +2726,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2778,7 +2764,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -2824,10 +2809,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2865,7 +2847,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -2911,10 +2892,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -2952,7 +2930,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -3037,10 +3014,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -3078,7 +3052,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -3123,10 +3096,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -3164,7 +3134,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -3211,10 +3180,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -3252,7 +3218,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">
@@ -3297,10 +3262,7 @@
                                     <a href="./product.html" class="product__link"></a>
                                     <div class="product__header">
                                         <div class="product__new active">Новинка</div>
-                                        <div class="product__actions">
-                                            <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
-                                        </div>
+                                        
                                     </div>
                                     <div class="product__main">
                                         <div class="product__img-box">
@@ -3338,7 +3300,6 @@
                                                         Отзывов: <span class="product__reviews-counter">5</span>
                                                         <div class="product__actions product__actions--rating">
                                                             <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                                            <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                                         </div>
                                                     </div>
                                                     <div class="product__info">

@@ -216,6 +216,8 @@
 .product__icon {
     margin-right: 5px;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
 
     &:last-child {
         margin-right: 0;
@@ -352,6 +354,10 @@
 
     &:hover {
         background: #37BD8D;
+    }
+
+    &.cart {
+        opacity: 0.5;
     }
 
     @include breakpoint($laptop) {
