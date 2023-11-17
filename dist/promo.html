@@ -975,72 +975,9 @@
             </button>
         </div>
         <div class="cart__products">
-            <div class="cart__products-wrap">
-                <div class="cart__product cart-product">
-                    <div class="cart__product-img-box">
-                        <img src="../img/cart/product-1.svg" alt="" class="cart__product-img">
-                    </div>
-                    <div class="cart__product-content">
-                        <div class="cart__product-info">
-                            <div class="cart__product-name">
-                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
-                            </div>
-                            <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
-                        </div>
-                        <div class="cart__product-footer">
-                            <div class="cart__product-counter">
-                                <div class="cart__product-action">
-                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
-                                </div>
-                                <input type="text" class="input input--cart" value="1">
-                                <div class="cart__product-action">
-                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
-                                </div>
-                            </div>
-                            <div class="cart__product-price">
-                                <span class="cart__product-cost">1000</span> 
-                                <span class="cart__product-price-curency">грн</span>
-                            </div>
-                        </div>
-                        <div class="cart__product-bin-box">
-                            <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
-                        </div>
-                    </div>
-                </div>
-                <div class="cart__product cart-product">
-                    <div class="cart__product-img-box">
-                        <img src="../img/cart/product-2.svg" alt="" class="cart__product-img">
-                    </div>
-                    <div class="cart__product-content">
-                        <div class="cart__product-info">
-                            <div class="cart__product-name">
-                                Процессор Intel Core i5-10400F, Box (BX8070110400F)
-                            </div>
-                            <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
-                        </div>
-                        <div class="cart__product-footer">
-                            <div class="cart__product-counter">
-                                <div class="cart__product-action">
-                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
-                                </div>
-                                <input type="text" class="input input--cart" value="1">
-                                <div class="cart__product-action">
-                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
-                                </div>
-                            </div>
-                            <div class="cart__product-price">
-                                <span class="cart__product-cost">2000</span> 
-                                <span class="cart__product-price-curency">грн</span>
-                            </div>
-                        </div>
-                        <div class="cart__product-bin-box">
-                            <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart__set cart-product">
-                <h6 class="cart__set-name">Комлект 1</h6>
+            <div class="cart__products-wrap"></div>
+            <!-- <div class="cart__set cart-product">
+                <h6 class="cart__set-name">Комлект</h6>
                 <div class="card__set-products">
                     <div class="cart__set__product">
                         <div class="card__set-info">
@@ -1081,7 +1018,7 @@
                         <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="cart__buy">
             <div class="cart__buy-up">
@@ -1107,7 +1044,7 @@
             <div class="cart__kit-content">
                 <div class="cart__kit-cards">
                     <div class="cart__slider">
-                        <div class="cart__kit-card">
+                        <div class="cart__kit-card" data-product-id="kitCard-1">
                             <div class="cart__kit-products">
                                 <div class="cart__kit-product">
                                     <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
@@ -1146,7 +1083,7 @@
                                 <div class="cart__kit-order">
                                     <div class="card__kit-order-info">
                                         <div class="cart__kit-price">
-                                            3600 
+                                            <span class="cart__kit-general-price">9000</span>
                                             <span class="cart__kit-price-curency">грн</span>
                                         </div>
                                         <div class="card__kit-saving">
@@ -1155,11 +1092,11 @@
                                             <span class="cart__kit-saving-curency">грн</span>
                                         </div>
                                     </div>
-                                    <a class="button" href="../order.html">Купить комплект</a>
+                                    <button class="button button--set">Купить комплект</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart__kit-card">
+                        <div class="cart__kit-card" data-product-id="kitCard-2">
                             <div class="cart__kit-products">
                                 <div class="cart__kit-product">
                                     <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
@@ -1198,7 +1135,7 @@
                                 <div class="cart__kit-order">
                                     <div class="card__kit-order-info">
                                         <div class="cart__kit-price">
-                                            3600 
+                                            <span class="cart__kit-general-price">8000</span>
                                             <span class="cart__kit-price-curency">грн</span>
                                         </div>
                                         <div class="card__kit-saving">
@@ -1207,11 +1144,11 @@
                                             <span class="cart__kit-saving-curency">грн</span>
                                         </div>
                                     </div>
-                                    <a class="button" href="../order.html">Купить комплект</a>
+                                    <button class="button button--set">Купить комплект</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart__kit-card">
+                        <div class="cart__kit-card" data-product-id="kitCard-3">
                             <div class="cart__kit-products">
                                 <div class="cart__kit-product">
                                     <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
@@ -1250,7 +1187,7 @@
                                 <div class="cart__kit-order">
                                     <div class="card__kit-order-info">
                                         <div class="cart__kit-price">
-                                            3600 
+                                            <span class="cart__kit-general-price">9000</span>
                                             <span class="cart__kit-price-curency">грн</span>
                                         </div>
                                         <div class="card__kit-saving">
@@ -1259,11 +1196,11 @@
                                             <span class="cart__kit-saving-curency">грн</span>
                                         </div>
                                     </div>
-                                    <a class="button" href="../order.html">Купить комплект</a>
+                                    <button class="button button--set">Купить комплект</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart__kit-card">
+                        <div class="cart__kit-card" data-product-id="kitCard-4">
                             <div class="cart__kit-products">
                                 <div class="cart__kit-product">
                                     <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
@@ -1302,7 +1239,7 @@
                                 <div class="cart__kit-order">
                                     <div class="card__kit-order-info">
                                         <div class="cart__kit-price">
-                                            3600 
+                                            <span class="cart__kit-general-price">8500</span>
                                             <span class="cart__kit-price-curency">грн</span>
                                         </div>
                                         <div class="card__kit-saving">
@@ -1311,7 +1248,7 @@
                                             <span class="cart__kit-saving-curency">грн</span>
                                         </div>
                                     </div>
-                                    <a class="button" href="../order.html">Купить комплект</a>
+                                    <button class="button button--set">Купить комплект</button>
                                 </div>
                             </div>
                         </div>
