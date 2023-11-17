@@ -27,6 +27,7 @@ import * as productModal from "./components/productModal.js";
 import * as productShowMore from "./components/productShowMore.js";
 import * as productReviews from "./components/productReviews.js";
 import * as sliderImages from "./components/sliderImages.js";
+import * as sliderProductKit from "./components/sliderProductKit.js";
 import * as favorites from "./components/favorites.js";
 import * as goToFavorites from "./components/goToFavorites.js";
 import * as filter from "./components/filter.js";
@@ -76,6 +77,7 @@ switch (window.location.pathname) {
         pagination.initPagination(pages);
         sliderProduct.initSlider();
         sliderImages.initSlider();
+        sliderProductKit.initSlider();
         productTabs.toggleTabs();
         productModal.showModalWindows();
         productShowMore.showMore();

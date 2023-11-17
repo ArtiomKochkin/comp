@@ -1,7 +1,7 @@
 export function cartManager() {
     const continueShopping = document.getElementById("continueShopping");
     const totalPrice = document.querySelectorAll(".cart__buy-total");
-    const buttons = document.querySelectorAll(".product__button");
+    const buttons = document.querySelectorAll(".buttonProduct");
     const buttonsSet = document.querySelectorAll(".button--set");
     const cartCounter = document.querySelectorAll(".header__actions-num--cart");
     const cartProductsWrap = document.querySelector(".cart__products-wrap");
@@ -115,13 +115,13 @@ export function cartManager() {
         let product, productInfo, productHTML;
         buttons.forEach(button => {
             button.addEventListener("click", () => {
-                product = button.closest(".product");
+                product = button.closest(".productParent");
                 productInfo = {
                     id: product.getAttribute("data-product-id"),
-                    imgSrc: product.querySelector(".product__img").getAttribute("src"),
-                    imgAlt: product.querySelector(".product__img").getAttribute("alt"),
-                    name: product.querySelector(".product__name").innerText,
-                    price: product.querySelector(".product__price").innerText,
+                    imgSrc: product.querySelector(".imgProduct").getAttribute("src"),
+                    imgAlt: product.querySelector(".imgProduct").getAttribute("alt"),
+                    name: product.querySelector(".nameProduct").innerText,
+                    price: product.querySelector(".priceProduct").innerText,
                 };
                 productHTML = `
                 <div class="cart__product cart-product cart-product-added" id="${productInfo.id}">

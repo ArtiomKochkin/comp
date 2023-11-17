@@ -14,10 +14,10 @@
             <img src="./img/svg/arrow/arrow-right-gray-s.svg" alt="" class="breadcrumbs__arrow">
             <a href="product.html" class="breadcrumbs__link breadcrumbs__link--current">Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)</a>
         </div>
-        <section class="product-page container">
+        <section class="product-page container productParent" data-product-id="product-1">
             <div class="product-page__header">
                 <div class="product-page__header-info">
-                    <h2 class="product-page__title">Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)</h2>
+                    <h2 class="product-page__title nameProduct">Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)</h2>
                     <div class="product__reviews">
                         <div class="rating">
                             <div class="rating-item">
@@ -71,12 +71,12 @@
                                 </div>
                             </div>
                             <div class="product-page-img-box" data-modal="images">
-                                <img src="./img/product/laptop-1.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page-img">
+                                <img src="./img/product/laptop-1.jpg" alt="Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)" class="product-page-img imgProduct">
                             </div>
                         </div>
                         <div class="product-page__top-right">
                             <div class="product-page__top-header">
-                                <h3 class="product-page__subtitle">
+                                <h3 class="product-page__subtitle ">
                                     Ноутбук Vinga Iron S140 Grey (S140-P50464GWP)
                                 </h3>
                                 <div class="product-page__stock">
@@ -116,7 +116,7 @@
                                 <div class="product-page__prices">
                                     <div class="product-page__price-old ">37000 грн.</div>
                                     <div class="product-page__price-actual product-page__price-actual--sale">
-                                        <span class="product-page__price ">28999</span> грн.
+                                        <span class="product-page__price priceProduct">28999</span> грн.
                                     </div>
                                 </div>
                                 <div class="product__actions">
@@ -124,7 +124,7 @@
                                     <img src="./img/svg/favorite.svg" alt="" class="product__icon">
                                 </div>
                                 <div class="product-page__buttons">
-                                    <div class="product-page__button">
+                                    <div class="product-page__button buttonProduct">
                                         <button class="button" type="button">купить</button>
                                     </div>
                                     <div class="product-page__button">
@@ -425,83 +425,235 @@
                     <div class="cart__kit cart__kit--product-page">
                         <h4 class="section__title">Вместе дешевле</h4>
                         <div class="cart__kit-content">
-                            <div class="cart__kit-arrow-box">
-                                <img src="../img/svg/arrow/arrow-left-blue-24.svg" alt="" class="cart__kit-arrow">
-                            </div>
                             <div class="cart__kit-cards">
-                                <div class="cart__kit-card">
-                                    <div class="cart__kit-products">
-                                        <div class="cart__kit-product">
-                                            <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
-                                            <div class="cart__kit-product-info">
-                                                <div class="cart__kit-product-name">
-                                                    Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                <div class="cart__kit-slider">
+                                    <div class="cart__kit-card" data-product-id="productKitCard-1">
+                                        <div class="cart__kit-products">
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="product__prices cart__kit-product__prices">
-                                                    <div class="product__price-old">6000 грн.</div>
-                                                    <div class="product__price-actual product__price-actual--sale">
-                                                        <span class="product__price ">5000</span> грн.
+                                            </div>
+                                            <div class="cart__kit-add-box">
+                                                <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                            </div>
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Монитор 23.8" Acer 
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cart__kit-add-box">
-                                            <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
-                                        </div>
-                                        <div class="cart__kit-product">
-                                            <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
-                                            <div class="cart__kit-product-info">
-                                                <div class="cart__kit-product-name">
-                                                    Монитор 23.8" Acer 
-                                                </div>
-                                                <div class="product__prices cart__kit-product__prices">
-                                                    <div class="product__price-old">6000 грн.</div>
-                                                    <div class="product__price-actual product__price-actual--sale">
-                                                        <span class="product__price ">5000</span> грн.
+                                        <div class="cart__kit-card-info">
+                                            <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                            <div class="cart__kit-order">
+                                                <div class="card__kit-order-info">
+                                                    <div class="cart__kit-price">
+                                                        <span class="cart__kit-general-price">9000</span>
+                                                        <span class="cart__kit-price-curency">грн</span>
+                                                    </div>
+                                                    <div class="card__kit-saving">
+                                                        Экономия: 
+                                                        <span class="cart__kit-saving-price">200</span>
+                                                        <span class="cart__kit-saving-curency">грн</span>
                                                     </div>
                                                 </div>
+                                                <button class="button button--set">Купить комплект</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="cart__kit-card-info">
-                                        <div class="cart__kit-number">Код комлекта: 1234567</div>
-                                        <div class="cart__kit-order">
-                                            <div class="card__kit-order-info">
-                                                <div class="cart__kit-price">
-                                                    3600 
-                                                    <span class="cart__kit-price-curency">грн</span>
-                                                </div>
-                                                <div class="card__kit-saving">
-                                                    Экономия: 
-                                                    <span class="cart__kit-saving-price">200</span>
-                                                    <span class="cart__kit-saving-curency">грн</span>
+                                    <div class="cart__kit-card" data-product-id="productKitCard-2">
+                                        <div class="cart__kit-products">
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <a class="button" href="#!">Купить комплект</a>
+                                            <div class="cart__kit-add-box">
+                                                <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                            </div>
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Монитор 23.8" Acer 
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__kit-card-info">
+                                            <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                            <div class="cart__kit-order">
+                                                <div class="card__kit-order-info">
+                                                    <div class="cart__kit-price">
+                                                        <span class="cart__kit-general-price">8000</span>
+                                                        <span class="cart__kit-price-curency">грн</span>
+                                                    </div>
+                                                    <div class="card__kit-saving">
+                                                        Экономия: 
+                                                        <span class="cart__kit-saving-price">200</span>
+                                                        <span class="cart__kit-saving-curency">грн</span>
+                                                    </div>
+                                                </div>
+                                                <button class="button button--set">Купить комплект</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__kit-card" data-product-id="productKitCard-3">
+                                        <div class="cart__kit-products">
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart__kit-add-box">
+                                                <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                            </div>
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Монитор 23.8" Acer 
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__kit-card-info">
+                                            <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                            <div class="cart__kit-order">
+                                                <div class="card__kit-order-info">
+                                                    <div class="cart__kit-price">
+                                                        <span class="cart__kit-general-price">9000</span>
+                                                        <span class="cart__kit-price-curency">грн</span>
+                                                    </div>
+                                                    <div class="card__kit-saving">
+                                                        Экономия: 
+                                                        <span class="cart__kit-saving-price">200</span>
+                                                        <span class="cart__kit-saving-curency">грн</span>
+                                                    </div>
+                                                </div>
+                                                <button class="button button--set">Купить комплект</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__kit-card" data-product-id="productKitCard-4">
+                                        <div class="cart__kit-products">
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-1.jpg" alt="Корпус 2E Gaming Spargo GX910, Black (2E-GX910)" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Корпус 2E Gaming Spargo GX910, Black (2E-GX910)
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart__kit-add-box">
+                                                <img src="../img/svg/plus.svg" alt="" class="cart__kit-add">
+                                            </div>
+                                            <div class="cart__kit-product">
+                                                <img src="../img/cart/kit-2.jpg" alt="Монитор 23.8' Acer" class="cart__kit-product-img">
+                                                <div class="cart__kit-product-info">
+                                                    <div class="cart__kit-product-name">
+                                                        Монитор 23.8" Acer 
+                                                    </div>
+                                                    <div class="product__prices cart__kit-product__prices">
+                                                        <div class="product__price-old">6000 грн.</div>
+                                                        <div class="product__price-actual product__price-actual--sale">
+                                                            <span class="product__price priceProduct">5000</span> грн.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__kit-card-info">
+                                            <div class="cart__kit-number">Код комлекта: 1234567</div>
+                                            <div class="cart__kit-order">
+                                                <div class="card__kit-order-info">
+                                                    <div class="cart__kit-price">
+                                                        <span class="cart__kit-general-price">8500</span>
+                                                        <span class="cart__kit-price-curency">грн</span>
+                                                    </div>
+                                                    <div class="card__kit-saving">
+                                                        Экономия: 
+                                                        <span class="cart__kit-saving-price">200</span>
+                                                        <span class="cart__kit-saving-curency">грн</span>
+                                                    </div>
+                                                </div>
+                                                <button class="button button--set">Купить комплект</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="cart__kit-arrow-box">
-                                <img src="../img/svg/arrow/arrow-right-blue-24.svg" alt="" class="cart__kit-arrow">
                             </div>
                         </div>
                     </div>
                     <div class="recommendation">
                         <h4 class="section__title">Вместе с этим товаром покупают</h4>
                         <div class="recommendation__items">
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-1">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new active">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
                                     </div>
                                     <div class="product__reviews">
@@ -529,27 +681,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old disabled">6000 грн.</div>
                                         <div class="product__price-actual">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-2">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Процессор Intel Core i5-12400F OEM
                                     </div>
                                     <div class="product__reviews">
@@ -577,27 +729,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">6000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-3">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Корпус Cougar MX330-F
                                     </div>
                                     <div class="product__reviews">
@@ -625,27 +777,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-4">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Клавиатура проводная Dark Project KD87A Gateron Teal Cap
                                     </div>
                                     <div class="product__reviews">
@@ -673,27 +825,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">2500</span> грн.
+                                            <span class="product__price priceProduct">2500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-5">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Материнская плата GIGABYTE B550 AORUS ELITE V2
                                     </div>
                                     <div class="product__reviews">
@@ -721,27 +873,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-6">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Видеокарта Palit GeForce RTX 3060 Dual (LHR)
                                     </div>
                                     <div class="product__reviews">
@@ -769,10 +921,10 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">12000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">10000</span> грн.
+                                            <span class="product__price priceProduct">10000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
@@ -1042,7 +1194,7 @@
                             </div>
                             <div class="product-page__card-buttons">
                                 <div class="product-page__card-button">
-                                    <button class="button" type="button">купить</button>
+                                    <button class="button buttonProduct" type="button">купить</button>
                                 </div>
                                 <div class="product-page__card-button">
                                     <button class="button button--transparent-primary">купить в кредит</button>
@@ -1059,25 +1211,25 @@
                                 </span>
                             </div>
                             <div class="order__making-button">
-                                <button class="button">купить</button>
+                                <button class="button buttonProduct" type="button">купить</button>
                             </div>
                         </div>
                     </div>
                     <div class="recommendation">
                         <h4 class="section__title">Похожие товары</h4>
                         <div class="recommendation__items">
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-7">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new active">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
                                     </div>
                                     <div class="product__reviews">
@@ -1105,27 +1257,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old disabled">6000 грн.</div>
                                         <div class="product__price-actual">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-8">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Процессор Intel Core i5-12400F OEM
                                     </div>
                                     <div class="product__reviews">
@@ -1153,27 +1305,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">6000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-9">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Корпус Cougar MX330-F
                                     </div>
                                     <div class="product__reviews">
@@ -1201,27 +1353,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-10">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Клавиатура проводная Dark Project KD87A Gateron Teal Cap
                                     </div>
                                     <div class="product__reviews">
@@ -1249,27 +1401,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">2500</span> грн.
+                                            <span class="product__price priceProduct">2500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-11">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Материнская плата GIGABYTE B550 AORUS ELITE V2
                                     </div>
                                     <div class="product__reviews">
@@ -1297,27 +1449,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-12">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Видеокарта Palit GeForce RTX 3060 Dual (LHR)
                                     </div>
                                     <div class="product__reviews">
@@ -1345,10 +1497,10 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">12000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">10000</span> грн.
+                                            <span class="product__price priceProduct">10000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
@@ -1869,7 +2021,7 @@
                             </div>
                             <div class="product-page__card-buttons">
                                 <div class="product-page__card-button">
-                                    <button class="button" type="button">купить</button>
+                                    <button class="button buttonProduct" type="button">купить</button>
                                 </div>
                                 <div class="product-page__card-button">
                                     <button class="button button--transparent-primary">купить в кредит</button>
@@ -1886,25 +2038,25 @@
                                 </span>
                             </div>
                             <div class="order__making-button">
-                                <button class="button">купить</button>
+                                <button class="button buttonProduct" type="button">купить</button>
                             </div>
                         </div>
                     </div>
                     <div class="recommendation">
                         <h4 class="section__title">Похожие товары</h4>
                         <div class="recommendation__items">
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-13">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new active">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
                                     </div>
                                     <div class="product__reviews">
@@ -1932,27 +2084,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old disabled">6000 грн.</div>
                                         <div class="product__price-actual">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-14">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Процессор Intel Core i5-12400F OEM
                                     </div>
                                     <div class="product__reviews">
@@ -1980,27 +2132,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">6000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-15">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Корпус Cougar MX330-F
                                     </div>
                                     <div class="product__reviews">
@@ -2028,27 +2180,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-16">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Клавиатура проводная Dark Project KD87A Gateron Teal Cap
                                     </div>
                                     <div class="product__reviews">
@@ -2076,27 +2228,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">2500</span> грн.
+                                            <span class="product__price priceProduct">2500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-17">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Материнская плата GIGABYTE B550 AORUS ELITE V2
                                     </div>
                                     <div class="product__reviews">
@@ -2124,27 +2276,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-18">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Видеокарта Palit GeForce RTX 3060 Dual (LHR)
                                     </div>
                                     <div class="product__reviews">
@@ -2172,10 +2324,10 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">12000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">10000</span> грн.
+                                            <span class="product__price priceProduct">10000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
@@ -2463,7 +2615,7 @@
                             </div>
                             <div class="product-page__card-buttons">
                                 <div class="product-page__card-button">
-                                    <button class="button" type="button">купить</button>
+                                    <button class="button buttonProduct" type="button">купить</button>
                                 </div>
                                 <div class="product-page__card-button">
                                     <button class="button button--transparent-primary">купить в кредит</button>
@@ -2480,25 +2632,25 @@
                                 </span>
                             </div>
                             <div class="order__making-button">
-                                <button class="button">купить</button>
+                                <button class="button buttonProduct" type="button">купить</button>
                             </div>
                         </div>
                     </div>
                     <div class="recommendation">
                         <h4 class="section__title">Похожие товары</h4>
                         <div class="recommendation__items">
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-19">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new active">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/monitor.jpg" alt=" монитор 23.8' acer k240yb, black (um.qe0ee.b01)" class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)
                                     </div>
                                     <div class="product__reviews">
@@ -2526,27 +2678,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old disabled">6000 грн.</div>
                                         <div class="product__price-actual">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-20">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/i5.jpg" alt="процессор intel core i5-12400f oem"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Процессор Intel Core i5-12400F OEM
                                     </div>
                                     <div class="product__reviews">
@@ -2574,27 +2726,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">6000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">5000</span> грн.
+                                            <span class="product__price priceProduct">5000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-21">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/system-unit.jpg" alt="корпус cougar mx330-f"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Корпус Cougar MX330-F
                                     </div>
                                     <div class="product__reviews">
@@ -2622,27 +2774,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-22">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/keyboard.jpg" alt="клавиатура проводная dark project kd87a gateron teal cap"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Клавиатура проводная Dark Project KD87A Gateron Teal Cap
                                     </div>
                                     <div class="product__reviews">
@@ -2670,27 +2822,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">2500</span> грн.
+                                            <span class="product__price priceProduct">2500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-23">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/motherboard.jpg" alt="материнская плата gigabyte b550 aorus elite v2"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Материнская плата GIGABYTE B550 AORUS ELITE V2
                                     </div>
                                     <div class="product__reviews">
@@ -2718,27 +2870,27 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">3600 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">3500</span> грн.
+                                            <span class="product__price priceProduct">3500</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
                                 </div>
                             </div>
-                            <div class="recommendation__item product">
+                            <div class="recommendation__item product productParent" data-product-id="productRecomendation-24">
                                 <a href="./product.html" class="product__link"></a>
                                 <div class="product__header">
                                     <div class="product__new">Новинка</div>
                                     <div class="product__actions">
-                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon">
-                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon">
+                                        <img src="./img/svg/comparison.svg" alt="" class="product__icon product__icon-comparison">
+                                        <img src="./img/svg/favorite.svg" alt="" class="product__icon product__icon-favorites">
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)" class="product__img">
-                                    <div class="product__name">
+                                    <img src="./img/goods/video-card.jpg" alt="видеокарта palit geforce rtx 3060 dual (lhr)"class="product__img imgProduct">
+                                    <div class="product__name nameProduct">
                                         Видеокарта Palit GeForce RTX 3060 Dual (LHR)
                                     </div>
                                     <div class="product__reviews">
@@ -2766,10 +2918,10 @@
                                     <div class="product__prices">
                                         <div class="product__price-old">12000 грн.</div>
                                         <div class="product__price-actual product__price-actual--sale">
-                                            <span class="product__price ">10000</span> грн.
+                                            <span class="product__price priceProduct">10000</span> грн.
                                         </div>
                                     </div>
-                                    <button class="product__button" type="button">
+                                    <button class="product__button buttonProduct" type="button">
                                         <span class="product__button-text">Купить</span>
                                         <img src="./img/svg/cart-product.svg" alt="" class="product__button-img">
                                     </button>
@@ -2950,7 +3102,7 @@
                                 </div>
                             </div>
                             <div class="modal__button">
-                                <button class="button " type="button">купить</button>
+                                <button class="button buttonProduct" type="button">купить</button>
                             </div>
                         </div>
                     </div>

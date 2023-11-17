@@ -281,10 +281,12 @@ img {
   background: url("../../img/svg/arrow/arrow-right-blue-s.svg") 0 0/100% no-repeat;
 }
 
-.cart__slider {
+.cart__slider,
+.cart__kit-slider {
   position: relative;
 }
-.cart__slider .slick-arrow {
+.cart__slider .slick-arrow,
+.cart__kit-slider .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -296,11 +298,13 @@ img {
   cursor: pointer;
   transform: translateY(-50%);
 }
-.cart__slider .slick-arrow.slick-prev {
+.cart__slider .slick-arrow.slick-prev,
+.cart__kit-slider .slick-arrow.slick-prev {
   left: -3rem;
   background: url("../../img/svg/arrow/arrow-left-blue-24.svg") 0 0/100% no-repeat;
 }
-.cart__slider .slick-arrow.slick-next {
+.cart__slider .slick-arrow.slick-next,
+.cart__kit-slider .slick-arrow.slick-next {
   right: -3rem;
   background: url("../../img/svg/arrow/arrow-right-blue-24.svg") 0 0/100% no-repeat;
 }
