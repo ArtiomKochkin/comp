@@ -7,12 +7,7 @@ export function cartManager() {
     const cartProductsWrap = document.querySelector(".cart__products-wrap");
     let sum = 0;
 
-    document.addEventListener("DOMContentLoaded", () => {
-        continueShopping.addEventListener("click", closeCart);
-        totalPrice.forEach(item => {
-            item.innerText = sum;
-        });
-    });
+    continueShopping.addEventListener("click", closeCart);
 
     function closeCart(event) {
         let modal = event.target.closest(".modal");
@@ -32,7 +27,7 @@ export function cartManager() {
         let countPlus = countProduct.nextElementSibling;
         let bins = item.querySelectorAll(".cart__product-bin");
         let price = item.querySelector(".cart__product-cost");
-
+        
         countPlus.addEventListener("click", () => {
             countProduct.value = +countProduct.value + 1;
             sum += +price.innerText;
@@ -62,8 +57,7 @@ export function cartManager() {
                 });
                 bin.closest(".cart-product").remove();
             });
-        }); 
-
+        });
         // sum += +countProduct.value * +price.innerText;
     }
 

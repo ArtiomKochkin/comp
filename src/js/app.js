@@ -39,28 +39,26 @@ import * as orderForm from "./components/orderForm.js";
 import * as form from "./components/form.js";
 import * as accountRating from "./components/accountRating.js";
 import * as password from "./components/password.js";
-// import * as toFavorites from "./components/toFavorites.js";
-// import * as wishlist from "./components/wishlist.js";
+import * as toFavorites from "./components/toFavorites.js";
+import * as wishlist from "./components/wishlist.js";
 
 functions.isWebp();
 menu.toggleMenu();
 menuContent.menuContent();
-comparisonHeader.toggleComparisonList();
+// comparisonHeader.toggleComparisonList();
 headerActions.applyActions();
 modal.toggleModal();
 catalog.toggleCatalog();
 cartConfiguration.cartManager();
 sliderCart.initSlider();
 favorites.openFavorites();
+toFavorites.addToFavorites();
 
 switch (window.location.pathname) {
     case "/index.html" : {   
         sliderIntro.initSlider();
         sliderReviews.initSlider();
     } break;
-    case "/category.html" : {
-        // toFavorites.addToFavorites();
-    }
     case "/promotion.html" : {
         sliderPromotion.initSlider();
     } break;
@@ -70,7 +68,7 @@ switch (window.location.pathname) {
         orderForm.checkOrderData();
     } break;
     case "/comparison.html" : {
-        comparisonConfiguration.comparisonManager();
+        // comparisonConfiguration.comparisonManager();
     } break;
     case "/product.html" : {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 
@@ -125,10 +123,9 @@ switch (window.location.pathname) {
         filterCategories.filterByCategories();
     } break;
     case "/account.html" : {
-        let wishlistPages =  document.querySelectorAll(".account__product-list--wishlist");
         let viewedPages =  document.querySelectorAll(".account__product-list--viewed");
         let feedbackPages =  document.querySelectorAll(".account__feedback-list");
-        let pages = [wishlistPages, viewedPages, feedbackPages];
+        let pages = [viewedPages, feedbackPages];
         pages.forEach(function(page) {
             pagination.initPagination(page);
         });
@@ -142,6 +139,6 @@ switch (window.location.pathname) {
         accountPersonalDataModal.accountModal();
         accountAvatar.chooseAvatar();
         form.checkAccountData();
-        // wishlist.insertProductsToWishlist();
+        wishlist.insertProductsToWishlist();
     } break;
 }

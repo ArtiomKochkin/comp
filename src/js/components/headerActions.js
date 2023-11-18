@@ -4,8 +4,8 @@ export function applyActions() {
     const numCartMobile = document.getElementById("numCartMobile");
     const numCart = document.getElementById("numCart");
 
-    document.addEventListener("DOMContentLoaded", applyComparison);
-    document.addEventListener("DOMContentLoaded", applyFavorites);
+    // document.addEventListener("DOMContentLoaded", applyComparison);
+    // document.addEventListener("DOMContentLoaded", applyFavorites);
     document.addEventListener("DOMContentLoaded", applyCart(numCart));
     document.addEventListener("DOMContentLoaded", applyCart(numCartMobile));
 
