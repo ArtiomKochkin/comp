@@ -199,6 +199,7 @@ export function filterProducts () {
         });
         removeFilter();
         filter();
+        checkFilterView();
 
         function filter() {
             let checkboxes = document.querySelectorAll(".checkbox__input");
@@ -296,5 +297,16 @@ export function filterProducts () {
         buttonsReset.forEach(item => {
             item.classList.remove("hidden");
         });
+    }
+
+    function checkFilterView() {
+        const listView = document.getElementById("listView");
+        const tableView = document.getElementById("tableView");
+        
+        if (listView.classList.contains("active")) {
+            listView.click();
+        } else {
+            tableView.click();
+        }
     }
 }

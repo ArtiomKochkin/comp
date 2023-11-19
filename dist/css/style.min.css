@@ -1075,7 +1075,7 @@ img {
 
 .product__info {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   left: 0;
   top: 99%;
   display: none;
