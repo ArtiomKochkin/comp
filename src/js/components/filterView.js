@@ -1,21 +1,41 @@
+import * as cart from "../components/cartConfiguration.js";
+
 export function changeViewProducts() {
     const viewItems = document.querySelectorAll(".filter__view-item");
     const listView = document.getElementById("listView");
     const productItems = document.querySelectorAll(".product__items");
 
-    viewItems.forEach(changeView);
-
     function changeView(item) {
-        item.addEventListener("click", event => {
-            viewItems.forEach(item => {
-                item.classList.remove("active");
+        return new Promise((resolve) => {
+            item.addEventListener("click", (event) => {
+                viewItems.forEach((viewItem) => {
+                    viewItem.classList.remove("active");
+                });
+    
+                if (!item.classList.contains("active")) {
+                    item.classList.add("active");
+                    (event.currentTarget == listView) ? setListView() : setTableView();
+                }
+    
+                resolve();
             });
-            if (!item.classList.contains("active")) {
-                item.classList.add("active");
-                (event.currentTarget == listView) ? setListView() : setTableView(); 
-            }
         });
     }
+
+    async function handleViewChange(item) {
+        await changeView(item);
+
+        let buttons = document.querySelectorAll(".buttonProduct");
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                cart.cartManager();
+            });
+        });
+    }
+
+    viewItems.forEach(item => {
+        handleViewChange(item);
+    });
 
     function setListView() {
         productItems.forEach(productItem => {
