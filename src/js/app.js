@@ -52,7 +52,7 @@ catalog.toggleCatalog();
 cartConfiguration.cartManager();
 sliderCart.initSlider();
 favorites.openFavorites();
-toFavorites.addToFavorites();
+// toFavorites.addToFavorites();
 
 switch (window.location.pathname) {
     case "/index.html" : {   
@@ -139,6 +139,6 @@ switch (window.location.pathname) {
         accountPersonalDataModal.accountModal();
         accountAvatar.chooseAvatar();
         form.checkAccountData();
-        wishlist.insertProductsToWishlist();
+        // wishlist.insertProductsToWishlist();
     } break;
 }

@@ -35,8 +35,8 @@ export function addToFavorites() {
                 }
             }
             localStorage.setItem("numFavorites", numFavorites.innerText);
-            updateWishlist(product);
-        });      
+            updateWishlist(product); 
+        }); 
     }
     
     function updateWishlist(product) {
@@ -46,6 +46,7 @@ export function addToFavorites() {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(html, "text/html");
                 let wishlistWrap = doc.querySelector(".account__product-list--wishlist");
+
                 let productInfo = {
                     id: product.getAttribute("data-product-id"),
                     link: product.querySelector(".product__link").getAttribute("href"),
@@ -142,7 +143,7 @@ export function addToFavorites() {
                         </div>
                     </div>
                 `;
-                
+
                 if (product.classList.contains("wishlist")) {
                     wishlistWrap.insertAdjacentHTML("afterbegin", productHTML);
                 }
