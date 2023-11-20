@@ -25,6 +25,7 @@ import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
+import { htaccess } from "./gulp/tasks/htaccess.js";
 
 
 // наблюдатель за изменениями в файлах
@@ -34,6 +35,7 @@ function watcher() {
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.htaccess, htaccess);
 }
 
 // отдельно потому что нужно загружать 1 раз
@@ -43,7 +45,7 @@ export { svgSprive }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // главные задачи которые должны обрабатываться параллельно
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, htaccess));
 
 // построение сценариев выполнения задач последовательно
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
