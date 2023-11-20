@@ -1,6 +1,6 @@
 export function addToFavorites() {
 
-    localStorage.clear();
+    // localStorage.clear();
 
     const buttonsFav = document.querySelectorAll(".product__icon-favorites");
     const numFavorites = document.getElementById("numFavorites");

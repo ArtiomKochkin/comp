@@ -48,6 +48,38 @@ export function accountModal() {
     let numRegexp = /^[0-9]+$/;
     let shouldSuccess = true;
 
+    (function() {
+        if (localStorage.getItem("name")) {
+            nameText.textContent = localStorage.getItem("name");
+            nameText.classList.remove("disabled");
+            addNameButton.classList.remove("show");
+        }
+        if (localStorage.getItem("tel")) {
+            telText.textContent = localStorage.getItem("tel");
+            telText.classList.remove("disabled");
+            addTelButton.classList.remove("show");
+        }
+        if (localStorage.getItem("email")) {
+            emailText.textContent = localStorage.getItem("email");
+            emailText.classList.remove("disabled");
+            addEmailButton.classList.remove("show");
+            confrimationEmail.classList.remove("disabled");
+            confirmationEmailButton.classList.remove("disabled");
+        }
+        if (localStorage.getItem("editEmail")) {
+            emailText.textContent = localStorage.getItem("editEmail");
+            emailText.classList.remove("disabled");
+            addEmailButton.classList.remove("show");
+            confrimationEmail.classList.add("disabled");
+            confirmationEmailButton.classList.add("disabled");
+        }
+        if (localStorage.getItem("delivery")) {
+            deliveryText.textContent = localStorage.getItem("delivery");
+            deliveryText.classList.remove("disabled");
+            addDeliveryButton.classList.remove("show");
+        }
+    })();
+
     // document.addEventListener("DOMContentLoaded", openModal(welcome));
     buttons.forEach(item => {
         item.addEventListener("click", () => {
@@ -95,6 +127,7 @@ export function accountModal() {
                 name.value = "";
                 errorMessage = "";
                 action.click();
+                localStorage.setItem("name", nameText.textContent);
             }
             getError(name, errorMessage);
         });
@@ -120,6 +153,7 @@ export function accountModal() {
                 action.click();
                 errorMessage = "";
                 openModal(successTel);
+                localStorage.setItem("tel", telText.textContent);
             }
             getError(tel, errorMessage);
         });
@@ -152,6 +186,8 @@ export function accountModal() {
                 action.click();
                 errorMessage = "";
                 openModal(successEmail);
+                localStorage.setItem("email", emailText.textContent);
+
             }
             getError(email, errorMessage);
         });
@@ -183,6 +219,7 @@ export function accountModal() {
                 email.value = "";
                 code.value = "";
                 openModal(successEmail);
+                localStorage.setItem("editEmail", emailText.textContent);
             }
         });
 
@@ -348,7 +385,7 @@ export function accountModal() {
                     deliveryText.classList.remove("disabled");
                     addDeliveryButton.classList.remove("show");
                 } else if (streetMail.value != "" && houseMail.value != "" && apartamentMail.value != "") {
-                    addressP.textContent = "Доставка курьером, " + "г. " + city + ", ул " + streetMail.value + ", д. " + houseMail.value + ", кв. " + apartamentMail.value;
+                    addressP.textContent = " Доставка курьером, " + "г. " + city + ", ул " + streetMail.value + ", д. " + houseMail.value + ", кв. " + apartamentMail.value;
                     deliveryText.classList.remove("disabled");
                     addDeliveryButton.classList.remove("show");
                 } else {
@@ -361,6 +398,7 @@ export function accountModal() {
                 checkSettings(street, streetRegexp);
                 checkSettings(house, houseRegexp);
                 checkSettings(apartament, numRegexp);
+                
             }
             if (radioCourierDelivery.checked) {
                 checkSettings(streetMail, streetRegexp);
@@ -373,6 +411,7 @@ export function accountModal() {
                 deliveryText.appendChild(addressP);
                 editDelivery.click();
                 openModal(successDelivery);
+                localStorage.setItem("delivery", deliveryText.textContent);
             }
         });
     }
@@ -389,7 +428,6 @@ export function accountModal() {
             shouldSuccess = true;
         }
         getError(element, errorMessage); 
-        shouldSuccess = false;
     }
     
     function getError(element, str) {
@@ -411,6 +449,7 @@ export function accountModal() {
             if (element.nextElementSibling) {
                 element.classList.remove("errored");
                 element.nextElementSibling.remove();
+                shouldSuccess = true;
             }
         }
     }
