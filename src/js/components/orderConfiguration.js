@@ -1,8 +1,4 @@
 export function makeOrder() {
-    const body = document.body;
-    const modalCart = document.getElementById("cartModal");
-    const modalCartContent = modalCart.querySelector(".modal__content");
-    const editOrder = document.querySelectorAll(".order__making-product-edit");
     const orderRecipient = document.querySelector(".switch__input");
     const orderRecipientContacts = document.querySelector(".order__recipient-contact-details");
     const orderPayment = document.querySelectorAll(".order__radios-item");
@@ -11,17 +7,6 @@ export function makeOrder() {
     orderRecipient.addEventListener("change", toggleSwitch);
     orderDeliveryItems.forEach(handleDeliveryChange);
     orderPayment.forEach(handlePaymentChange);
-    editOrder.forEach(showOrder);
-
-    function showOrder(item) {
-        item.addEventListener("click", () => {
-            modalCart.classList.add("show");
-            body.classList.add("no-scroll");
-            setTimeout(() => {
-                modalCartContent.style.opacity = "1";
-            }, 1);
-        });
-    }
 
     function toggleSwitch() {
         if (orderRecipient.checked == true) {

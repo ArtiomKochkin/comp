@@ -313,6 +313,7 @@
 .order__making-product-up {
     display: flex;
     align-items: center;
+    width: 50%;
 
     @include breakpoint($tablet-pt) {
         flex-grow: 1;

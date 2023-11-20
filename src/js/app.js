@@ -45,19 +45,23 @@ import * as wishlist from "./components/wishlist.js";
 functions.isWebp();
 menu.toggleMenu();
 menuContent.menuContent();
-// comparisonHeader.toggleComparisonList();
 headerActions.applyActions();
 modal.toggleModal();
 catalog.toggleCatalog();
 cartConfiguration.cartManager();
-sliderCart.initSlider();
 favorites.openFavorites();
+document.addEventListener("DOMContentLoaded", () => {
+    sliderCart.initSlider();
+});
+// comparisonHeader.toggleComparisonList();
 // toFavorites.addToFavorites();
 
 switch (window.location.pathname) {
     case "/index.html" : {   
-        sliderIntro.initSlider();
-        sliderReviews.initSlider();
+        document.addEventListener("DOMContentLoaded", () => {
+            sliderIntro.initSlider();
+            sliderReviews.initSlider();
+        });
     } break;
     case "/promotion.html" : {
         sliderPromotion.initSlider();

@@ -9156,6 +9156,7 @@ img {
 .order__making-product-up {
   display: flex;
   align-items: center;
+  width: 50%;
 }
 @media screen and (max-width: 768px) {
   .order__making-product-up {
