@@ -50,31 +50,32 @@ modal.toggleModal();
 catalog.toggleCatalog();
 cartConfiguration.cartManager();
 favorites.openFavorites();
-document.addEventListener("DOMContentLoaded", () => {
-    sliderCart.initSlider();
-});
+sliderCart.initSlider();
 // comparisonHeader.toggleComparisonList();
 // toFavorites.addToFavorites();
 
-switch (window.location.pathname) {
-    case "/index.html" : {   
-        document.addEventListener("DOMContentLoaded", () => {
-            sliderIntro.initSlider();
-            sliderReviews.initSlider();
-        });
+switch (true) {
+    // данный код полезен только если проект запущен в режиме разработки
+    // case "/" : {
+    //     sliderIntro.initSlider();
+    //     sliderReviews.initSlider();
+    // }
+    case window.location.pathname.includes("/index.html") : {
+        sliderIntro.initSlider();
+        sliderReviews.initSlider();
     } break;
-    case "/promotion.html" : {
+    case window.location.pathname.includes("/promotion.html")  : {
         sliderPromotion.initSlider();
     } break;
-    case "/order.html" : {
+    case window.location.pathname.includes("/order.html")  : {
         orderConfiguration.makeOrder();
         orderDetails.calculateOrderDetails();
         orderForm.checkOrderData();
     } break;
-    case "/comparison.html" : {
+    case window.location.pathname.includes("/comparison.html")  : {
         // comparisonConfiguration.comparisonManager();
     } break;
-    case "/product.html" : {
+    case window.location.pathname.includes("/product.html")  : {
         let pages = document.querySelectorAll(".product-page__feedback-items"); 
         pagination.initPagination(pages);
         sliderProduct.initSlider();
@@ -86,11 +87,11 @@ switch (window.location.pathname) {
         productReviews.likeConfiguration();
         form.checkAccountData();
     } break;
-    case "/news.html" : {
+    case window.location.pathname.includes("/news.html")  : {
         let pages = document.querySelectorAll(".news__wrap"); 
         pagination.initPagination(pages);
     } break;
-    case "/promo.html" : {
+    case window.location.pathname.includes("/promo.html")  : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         countdown.initCountdown();
@@ -100,7 +101,7 @@ switch (window.location.pathname) {
         filterRange.applyRange();
         filterCategories.filterByCategories();
     } break;
-    case "/products.html" : {
+    case window.location.pathname.includes("/products.html")  : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         filter.filterProducts();
@@ -109,7 +110,7 @@ switch (window.location.pathname) {
         filterRange.applyRange();
         filterCategories.filterByCategories();
     } break;
-    case "/subcategory.html" : {
+    case window.location.pathname.includes("/subcategory.html")  : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         filter.filterProducts();
@@ -117,7 +118,7 @@ switch (window.location.pathname) {
         filterView.changeViewProducts();
         filterRange.applyRange();
     } break;
-    case "/search.html" : {
+    case window.location.pathname.includes("/search.html")  : {
         let pages = document.querySelectorAll(".product__items"); 
         pagination.initPagination(pages);
         filter.filterProducts();
@@ -126,13 +127,7 @@ switch (window.location.pathname) {
         filterRange.applyRange();
         filterCategories.filterByCategories();
     } break;
-    case "/account.html" : {
-        let viewedPages =  document.querySelectorAll(".account__product-list--viewed");
-        let feedbackPages =  document.querySelectorAll(".account__feedback-list");
-        let pages = [viewedPages, feedbackPages];
-        pages.forEach(function(page) {
-            pagination.initPagination(page);
-        });
+    case window.location.pathname.includes("/account.html")  : {
         password.switchVisibility();
         accountRating.chooseRating();
         accountTabs.toggleTabs();

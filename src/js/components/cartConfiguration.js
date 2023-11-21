@@ -55,6 +55,12 @@ export function cartManager() {
                 totalPrice.forEach(item => {
                     item.innerText = sum;
                 });
+                cartCounter.forEach(item => {
+                    item.innerText = +item.innerText - 1;
+                    if (+item.innerText == 0) {
+                        item.parentElement.classList.remove("active");
+                    }
+                });
                 bin.closest(".cart-product").remove();
             });
         });
@@ -127,16 +133,16 @@ export function cartManager() {
                             <div class="cart__product-name">
                                 ${productInfo.name}
                             </div>
-                            <img src="../img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
+                            <img src="img/svg/bin-dark-12.svg" alt="" class="cart__product-bin cart__product-bin--mobile">
                         </div>
                         <div class="cart__product-footer">
                             <div class="cart__product-counter">
                                 <div class="cart__product-action">
-                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
+                                    <img src="img/svg/minus.svg" alt="" class="cart__product-action-img">
                                 </div>
                                 <input type="text" class="input input--cart" value="1">
                                 <div class="cart__product-action">
-                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                                    <img src="img/svg/plus.svg" alt="" class="cart__product-action-img">
                                 </div>
                             </div>
                             <div class="cart__product-price">
@@ -145,7 +151,7 @@ export function cartManager() {
                             </div>
                         </div>
                         <div class="cart__product-bin-box">
-                            <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
+                            <img src="img/svg/bin-red.svg" alt="" class="cart__product-bin">
                         </div>
                     </div>
                 </div>
@@ -196,11 +202,11 @@ export function cartManager() {
                         <div class="cart__product-footer cart__product-footer--set">
                             <div class="cart__product-counter">
                                 <div class="cart__product-action">
-                                    <img src="../img/svg/minus.svg" alt="" class="cart__product-action-img">
+                                    <img src="img/svg/minus.svg" alt="" class="cart__product-action-img">
                                 </div>
                                 <input type="text" class="input input--cart" value="1">
                                 <div class="cart__product-action">
-                                    <img src="../img/svg/plus.svg" alt="" class="cart__product-action-img">
+                                    <img src="img/svg/plus.svg" alt="" class="cart__product-action-img">
                                 </div>
                             </div>
                             <div class="cart__product-price">
@@ -208,7 +214,7 @@ export function cartManager() {
                                 <span class="cart__product-price-curency">грн</span>
                             </div>
                             <div class="cart__product-bin-box cart__product-bin-box--set">
-                                <img src="../img/svg/bin-red.svg" alt="" class="cart__product-bin">
+                                <img src="img/svg/bin-red.svg" alt="" class="cart__product-bin">
                             </div>
                         </div>
                     </div>

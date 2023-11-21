@@ -29,6 +29,13 @@ body {
     &.no-scroll {
         overflow: hidden;
     }
+
+    &.webp {
+        .game,
+        .game__category {
+            background-size: cover;
+        }
+    }
 }
 
 img {

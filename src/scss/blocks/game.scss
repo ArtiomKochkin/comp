@@ -1,5 +1,5 @@
 .game {
-    background: $dark url("../../img/game-zone/bg.jpg") center no-repeat;
+    background: $dark url("../img/game-zone/bg.jpg") center no-repeat;
     background-size: cover;
     padding: 4rem 0;
 
@@ -192,46 +192,39 @@
 .game__category {
     position: relative;
     box-shadow: 0px 2px 10px 0px rgba(50, 50, 71, 0.14);
+    background-size: cover;
 
     &.keyboard {
         grid-area: keyboard;
-        background: $dark url("../../img/game-zone/keyboard.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/keyboard.jpg") center no-repeat;
     }
     &.mouse {
         grid-area: mouse;
-        background: $dark url("../../img/game-zone/mouse.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/mouse.jpg") center no-repeat;
     }
     &.accessories {
         grid-area: accessories;
-        background: $dark url("../../img/game-zone/accessories.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/accessories.jpg") center no-repeat;
     }
     &.laptop {
         grid-area: laptop;
-        background: $dark url("../../img/game-zone/laptop.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/laptop.jpg") center no-repeat;
     }
     &.monitor {
         grid-area: monitor;
-        background: $dark url("../../img/game-zone/monitor.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/monitor.jpg") center no-repeat;
     }
     &.video-card {
         grid-area: video-card;
-        background: $dark url("../../img/game-zone/video-card.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/video-card.jpg") center no-repeat;
     }
     &.motherboard {
         grid-area: motherboard;
-        background: $dark url("../../img/game-zone/motherboard.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/motherboard.jpg") center no-repeat;
     }
     &.cpu {
         grid-area: cpu;
-        background: $dark url("../../img/game-zone/cpu.jpg") center no-repeat;
-        background-size: cover;
+        background: $dark url("../img/game-zone/cpu.jpg") center no-repeat;
     }
 
     &:hover .game__category-link{

@@ -11,12 +11,12 @@
     line-height: 14px; /* 100% */
     padding-right: 2.5rem;
     letter-spacing: 0.28px;
-    background: url("../../img/svg/arrow/arrow-right-blue-m.svg") 97% 65% no-repeat;
+    background: url("../img/svg/arrow/arrow-right-blue-m.svg") 97% 65% no-repeat;
     background-size: 16px;
     transition: all linear .3s;
     
     &:hover {
-        background: url("../../img/svg/arrow/arrow-right-blue-m.svg") 101% 65% no-repeat; 
+        background: url("../img/svg/arrow/arrow-right-blue-m.svg") 101% 65% no-repeat; 
         background-size: 16px; 
         opacity: 0.8;
     }
@@ -24,19 +24,19 @@
 
     &--white {
         color: $white;
-        background: url("../../img/svg/arrow/arrow-right-white-m.svg") 97% 65% no-repeat;
+        background: url("../img/svg/arrow/arrow-right-white-m.svg") 97% 65% no-repeat;
         background-size: 16px;
         transition: all linear .3s;
 
         &:hover {
-            background: url("../../img/svg/arrow/arrow-right-white-m.svg") 101% 65% no-repeat;
+            background: url("../img/svg/arrow/arrow-right-white-m.svg") 101% 65% no-repeat;
             background-size: 16px; 
         }
     }
     
     &--s {
         padding-right: 2.2rem;
-        background: url("../../img/svg/arrow/arrow-right-blue-s.svg") 97% 40% no-repeat;
+        background: url("../img/svg/arrow/arrow-right-blue-s.svg") 97% 40% no-repeat;
         background-size: 12px;
         transition: all linear .3s;
         font-size: 0.6vw;
@@ -44,7 +44,7 @@
         line-height: 10px; /* 100% */
 
         &:hover {
-            background: url("../../img/svg/arrow/arrow-right-blue-s.svg") 101% 40% no-repeat;
+            background: url("../img/svg/arrow/arrow-right-blue-s.svg") 101% 40% no-repeat;
             background-size: 12px; 
         }
     }

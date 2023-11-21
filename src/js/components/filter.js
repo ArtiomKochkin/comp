@@ -129,10 +129,10 @@ export function filterProducts () {
         title.addEventListener("click", () => {
             if (!content.classList.contains("hidden")) {
                 content.classList.add("hidden");
-                title.style.background = 'url("../../img/svg/arrow/arrow-down-gray-16.svg") no-repeat 100% center';
+                title.style.background = 'url("./img/svg/arrow/arrow-down-gray-16.svg") no-repeat 100% center';
             } else {
                 content.classList.remove("hidden");
-                title.style.background = 'url("../../img/svg/arrow/arrow-up-gray-16.svg") no-repeat 100% center';
+                title.style.background = 'url("./img/svg/arrow/arrow-up-gray-16.svg") no-repeat 100% center';
             }
         });
     }

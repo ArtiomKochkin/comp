@@ -58,7 +58,7 @@
     }
 
     &--tel {
-        background: url("../../img/contacts/phone.svg") 0% 0% no-repeat;
+        background: url("../img/contacts/phone.svg") 0% 0% no-repeat;
         background-size: 24px 24px;
 
         @include breakpoint($mobile) {
@@ -76,7 +76,7 @@
         }
     }
     &--email {
-        background: url("../../img/contacts/email.svg") 0% 0% no-repeat;
+        background: url("../img/contacts/email.svg") 0% 0% no-repeat;
         background-size: 24px 24px;
 
         @include breakpoint($tablet-pt) {
@@ -90,15 +90,15 @@
         }
     }
     &--time {
-        background: url("../../img/contacts/time.svg") 0% 0% no-repeat;
+        background: url("../img/contacts/time.svg") 0% 0% no-repeat;
         background-size: 24px 24px;
     }
     &--location {
-        background: url("../../img/contacts/location.svg") 0% 0% no-repeat;
+        background: url("../img/contacts/location.svg") 0% 0% no-repeat;
         background-size: 24px 24px;
     }
     &--skype {
-        background: url("../../img/contacts/skype.svg") 0% 0% no-repeat;
+        background: url("../img/contacts/skype.svg") 0% 0% no-repeat;
         background-size: 24px 24px;
     }
 

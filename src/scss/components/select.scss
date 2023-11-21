@@ -19,14 +19,14 @@
     border-radius: 4px;
     border: 1px solid #e6e6e6;
     min-width: 256px;
-    background: url("../../img/svg/arrow/arrow-down-gray-16.svg") no-repeat 95% center;
+    background: url("../img/svg/arrow/arrow-down-gray-16.svg") no-repeat 95% center;
 
     font-size: 0.8vw;
     font-family: inherit;
 
     &:focus {
         outline: none;
-        background: url("../../img/svg/arrow/arrow-up-gray-16.svg") no-repeat 95% center;
+        background: url("../img/svg/arrow/arrow-up-gray-16.svg") no-repeat 95% center;
         border: 1px solid $secondary;
     }
 
