@@ -122,6 +122,17 @@
     &.hidden {
         display: none;
     }
+
+    &.search-active {
+        padding: 0.9rem;
+        
+        .button-text {
+            display: none;
+        }
+        .button-img {
+            margin-left: 0;
+        }
+    }
 }
 
 .button-img {

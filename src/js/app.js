@@ -39,6 +39,7 @@ import * as orderForm from "./components/orderForm.js";
 import * as form from "./components/form.js";
 import * as accountRating from "./components/accountRating.js";
 import * as password from "./components/password.js";
+import * as headerSearch from "./components/headerSearch.js";
 import * as toFavorites from "./components/toFavorites.js";
 import * as wishlist from "./components/wishlist.js";
 
@@ -51,15 +52,11 @@ catalog.toggleCatalog();
 cartConfiguration.cartManager();
 favorites.openFavorites();
 sliderCart.initSlider();
+headerSearch.handleSearch();
 // comparisonHeader.toggleComparisonList();
 // toFavorites.addToFavorites();
 
 switch (true) {
-    // данный код полезен только если проект запущен в режиме разработки
-    // case "/" : {
-    //     sliderIntro.initSlider();
-    //     sliderReviews.initSlider();
-    // }
     case window.location.pathname.includes("/index.html") : {
         sliderIntro.initSlider();
         sliderReviews.initSlider();

@@ -1396,6 +1396,15 @@ img {
 .button.hidden {
   display: none;
 }
+.button.search-active {
+  padding: 0.9rem;
+}
+.button.search-active .button-text {
+  display: none;
+}
+.button.search-active .button-img {
+  margin-left: 0;
+}
 
 .button-img {
   display: block;
@@ -1467,6 +1476,16 @@ img {
 @media screen and (max-width: 500px) {
   .input--search {
     display: none;
+    font-size: 2.6vw;
+  }
+  .input--search::placeholder {
+    font-size: 2.6vw;
+  }
+  .input--search.search-active {
+    display: inline-block;
+    width: auto;
+    border-radius: 4px;
+    padding: 0.9rem;
   }
 }
 .input--footer {
@@ -4418,7 +4437,7 @@ img {
 @media screen and (max-width: 500px) {
   .cart__kit-product-img {
     display: block;
-    width: 30%;
+    width: 40%;
     height: fit-content;
     margin: auto;
   }
