@@ -1,6 +1,6 @@
 .pagination {
     text-align: center;
-    padding: 2.4rem 0;
+    margin: 2.4rem 0;
 
     &.hidden {
         display: none;
@@ -125,6 +125,6 @@
     }
     @include breakpoint($mobile) {
         font-size: 3.3vw;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 1.1rem;
     }
 }

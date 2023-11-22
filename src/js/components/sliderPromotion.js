@@ -13,7 +13,7 @@ export function initSlider() {
                 {
                     breakpoint: 768,
                     settings: {
-                        arrows: false
+                        arrows: true
                     }
                 }
             ]

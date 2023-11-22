@@ -140,4 +140,8 @@ switch (true) {
         form.checkAccountData();
         // wishlist.insertProductsToWishlist();
     } break;
+    default : {
+        sliderIntro.initSlider();
+        sliderReviews.initSlider();
+    }
 }

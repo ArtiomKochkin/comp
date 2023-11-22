@@ -57,12 +57,12 @@ export function toggleCatalog() {
                     if (catalogList.style.display != "block") {
                         catalogList.style.display = "block";
                         catalogLink.classList.add("hidden");
-                        columnItem.style.background = 'url("../../img/svg/arrow-down.svg") 100% 0% no-repeat';
+                        columnItem.style.background = 'url("../img/svg/arrow-down.svg") 100% 0% no-repeat';
                         catalog.style.minHeight = (catalog.offsetHeight + catalogList.offsetHeight) + "px";
                     } else {
                         catalogList.style.display = "none";
                         catalogLink.classList.remove("hidden");
-                        columnItem.style.background = 'url("../../img/svg/arrow-right.svg") 100% 0% no-repeat';
+                        columnItem.style.background = 'url("../img/svg/arrow-right.svg") 100% 0% no-repeat';
                         catalog.style.minHeight = (catalog.offsetHeight - catalogList.offsetHeight) + "px";
                     }
                 } else {

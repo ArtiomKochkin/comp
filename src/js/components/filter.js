@@ -201,6 +201,10 @@ export function filterProducts () {
         filter();
         checkFilterView();
 
+        if (document.querySelector(".filter").classList.contains("mobile")) {
+            document.querySelector(".filter").classList.remove("mobile");
+        }
+
         function filter() {
             let checkboxes = document.querySelectorAll(".checkbox__input");
             let checkboxStates = {};

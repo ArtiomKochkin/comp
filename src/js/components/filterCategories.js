@@ -15,14 +15,14 @@ export function filterByCategories() {
                 if (!buttonShowMore.classList.contains("opened")) {
                     buttonShowMore.classList.add("opened");
                     buttonShowMore.innerText = "Скрыть";
-                    buttonShowMore.style.background = 'url("../../img/svg/arrow/arrow-up-blue-12.svg") no-repeat 100% center';
+                    buttonShowMore.style.background = 'url("../img/svg/arrow/arrow-up-blue-12.svg") no-repeat 100% center';
                     for (let i = 4; i < filterItems.length; i++) {
                         filterItems[i].classList.remove("hidden");
                     }
                 } else {
                     buttonShowMore.classList.remove("opened");
                     buttonShowMore.innerText = "Все категории";
-                    buttonShowMore.style.background = 'url("../../img/svg/arrow/arrow-down-blue-12.svg") no-repeat 100% center';
+                    buttonShowMore.style.background = 'url("../img/svg/arrow/arrow-down-blue-12.svg") no-repeat 100% center';
                     for (let i = 4; i < filterItems.length; i++) {
                         filterItems[i].classList.add("hidden");
                     }
@@ -44,14 +44,14 @@ export function filterByCategories() {
                 if (!buttonShowMore.classList.contains("opened")) {
                     buttonShowMore.classList.add("opened");
                     buttonShowMore.innerText = "Скрыть";
-                    buttonShowMore.style.background = 'url("../../img/svg/arrow/arrow-up-blue-12.svg") no-repeat 100% center';
+                    buttonShowMore.style.background = 'url("../img/svg/arrow/arrow-up-blue-12.svg") no-repeat 100% center';
                     for (let i = 3; i < subcategories.length; i++) {
                         subcategories[i].classList.remove("hidden");
                     }
                 } else {
                     buttonShowMore.classList.remove("opened");
                     buttonShowMore.innerText = "Все категории";
-                    buttonShowMore.style.background = 'url("../../img/svg/arrow/arrow-down-blue-12.svg") no-repeat 100% center';
+                    buttonShowMore.style.background = 'url("../img/svg/arrow/arrow-down-blue-12.svg") no-repeat 100% center';
                     for (let i = 3; i < subcategories.length; i++) {
                         subcategories[i].classList.add("hidden");
                     }
