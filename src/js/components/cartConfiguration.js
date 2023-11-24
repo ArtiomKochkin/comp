@@ -7,6 +7,40 @@ export function cartManager() {
     const cartProductsWrap = document.querySelector(".cart__products-wrap");
     let sum = 0;
 
+    (function() {
+        if (localStorage.getItem("cart")) {
+
+            function loadCart() {
+                return new Promise((resolve, reject) => {
+                    cartProductsWrap.innerHTML = localStorage.getItem("cart");
+                    cartCounter.forEach(item => {
+                        item.innerText = localStorage.getItem("cartCounter");
+                        if (+item.innerText > 0) {
+                            item.parentElement.classList.add("active");
+                        }
+                    });
+                    totalPrice.forEach(item => {
+                        item.innerHTML = localStorage.getItem("price");
+                        sum = +item.innerHTML;
+                    });
+    
+                    resolve();
+                });
+            }
+            
+            function handleCartProducts() {
+                let products = document.querySelectorAll(".cart-product");
+                products.forEach(item => {
+                    cartOperations(item.id);
+                });
+            }
+    
+            loadCart().then(() => {
+                handleCartProducts();
+            });
+        }
+    }());
+
     continueShopping.addEventListener("click", closeCart);
 
     function closeCart(event) {
@@ -60,11 +94,15 @@ export function cartManager() {
                     if (+item.innerText == 0) {
                         item.parentElement.classList.remove("active");
                     }
+                    localStorage.setItem("cartCounter", item.innerText);
                 });
                 bin.closest(".cart-product").remove();
+
+                let cartTemporaryWrap = document.querySelector(".cart__products-wrap");
+                localStorage.setItem("cart", cartTemporaryWrap.innerHTML);
+                localStorage.setItem("price", sum);
             });
         });
-        // sum += +countProduct.value * +price.innerText;
     }
 
     function calculateCartCounter(product, operation) {
@@ -87,6 +125,7 @@ export function cartManager() {
                 }
             }
             item.innerText = counter;
+            localStorage.setItem("cartCounter", counter);
         });
     }
 
@@ -109,12 +148,16 @@ export function cartManager() {
             });
         }
         cartOperations(productInfo.id);
+        localStorage.setItem("cart", cartProductsWrap.innerHTML);
+        localStorage.setItem("price", sum);
     }
 
     if (buttons.length != 0) {
         let product, productInfo, productHTML;
+        let i = 0;
         buttons.forEach(button => {
             button.addEventListener("click", () => {
+                i++;
                 product = button.closest(".productParent");
                 productInfo = {
                     id: product.getAttribute("data-product-id"),

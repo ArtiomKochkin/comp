@@ -1,7 +1,9 @@
 export function switchVisibility() {
     const buttonEyes = document.querySelectorAll(".modal__eye-img");
 
-    buttonEyes.forEach(toggleVisibilityPassword);
+    if (buttonEyes.length > 0) {
+        buttonEyes.forEach(toggleVisibilityPassword);
+    }
 
     function toggleVisibilityPassword(item) {
         item.addEventListener("click", () => {

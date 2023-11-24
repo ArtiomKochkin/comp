@@ -18,6 +18,12 @@ export function calculateOrderDetails() {
     orderDeliveryRadio.forEach(calculateShippingCost);
     orderButton.addEventListener("click", handleProducts);
 
+    (function() {
+        if (localStorage.getItem("cart")) {
+            orderButton.click();
+        }
+    }());
+
     function handleProducts(event) {
         event.preventDefault();
         orderButton.closest(".modal").click();

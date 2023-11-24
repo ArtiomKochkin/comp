@@ -1,6 +1,10 @@
 .intro {
     position: relative;
     margin-top: 3rem;
+
+    @include breakpoint($tablet) {
+        margin-top: 0;
+    }
 }
 
 .intro__banner {
@@ -10,6 +14,7 @@
 
     @include breakpoint($tablet) {
         margin-left: 0;
+        height: fit-content;
     }
     @include breakpoint($tablet) {
         margin: 0;
@@ -28,29 +33,49 @@
 
 .intro__slider-img {
     width: 63.4vw;
+    height: auto;
 
     @include breakpoint($desktop) {
         width: 100%;
+        
+    }
+    @include breakpoint($laptop) {
+        min-height: 45vh;
+    }
+    @include breakpoint($tablet) {
+        min-height: 50vh;
+    }
+    @include breakpoint($tablet-pt) {
+        min-height: 41vh;
+    }
+    @include breakpoint($mobile) {
+        min-height: 45vh;
+    }
+    @media screen and (max-width: 430px) {
+        min-height: 35vh;
+    }
+    @media screen and (max-width: 360px) {
+        min-height: 43vh;
     }
 
-    @media screen and (min-height: 500px) {
-        height: 50vh;
-    }
-    @media screen and (min-height: 600px) {
-        height: 54vh;
-    }
-    @media screen and (min-height: 768px) {
-        height: 48vh;
-    }
-    @media screen and (min-height: 900px) {
-        height: 44vh;
-    }
-    @media screen and (min-height: 1024px) {
-        height: 40vh;
-    }
-    @media screen and (min-height: 1240px) {
-        height: 45vh;
-    }
+    // @media screen and (min-height: 500px) {
+    //     height: 50vh;
+    // }
+    // @media screen and (min-height: 600px) {
+    //     height: 54vh;
+    // }
+    // @media screen and (min-height: 768px) {
+    //     height: 48vh;
+    // }
+    // @media screen and (min-height: 900px) {
+    //     height: 44vh;
+    // }
+    // @media screen and (min-height: 1024px) {
+    //     height: 40vh;
+    // }
+    // @media screen and (min-height: 1240px) {
+    //     height: 45vh;
+    // }
 
 }
 

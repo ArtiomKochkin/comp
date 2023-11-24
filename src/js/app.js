@@ -53,6 +53,7 @@ cartConfiguration.cartManager();
 favorites.openFavorites();
 sliderCart.initSlider();
 headerSearch.handleSearch();
+password.switchVisibility();
 // comparisonHeader.toggleComparisonList();
 // toFavorites.addToFavorites();
 
@@ -125,7 +126,6 @@ switch (true) {
         filterCategories.filterByCategories();
     } break;
     case window.location.pathname.includes("/account.html")  : {
-        password.switchVisibility();
         accountRating.chooseRating();
         accountTabs.toggleTabs();
         goToFavorites.onClick();

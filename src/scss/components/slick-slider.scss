@@ -52,9 +52,10 @@
         display: flex;
         align-items: center;
 
-        @include breakpoint($tablet-pt) {
-            left: 3rem;
+        @include breakpoint($tablet) {
+            right: 3rem;
             bottom: 3rem;
+            left: auto;
         }
         @include breakpoint($mobile) {
             left: auto;
